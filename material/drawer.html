@@ -1,0 +1,40 @@
+<nav aria-label="navigation">
+  <a href="{{ repo_url }}" class="project">
+    <div class="banner">
+      {% if config.extra.logo %}
+        <div class="logo">
+          <img src="{{ base_url }}/{{ config.extra.logo }}">
+        </div>
+      {% endif %}
+      <div class="name">
+        <strong>{{ site_name }} {{ config.extra.version }}</strong>
+      </div>
+    </div>
+  </a>
+  <div class="scrollable">
+    <div class="wrapper">
+      {% if config.extra.faq.url %}
+        <ul class="repo">
+          <li class="repo-download">
+            <a href="{{ config.extra.faq.url }}" target="_blank" aria-label="FAQ sur ideesculture.zendesk.com">
+              <i class="icon icon-menu"></i> Questions fréquentes
+            </a>
+          </li>
+        </ul>
+        <hr>
+      {% endif %}
+      <ul class="toc">
+        {% for nav_item in nav %}
+          {% include "nav.html" %}
+        {% endfor %}
+        {% if config.extra.author %}
+          <li>
+            <hr>
+            <span class="section">AUTEURS</span>
+            <span class="section" style="color:black;margin-top:0;padding-top:0;">L'équipe d'idéesculture</span>
+          </li>
+        {% endif %}
+      </ul>
+    </div>
+  </div>
+</nav>
