@@ -1,0 +1,1040 @@
+
+<!doctype html>
+<html lang="fr" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+        <meta name="description" content="Documentation pour les utilisateurs de CollectiveAccess avec le plugin Musées De France">
+      
+      
+      
+        <meta name="author" content="idéesculture">
+      
+      
+      <link rel="shortcut icon" href="../assets/favicon.png">
+      <meta name="generator" content="mkdocs-1.1.2, mkdocs-material-7.0.3">
+    
+    
+      
+        <title>7. La saisie d'un objet dans CollectiveAccess - Guide utilisateur CollectiveAccess</title>
+      
+    
+    
+      <link rel="stylesheet" href="../assets/stylesheets/main.1655a90d.min.css">
+      
+        
+        <link rel="stylesheet" href="../assets/stylesheets/palette.7fa14f5b.min.css">
+        
+          
+          
+          <meta name="theme-color" content="#ffa724">
+        
+      
+    
+    
+    
+      
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,400i,700%7CRoboto+Mono&display=fallback">
+        <style>:root{--md-text-font-family:"Roboto";--md-code-font-family:"Roboto Mono"}</style>
+      
+    
+    
+    
+    
+      
+    
+    
+  </head>
+  
+  
+    
+    
+    
+    
+    
+    <body dir="ltr" data-md-color-scheme="default" data-md-color-primary="orange" data-md-color-accent="orange">
+      
+  
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#7-la-saisie-dun-objet-dans-collectiveaccess" class="md-skip">
+          Aller au contenu
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+      
+
+<header class="md-header" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="Header">
+    <a href=".." title="Guide utilisateur CollectiveAccess" class="md-header__button md-logo" aria-label="Guide utilisateur CollectiveAccess">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 89 89">
+  <path d="M3.136,17.387l0,42.932l42.932,21.467l-42.932,-64.399Z" />
+  <path d="M21.91,8l42.933,64.398l-18.775,9.388l-42.932,-64.399l18.774,-9.387Z" style="fill-opacity: 0.5" />
+  <path d="M67.535,17.387l-27.262,18.156l21.878,32.818l5.384,2.691l0,-53.665Z" />
+  <path d="M67.535,17.387l0,53.666l18.774,-9.388l0,-53.665l-18.774,9.387Z" style="fill-opacity: 0.25" />
+</svg>
+
+    </a>
+    <label class="md-header__button md-icon" for="__drawer">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3V6m0 5h18v2H3v-2m0 5h18v2H3v-2z"/></svg>
+    </label>
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <span class="md-ellipsis">
+            Guide utilisateur CollectiveAccess
+          </span>
+        </div>
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
+            
+              7. La saisie d'un objet dans CollectiveAccess
+            
+          </span>
+        </div>
+      </div>
+    </div>
+    <div class="md-header__options">
+      
+    </div>
+    
+      <label class="md-header__button md-icon" for="__search">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5z"/></svg>
+      </label>
+      
+<div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" aria-label="Rechercher" placeholder="Rechercher" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" data-md-state="active" required>
+      <label class="md-search__icon md-icon" for="__search">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5z"/></svg>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12z"/></svg>
+      </label>
+      <button type="reset" class="md-search__icon md-icon" aria-label="Clear" tabindex="-1">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41L17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12 19 6.41z"/></svg>
+      </button>
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
+            Initializing search
+          </div>
+          <ol class="md-search-result__list"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+    
+    
+      <div class="md-header__source">
+        
+<a href="https://github.com/ideesculture/museesDeFranceDocumentation/" title="Aller au dépôt" class="md-source" data-md-component="source">
+  <div class="md-source__icon md-icon">
+    
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><path d="M439.55 236.05L244 40.45a28.87 28.87 0 0 0-40.81 0l-40.66 40.63 51.52 51.52c27.06-9.14 52.68 16.77 43.39 43.68l49.66 49.66c34.23-11.8 61.18 31 35.47 56.69-26.49 26.49-70.21-2.87-56-37.34L240.22 199v121.85c25.3 12.54 22.26 41.85 9.08 55a34.34 34.34 0 0 1-48.55 0c-17.57-17.6-11.07-46.91 11.25-56v-123c-20.8-8.51-24.6-30.74-18.64-45L142.57 101 8.45 235.14a28.86 28.86 0 0 0 0 40.81l195.61 195.6a28.86 28.86 0 0 0 40.8 0l194.69-194.69a28.86 28.86 0 0 0 0-40.81z"/></svg>
+  </div>
+  <div class="md-source__repository">
+    GitHub
+  </div>
+</a>
+      </div>
+    
+  </nav>
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+          
+<nav class="md-tabs" aria-label="Tabs" data-md-component="tabs">
+  <div class="md-tabs__inner md-grid">
+    <ul class="md-tabs__list">
+      
+        
+  
+  
+
+
+  <li class="md-tabs__item">
+    <a href=".." class="md-tabs__link">
+      Accueil
+    </a>
+  </li>
+
+      
+        
+  
+  
+    
+  
+
+
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="../chapter1/" class="md-tabs__link md-tabs__link--active">
+        Guide utilisateur Providence
+      </a>
+    </li>
+  
+
+      
+    </ul>
+  </div>
+</nav>
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+
+
+  
+
+
+<nav class="md-nav md-nav--primary md-nav--lifted" aria-label="Navigation" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href=".." title="Guide utilisateur CollectiveAccess" class="md-nav__button md-logo" aria-label="Guide utilisateur CollectiveAccess">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 89 89">
+  <path d="M3.136,17.387l0,42.932l42.932,21.467l-42.932,-64.399Z" />
+  <path d="M21.91,8l42.933,64.398l-18.775,9.388l-42.932,-64.399l18.774,-9.387Z" style="fill-opacity: 0.5" />
+  <path d="M67.535,17.387l-27.262,18.156l21.878,32.818l5.384,2.691l0,-53.665Z" />
+  <path d="M67.535,17.387l0,53.666l18.774,-9.388l0,-53.665l-18.774,9.387Z" style="fill-opacity: 0.25" />
+</svg>
+
+    </a>
+    Guide utilisateur CollectiveAccess
+  </label>
+  
+    <div class="md-nav__source">
+      
+<a href="https://github.com/ideesculture/museesDeFranceDocumentation/" title="Aller au dépôt" class="md-source" data-md-component="source">
+  <div class="md-source__icon md-icon">
+    
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><path d="M439.55 236.05L244 40.45a28.87 28.87 0 0 0-40.81 0l-40.66 40.63 51.52 51.52c27.06-9.14 52.68 16.77 43.39 43.68l49.66 49.66c34.23-11.8 61.18 31 35.47 56.69-26.49 26.49-70.21-2.87-56-37.34L240.22 199v121.85c25.3 12.54 22.26 41.85 9.08 55a34.34 34.34 0 0 1-48.55 0c-17.57-17.6-11.07-46.91 11.25-56v-123c-20.8-8.51-24.6-30.74-18.64-45L142.57 101 8.45 235.14a28.86 28.86 0 0 0 0 40.81l195.61 195.6a28.86 28.86 0 0 0 40.8 0l194.69-194.69a28.86 28.86 0 0 0 0-40.81z"/></svg>
+  </div>
+  <div class="md-source__repository">
+    GitHub
+  </div>
+</a>
+    </div>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+      
+
+  
+  
+  
+    <li class="md-nav__item">
+      <a href=".." class="md-nav__link">
+        Accueil
+      </a>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+    
+  
+  
+    
+    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
+      
+      
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_2" type="checkbox" id="__nav_2" checked>
+      
+      <label class="md-nav__link" for="__nav_2">
+        Guide utilisateur Providence
+        <span class="md-nav__icon md-icon"></span>
+      </label>
+      <nav class="md-nav" aria-label="Guide utilisateur Providence" data-md-level="1">
+        <label class="md-nav__title" for="__nav_2">
+          <span class="md-nav__icon md-icon"></span>
+          Guide utilisateur Providence
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../chapter1/" class="md-nav__link">
+        1. Introduction
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../chapter2/" class="md-nav__link">
+        2. Structure de la base de données
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../chapter3/" class="md-nav__link">
+        3. Connexion et démarrage dans Providence
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../chapter4/" class="md-nav__link">
+        4. La gestion des recherches
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../chapaffichage/" class="md-nav__link">
+        5. Création d’un affichage personnalisé
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../chapformrech/" class="md-nav__link">
+        6. Création d’un formulaire de recherche avancée
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+    
+  
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" data-md-toggle="toc" type="checkbox" id="__toc">
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          7. La saisie d'un objet dans CollectiveAccess
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
+        7. La saisie d'un objet dans CollectiveAccess
+      </a>
+      
+        
+<nav class="md-nav md-nav--secondary" aria-label="Table des matières">
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table des matières
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#quentend-par-objet" class="md-nav__link">
+    Qu’entend par objet ?
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#tour-des-differents-ecrans-de-saisie" class="md-nav__link">
+    Tour des différents écrans de saisie
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#detail-de-la-saisie-ecran-par-ecran" class="md-nav__link">
+    Détail de la saisie écran par écran
+  </a>
+  
+    <nav class="md-nav" aria-label="Détail de la saisie écran par écran">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#les-informations-de-base" class="md-nav__link">
+    Les informations de base
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#description-du-bien" class="md-nav__link">
+    Description du bien
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#statut-juridique" class="md-nav__link">
+    Statut juridique
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#contexte-historique" class="md-nav__link">
+    Contexte historique
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#informations-complementaires" class="md-nav__link">
+    Informations complémentaires
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#conservation-et-regie" class="md-nav__link">
+    Conservation et régie
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#representations-media" class="md-nav__link">
+    Représentations Média
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#acces" class="md-nav__link">
+    Accès
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#relations" class="md-nav__link">
+    Relations
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#resume" class="md-nav__link">
+    Résumé
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../chapter6/" class="md-nav__link">
+        8. La saisie d'une entité dans CollectiveAccess
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../chapter7/" class="md-nav__link">
+        9. La saisie des lieux dans CollectiveAccess
+      </a>
+    </li>
+  
+
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+<nav class="md-nav md-nav--secondary" aria-label="Table des matières">
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table des matières
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#quentend-par-objet" class="md-nav__link">
+    Qu’entend par objet ?
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#tour-des-differents-ecrans-de-saisie" class="md-nav__link">
+    Tour des différents écrans de saisie
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#detail-de-la-saisie-ecran-par-ecran" class="md-nav__link">
+    Détail de la saisie écran par écran
+  </a>
+  
+    <nav class="md-nav" aria-label="Détail de la saisie écran par écran">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#les-informations-de-base" class="md-nav__link">
+    Les informations de base
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#description-du-bien" class="md-nav__link">
+    Description du bien
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#statut-juridique" class="md-nav__link">
+    Statut juridique
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#contexte-historique" class="md-nav__link">
+    Contexte historique
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#informations-complementaires" class="md-nav__link">
+    Informations complémentaires
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#conservation-et-regie" class="md-nav__link">
+    Conservation et régie
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#representations-media" class="md-nav__link">
+    Représentations Média
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#acces" class="md-nav__link">
+    Accès
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#relations" class="md-nav__link">
+    Relations
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#resume" class="md-nav__link">
+    Résumé
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          <div class="md-content" data-md-component="content">
+            <article class="md-content__inner md-typeset">
+              
+                
+                  <a href="https://github.com/ideesculture/museesDeFranceDocumentation/edit/main/docs/chapter5.md" title="Editer cette page" class="md-content__button md-icon">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20.71 7.04c.39-.39.39-1.04 0-1.41l-2.34-2.34c-.37-.39-1.02-.39-1.41 0l-1.84 1.83 3.75 3.75M3 17.25V21h3.75L17.81 9.93l-3.75-3.75L3 17.25z"/></svg>
+                  </a>
+                
+                
+                <h1 id="7-la-saisie-dun-objet-dans-collectiveaccess">7. La saisie d’un objet dans CollectiveAccess<a class="headerlink" href="#7-la-saisie-dun-objet-dans-collectiveaccess" title="Permanent link">¶</a></h1>
+<p>Nous abordons dans ce chapitre les points suivants :</p>
+<ul>
+<li>la démarche de saisie </li>
+<li>le panorama des écrans de saisie </li>
+<li>les liens entre les objets et les entités, collections, thésaurus... </li>
+<li>l’association d’un un média à un objet </li>
+</ul>
+<p>CollectiveAccess est une application multi-langue, vous pouvez répéter les métadonnées pour les saisir dans toutes les langues souhaitez.</p>
+<h2 id="quentend-par-objet">Qu’entend par objet ?<a class="headerlink" href="#quentend-par-objet" title="Permanent link">¶</a></h2>
+<p>Les objets correspondent aux éléments que vous gérez. 
+Vous pouvez diversifier votre collection en définissant des types d'objets.</p>
+<p>Par exemple, le profil de saisie Joconde (créé à partir des recommandations du Service des Musées de France) définit différents types d'objets dans deux grandes catégories d’objets :</p>
+<ul>
+<li>les biens affectés : collections propres de l’établissement </li>
+<li>les biens déposés : objets prêtés ou déposés par d’autres établissements</li>
+</ul>
+<p>Nous retrouvons ainsi les types d’objets suivants :</p>
+<ul>
+<li>beaux-arts</li>
+<li>dessin</li>
+<li>numérique</li>
+<li>peinture</li>
+<li>photographie</li>
+<li>imprimé</li>
+<li>sculpture</li>
+</ul>
+<p>La liste des types d’objets est définie et paramètre selon vos collections, vous pouvez l’enrichir ou la modifier depuis le menu Gérer de CollectiveAccess. (<em>cette fonctionnalité est détaillée dans le support administration de CollectiveAccess</em>).</p>
+<h2 id="tour-des-differents-ecrans-de-saisie">Tour des différents écrans de saisie<a class="headerlink" href="#tour-des-differents-ecrans-de-saisie" title="Permanent link">¶</a></h2>
+<p>L'éditeur d'objets comprend par défaut huit écrans contenant les champs d'informations nécessaires à la création d’un nouvel objet :</p>
+<ul>
+<li>les informations de base</li>
+<li>les informations administratives</li>
+<li>les informations concernant les médias</li>
+<li>les informations de conservation et de stockage</li>
+<li>les informations fixes</li>
+<li>les relations liées à l'objet</li>
+<li>les mots-clés</li>
+<li>les informations de connexion</li>
+<li>le résumé</li>
+</ul>
+<h2 id="detail-de-la-saisie-ecran-par-ecran">Détail de la saisie écran par écran<a class="headerlink" href="#detail-de-la-saisie-ecran-par-ecran" title="Permanent link">¶</a></h2>
+<p><em>NB : les écrans et les métadonnées décrits correspondent à ceux mis en place au sein du profil Joconde et répondent aux spécifications du Service des Musées de France</em>
+<em>Les interfaces de saisie et les métadonnées sont modifiées en fonction de vos besoins et de votre fonctionnement ; nous décrivons ces fonctionnalités dans les supports de cours administration.</em></p>
+<h3 id="les-informations-de-base">Les informations de base<a class="headerlink" href="#les-informations-de-base" title="Permanent link">¶</a></h3>
+<p>Contient les informations les plus élémentaires pour enregistrer un nouvel objet.</p>
+<p>Nom de la collection</p>
+<ul>
+<li>
+<p><strong>N° d’inventaire</strong> :  saisissez un identifiant alphanumérique en respectant les règles de saisies définies au sein de votre établissement.</p>
+</li>
+<li>
+<p><strong>Autre numéro</strong> : saisissez les autres numéros de référence de l’objet en indiquant un type d’autre numéro (fiche cartonnée musée, inventaire fort…) ; vous pouvez saisir plusieurs autres numéros.</p>
+</li>
+<li>
+<p><strong>Domaine</strong> : recherchez dans le thesaurus fourni par le Service des Musées de France le domaine souhaité.</p>
+</li>
+</ul>
+<p><em>Lien vers la documentation du SMF :</em> ￼<em>http://www.culture.gouv.fr/documentation/joconde/fr/partenaires/AIDEMUSEES/methode.htm#DOMN</em>￼</p>
+<ul>
+<li>
+<p><strong>Désignation principale</strong> : correspond au nom de l'objet.
+<em>Attention ce champ est obligatoire : si l'objet ne possède pas de titre ou de position, vous pouvez saisir son identifiant.</em></p>
+</li>
+<li>
+<p><strong>Autres désignations</strong> (libellés non préférés) : saisissez ici toute autre désignation utilisée pour votre objet ; et sélectionnez le type de désignation correspondant dans le menu déroulant « type ».</p>
+</li>
+</ul>
+<p>La sélection du type « utiliser pour » permettra à CollectiveAcces d'identifier votre objet par cette désignation qui ne sera jamais affichée comme un autre titre. </p>
+<p>Vous pouvez ajouter autant d’appellations ou dénominations que nécessaire en cliquant sur le +.</p>
+<ul>
+<li>
+<p><strong>Auteur, exécutant </strong> : saisissez ici le nom du producteur de l’objet. Ce champ est directement lié aux enregistrements « entités » :</p>
+<ul>
+<li>saisissez quelques lettres et CollectiveAccess vous propose toutes les entités dont le nom commence par ces lettres, vous pouvez ensuite le sélectionner;</li>
+<li>si l’auteur saisi n’existe, une fenêtre pop-up vous permet de le créer directement depuis la saisie de l’objet et l’ajoute directement au fichier des entités.</li>
+</ul>
+</li>
+<li>
+<p><strong>Ecole</strong> : recherchez le style de l’objet dans le thesaurus du Service des Musées de France Style / Ecole.</p>
+</li>
+</ul>
+<p><em>Lien vers la documentation du SMF :</em> ￼<em>http://www.culture.gouv.fr/documentation/joconde/fr/partenaires/AIDEMUSEES/methode.htm#ECOL</em>￼</p>
+<ul>
+<li><strong>Datation précise</strong> : date de production précise de l'objet. CollectiveAccess traite les dates et heures sous différents formats :<ul>
+<li>Année : 2015 ; 450 av. J.-C. ; vers 1950 ; il y a 40 millions d’années  </li>
+<li>Période : 1914 - 1926 ; entre juin 2010 et juillet 2010 ; du 5 janvier 2010 au 15 janvier 2010</li>
+<li>Mois et Année : Juin 1910 ; 06/1910</li>
+<li>Date : 6/01/1914 ; 6 janvier 1914, 6/01/14</li>
+<li>Date avec heures  : 7 juin 1914 à 16h43 ; 7/06/1914</li>
+<li>Expressions : 
+aujourd’hui : CollectiveAccess inscrit la date du jour ; 
+hier : CollectiveAccess inscrit la date précédente à la date du jour ; 
+demain : CollectiveAccess inscrit la suivant la date du jour 
+maintenant : date et heure du jour
+décennie : 1990’s ; 199-
+siècle : 20e S. ; 19—
+\'' - Dates incertaines : vers 1955, vers Juin 1860 : 2 Juillet 1921? ; vers 1950-1956 ; 6/11/???? ; 6/????
+\'' - Saison : Été 2010 ; Hiver 2010
+\'' - Quart de siècle : 20 Q3 (3e quart du 20e siècle : 1950-1975)</li>
+</ul>
+</li>
+</ul>
+<p>*NB : Le fichier de configuration datetime.conf permet de configurer d’autres dates ou périodes de dates selon vos souhaits. *</p>
+<h3 id="description-du-bien">Description du bien<a class="headerlink" href="#description-du-bien" title="Permanent link">¶</a></h3>
+<ul>
+<li><strong>Matériaux / techniques</strong> : vous permet d’associer un ou plusieurs couple de matériaux et techniques l’objet en les recherchant  dans le thesaurus matériaux et techniques fourni par le Service des Musées de France.</li>
+</ul>
+<p><em>Lien vers la documentation du SMF :</em>￼<em>http://www.culture.gouv.fr/documentation/joconde/fr/partenaires/AIDEMUSEES/methode.htm#TECH</em>￼
+* <strong>Dimensions</strong>  : saisissez ici les dimensions connues de l’objet : largeur, hauteur et profondeur ainsi que son poids. Indiquez l’unité de mesure à la suite de la valeur.
+    <em>Exemples :</em>
+    -  Largeur : 6 m ; Hauteur : 3,4 m 
+    -  Largeur : 64 cm ; Hauteur : 14 cm
+CollectiveAccess intègre la gestion de toutes les unités de mesures et  les convertit lors des recherches effectuées. 
+<em>Lien vers la documentation du SMF :</em>￼<em>http://www.culture.gouv.fr/documentation/joconde/fr/partenaires/AIDEMUSEES/methode.htm#DIMS</em>￼
+* <strong>Inscriptions</strong> : détaillez dans ce champ les marques et inscriptions que vous pouvez relever sur l’objet en précisant les informations suivantes : 
+    - transcription de l’inscription : grâce à un éditeur de texte enrichi, vous pouvez retranscrire au plus précis
+    - type d’inscription
+    - emplacement de l’inscription 
+    - Langue, emplacement
+*Lien vers la documentation du SMF : ￼http://www.culture.gouv.fr/documentation/joconde/fr/partenaires/AIDEMUSEES/methode.htm#INSC￼
+* <strong>Description</strong> : au sein de ce champ au format texte enrichi, saisissez une description détaillée de votre objet</p>
+<h3 id="statut-juridique">Statut juridique<a class="headerlink" href="#statut-juridique" title="Permanent link">¶</a></h3>
+<ul>
+<li><strong>Type de propriété </strong>: indiquez le type de propriété de l’objet</li>
+<li><strong>Mode d’acquisition</strong> : saisissez ici le mode d’acquisition de l’objet en ajoutant éventuellement un commentaire.
+<em>Lien vers la documentation du SMF : ￼http://www.culture.gouv.fr/documentation/joconde/fr/partenaires/AIDEMUSEES/methode.htm#ACQU￼</em></li>
+<li><strong>Prix</strong> : indiquez le prix de l’objet suivie de la devise d’origine
+Utilisez les symboles $, €, £… ou trois lettres : EUR pour euros, USD pour US Dollars…
+<em>Exemple</em> : 100 €, 100 EUR ou 100 $ …</li>
+<li><strong>Valeur d’assurance</strong> : indiquez ici la valeur d’assurance de votre objet ainsi que la date à laquelle celle-ci a été attribuée.</li>
+<li><strong>Date et références de l’acte d’acquisition</strong> : saisissez la date et la référence de l’acte d’acquisition.
+<em>Lien vers la documentation du SMF : ￼http://www.culture.gouv.fr/documentation/joconde/fr/partenaires/AIDEMUSEES/methode.htm#DACQ￼</em></li>
+<li><strong>Mention des concours publics</strong> : indiquez ici s’il s’agit d’une acquisition subventionnée ou non
+<em>Lien vers la documentation du SMF : ￼http://www.culture.gouv.fr/documentation/joconde/fr/partenaires/AIDEMUSEES/methode.htm#MENTION￼</em></li>
+<li><strong>Propriétaire</strong> : ce champ est lié au fichier des Entités, saisissez le propriétaire de la même manière que vous avez précédemment saisi l’auteur. A savoir, quelques lettres et CollectiveAccess vous propose les entités liées qui correspondent ; si l’entité saisie n’existe pas, vous pouvez la créer au fil de l’eau.</li>
+<li><strong>Etablissement affectataire</strong> : ce champ est lié au fichier des Entités, saisissez l’établissement affectataire de la même manière que vous avez précédemment saisi l’auteur.</li>
+<li><strong>Avis des instances scientifiques</strong> : pour chaque avis,  précisez quelle instance scientifique l’a donné, son sens (favorable / défavorable), sa date ; une zone « commentaires » vous permet de le détailler.
+<em>Lien vers la documentation du SMF : ￼http://www.culture.gouv.fr/documentation/joconde/fr/partenaires/AIDEMUSEES/methode.htm#AVIS￼</em></li>
+<li><strong>Date d’affectation au musée</strong> : date d’affectation de l’objet au musée
+<em>Lien vers la documentation du SMF : ￼http://www.culture.gouv.fr/documentation/joconde/fr/partenaires/AIDEMUSEES/methode.htm#DAFF￼</em></li>
+<li><strong>Donateur, testateur, ou vendeur</strong> : champ lié au fichier des entités, saisissez l’entité de la même manière que vous avez précédemment saisi l’auteur et précisez ensuite s’il s’agit d’un donateur, testateur ou vendeur.
+<em>Lien vers la documentation du SMF : ￼http://www.culture.gouv.fr/documentation/joconde/fr/partenaires/AIDEMUSEES/methode.htm#DONA￼</em></li>
+<li><strong>Anciennes appartenances</strong> : champ texte qui vous permet de détailler les anciennes appartenances de l’objet.
+<em>Lien vers la documentation du SMF : ￼http://www.culture.gouv.fr/documentation/joconde/fr/partenaires/AIDEMUSEES/methode.htm#APTN￼</em></li>
+</ul>
+<h3 id="contexte-historique">Contexte historique<a class="headerlink" href="#contexte-historique" title="Permanent link">¶</a></h3>
+<ul>
+<li><strong>Genèse</strong> : choisissez un terme dans le thésuraus Genèse fourni par le Service des Musées de France.</li>
+<li><strong>Objets liés</strong> : vous pouvez lier des objets à l’objet que vous décrivez</li>
+<li><strong>Historique</strong> : champ texte vous permettant de décrire le contexte historique de l’objet</li>
+<li><strong>Lieu et précisions sur le lieu</strong> : lien vers le fichier des lieux, sélectionnez un lieu et précisez s’il s’agit d’un lieu d’utilisation / destination , de création, de découverte ou de récolte
+<em>Lien vers la documentation du SMF : ￼http://www.culture.gouv.fr/documentation/joconde/fr/partenaires/AIDEMUSEES/methode.htm#LIEU￼</em></li>
+<li><strong>Géographie historique</strong> : champ vous permettant de préciser le lieu
+<em>Exemple</em> :* Asie mineure, Ionie*
+<em>Lien vers la documentation du SMF : ￼http://www.culture.gouv.fr/documentation/joconde/fr/partenaires/AIDEMUSEES/methode.htm#GEOHI￼</em></li>
+<li><strong>Utilisation, destination et précisions</strong>  : choisissez un terme au sein du thesaurus « utilisation / destination » proposé par le SMF afin de préciser la fonction et l’usage de l’objet.
+<em>Lien vers la documentation du SMF : ￼http://www.culture.gouv.fr/documentation/joconde/fr/partenaires/AIDEMUSEES/methode.htm#UTIL￼</em></li>
+<li><strong>Méthode de découverte, collecte, ou de récolte d’un objet</strong> : précisez la méthode utilisée lors de la découverte, de la collecte ou de la récolte d’un objet.</li>
+<li><strong>Date de découverte, collecte, récolte</strong> : indiquez la date de la découverte, de la collecte ou de la récolte de l’objet.
+<em>Lien vers la documentation du SMF : ￼http://www.culture.gouv.fr/documentation/joconde/fr/partenaires/AIDEMUSEES/methode.htm#DATEDECV￼</em></li>
+<li><strong>Découvreur</strong> : champ lié au fichier des entités, saisissez ici le nom du découvreur.</li>
+</ul>
+<h3 id="informations-complementaires">Informations complémentaires<a class="headerlink" href="#informations-complementaires" title="Permanent link">¶</a></h3>
+<ul>
+<li><strong>Exposition</strong> : champ texte permettant de préciser les expositions dans lesquelles l’objet a été exposé ; les expositions actuelles sont décrites dans une fiche Exposition reliée à l’objet.</li>
+<li><strong>Bibliographie ou note de publication</strong> : champ de texte enrichi dans lequel vous pouvez saisir une note du publication</li>
+<li><strong>Première date de présence</strong> : indiquez ici la 1ère date de présence du bien dans les collection</li>
+<li><strong>Commentaires</strong> : Saisissez ici toutes les informations que vous n’avez pu saisir ailleurs qu’il s’agisse des informations liées à la conservation de l’objet ou à son contexte d’acquisition.
+<em>Lien vers la documentation du SMF : ￼http://www.culture.gouv.fr/documentation/joconde/fr/partenaires/AIDEMUSEES/methode.htm#COMM￼</em></li>
+<li><strong>Date de vol ou de disparition</strong> : date de vol éventuelle</li>
+<li><strong>Date à laquelle le bien a été retrouvé</strong> : si vol, date à laquelle l’objet a été retrouvé</li>
+<li>** Mention à porter en cas de radiation** : mention que l’on souhaite inscrire au registre inventaire en cas de radiation.</li>
+<li><strong>Rédacteur</strong> : rédacteur de la notice : relié au fichier des entités</li>
+</ul>
+<h3 id="conservation-et-regie">Conservation et régie<a class="headerlink" href="#conservation-et-regie" title="Permanent link">¶</a></h3>
+<ul>
+<li><strong>Constat d’état initial</strong>  : décrivez le constat d’état initial de l’objet : date du constat, constat, état et commentaires ; vous pouvez associer à ce constat tout document numérique souhaité.</li>
+<li><strong>Lien vers fiche conservation / restauration</strong> : lien vers la ou les fiches de conservation ou de restauration </li>
+<li><strong>Emplacement</strong> : sélectionnez l’emplacement de l’objet au sein du fichier emplacement.</li>
+<li><strong>Date d’arrivée à l’emplacement actuel</strong> : date d’arrivée de l’objet à l’emplacement actuel.</li>
+</ul>
+<h3 id="representations-media">Représentations Média<a class="headerlink" href="#representations-media" title="Permanent link">¶</a></h3>
+<p>Placez ici tous les médias représentant l’objet : photographies, images, vidéos, enregistrements sonores…
+ Pour télécharger plusieurs représentations de votre enregistrement, cliquez sur « Ajouter une représentation ». Chaque représentation est un enregistrement à part entière
+ <em>CollectiveAccess supporte de nombreux types de fichiers. Pour consulter la liste complète des types de fichiers, rendez-vous sur le wiki : ￼http://docs.collectiveaccess.org/wiki/Supported_Media_File_Formats￼</em>.
+* <strong>Formats de fichier</strong> : Pour information, les formats courants sont : JPEG, TIFF, MPEG-4, vidéo FLASH, FLV, WAV, AIFF, MP3, PDF
+* <strong>droits du média</strong> : attribuez les droits d'accès aux fichiers média dans le menu déroulant. Ceux-ci sont configurables dans le menu listes &amp; vocabulaire.
+* <strong>statut</strong> : attribuez un statut de catalogage à votre média ; celui-ci peut être différent du statut attribué à l'objet.
+* <strong>accès</strong>  : choisissez si ce média est accessible ou non au public sur Pawtucket, interface publique de CollectiveAccess ; ce niveau d’accès peut être différent de celui-ci attribué à l'objet.
+* <strong>définir par défaut </strong>: en cliquant sur « définir par défaut », le média s'affichera en premier dans l'interface de catalogage et sur le catalogue en ligne, s'il y a plusieurs images de l'enregistrement.
+- <strong>télécharger le média</strong> : cliquez sur ce bouton pour télécharger les médias.</p>
+<h3 id="acces">Accès<a class="headerlink" href="#acces" title="Permanent link">¶</a></h3>
+<p>Choisissez ici l’accès de l’objet au public et détaillez les conditions.</p>
+<h3 id="relations">Relations<a class="headerlink" href="#relations" title="Permanent link">¶</a></h3>
+<p>Sont rappelées dans cet écran toutes les relations entre l’objet et les différents enregistrements de CollectiveAccess saisies dans les précédents écrans : Collection, Entités, Objets,…
+Depuis cet écran, vous pouvez également renseigner deux champs spécifiques pour le catalogage de votre objet :
+- la géolocalisation ou <strong>géoréférencement</strong> : ce champ vous permet de faire correspondre un emplacement géographique à votre objet. Saisissez l'adresse désirée, CollectiveAccess vous retournera les coordonnées géographiques de l'adresse fournie, ainsi que son emplacement sur une carte aérienne. 
+    Vous pouvez également créer la géolocalisation dans Google Earth, puis l'importer dans CollectiveAccess.
+- le nom <strong>géographique</strong> :  À la place d'une adresse spécifique vous pouvez saisir dans ce champ un nom de lieu, comme un parc, un lac ou glacier... Saisissez les premiers caractères de ce nom, un menu déroulant vous présente les noms reconnus. Après sélection, vous récupérez les coordonnées géographiques et un affichage sur une carte aérienne.</p>
+<h3 id="resume">Résumé<a class="headerlink" href="#resume" title="Permanent link">¶</a></h3>
+<p>Les informations saisies sont résumées dans cet écran.
+Sélectionnez le format d’affichage dans le menu déroulant présent en faut à droite :
+* le format d’affichage « Registre d’inventaire » affichera les 18 colonnes demandées par le Service des Musées de France lors de l’inscription d’un objet à l’inventaire. Les rubriques remplies apparaissent en gras, les autres sont grisées.
+* vous retrouverez ici également tous les formats d’affichage que vous aurez créez (*dans Gérer > mes affichages, support « Gestion des affichages »)</p>
+                
+              
+              
+                
+
+
+              
+            </article>
+          </div>
+        </div>
+      </main>
+      
+        <!--
+  Copyright (c) 2016-2021 Martin Donath <martin.donath@squidfunk.com>
+
+  Permission is hereby granted, free of charge, to any person obtaining a copy
+  of this software and associated documentation files (the "Software"), to
+  deal in the Software without restriction, including without limitation the
+  rights to use, copy, modify, merge, publish, distribute, sublicense, and/or
+  sell copies of the Software, and to permit persons to whom the Software is
+  furnished to do so, subject to the following conditions:
+
+  The above copyright notice and this permission notice shall be included in
+  all copies or substantial portions of the Software.
+
+  THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+  IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+  FITNESS FOR A PARTICULAR PURPOSE AND NON-INFRINGEMENT. IN NO EVENT SHALL THE
+  AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+  LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING
+  FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS
+  IN THE SOFTWARE.
+-->
+
+
+
+<!-- Footer -->
+<footer class="md-footer">
+
+  <!-- Link to previous and/or next page -->
+  
+    <nav
+      class="md-footer__inner md-grid"
+      aria-label="Footer"
+    >
+
+      <!-- Link to previous page -->
+      
+        <a
+          href="../chapformrech/"
+          class="md-footer__link md-footer__link--prev"
+          rel="prev"
+        >
+          <div class="md-footer__button md-icon">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12z"/></svg>
+          </div>
+          <div class="md-footer__title">
+            <div class="md-ellipsis">
+              <span class="md-footer__direction">
+                Précédent
+              </span>
+              6. Création d’un formulaire de recherche avancée
+            </div>
+          </div>
+        </a>
+      
+
+      <!-- Link to next page -->
+      
+        <a
+          href="../chapter6/"
+          class="md-footer__link md-footer__link--next"
+          rel="next"
+        >
+          <div class="md-footer__title">
+            <div class="md-ellipsis">
+              <span class="md-footer__direction">
+                Suivant
+              </span>
+              8. La saisie d'une entité dans CollectiveAccess
+            </div>
+          </div>
+          <div class="md-footer__button md-icon">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M4 11v2h12l-5.5 5.5 1.42 1.42L19.84 12l-7.92-7.92L10.5 5.5 16 11H4z"/></svg>
+          </div>
+        </a>
+      
+    </nav>
+  
+
+  <!-- Further information -->
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+
+      <!-- Copyright and theme information -->
+      <div class="md-footer-copyright">
+        
+          <div class="md-footer-copyright__highlight">
+            © 2021
+          </div>
+        
+        <a href="https://www.ideesculture.com">idéesculture</a>
+      </div>
+
+      <!-- Social links -->
+      
+  <div class="md-footer-social">
+    
+      
+      
+        
+        
+      
+      <a href="https://github.com/ideesculture" target="_blank" rel="noopener" title="github.com" class="md-footer-social__link">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 496 512"><path d="M165.9 397.4c0 2-2.3 3.6-5.2 3.6-3.3.3-5.6-1.3-5.6-3.6 0-2 2.3-3.6 5.2-3.6 3-.3 5.6 1.3 5.6 3.6zm-31.1-4.5c-.7 2 1.3 4.3 4.3 4.9 2.6 1 5.6 0 6.2-2s-1.3-4.3-4.3-5.2c-2.6-.7-5.5.3-6.2 2.3zm44.2-1.7c-2.9.7-4.9 2.6-4.6 4.9.3 2 2.9 3.3 5.9 2.6 2.9-.7 4.9-2.6 4.6-4.6-.3-1.9-3-3.2-5.9-2.9zM244.8 8C106.1 8 0 113.3 0 252c0 110.9 69.8 205.8 169.5 239.2 12.8 2.3 17.3-5.6 17.3-12.1 0-6.2-.3-40.4-.3-61.4 0 0-70 15-84.7-29.8 0 0-11.4-29.1-27.8-36.6 0 0-22.9-15.7 1.6-15.4 0 0 24.9 2 38.6 25.8 21.9 38.6 58.6 27.5 72.9 20.9 2.3-16 8.8-27.1 16-33.7-55.9-6.2-112.3-14.3-112.3-110.5 0-27.5 7.6-41.3 23.6-58.9-2.6-6.5-11.1-33.3 2.6-67.9 20.9-6.5 69 27 69 27 20-5.6 41.5-8.5 62.8-8.5s42.8 2.9 62.8 8.5c0 0 48.1-33.6 69-27 13.7 34.7 5.2 61.4 2.6 67.9 16 17.7 25.8 31.5 25.8 58.9 0 96.5-58.9 104.2-114.8 110.5 9.2 7.9 17 22.9 17 46.4 0 33.7-.3 75.4-.3 83.6 0 6.5 4.6 14.4 17.3 12.1C428.2 457.8 496 362.9 496 252 496 113.3 383.5 8 244.8 8zM97.2 352.9c-1.3 1-1 3.3.7 5.2 1.6 1.6 3.9 2.3 5.2 1 1.3-1 1-3.3-.7-5.2-1.6-1.6-3.9-2.3-5.2-1zm-10.8-8.1c-.7 1.3.3 2.9 2.3 3.9 1.6 1 3.6.7 4.3-.7.7-1.3-.3-2.9-2.3-3.9-2-.6-3.6-.3-4.3.7zm32.4 35.6c-1.6 1.3-1 4.3 1.3 6.2 2.3 2.3 5.2 2.6 6.5 1 1.3-1.3.7-4.3-1.3-6.2-2.2-2.3-5.2-2.6-6.5-1zm-11.4-14.7c-1.6 1-1.6 3.6 0 5.9 1.6 2.3 4.3 3.3 5.6 2.3 1.6-1.3 1.6-3.9 0-6.2-1.4-2.3-4-3.3-5.6-2z"/></svg>
+      </a>
+    
+      
+      
+        
+        
+      
+      <a href="https://twitter.com/ideesculture" target="_blank" rel="noopener" title="twitter.com" class="md-footer-social__link">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path d="M459.37 151.716c.325 4.548.325 9.097.325 13.645 0 138.72-105.583 298.558-298.558 298.558-59.452 0-114.68-17.219-161.137-47.106 8.447.974 16.568 1.299 25.34 1.299 49.055 0 94.213-16.568 130.274-44.832-46.132-.975-84.792-31.188-98.112-72.772 6.498.974 12.995 1.624 19.818 1.624 9.421 0 18.843-1.3 27.614-3.573-48.081-9.747-84.143-51.98-84.143-102.985v-1.299c13.969 7.797 30.214 12.67 47.431 13.319-28.264-18.843-46.781-51.005-46.781-87.391 0-19.492 5.197-37.36 14.294-52.954 51.655 63.675 129.3 105.258 216.365 109.807-1.624-7.797-2.599-15.918-2.599-24.04 0-57.828 46.782-104.934 104.934-104.934 30.213 0 57.502 12.67 76.67 33.137 23.715-4.548 46.456-13.32 66.599-25.34-7.798 24.366-24.366 44.833-46.132 57.827 21.117-2.273 41.584-8.122 60.426-16.243-14.292 20.791-32.161 39.308-52.628 54.253z"/></svg>
+      </a>
+    
+      
+      
+        
+        
+      
+      <a href="https://linkedin.com/company/idéesculture/" target="_blank" rel="noopener" title="linkedin.com" class="md-footer-social__link">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><path d="M416 32H31.9C14.3 32 0 46.5 0 64.3v383.4C0 465.5 14.3 480 31.9 480H416c17.6 0 32-14.5 32-32.3V64.3c0-17.8-14.4-32.3-32-32.3zM135.4 416H69V202.2h66.5V416zm-33.2-243c-21.3 0-38.5-17.3-38.5-38.5S80.9 96 102.2 96c21.2 0 38.5 17.3 38.5 38.5 0 21.3-17.2 38.5-38.5 38.5zm282.1 243h-66.4V312c0-24.8-.5-56.7-34.5-56.7-34.6 0-39.9 27-39.9 54.9V416h-66.4V202.2h63.7v29.2h.9c8.9-16.8 30.6-34.5 62.9-34.5 67.2 0 79.7 44.3 79.7 101.9V416z"/></svg>
+      </a>
+    
+      
+      
+        
+        
+      
+      <a href="https://www.youtube.com/user/ideesculture" target="_blank" rel="noopener" title="www.youtube.com" class="md-footer-social__link">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512"><path d="M549.655 124.083c-6.281-23.65-24.787-42.276-48.284-48.597C458.781 64 288 64 288 64S117.22 64 74.629 75.486c-23.497 6.322-42.003 24.947-48.284 48.597-11.412 42.867-11.412 132.305-11.412 132.305s0 89.438 11.412 132.305c6.281 23.65 24.787 41.5 48.284 47.821C117.22 448 288 448 288 448s170.78 0 213.371-11.486c23.497-6.321 42.003-24.171 48.284-47.821 11.412-42.867 11.412-132.305 11.412-132.305s0-89.438-11.412-132.305zm-317.51 213.508V175.185l142.739 81.205-142.739 81.201z"/></svg>
+      </a>
+    
+  </div>
+
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    <script id="__config" type="application/json">{"base": "..", "features": ["navigation.sections", "navigation.tabs"], "translations": {"clipboard.copy": "Copier dans le presse-papier", "clipboard.copied": "Copi\u00e9 dans le presse-papier", "search.config.lang": "fr", "search.config.pipeline": "trimmer, stopWordFilter", "search.config.separator": "[\\s\\-]+", "search.placeholder": "Rechercher", "search.result.placeholder": "Taper pour d\u00e9marrer la recherche", "search.result.none": "Aucun document trouv\u00e9", "search.result.one": "1 document trouv\u00e9", "search.result.other": "# documents trouv\u00e9s", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.term.missing": "Missing"}, "search": "../assets/javascripts/workers/search.fb4a9340.min.js", "version": null}</script>
+    
+    
+      <script src="../assets/javascripts/bundle.ca5457b8.min.js"></script>
+      
+    
+  </body>
+</html>
