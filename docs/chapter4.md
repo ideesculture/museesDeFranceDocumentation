@@ -2073,11 +2073,18 @@ Lieu de création/exécution : **Mali (lieu d'exécution)**
 
 ##### c) Noms à particule 
 
-|                             Pays                             | Syntaxe                                                      | Exemple                                                      |
-| :----------------------------------------------------------: | ------------------------------------------------------------ | ------------------------------------------------------------ |
-|                Allemagne<br/> Amérique du Sud                | von, von der, zu sont rejetés<br/> de, de las, los, etc. sont rejetés | THOREN Otto von<br/> CASTRO Sergio de                        |
-| Angleterre<br/> Belgique<br/> Espagne<br/> États-Unis<br/> France | pas de rejet<br/> pas de rejet<br/> de, de las, los, etc. sont rejettés. Les noms composés réunis par « y » sont classés au premier élément du nom<br/> pas de rejet<br/> rejet systématique, à l’exception des noms d’origine néerlando-flamande | DE QUINCEY Thomas<br/> DE BAY Jean-Baptiste<br/> FORTUNY Y MADRAZO Mariano<br/> \-<br/> \- |
-|            Italie<br/> Pays-Bas<br/> Scandinavie             | pas de rejet. Les noms composés réunis par « Di » sont classés au premier élément du nom<br/> Van, Ter sont rejetés<br/> af, av et von sont rejetés | STEFANO Di Giovani<br/> BERGEN Dirck Van<br/> KRAFFT David von |
+|      Pays       | Syntaxe                                                      | Exemple                   |
+| :-------------: | ------------------------------------------------------------ | ------------------------- |
+|    Allemagne    | von, von der, zu sont rejetés                                | THOREN Otto von           |
+| Amérique du Sud | de, de las, los, etc. sont rejetés                           | CASTRO Sergio de          |
+|   Angleterre    | pas de rejet                                                 | DE QUINCEY Thomas         |
+|    Belgique     | pas de rejet                                                 | DE BAY Jean-Baptiste      |
+|     Espagne     | de, de las, los, etc. sont rejettés. Les noms composés réunis par « y » sont classés au premier élément du nom | FORTUNY Y MADRAZO Mariano |
+|   États-Unis    | pas de rejet                                                 | -                         |
+|     France      | rejet systématique, à l’exception des noms d’origine néerlando-flamande | -                         |
+|     Italie      | pas de rejet. Les noms composés réunis par « Di » sont classés au premier élément du nom | STEFANO Di Giovani        |
+|    Pays-Bas     | Van, Ter sont rejetés                                        | BERGEN Dirck Van          |
+|   Scandinavie   | af, av et von sont rejetés                                   | KRAFFT David von          |
 
 
 
@@ -2293,13 +2300,30 @@ Précisions sur l'inscription : **Foache ; 10 (b. d.) ; Foache épreuve d'a
 
 -   Certains symboles indiquent le rôle exact de chaque intervenant (Source BnF)
 
-| A l’enseigne                                                 | marchand                                                     |
-| ------------------------------------------------------------ | ------------------------------------------------------------ |
-| A l’image<br/> Caelevit<br/> Chez                            | Marchand<br/> « a gravé » au burin<br/> éditeur              |
-| Composuit, Comp<br/> Delineavit, delvt. Del., de., d<br/> Direxit, Direx., Dir | « a composé », inventeur<br/> « a dessiné », deux solutions : inventeur ou lithographe<br/> « a dirigé », maître ou responsable d’atelier de gravure |
-| Excudit, Exc., Ex<br/> Fabrique d’image de… à…<br/> Fecit, Fect, Fe., F<br/> Formis<br/> Gedruckt zu<br/> Imp. De<br/> Impressit, impr., imp.<br/> Incidit, Incisit, Inc | « a édité », parfois aussi imprimeur et/ou graveur<br/> imprimeur<br/> « a fait », graveur<br/> imprimeur<br/> éditeur<br/> imprimeur<br/> artistes imprimant eux-mêmes leurs estampes<br/> « gravé », souvent en taille douce |
-| Invenit, Inv., I.<br/> Lith<br/> Perfecit, Perfect.          | « a trouvé », inventeur<br/> « a lithographié », graveur ou/imprimeur<br/> « a amélioré », gravure reprise et transformée par un autre praticien, 2e graveur |
-| Pinxit, Pinx.<br/> Scripsit<br/> Sculpsit, Sculp., Sc., s.<br/> Se vend chez<br/>Typ | « a peint », inventeur<br/> graveur en lettres<br/> « a gravé », graveur, ou encore « a sculpté », inventeur dans le cas d’une gravure reproduisant une sculpture<br/> marchand<br/> imprimeur typographe |
+| A l’enseigne                    | marchand                                                     |
+| ------------------------------- | ------------------------------------------------------------ |
+| A l’image                       | Marchand                                                     |
+| Caelevit                        | « a gravé » au burin                                         |
+| Chez                            | éditeur                                                      |
+| Composuit, Comp                 | « a composé », inventeur                                     |
+| Delineavit, delvt. Del., de., d | « a dessiné », deux solutions : inventeur ou lithographe     |
+| Direxit, Direx., Dir            | « a dirigé », maître ou responsable d’atelier de gravure     |
+| Excudit, Exc., Ex               | « a édité », parfois aussi imprimeur et/ou graveur           |
+| Fabrique d’image de… à…         | imprimeur                                                    |
+| Fecit, Fect, Fe., F             | « a fait », graveur                                          |
+| Formis                          | imprimeur                                                    |
+| Gedruckt zu                     | éditeur                                                      |
+| Imp. De                         | imprimeur                                                    |
+| Impressit, impr., imp.          | artistes imprimant eux-mêmes leurs estampes                  |
+| Incidit, Incisit, Inc           | « gravé », souvent en taille douce                           |
+| Invenit, Inv., I.               | « a trouvé », inventeur                                      |
+| Lith                            | « a amélioré », gravure reprise et transformée par un autre praticien, 2e graveur |
+| Perfecit, Perfect.              | « a peint », inventeur                                       |
+| Pinxit, Pinx.                   | graveur en lettres                                           |
+| Scripsit                        | « a gravé », graveur, ou encore « a sculpté », inventeur dans le cas d’une gravure reproduisant |
+| Sculpsit, Sculp., Sc., s.       | une sculpture                                                |
+| Se vend chez                    | marchand                                                     |
+| Typ                             | imprimeur typographe                                         |
 
 Domaine : **estampe**
 
