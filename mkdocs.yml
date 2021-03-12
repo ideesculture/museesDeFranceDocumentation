@@ -5,7 +5,7 @@ site_author: 'idéesculture'
 
 pages:
 - Accueil: index.md
-- Guide d'aide à la réalisation d'un inventaire:
+- Guide d'aide à la réalisation d'un inventaire et récolement:
     - I. Introduction: chapter1.md
     - II. Catalogage, recherche et récolement des objets mobiliers dans CollectiveAccess: chapter2.md
     - III. Règles d'impression et de mise en forme du registre réglementaire d'inventaire: chapter3.md
