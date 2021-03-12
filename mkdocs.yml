@@ -7,7 +7,7 @@ pages:
 - Accueil: index.md
 - Guide d'aide à la réalisation d'un inventaire:
     - I. Introduction: chapter1.md
-    - II. CCatalogage, recherche et récolement des objets mobiliers dans CollectiveAccess: chapter2.md
+    - II. Catalogage, recherche et récolement des objets mobiliers dans CollectiveAccess: chapter2.md
     - III. Règles d'impression et de mise en forme du registre réglementaire d'inventaire: chapter3.md
     - IV. Règles d'inventaire des Musées de France: chapter4.md
 
