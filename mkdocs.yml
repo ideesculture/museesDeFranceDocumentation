@@ -12,6 +12,9 @@ pages:
     - IV. Règles d'inventaire des Musées de France: chapter4.md
 - Utilisation de CollectiveAccess :
     - I. Recherche: chapterII_recherche.md
+- Génération de cette documentation :
+    - Logiciels utilisés: tech_logiciels.md
+    - Installation: tech_install.md
 
 # Repository
 repo_name: 'GitHub'
@@ -37,3 +40,12 @@ markdown_extensions:
   - admonition
   - toc:
       permalink: '¶'
+
+# Plugins
+plugins:
+ - mkpdfs:
+    company: IdéesCulture SAS
+    author: Equipe IdéesCulture
+    toc_title: Table des matières
+    toc_position: pre
+    output_path: pdf/documentation.pdf      
