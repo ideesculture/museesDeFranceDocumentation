@@ -10,6 +10,8 @@ pages:
     - II. Catalogage, recherche et récolement des objets mobiliers dans CollectiveAccess: chapter2.md
     - III. Règles d'impression et de mise en forme du registre réglementaire d'inventaire: chapter3.md
     - IV. Règles d'inventaire des Musées de France: chapter4.md
+- Utilisation de CollectiveAccess :
+    - I. Recherche: chapterII_recherche.md
 
 # Repository
 repo_name: 'GitHub'
