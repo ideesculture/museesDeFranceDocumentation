@@ -12,6 +12,15 @@ pages:
     - IV. Règles d'inventaire des Musées de France: chapter4.md
 - Utilisation de CollectiveAccess :
     - I. Recherche: chapterII_recherche.md
+    - II. Effectuer un traitement par lots: chapterIII_traitements_lots.md
+    - III. Ajout d'un objet modélisé à Providence: chapterIV_objet_modelise.md
+    - IV. Module Musées de France - Récolement décennal: chapterV_recolement_decennal.md
+    - V. Guide de saisie des objets dans CollectiveAccess: chapterVI_Guide_saisie_objets.md
+    - VI. Configuration du site internet: chapterVII_configuration_site_internet.md
+    - VII. Importer des médias en lot: chapterVIII_Import_medias_lot.md
+    - VIII. Paramétrage des grilles de saisie: chapterIX_parametrage_grille_saisie.md
+    - IX. Paramétrage des listes de vocabulaire: chapterX_Parametrage_listes_vocabulaire.md
+    - X. Connexion et démarrage dans Providence: chapterXI_connexion_demarrage.md
 - Génération de cette documentation :
     - Logiciels utilisés: tech_logiciels.md
     - Installation: tech_install.md
@@ -48,4 +57,5 @@ plugins:
     author: Equipe IdéesCulture
     toc_title: Table des matières
     toc_position: pre
-    output_path: pdf/documentation.pdf      
+    output_path: pdf/documentation.pdf
+    design: material/assets/stylesheets/ideesculture.css      
