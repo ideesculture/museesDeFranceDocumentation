@@ -244,6 +244,11 @@
     Installation des outils de développement de la documentation
   </a>
 </li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#personnaliser-la-feuille-de-style-mkpdfs">
+    Personnaliser la feuille de style mkPdfs
+  </a>
+</li>
 </ul>
 </nav>
 </li>
@@ -271,6 +276,11 @@
     Installation des outils de développement de la documentation
   </a>
 </li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#personnaliser-la-feuille-de-style-mkpdfs">
+    Personnaliser la feuille de style mkPdfs
+  </a>
+</li>
 </ul>
 </nav>
 </div>
@@ -293,6 +303,14 @@ brew install cairo pango gdk-pixbuf libffi
 brew install libmagic
 pip3 install WeasyPrint
 pip3 install mkdocs==1.0.4 mkdocs-material==4.6.3 mkpdfs-mkdocs
+</code></pre></div>
+<h2 id="personnaliser-la-feuille-de-style-mkpdfs">Personnaliser la feuille de style mkPdfs<a class="headerlink" href="#personnaliser-la-feuille-de-style-mkpdfs" title="Permanent link">¶</a></h2>
+<p>Installer les prerequis</p>
+<div class="highlight"><pre><span></span><code>cd mkpdfs-design 
+npm install
+</code></pre></div>
+<p>Pour mettre à jour la CSS depuis les fichiers SCSS</p>
+<div class="highlight"><pre><span></span><code>npm run build
 </code></pre></div>
 </article>
 </div>
