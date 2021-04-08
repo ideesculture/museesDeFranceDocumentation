@@ -30,3 +30,9 @@ Installer les prerequis
 cd mkpdfs-design 
 npm install
 ```
+
+Pour mettre à jour la CSS depuis les fichiers SCSS
+
+```
+npm run build
+```

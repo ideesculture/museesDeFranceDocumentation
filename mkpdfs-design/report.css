@@ -670,14 +670,14 @@ article .task-list-control [type="checkbox"] {
 
 @page {
   @top-left {
-    background: #2196f3;
+    background: #dd7717;
     content: counter(page);
     height: 1cm;
     color: #fff;
     text-align: center;
     width: 1cm; }
   @top-center {
-    background: #2196f3;
+    background: #dd7717;
     content: '';
     display: block;
     height: .05cm;
@@ -748,14 +748,14 @@ html {
     justify-content: flex-end;
     page: chapter; }
     html body article.chapter h1.section_title {
-      background-color: #2196f3;
+      background-color: #dd7717;
       padding: 1cm;
       width: 60%;
       text-align: center;
       color: #fff;
       font-size: 30pt; }
   html article#doc-cover h1#doc-title {
-    color: #2196f3;
+    color: white;
     font-size: 38pt;
     margin: 5cm 2cm 0 2cm;
     page: no-chapter;
@@ -768,7 +768,7 @@ html {
     margin: 0;
     height: 297mm; }
     html body article#doc-cover address {
-      background: #2196f3;
+      background: #dd7717;
       flex: 1;
       color: #fff;
       margin: 0 -2cm;
@@ -791,7 +791,7 @@ html {
   margin-top: 5px; }
 
 html body h1 {
-  color: #2196f3;
+  color: #dd7717;
   string-set: heading content(); }
 
 html body h2, html body h3, html body h4 {
@@ -813,13 +813,13 @@ html body article {
   html body article video source::before {
     content: attr(src); }
   html body article video[src]::before {
-    content: attr(data-title) " " "https://docs.pfb.brussels" attr(src); }
+    content: attr(data-title) " " "https://www.ideesculture.com" attr(src); }
 
 h2, h3, h4, h5 {
   margin-bottom: 0.1em; }
 
 html body article a {
-  color: #2196f3;
+  color: #dd7717;
   text-decoration: none; }
   html body article a.external-link::after {
     content: " (" attr(href) ")";
@@ -845,7 +845,7 @@ html body article#contents {
     font-weight: 500;
     margin: 3em 0 1em; }
     html body article#contents h3::before {
-      background: #2196f3;
+      background: #dd7717;
       content: '';
       display: block;
       height: .08cm;
@@ -859,7 +859,7 @@ html body article#contents {
       margin: .15cm 0;
       padding-top: .15cm; }
       html body article#contents ul li::before {
-        color: #2196f3;
+        color: #dd7717;
         content: '• ';
         font-size: 40pt;
         line-height: 16pt;
@@ -871,7 +871,7 @@ html body article#contents {
     list-style: none;
     padding-left: 0; }
   html body article#contents div h4 a::after, html body article#contents ul li a::after {
-    color: #2196f3;
+    color: #dd7717;
     content: target-counter(attr(href), page);
     float: right; }
   html body article#contents div h4 {

@@ -2,9 +2,9 @@
 
 @import "stylesheets/extensions.scss";
 
-$bgColor: #2196f3;
+$bgColor: #dd7717;
 $bgTextColor: #fff;
-$URL: 'https://docs.pfb.brussels';
+$URL: 'https://www.ideesculture.com';
 
 @font-face {
   font-family: Fira Sans;
@@ -162,7 +162,7 @@ html {
     }
   }
   article#doc-cover h1#doc-title {
-    color: $bgColor;
+    color: white;
     font-size: 38pt;
     margin: 5cm 2cm 0 2cm;
     page: no-chapter;
