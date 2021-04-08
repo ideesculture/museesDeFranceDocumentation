@@ -5,42 +5,46 @@ site_author: 'idéesculture'
 
 pages:
 - Accueil: index.md
-- Guide d'aide à la réalisation d'un inventaire et récolement:
+- Utilisation de CollectiveAccess :
+    - I. Connexion et démarrage dans Providence: chapterXI_connexion_demarrage.md
+    - II. Recherche: chapterII_recherche.md
+    - III. Effectuer un traitement par lots: chapterIII_traitements_lots.md
+    - IV. Ajouter un objet 3D dans Providence (avec Sketchfab): chapterIV_objet_modelise.md
+    - VI. Importer des médias en lot: chapterVIII_Import_medias_lot.md
+    - VII. Paramétrage des grilles de saisie: chapterIX_parametrage_grille_saisie.md
+    - VIII. Paramétrage des listes de vocabulaire: chapterX_Parametrage_listes_vocabulaire.md
+    - IX. Utiliser Grav comme CMS à côté de CollectiveAccess : chapterVII_configuration_site_internet.md
+- Musées de France, inventaire et récolement :
     - I. Introduction: chapter1.md
     - II. Catalogage, recherche et récolement des objets mobiliers dans CollectiveAccess: chapter2.md
     - III. Règles d'impression et de mise en forme du registre réglementaire d'inventaire: chapter3.md
     - IV. Règles d'inventaire des Musées de France: chapter4.md
-- Utilisation de CollectiveAccess :
-    - I. Recherche: chapterII_recherche.md
-    - II. Effectuer un traitement par lots: chapterIII_traitements_lots.md
-    - III. Ajout d'un objet modélisé à Providence: chapterIV_objet_modelise.md
-    - IV. Module Musées de France - Récolement décennal: chapterV_recolement_decennal.md
-    - V. Guide de saisie des objets dans CollectiveAccess: chapterVI_Guide_saisie_objets.md
-    - VI. Configuration du site internet: chapterVII_configuration_site_internet.md
-    - VII. Importer des médias en lot: chapterVIII_Import_medias_lot.md
-    - VIII. Paramétrage des grilles de saisie: chapterIX_parametrage_grille_saisie.md
-    - IX. Paramétrage des listes de vocabulaire: chapterX_Parametrage_listes_vocabulaire.md
-    - X. Connexion et démarrage dans Providence: chapterXI_connexion_demarrage.md
+    - V. Récolement décennal: chapterV_recolement_decennal.md
 - Génération de cette documentation :
     - Logiciels utilisés: tech_logiciels.md
     - Installation: tech_install.md
 
 # Repository
 repo_name: 'GitHub'
-repo_url: 'http://ideesculture.github.io/guide-utilisateur-collectiveaccess'
+repo_url: 'http://github.com/ideesculture/museesDeFranceDocumentation'
 
 theme:
   name: material
-
-# Options
-extra:
-  version: '1.0'
+  language: fr
+  palette:
+    primary: orange
   logo: 'images/logo.png'
-  author:
-    github: 'ideesculture'
-    twitter: 'ideesculture'
-  faq:
-    url: 'https://ideesculture.zendesk.com/hc/fr'
+  extra:
+    generator: false
+    version: '1.0'
+    author:
+      github: 'ideesculture'
+      twitter: 'ideesculture'
+    faq:
+      url: 'https://ideesculture.zendesk.com/hc/fr'
+    
+  copyright: 2021 IdéesCulture
+
 
 # Extensions
 markdown_extensions:
