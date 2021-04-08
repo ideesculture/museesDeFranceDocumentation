@@ -21,3 +21,12 @@ brew install libmagic
 pip3 install WeasyPrint
 pip3 install mkdocs==1.0.4 mkdocs-material==4.6.3 mkpdfs-mkdocs
 ```
+
+## Personnaliser la feuille de style mkPdfs
+
+Installer les prerequis
+
+```
+cd mkpdfs-design 
+npm install
+```
