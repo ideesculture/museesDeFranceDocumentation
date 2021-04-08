@@ -9,11 +9,11 @@ pages:
     - I. Connexion et démarrage dans Providence: chapterXI_connexion_demarrage.md
     - II. Recherche: chapterII_recherche.md
     - III. Effectuer un traitement par lots: chapterIII_traitements_lots.md
-    - IV. Ajouter un objet 3D dans Providence (avec Sketchfab): chapterIV_objet_modelise.md
-    - VI. Importer des médias en lot: chapterVIII_Import_medias_lot.md
-    - VII. Paramétrage des grilles de saisie: chapterIX_parametrage_grille_saisie.md
-    - VIII. Paramétrage des listes de vocabulaire: chapterX_Parametrage_listes_vocabulaire.md
-    - IX. Utiliser Grav comme CMS à côté de CollectiveAccess : chapterVII_configuration_site_internet.md
+    - IV. Paramétrage des grilles de saisie: chapterIX_parametrage_grille_saisie.md
+    - V. Paramétrage des listes de vocabulaire: chapterX_Parametrage_listes_vocabulaire.md
+    - VI. Ajouter un objet 3D dans Providence (avec Sketchfab): chapterIV_objet_modelise.md
+    - VII. Importer des médias en lot: chapterVIII_Import_medias_lot.md
+    - VIII. Utiliser Grav comme CMS à côté de CollectiveAccess : chapterVII_configuration_site_internet.md
 - Musées de France, inventaire et récolement :
     - I. Introduction: chapter1.md
     - II. Catalogage, recherche et récolement des objets mobiliers dans CollectiveAccess: chapter2.md
