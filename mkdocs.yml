@@ -23,6 +23,18 @@ pages:
 - Génération de cette documentation :
     - Logiciels utilisés: tech_logiciels.md
     - Installation: tech_install.md
+- Saisie Joconde :
+    - Saisie Joconde: Saisie_Joconde.md
+    - Entités: Saisie_Entite.md
+    - Lieux: Saisie_Lieux.md
+    - Récolement: Recolement.md
+    - Export Joconde: Export_Joconde.md
+    - Registre des biens affectés/déposés: Registre_biens.md
+    - Types de champs: types_de_champs.md
+- a lire :
+  - objet : chapter5.md
+  - entités : chapter6.md
+  - lieux : chapter7.md
 
 # Repository
 repo_name: 'GitHub'
@@ -51,6 +63,7 @@ markdown_extensions:
   - pymdownx.highlight
   - pymdownx.superfences
   - admonition
+  - footnotes
   - toc:
       permalink: '¶'
 
