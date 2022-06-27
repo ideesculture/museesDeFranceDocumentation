@@ -69,7 +69,7 @@ plugins:
  - mkpdfs:
     company: IdéesCulture SAS
     author: Equipe IdéesCulture
-    toc_title: Table des matières
+    toc_title: Dans ce chapitre
     toc_position: pre
     output_path: pdf/documentation.pdf
     design: mkpdfs-design/report.css
