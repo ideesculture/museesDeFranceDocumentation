@@ -60,4 +60,5 @@ Cet écran présente tous les changements apportés à l’enregistrement et ind
 L’écran Résumé récapitule les informations saisies dans la fiche entité, selon le format d’affichage sélectionné dans le menu déroulant présent en haut à gauche de l’écran.
 *Vous pouvez créer de nouveaux formats d’affichages en allant dans le menu Gérer \> Mes affichages. (cf. Support administration de CollectiveAccess, gestion des formats d’affichages).*
 
-[image-1]:	chapter6_images/creer-entite.png
+
+

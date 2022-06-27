@@ -20,7 +20,7 @@ Avec le menu de gauche vous pouvez :
 
 ![Menu_Gauche_Baguette](./Export_Joconde/Menu_Gauche_Baguette.png)
 
-- Dupliquer [l'ensemble](../chapterIII_traitements_lots.md) joconde actuel pour créer un nouvel ensemble
+- Dupliquer [l'ensemble](../chapterIII_traitements_lots) joconde actuel pour créer un nouvel ensemble
 
 ![Dupliquer](./Export_Joconde/Dupliquer.png)
 

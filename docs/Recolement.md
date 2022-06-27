@@ -28,7 +28,7 @@ Notez ici les dates réelles de début et de fin de la campagne
 [![Dates_Effectives](./Campagne_Recolement/Dates_Effectives.png)](../Introduction/#date-daterange)
 
 #### Intervenants
-Ce champ permet de préciser le nom des différents intervenants de la campagne. Ce champ est relié au fichier des [entités](../Saisie_Entite.md), si vous ne trouvez pas le nom de l'intervenant la documentation pour le rajouter est disponible [ici](../Saisie_Entite.md/#informations-de-base-informations-basiques)
+Ce champ permet de préciser le nom des différents intervenants de la campagne. Ce champ est relié au fichier des [entités](../Saisie_Entite), si vous ne trouvez pas le nom de l'intervenant la documentation pour le rajouter est disponible [ici](../Saisie_Entite./#informations-de-base-informations-basiques)
 [![Intervenants](./Campagne_Recolement/Intervenants.png)](../Introduction/#3-recherche-par-auto-completion)
 
 #### Contenu scientifique de la campagne
@@ -114,8 +114,8 @@ Le tableau de progression résume tout les tableaux dans la décennie à laquell
 - Procès verbal : fait réference au champ [Date du PV](#date-du-pv) saisi pour la campagne 
 - Nombre d'objets récolés :
 
-    - **Générer les fiches** : si aucun objet n'as été précisé pour la campagne vous pouvez générer les fiches en cliquant sur cette colonne puis en sélectionnant un [ensemble](../chapterIII_traitements_lots.md) 
-    - Si des objets sont déjà en lien avec la campagne alors cette colonne affiche une barre de progression, le nombre d'objets récolé, le nombre d'objets total ainsi qu'une flèche verte pour ajouter d'autres [ensembles d'objets](../chapterIII_traitements_lots.md). Cliquez sur la barre de progression pour accéder à la liste des [objets à récoler]()
+    - **Générer les fiches** : si aucun objet n'as été précisé pour la campagne vous pouvez générer les fiches en cliquant sur cette colonne puis en sélectionnant un [ensemble](../chapterIII_traitements_lots) 
+    - Si des objets sont déjà en lien avec la campagne alors cette colonne affiche une barre de progression, le nombre d'objets récolé, le nombre d'objets total ainsi qu'une flèche verte pour ajouter d'autres [ensembles d'objets](../chapterIII_traitements_lots). Cliquez sur la barre de progression pour accéder à la liste des [objets à récoler]()
 
 ## Récoler un objet
 Pour récoler un objet il faut se rendre sur l'écran _Informations du PV de récolement_ depuis [campagne](#tableau-de-progression)
@@ -244,7 +244,7 @@ Notez les inscriptions sur l'objet ici : le texte, son type et s'il est inscrit 
 [![Inscriptions](./Campagne_Recolement/Inscriptions.png)](../Introduction/#1-liste-deroulante)
 
 #### Récoleur
-Indiquez ici le nom du récoleur de l'objet. Ce champ est relié au fichier des [entités](../Saisie_Entite.md) et CollectiveAccess vous permettra de créer la fiche du récoleur au fil de l'au
+Indiquez ici le nom du récoleur de l'objet. Ce champ est relié au fichier des [entités](../Saisie_Entite) et CollectiveAccess vous permettra de créer la fiche du récoleur au fil de l'au
 [![Recoleur](./Campagne_Recolement/Recoleur.png)](../Introduction/#3-recherche-par-auto-completion)
 
 #### Date de visualisation
@@ -256,7 +256,7 @@ Indiquez la date de validation du récolement sur place et la date de validation
 [![date_Validation_Recolement](./Campagne_Recolement/Date_Validation_Recolement.png)](../Introduction/#date-daterange)
 
 #### Valideur
-Indiquez ici le nom du valideur du récolement. Ce champ est relié au fichier des [entités](../Saisie_Entite.md) et CollectiveAccess vous permettra de créer la fiche du valideur au fil de l'au
+Indiquez ici le nom du valideur du récolement. Ce champ est relié au fichier des [entités](../Saisie_Entite) et CollectiveAccess vous permettra de créer la fiche du valideur au fil de l'au
 [![Valideur](./Campagne_Recolement/Valideur.png)](../Introduction/#3-recherche-par-auto-completion)
 
 #### Récolement fait

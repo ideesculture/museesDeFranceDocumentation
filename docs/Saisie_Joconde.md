@@ -13,7 +13,7 @@ Par exemple, le profil de Saisie Joconde (créé à partir des recommandations d
 La liste des types d’objets est définie et paramètre selon vos collections, vous pouvez l’enrichir ou la modifier depuis le menu Gérer de CollectiveAccess.[^1] 
 [^1]:Cette fonctionnalité est détaillée dans le support administration de CollectiveAccess.
 
-Cliquez [ici](/pdf/methode_redaction_informatisee_notices._20210211.pdf) pour recuperer le PDF officiel concernant la saisie Joconde.
+Cliquez [ici](https://www.culture.gouv.fr/Thematiques/Musees/Pour-les-professionnels/Conserver-et-gerer-les-collections/Informatiser-les-collections-d-un-musee-de-France/Organisation-operationnelle-de-l-informatisation-des-collections-d-un-musee-de-France/Methode-de-redaction-informatisee-des-notices-d-objets-de-musees) pour récupérer le PDF officiel concernant la saisie Joconde.
 
 ## Comment créer un objet ?
 Pour créer un objet  :
@@ -213,7 +213,7 @@ Champ texte vous permettant de décrire le contexte historique de l’objet
 
 #### Lieu de création/d'exécution
 Sélectionnez le lieu et indiqué s'il est celui de la création/de l'éxécution de l'objet, celui de la production de l'objet ou celui de la publication de l'objet en bas a droite après avoir choisi le lieu
-Si le lieu n'existe pas vous pouvez [le créer](../Saisie_Lieux.md)
+Si le lieu n'existe pas vous pouvez [le créer](../Saisie_Lieux)
 [![Lieu_Creation](./Images_Objets/Lieu_Creation.png)](../Introduction/#4-navigation-hierarchique-horizontale)
 
 #### Précisions sur les lieux de création/d'exécution
@@ -237,7 +237,7 @@ Précisions sur le(s) utilisation(s)/destination(s) de l'objet
 
 #### Lieu(x) d'utilisation, destination
 Recherchez le lieu d'utilisation ou de destination de l'objet. 
-Si le lieu n'existe pas vous pouvez [le créer](../Saisie_Lieux.md)
+Si le lieu n'existe pas vous pouvez [le créer](../Saisie_Lieux)
 [![Lieu_Utilisation_Destination](./Images_Objets/Lieux_Utilisation_Destination.png)](../Introduction/#4-navigation-hierarchique-horizontale)
 
 #### Précisions sur les lieux d'utlisation/destination
@@ -255,7 +255,7 @@ Période à laquelle l'objet est utilisé (Année précise)
 ### Pour les objets issue de fouille/trouvaille archéologique
 
 #### Lieu de découverte, de collecte ou de récolte
-Lien vers le fichier des [lieux](../Saisie_Lieux.md), sélectionnez un lieu et précisez s’il s’agit d’un lieu d’utilisation / destination , de création, de découverte ou de récolte en bas à droite
+Lien vers le fichier des [lieux](../Saisie_Lieux), sélectionnez un lieu et précisez s’il s’agit d’un lieu d’utilisation / destination , de création, de découverte ou de récolte en bas à droite
 
 [Lien vers le thesaurus](https://opentheso.huma-num.fr/opentheso/?idt=th284)
 [![Lieu_Decouverte](./Images_Objets/Lieu_Decouverte.png)](../Introduction/#4-navigation-hierarchique-horizontale)
@@ -317,7 +317,7 @@ Indiquez ici s’il s’agit d’une acquisition subventionnée par l'État ou u
 [![Mention_Concours_Publics](./Images_Objets/Mention_Concours_Publics.png)](../Introduction/#1-liste-deroulante)
 
 #### Etablissement affectataire
-Ce champ est lié au fichier des [entités](../Saisie_Entite.md), saisissez l’établissement affectataire de l'objet.
+Ce champ est lié au fichier des [entités](../Saisie_Entite), saisissez l’établissement affectataire de l'objet.
 [![Etablissement_Affectataire](./Images_Objets/Etablissement_Affectataire.png)](../Introduction/#3-recherche-par-auto-completion)
 
 #### Date et références de l’acte d’acquisition
