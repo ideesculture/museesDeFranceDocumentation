@@ -9,6 +9,7 @@ Version de cette documentation :
 1.2 - juin 2022
 
 Ont contribué à cette documentation :
+
 - Nathalie Felten
 - Gautier Michelin
 - <a href=mailto:brooklynwafellman>Brooklyn Wafellman</a>
