@@ -1,6 +1,6 @@
-# 1. Présentation de la Saisie Joconde 
+# 1. Présentation de la saisie Joconde 
 
-Cette page vous permet de découvrir les fonctionnalités présents pour chacunes des 6 procédures qui seront décrites par la suite.
+Ce chapitre vous permet de découvrir les fonctionnalités présents pour chacunes des 6 procédures qui seront décrites par la suite : Objets, Entités, Lieux, Récolement, Export Joconde et Registre des Biens Affectés.
 
 ### Enregistrements Principaux
 Il existe 3 types d'enregistrements importants pour réaliser une saisie Joconde:
