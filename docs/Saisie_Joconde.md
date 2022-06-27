@@ -22,8 +22,8 @@ Pour créer un objet  :
 
 Sinon :
 
-- cliquez sur le menu « Nouveau » dans la barre de navigation principale.
-- sélectionnez « Objet » dans le menu déroulant, puis choisissez un type (Bien affecté, bien déposé) pour créer un nouvel enregistrement.[^2]
+- cliquez sur le menu « Nouveau » dans la barre de navigation principale.
+- sélectionnez « Objet » dans le menu déroulant, puis choisissez un type (Bien affecté, bien déposé) pour créer un nouvel enregistrement.[^2]
 [^2]:La liste des types d'objets dépend de votre paramétrage. (cf. support de cours administration de CollectiveAccess)
 
 ## Tour des différents écrans de saisie
@@ -56,34 +56,34 @@ Saisissez les autres numéros de référence de l’objet ; vous pouvez saisir p
 [![Autre_Numero](./Images_Objets/Autre_Numero.png)](../Introduction/#texte-text)
 
 #### Ancien numéro 
-Saisissez ici les aciens numéros qu'à pu avoir l'objet
+Saisissez ici les anciens numéros qu'à pu avoir l'objet
 [![Ancien_Numero](./Images_Objets/Ancien_Numero.png)](../Introduction/#texte-text)
 
 #### Domaine
 Trouver le domaine de l'objet grâce à un [champ auto-completif](../Introduction/#3-recherche-par-auto-completion)
 ou recherchez dans le thesaurus le domaine souhaité.
 
-[Lien vers le thesaurus](https://opentheso.huma-num.fr/opentheso/?idt=th294)
+[Lien vers le thesaurus sur OpenTheso](https://opentheso.huma-num.fr/opentheso/?idt=th294)
 [![Domaine](./Images_Objets/Domaine.png)](../Introduction/#3-recherche-par-auto-completion)
 
 #### Dénomination
 Saisissez ici la désignation (le nom commun de l'objet) utilisée pour votre objet. Un affixe est disponible pour plus de précision
 
-[Lien vers le thesaurus](https://opentheso.huma-num.fr/opentheso/?idt=th290)
+[Lien vers le thesaurus sur OpenTheso](https://opentheso.huma-num.fr/opentheso/?idt=th290)
 [![Denomination](./Images_Objets/Denomination.png)](../Introduction/#3-recherche-par-auto-completion)
 
-#### Appelation
+#### Appellation
 Saisissez ici toute autre désignation utilisée pour votre objet.
-L'appelation correspond souvent à la désignation de l'objet à son époque
+L'appellation correspond souvent à la désignation de l'objet à son époque
 [![Appellation](./Images_Objets/Appellation.png)](../Introduction/#texte-text)
 
-#### Titre de l'oeuvre  
+#### Titre de l'oeuvre  
 Correspond au nom de l'objet. 
 _Attention ce champ est obligatoire : si l'objet ne possède pas de titre ou de position, vous pouvez saisir son identifiant._
 [![Titre_oeuvre](./Images_Objets/Titre_oeuvre.png)](../Introduction/#texte-text)
 
 #### Auteur, exécutant, collecteur
-Saisissez ici le nom du producteur de l’objet. Ce champ est directement lié aux enregistrements « [entités](./Saisie_Entite) » :
+Saisissez ici le nom du producteur de l’objet. Ce champ est directement lié aux enregistrements « [entités](./Saisie_Entite) » :
 
 - saisissez quelques lettres (au moins 3) et CollectiveAccess vous propose toutes les entités dont le nom commence par ces lettres, vous pouvez ensuite le sélectionner;
 - si l’auteur saisi n’existe, une fenêtre pop-up vous permet de le créer directement depuis la saisie de l’objet et l’ajoute directement au fichier des entités.
@@ -94,7 +94,7 @@ Saisissez ici le nom du producteur de l’objet. Ce champ est directement lié a
 #### Ecole
 Indiquez dans ce champ l'école en lien avec le style de l'entité. 2 affixes sont disponibles pour plus de précision
 
-[Lien vers le thesaurus](https://opentheso.huma-num.fr/opentheso/?idt=th295)
+[Lien vers le thesaurus sur OpenTheso](https://opentheso.huma-num.fr/opentheso/?idt=th295)
 [![Ecole](./Images_Objets/Ecole.png)](../Introduction/#3-recherche-par-auto-completion)
 
 #### Anciennes attributions
@@ -113,7 +113,7 @@ Date de production précise de l'objet (si connu).
 Rentrez ici l'époque, le style et le mouvement de l'objet. 
 Deux affixe sont disponibles afin de préciser où ce place l'objet durant l'époque, le style ou le mouvement 
 
-[Lien vers le thesaurus](https://opentheso.huma-num.fr/opentheso/?idt=th289)
+[Lien vers le thesaurus sur OpenTheso](https://opentheso.huma-num.fr/opentheso/?idt=th289)
 [![Epoque_Style](./Images_Objets/Epoque_Style.png)](../Introduction/#3-recherche-par-auto-completion)
 
 ### Description du bien
@@ -122,7 +122,7 @@ Contient les informations du physique de l'objet
 #### Matériaux et techniques
 Vous permet d’associer un ou plusieurs couple de matériaux et techniques à l’objet en les recherchant dans le thesaurus matériaux et techniques.
 
-[Lien vers le thesaurus](https://opentheso.huma-num.fr/opentheso/?idt=th291)
+[Lien vers le thesaurus sur OpenTheso](https://opentheso.huma-num.fr/opentheso/?idt=th291)
 [![Materiaux_Techniques](./Images_Objets/Materiaux_Techniques.png)](../Introduction/#3-recherche-par-auto-completion)
 
 #### Dimensions
@@ -141,7 +141,7 @@ Détaillez dans ce champ les marques et inscriptions que vous pouvez relever sur
 - Transcription de l’inscription : Grâce à un éditeur de texte enrichi, vous pouvez retranscrire au plus précis le sens de l'inscription
 - Type d’inscription : Recherchez dans ce menu le type d'inscription ou de marque correspondant à celui de l'objet
 
-[Lien vers le thesaurus](https://opentheso.huma-num.fr/opentheso/?idt=th288)
+[Lien vers le thesaurus sur OpenTheso](https://opentheso.huma-num.fr/opentheso/?idt=th288)
 [![Marques_Inscriptions](./Images_Objets/Marques_Inscriptions.png)](../Introduction/#4-navigation-hierarchique-horizontale)
 
 #### Précisions sur les inscriptions
@@ -167,7 +167,7 @@ Décrivez l’état initial de l’objet : date du constat, constat d'état, ét
 #### Représentation (décor)
 Si l'objet répresente quelque chose indiquez ici le genre de la répresentation de l'objet ainsi que jusq'à 6 termes pour mieux définir la répresentation. un champ précision et aussi disponible en bas afin de localiser la représentation sur l'objet (ce champ correspond au dossier *thèmes* sur le thesaurus des représentations)
 
-[Lien vers le thesaurus](https://opentheso.huma-num.fr/opentheso/?idt=th285)
+[Lien vers le thesaurus sur OpenTheso](https://opentheso.huma-num.fr/opentheso/?idt=th285)
 [![Representation](./Images_Objets/Representation.png)](../Introduction/#3-recherche-par-auto-completion)
 
 #### Précision sur la représentation
@@ -186,7 +186,7 @@ Indiquez ici les œuvres de réferences de la répresentation :
 - Titre de l'oeuvre : le titre de l'œuvre de réference
 - Précisions : précisions concernant l'œuvre
 
-[Lien vers le thesaurus](https://opentheso.huma-num.fr/opentheso/?idt=th286)
+[Lien vers le thesaurus sur OpenTheso](https://opentheso.huma-num.fr/opentheso/?idt=th286)
 [![Representation](./Images_Objets/Representation.png)](../Introduction/#3-recherche-par-auto-completion)
 
 ### Contexte historique
@@ -198,7 +198,7 @@ La genèse de l'objet est composée de 3 champs :
 - Contexte : le contexte de la création de l'objet (commande, pièce d'essai,...)
 - Objet associé : indiquez ici s'il existe un objet ou un œuvre en lien avec l'objet décrit (vous préciserais l'objet en question dans le champ d'en dessous)
 
-[Lien vers le thesaurus](https://opentheso.huma-num.fr/opentheso/?idt=th298)
+[Lien vers le thesaurus sur OpenTheso](https://opentheso.huma-num.fr/opentheso/?idt=th298)
 [![Genese](./Images_Objets/Genese.png)](../Introduction/#3-recherche-par-auto-completion)
 
 #### Objet(s) associé(s)
@@ -228,7 +228,7 @@ Champ vous permettant de préciser le nom des lieux au moment de la création de
 Réferez-vous au thesaurus afin de trouver le(s) terme(s) qui correspond(ent) le mieux à l'utilisation/la destination de l'objet. 
 Utilisez l'affixe 1 pour définir si le treme correspond à l'utilisation, la destination ou la fonction de l'objet et l'affixe 2 pour préciser l'utilisation (originale, secondaire ou suposée)
 
-[Lien vers le thesaurus](https://opentheso.huma-num.fr/opentheso/?idt=th304)
+[Lien vers le thesaurus sur OpenTheso](https://opentheso.huma-num.fr/opentheso/?idt=th304)
 [![Utilisation_Destination](./Images_Objets/Utilisation_Destination.png)](../Introduction/#3-recherche-par-auto-completion)
 
 #### Précisions sur l'utilisation/destination
@@ -257,19 +257,19 @@ Période à laquelle l'objet est utilisé (Année précise)
 #### Lieu de découverte, de collecte ou de récolte
 Lien vers le fichier des [lieux](../Saisie_Lieux), sélectionnez un lieu et précisez s’il s’agit d’un lieu d’utilisation / destination , de création, de découverte ou de récolte en bas à droite
 
-[Lien vers le thesaurus](https://opentheso.huma-num.fr/opentheso/?idt=th284)
+[Lien vers le thesaurus sur OpenTheso](https://opentheso.huma-num.fr/opentheso/?idt=th284)
 [![Lieu_Decouverte](./Images_Objets/Lieu_Decouverte.png)](../Introduction/#4-navigation-hierarchique-horizontale)
 
 #### Type de site de découverte
 Type de site dans lequel l'objet à été découvert
 
-[Lien vers le thesaurus](https://opentheso.huma-num.fr/opentheso/?idt=th292)
+[Lien vers le thesaurus sur OpenTheso](https://opentheso.huma-num.fr/opentheso/?idt=th292)
 [![Type_Site_Decouverte](./Images_Objets/Type_Site_Decouverte.png)](../Introduction/#3-recherche-par-auto-completion)
 
 #### Méthode de découverte, collecte, ou de récolte d’un objet
 Précisez la méthode utilisée lors de la découverte, de la collecte ou de la récolte d’un objet.
 
-[Lien vers le thesaurus](https://opentheso.huma-num.fr/opentheso/?idt=th292)
+[Lien vers le thesaurus sur OpenTheso](https://opentheso.huma-num.fr/opentheso/?idt=th292)
 [![Methode_Decouverte](./Images_Objets/Methode_Decouverte.png)](../Introduction/#3-recherche-par-auto-completion)
 
 #### Date de découverte, collecte, récolte
@@ -293,7 +293,7 @@ Précisez ici le numéro du site SDA duquel est issu l'objet
 Cet écran sert à inscrire les informations juridiques concernant l'objet.
 Même si la plupart des champs sont des textes libres il existe un thesaurus sur lequel vous pouvez vous baser. 
 
-[Lien vers le thesaurus](https://opentheso.huma-num.fr/opentheso/?idt=th306)
+[Lien vers le thesaurus sur OpenTheso](https://opentheso.huma-num.fr/opentheso/?idt=th306)
 
 #### Date d'inscription au registre de l'inventaire
 Indiquez ici la date d'inscription de l'objet au registre d'inventaire
@@ -330,7 +330,7 @@ Saisissez la date à laquelle l'objet à été affecté au musée. Utlisez la [l
 [![Date_Affectation_Musee](./Images_Objets/Date_Affectation_Musee.png)](../Introduction/#3-recherche-par-auto-completion)
 
 #### Avis des instances scientifiques compétentes
-Pour chaque avis, précisez quelle instance scientifique l’a donné, son sens (favorable / défavorable), sa date ; une zone « commentaires » vous permet de le détailler.
+Pour chaque avis, précisez quelle instance scientifique l’a donné, son sens (favorable / défavorable), sa date ; une zone « commentaires » vous permet de le détailler.
 [![Avis_Instances_Scientifique](./Images_Objets/Avis_Instances_Scientifique.png)](../Introduction/#1-liste-deroulante)
 
 #### Anciennes appartenances
