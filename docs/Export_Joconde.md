@@ -49,7 +49,9 @@ Le menu central vous permet de :
 Une fois les objets sélectionnés retounez dans Procédures Réglementaires \> Export Joconde et rendez vous en bas de la page puis cliquez sur **Générer un export Joconde**
 ![Generer_Export_Joconde](./Export_Joconde/Generer_Export_Joconde.png)
 
-L'export va se générer. Cliquez sur retour et retouver votre export sous le nom **J_M0926-001_*Année* *Mois* *Jour*_*4chiffres***
+L'export va se générer. Cliquez sur retour et retouver votre export sous le nom **J_*Numéro Muséo*_*Année* *Mois* *Jour*_*4chiffres***
+
+*Pour trouver votre code muséo [utilisez ce lien](https://bit.ly/votrecodemuseo)*
 
 Cliquez ensuite sur le bouton *ZIP* de votre export et retouvez, dans le dossier media, les images de vos objets et un fichier texte contenant les informations de l'ensemble
 ![Export_Joconde](./Export_Joconde/Export_Joconde.png)
