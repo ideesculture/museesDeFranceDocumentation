@@ -5,9 +5,9 @@ Ce chapitre vous permet de découvrir les fonctionnalités présents pour chacun
 ### Enregistrements Principaux
 Il existe 3 types d'enregistrements importants pour réaliser une saisie Joconde:
 
-- [Les Objets]()
-- [Les Entités]()
-- [Les Lieux]()
+- [Les Objets](../Saisie_Joconde)
+- [Les Entités](../Saisie_Entite)
+- [Les Lieux](../Saisie_Lieux)
 
 Ces 3 enregistrementds permettent de définir très précisement une œuvre.
 
