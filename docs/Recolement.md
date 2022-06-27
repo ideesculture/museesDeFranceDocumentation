@@ -1,5 +1,16 @@
 # 5. Le Récolement dans CollectiveAccess
-Le récolement permet de vérifier les objets, CollectiveAccess vous accompagne dans cette démarche en proposant une procédure complète grâce à des campagnes de récolement
+
+Le récolement permet de vérifier les objets, CollectiveAccess vous accompagne dans cette démarche en proposant une procédure complète grâce à des campagnes de récolement.
+
+## Introduction
+
+Le récolement est une opération de vérification d'objets/numéros d'inventaires au sein du musée. Le but de cette opération est de savoir s'il se trouve au bon endroit (localisation), qu'il est présent dans la collection (disparu, mauvaise classification...), son état, son marquage et s'il est bien inscrit dans l'inventaire ou répertorié sur des documents divers. Cette opération est obligatoire tous les 10 ans (Musée de France) et s'organise en campagne de récolement en fonction de divers critères (soit par thème, par lieu, par collection). En découle la rédaction de fiche de récolement pour chaque objet vérifié. La fin de la campagne se termine par la rédaction d'un procès-verbal.
+
+Ce que permet CollectiveAccess :
+
+-   Dans le cas de l'inventaire, CollectiveAccess permet de faire une base documentaire qui permet de se renseigner, gérer et de modifier facilement chaque fiche d'objet. Elle ne peut considérer comme l'inventaire réglementaire des collections du musée, car celui-ci doit être imprimé (signé, daté...) et sécurisé. Cependant, CollectiveAccess simplifie la procédure pour réaliser un inventaire. Il permet aussi d'avoir un outil informatique qui permet d'effectuer des recherches directement dans la base documentaire (vérification, modifications, suppression) et d'avoir en permanence un registre d'inventaire accessible.
+    
+-   Dans le cas du récolement, CollectiveAccess permet la facilitation de cette opération. Par sa fonction récolement, il permet de suivre en direct le nombre d'objets récolés, de consulter leurs fiches, de voir les anciennes campagnes et permet de faire le procès-verbal du récolement (imprimé, email, PDF).
 
 ## Comment créer une campagne de récolement ?
 

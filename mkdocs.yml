@@ -15,19 +15,14 @@ pages:
     - VII. Importer des médias en lot: chapterVIII_Import_medias_lot.md
     - VIII. Utiliser Grav comme CMS à côté de CollectiveAccess : chapterVII_configuration_site_internet.md
 - Saisie Joconde :
-    - Introduction: Introduction.md
-    - Saisie Joconde: Saisie_Joconde.md
-    - Entités: Saisie_Entite.md
-    - Lieux: Saisie_Lieux.md
-    - Récolement: Recolement.md
-    - Export Joconde: Export_Joconde.md
-    - Registre des biens affectés/déposés: Registre_biens.md
-- Musées de France, inventaire et récolement :
-    - I. Introduction: chapter1.md
-    - II. Catalogage, recherche et récolement des objets mobiliers dans CollectiveAccess: chapter2.md
-    - III. Règles d'impression et de mise en forme du registre réglementaire d'inventaire: chapter3.md
-    - IV. Règles d'inventaire des Musées de France: chapter4.md
-    - V. Récolement décennal: chapterV_recolement_decennal.md
+    - Introduction : Decrire_Objets_Joconde.md 
+    - I. Présentation de la saisie Joconde: Introduction.md
+    - II. Objets: Saisie_Joconde.md
+    - III. Entités: Saisie_Entite.md
+    - IV. Lieux: Saisie_Lieux.md
+    - V. Récolement: Recolement.md
+    - VI. Export Joconde: Export_Joconde.md
+    - VII. Registre des biens affectés/déposés: Registre_biens.md
 - Génération de cette documentation :
     - Logiciels utilisés: tech_logiciels.md
     - Installation: tech_install.md
