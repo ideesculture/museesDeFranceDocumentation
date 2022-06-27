@@ -147,6 +147,7 @@ Tous les champs qui suivent sont à remplir en fonction de l'objet que l'on réc
 Une fois que tous les objets ont été récolés, il s'agit de générer le PV de récolement afin de le transmettre.
 ![Image72](img/image72.png)
 Générer le PV
+
 - cliquer sur le bouton "Générer le procès-verbal de récolement"
 - cliquer sur "Télécharger"
 - les informations du PV sont :
@@ -154,4 +155,5 @@ Générer le PV
 	- reprises en partie de la fiche campagne
 	- calculées et générées automatiquement grâce aux informations indiquées dans les fiches récolement d'où l'importance de bien cocher les cases
 - possible de générer le PV à tout moment pour visualiser les informations
+
 *le PV est généré au format .docx et lisible sous Word ou Openoffice, le transformer ensuite en pdf pour le transmettre aux services compétents.
