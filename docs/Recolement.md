@@ -28,7 +28,7 @@ Notez ici les dates réelles de début et de fin de la campagne
 [![Dates_Effectives](./Campagne_Recolement/Dates_Effectives.png)](../Introduction/#date-daterange)
 
 #### Intervenants
-Ce champ permet de préciser le nom des différents intervenants de la campagne. Ce champ est relié au fichier des [entités](../Saisie_Entite), si vous ne trouvez pas le nom de l'intervenant la documentation pour le rajouter est disponible [ici](../Saisie_Entite./#informations-de-base-informations-basiques)
+Ce champ permet de préciser le nom des différents intervenants de la campagne. Ce champ est relié au fichier des [entités](../Saisie_Entite). Si vous ne trouvez pas le nom de l'intervenant, la documentation pour le rajouter est disponible [ici](../Saisie_Entite./#informations-de-base-informations-basiques)
 [![Intervenants](./Campagne_Recolement/Intervenants.png)](../Introduction/#3-recherche-par-auto-completion)
 
 #### Contenu scientifique de la campagne
@@ -118,6 +118,8 @@ Le tableau de progression résume tout les tableaux dans la décennie à laquell
     - Si des objets sont déjà en lien avec la campagne alors cette colonne affiche une barre de progression, le nombre d'objets récolé, le nombre d'objets total ainsi qu'une flèche verte pour ajouter d'autres [ensembles d'objets](../chapterIII_traitements_lots). Cliquez sur la barre de progression pour accéder à la liste des [objets à récoler]()
 
 ## Récoler un objet
+** Important ** Vous ne pouvez pas récoler d'objet si vous n'avez pas au moins déjà créé une campagne.
+
 Pour récoler un objet il faut se rendre sur l'écran _Informations du PV de récolement_ depuis [campagne](#tableau-de-progression)
 
 Cette page donne un résumé plus complet de la campagne 
@@ -133,13 +135,18 @@ En dessous se trouve le tableau des objets à récoler :
 - L'emplacement indique ou été situé l'objet lors du récolement  
 
 ### Écran de récolement de l'objet
-Le récolement d'un objet peut se faire seul ou faire partie d'une campagne de récolement, les champs sont les mêmes dans les 2 cas mais l'objet issu d'une campagne posséde certains champs pré-complété
+Le récolement d'un objet peut se faire seul ou faire partie d'une campagne de récolement, les champs sont les mêmes dans les 2 cas mais l'objet issu d'une campagne posséde certains champs pré-complété.
+
+**Attention** un objet récolé hors campagne de récolement ne sera donc pas visible dans les statistiques du plugin MuséesDeFrance : les PV de récolement sont rattachés à la campagne.
 
 #### Objets liés
-Definissez ici l'objet à récolé
+Définissez ici l'objet à récoler.
+
 [![Objets_Lies](./Campagne_Recolement/Objets_Lies.png)](../Introduction/#3-recherche-par-auto-completion)
 
 #### Photographie spécifique au récolement
+L'objet peut déjà posséder une image
+
 Intégrez une image grâce à ce champ :
 
 - Écrivez dans label préféré le nom que voous voulez donner à votre image
@@ -188,7 +195,7 @@ Indiquez si un autre numéro est présent sur l'objet
 [![Presence_Autre_Numero](./Campagne_Recolement/Presence_Autre_Numero.png)](../Introduction/#texte-text)
 
 #### Problème d'identification 
-Indiquez s'il existe des problemes d'identification sur le numéro d'inventaire
+Indiquez s'il existe des problèmes d'identification sur le numéro d'inventaire
 [![Probleme_Identification](./Campagne_Recolement/Probleme_Identification.png)](../Introduction/#2-liste-a-cocher-boutons-radio)
 
 #### Présence du bien dans le récolement précédent
