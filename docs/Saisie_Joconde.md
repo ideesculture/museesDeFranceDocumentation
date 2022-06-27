@@ -42,12 +42,12 @@ Sinon :
 *NB : les écrans et les métadonnées décrits correspondent à ceux mis en place au sein du profil Joconde et répondent aux spécifications du Service des Musées de France*
 *Les interfaces de saisie et les métadonnées sont modifiées en fonction de vos besoins et de votre fonctionnement ; nous décrivons ces fonctionnalités dans les supports de cours administration.*
 
-L'écran "Saisie Joconde" reprend les écrans "Identification", "Description du bien", "Contexte historique", "Statut juridique" et "Informations complémentaires". Pour y accéder directement donnez un [N° d'inventaire](#n-dinventaire) à l'objet, [enregistrez](../Introduction/#enregistrer-annuler-supprimer) puis cliquez sur **Saisie Joconde** à gauche.
+L'écran "Saisie Joconde" reprend les écrans "Identification", "Description du bien", "Contexte historique", "Statut juridique" et "Informations complémentaires". Pour y accéder directement donnez un [Numéro d'inventaire](#numero-dinventaire) à l'objet, [enregistrez](../Introduction/#enregistrer-annuler-supprimer) puis cliquez sur **Saisie Joconde** à gauche.
 
 ### Identifier l'objet
 Contient les informations les plus élémentaires pour enregistrer un nouvel objet.
 
-#### N° d’inventaire
+#### Numéro d’inventaire
 Saisissez un identifiant alphanumérique en respectant les règles de saisies définies au sein de votre établissement.
 [![Numero_Inventaire](./Images_Objets/Numero_Inventaire.png)](../Introduction/#texte-text)
 
@@ -56,7 +56,7 @@ Saisissez les autres numéros de référence de l’objet ; vous pouvez saisir p
 [![Autre_Numero](./Images_Objets/Autre_Numero.png)](../Introduction/#texte-text)
 
 #### Ancien numéro 
-Saisissez ici les aciens numéros qu'à pu avoir l'objet
+Saisissez ici les aciens numéros qu'a pu avoir l'objet
 [![Ancien_Numero](./Images_Objets/Ancien_Numero.png)](../Introduction/#texte-text)
 
 #### Domaine
@@ -72,9 +72,9 @@ Saisissez ici la désignation (le nom commun de l'objet) utilisée pour votre ob
 [Lien vers le thesaurus](https://opentheso.huma-num.fr/opentheso/?idt=th290)
 [![Denomination](./Images_Objets/Denomination.png)](../Introduction/#3-recherche-par-auto-completion)
 
-#### Appelation
+#### Appellation
 Saisissez ici toute autre désignation utilisée pour votre objet.
-L'appelation correspond souvent à la désignation de l'objet à son époque
+L'appellation correspond souvent à la désignation de l'objet à son époque
 [![Appellation](./Images_Objets/Appellation.png)](../Introduction/#texte-text)
 
 #### Titre de l'oeuvre  
@@ -295,7 +295,7 @@ Même si la plupart des champs sont des textes libres il existe un thesaurus sur
 
 [Lien vers le thesaurus](https://opentheso.huma-num.fr/opentheso/?idt=th306)
 
-#### Date d'inscription au registre de l'inventaire
+#### Date d'inscription au registre d'inventaire
 Indiquez ici la date d'inscription de l'objet au registre d'inventaire
 [![Date_Inscription_Registre](./Images_Objets/Date_Inscription_Registre.png)](../Introduction/#date-daterange)
 

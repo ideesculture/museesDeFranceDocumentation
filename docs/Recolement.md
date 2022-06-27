@@ -28,7 +28,7 @@ Notez ici les dates réelles de début et de fin de la campagne
 [![Dates_Effectives](./Campagne_Recolement/Dates_Effectives.png)](../Introduction/#date-daterange)
 
 #### Intervenants
-Ce champ permet de préciser le nom des différents intervenants de la campagne. Ce champ est relié au fichier des [entités](../Saisie_Entite), si vous ne trouvez pas le nom de l'intervenant la documentation pour le rajouter est disponible [ici](../Saisie_Entite./#informations-de-base-informations-basiques)
+Ce champ permet de préciser le nom des différents intervenants de la campagne. Ce champ est relié au fichier des [entités](../Saisie_Entite), si vous ne trouvez pas le nom de l'intervenant la documentation pour le rajouter est disponible [ici](../Saisie_Entite/#informations-de-base-informations-basiques)
 [![Intervenants](./Campagne_Recolement/Intervenants.png)](../Introduction/#3-recherche-par-auto-completion)
 
 #### Contenu scientifique de la campagne
