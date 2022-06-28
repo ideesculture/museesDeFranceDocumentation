@@ -9,7 +9,7 @@ Il existe 3 types d'enregistrements importants pour réaliser une saisie Joconde
 - [Les Entités](../Saisie_Entite)
 - [Les Lieux](../Saisie_Lieux)
 
-Ces 3 enregistrementds permettent de définir très précisement une œuvre.
+Ces 3 enregistrements permettent de définir très précisement une œuvre.
 
 ## Quelques conseils de saisie
 
@@ -115,5 +115,4 @@ CollectiveAccess traite les dates et heures sous différents formats :
 	- Dates incertaines : vers 1955, vers Juin 1860 : 2 Juillet 1921? ; vers 1950-1956 ; 6/11/???? ; 6/????
 	- Saison : Été 2010 ; Hiver 2010
 	- Quart de siècle : 20 Q3 (3e quart du 20e siècle : 1950-1975)
-
 

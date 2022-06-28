@@ -68,4 +68,3 @@ plugins:
     toc_position: pre
     output_path: pdf/documentation.pdf
     design: mkpdfs-design/report.css
-    

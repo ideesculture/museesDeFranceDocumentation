@@ -81,7 +81,7 @@ Saisissez ici la civilisation à laquelle l'entité est associé
 Saisissez ici la communauté à laquelle l'entité est associé
 [![Groupe_Gens](./Images_Entite/Groupe_Gens.png)](../Introduction/#texte-text)
 
-#### Groupe linguistique :
+#### Groupe linguistique
 La langue parlée par l'entité 
 [![Groupe_Linguistique](./Images_Entite/Groupe_Linguistique.png)](../Introduction/#1-liste-deroulante)
 
