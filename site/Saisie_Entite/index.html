@@ -1,0 +1,1579 @@
+
+<!doctype html>
+<html lang="fr" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+        <meta name="description" content="Documentation pour les utilisateurs de CollectiveAccess avec le plugin Musées De France">
+      
+      
+        <meta name="author" content="idéesculture">
+      
+      
+      
+        <link rel="prev" href="../Saisie_Joconde/">
+      
+      
+        <link rel="next" href="../Saisie_Lieux/">
+      
+      
+      <link rel="icon" href="../assets/images/favicon.png">
+      <meta name="generator" content="mkdocs-1.5.3, mkdocs-material-9.5.7">
+    
+    
+      
+        <title>III. Entités - Guide utilisateur CollectiveAccess</title>
+      
+    
+    
+      <link rel="stylesheet" href="../assets/stylesheets/main.f2e4d321.min.css">
+      
+        
+        <link rel="stylesheet" href="../assets/stylesheets/palette.06af60db.min.css">
+      
+      
+
+
+    
+    
+      
+    
+    
+      
+        
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,700,700i%7CRoboto+Mono:400,400i,700,700i&display=fallback">
+        <style>:root{--md-text-font:"Roboto";--md-code-font:"Roboto Mono"}</style>
+      
+    
+    
+    <script>__md_scope=new URL("..",location),__md_hash=e=>[...e].reduce((e,_)=>(e<<5)-e+_.charCodeAt(0),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    
+      
+
+    
+    
+    
+  </head>
+  
+  
+    
+    
+    
+    
+    
+    <body dir="ltr" data-md-color-scheme="default" data-md-color-primary="orange" data-md-color-accent="indigo">
+  
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#3-la-saisie-dune-entite-dans-collectiveaccess" class="md-skip">
+          Aller au contenu
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+    
+      
+
+  
+
+<header class="md-header md-header--shadow" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="En-tête">
+    <a href=".." title="Guide utilisateur CollectiveAccess" class="md-header__button md-logo" aria-label="Guide utilisateur CollectiveAccess" data-md-component="logo">
+      
+  <img src="../images/logo.png" alt="logo">
+
+    </a>
+    <label class="md-header__button md-icon" for="__drawer">
+      
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3V6m0 5h18v2H3v-2m0 5h18v2H3v-2Z"/></svg>
+    </label>
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <span class="md-ellipsis">
+            Guide utilisateur CollectiveAccess
+          </span>
+        </div>
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
+            
+              III. Entités
+            
+          </span>
+        </div>
+      </div>
+    </div>
+    
+      
+    
+    
+    
+    
+      <label class="md-header__button md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5Z"/></svg>
+      </label>
+      <div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" aria-label="Rechercher" placeholder="Rechercher" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
+      <label class="md-search__icon md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5Z"/></svg>
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12Z"/></svg>
+      </label>
+      <nav class="md-search__options" aria-label="Recherche">
+        
+        <button type="reset" class="md-search__icon md-icon" title="Effacer" aria-label="Effacer" tabindex="-1">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12 19 6.41Z"/></svg>
+        </button>
+      </nav>
+      
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
+            Initialisation de la recherche
+          </div>
+          <ol class="md-search-result__list" role="presentation"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+    
+    
+      <div class="md-header__source">
+        <a href="http://github.com/ideesculture/museesDeFranceDocumentation" title="Aller au dépôt" class="md-source" data-md-component="source">
+  <div class="md-source__icon md-icon">
+    
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 6.5.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2023 Fonticons, Inc.--><path d="M439.55 236.05 244 40.45a28.87 28.87 0 0 0-40.81 0l-40.66 40.63 51.52 51.52c27.06-9.14 52.68 16.77 43.39 43.68l49.66 49.66c34.23-11.8 61.18 31 35.47 56.69-26.49 26.49-70.21-2.87-56-37.34L240.22 199v121.85c25.3 12.54 22.26 41.85 9.08 55a34.34 34.34 0 0 1-48.55 0c-17.57-17.6-11.07-46.91 11.25-56v-123c-20.8-8.51-24.6-30.74-18.64-45L142.57 101 8.45 235.14a28.86 28.86 0 0 0 0 40.81l195.61 195.6a28.86 28.86 0 0 0 40.8 0l194.69-194.69a28.86 28.86 0 0 0 0-40.81z"/></svg>
+  </div>
+  <div class="md-source__repository">
+    GitHub
+  </div>
+</a>
+      </div>
+    
+  </nav>
+  
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+          
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+
+
+<nav class="md-nav md-nav--primary" aria-label="Navigation" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href=".." title="Guide utilisateur CollectiveAccess" class="md-nav__button md-logo" aria-label="Guide utilisateur CollectiveAccess" data-md-component="logo">
+      
+  <img src="../images/logo.png" alt="logo">
+
+    </a>
+    Guide utilisateur CollectiveAccess
+  </label>
+  
+    <div class="md-nav__source">
+      <a href="http://github.com/ideesculture/museesDeFranceDocumentation" title="Aller au dépôt" class="md-source" data-md-component="source">
+  <div class="md-source__icon md-icon">
+    
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 6.5.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2023 Fonticons, Inc.--><path d="M439.55 236.05 244 40.45a28.87 28.87 0 0 0-40.81 0l-40.66 40.63 51.52 51.52c27.06-9.14 52.68 16.77 43.39 43.68l49.66 49.66c34.23-11.8 61.18 31 35.47 56.69-26.49 26.49-70.21-2.87-56-37.34L240.22 199v121.85c25.3 12.54 22.26 41.85 9.08 55a34.34 34.34 0 0 1-48.55 0c-17.57-17.6-11.07-46.91 11.25-56v-123c-20.8-8.51-24.6-30.74-18.64-45L142.57 101 8.45 235.14a28.86 28.86 0 0 0 0 40.81l195.61 195.6a28.86 28.86 0 0 0 40.8 0l194.69-194.69a28.86 28.86 0 0 0 0-40.81z"/></svg>
+  </div>
+  <div class="md-source__repository">
+    GitHub
+  </div>
+</a>
+    </div>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href=".." class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Accueil
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2" >
+        
+          
+          <label class="md-nav__link" for="__nav_2" id="__nav_2_label" tabindex="0">
+            
+  
+  <span class="md-ellipsis">
+    Utilisation de CollectiveAccess
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_2_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_2">
+            <span class="md-nav__icon md-icon"></span>
+            Utilisation de CollectiveAccess
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../chapterXI_connexion_demarrage/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    I. Connexion et démarrage dans Providence
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../chapterII_recherche/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    II. Recherche
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../chapterIII_traitements_lots/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    III. Effectuer un traitement par lots
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../chapterIX_parametrage_grille_saisie/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    IV. Paramétrage des grilles de saisie
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../chapterX_Parametrage_listes_vocabulaire/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    V. Paramétrage des listes de vocabulaire
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../chapterIV_objet_modelise/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    VI. Ajouter un objet 3D dans Providence (avec Sketchfab)
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../chapterVIII_Import_medias_lot/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    VII. Importer des médias en lot
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../chapterVII_configuration_site_internet/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    VIII. Utiliser Grav comme CMS à côté de CollectiveAccess
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+    
+  
+  
+  
+    
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
+      
+        
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3" checked>
+        
+          
+          <label class="md-nav__link" for="__nav_3" id="__nav_3_label" tabindex="0">
+            
+  
+  <span class="md-ellipsis">
+    Saisie Joconde
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_3_label" aria-expanded="true">
+          <label class="md-nav__title" for="__nav_3">
+            <span class="md-nav__icon md-icon"></span>
+            Saisie Joconde
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../Decrire_Objets_Joconde/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Introduction
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../Introduction/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    I. Présentation de la saisie Joconde
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../Saisie_Joconde/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    II. Objets
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+    
+  
+  
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  <span class="md-ellipsis">
+    III. Entités
+  </span>
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
+        
+  
+  <span class="md-ellipsis">
+    III. Entités
+  </span>
+  
+
+      </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table des matières">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table des matières
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#comment-creer-une-entite" class="md-nav__link">
+    <span class="md-ellipsis">
+      Comment créer une entité ?
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#ecrans-de-saisie" class="md-nav__link">
+    <span class="md-ellipsis">
+      Ecrans de saisie
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Ecrans de saisie">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#informations-de-base-informations-basiques" class="md-nav__link">
+    <span class="md-ellipsis">
+      Informations de base (Informations basiques)
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Informations de base (Informations basiques)">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#nom" class="md-nav__link">
+    <span class="md-ellipsis">
+      Nom
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#precisions-sur-lentite" class="md-nav__link">
+    <span class="md-ellipsis">
+      Précisions sur l'entité
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#identifiant-de-personne" class="md-nav__link">
+    <span class="md-ellipsis">
+      Identifiant de personne
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#acces" class="md-nav__link">
+    <span class="md-ellipsis">
+      Accès
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#statut" class="md-nav__link">
+    <span class="md-ellipsis">
+      Statut
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#media" class="md-nav__link">
+    <span class="md-ellipsis">
+      Média
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#contact" class="md-nav__link">
+    <span class="md-ellipsis">
+      Contact
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Contact">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#adresse" class="md-nav__link">
+    <span class="md-ellipsis">
+      Adresse
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#tel-fax" class="md-nav__link">
+    <span class="md-ellipsis">
+      Tél / Fax
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#adresse-email" class="md-nav__link">
+    <span class="md-ellipsis">
+      Adresse Email
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#type-dadresse" class="md-nav__link">
+    <span class="md-ellipsis">
+      Type d’adresse
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#information-complementaire" class="md-nav__link">
+    <span class="md-ellipsis">
+      Information complémentaire
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Information complémentaire">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#culture-populaire" class="md-nav__link">
+    <span class="md-ellipsis">
+      Culture populaire
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#groupe-de-gens" class="md-nav__link">
+    <span class="md-ellipsis">
+      Groupe de gens
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#groupe-linguistique" class="md-nav__link">
+    <span class="md-ellipsis">
+      Groupe linguistique
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#note-biographique-sur-les-personnes" class="md-nav__link">
+    <span class="md-ellipsis">
+      Note biographique sur les personnes
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#dates-essentielles" class="md-nav__link">
+    <span class="md-ellipsis">
+      Dates essentielles
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#genre" class="md-nav__link">
+    <span class="md-ellipsis">
+      Genre
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#nationalite-dune-personne" class="md-nav__link">
+    <span class="md-ellipsis">
+      Nationalité d'une personne
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#emploi-dune-personne" class="md-nav__link">
+    <span class="md-ellipsis">
+      Emploi d'une personne
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#salutation" class="md-nav__link">
+    <span class="md-ellipsis">
+      Salutation
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#son-style-ecole" class="md-nav__link">
+    <span class="md-ellipsis">
+      Son style / école
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#liens" class="md-nav__link">
+    <span class="md-ellipsis">
+      Liens
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Liens">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#nom-du-site-web" class="md-nav__link">
+    <span class="md-ellipsis">
+      Nom du site web
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#url" class="md-nav__link">
+    <span class="md-ellipsis">
+      URL
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../Saisie_Lieux/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    IV. Lieux
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../Recolement/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    V. Récolement
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../Export_Joconde/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    VI. Export Joconde
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../Registre_biens/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    VII. Registre des biens affectés/déposés
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_4" >
+        
+          
+          <label class="md-nav__link" for="__nav_4" id="__nav_4_label" tabindex="0">
+            
+  
+  <span class="md-ellipsis">
+    Génération de cette documentation
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_4_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_4">
+            <span class="md-nav__icon md-icon"></span>
+            Génération de cette documentation
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../tech_logiciels/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Logiciels utilisés
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../tech_install/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Installation
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../credits/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Crédits
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+<nav class="md-nav md-nav--secondary" aria-label="Table des matières">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table des matières
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#comment-creer-une-entite" class="md-nav__link">
+    <span class="md-ellipsis">
+      Comment créer une entité ?
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#ecrans-de-saisie" class="md-nav__link">
+    <span class="md-ellipsis">
+      Ecrans de saisie
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Ecrans de saisie">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#informations-de-base-informations-basiques" class="md-nav__link">
+    <span class="md-ellipsis">
+      Informations de base (Informations basiques)
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Informations de base (Informations basiques)">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#nom" class="md-nav__link">
+    <span class="md-ellipsis">
+      Nom
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#precisions-sur-lentite" class="md-nav__link">
+    <span class="md-ellipsis">
+      Précisions sur l'entité
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#identifiant-de-personne" class="md-nav__link">
+    <span class="md-ellipsis">
+      Identifiant de personne
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#acces" class="md-nav__link">
+    <span class="md-ellipsis">
+      Accès
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#statut" class="md-nav__link">
+    <span class="md-ellipsis">
+      Statut
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#media" class="md-nav__link">
+    <span class="md-ellipsis">
+      Média
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#contact" class="md-nav__link">
+    <span class="md-ellipsis">
+      Contact
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Contact">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#adresse" class="md-nav__link">
+    <span class="md-ellipsis">
+      Adresse
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#tel-fax" class="md-nav__link">
+    <span class="md-ellipsis">
+      Tél / Fax
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#adresse-email" class="md-nav__link">
+    <span class="md-ellipsis">
+      Adresse Email
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#type-dadresse" class="md-nav__link">
+    <span class="md-ellipsis">
+      Type d’adresse
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#information-complementaire" class="md-nav__link">
+    <span class="md-ellipsis">
+      Information complémentaire
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Information complémentaire">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#culture-populaire" class="md-nav__link">
+    <span class="md-ellipsis">
+      Culture populaire
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#groupe-de-gens" class="md-nav__link">
+    <span class="md-ellipsis">
+      Groupe de gens
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#groupe-linguistique" class="md-nav__link">
+    <span class="md-ellipsis">
+      Groupe linguistique
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#note-biographique-sur-les-personnes" class="md-nav__link">
+    <span class="md-ellipsis">
+      Note biographique sur les personnes
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#dates-essentielles" class="md-nav__link">
+    <span class="md-ellipsis">
+      Dates essentielles
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#genre" class="md-nav__link">
+    <span class="md-ellipsis">
+      Genre
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#nationalite-dune-personne" class="md-nav__link">
+    <span class="md-ellipsis">
+      Nationalité d'une personne
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#emploi-dune-personne" class="md-nav__link">
+    <span class="md-ellipsis">
+      Emploi d'une personne
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#salutation" class="md-nav__link">
+    <span class="md-ellipsis">
+      Salutation
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#son-style-ecole" class="md-nav__link">
+    <span class="md-ellipsis">
+      Son style / école
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#liens" class="md-nav__link">
+    <span class="md-ellipsis">
+      Liens
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Liens">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#nom-du-site-web" class="md-nav__link">
+    <span class="md-ellipsis">
+      Nom du site web
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#url" class="md-nav__link">
+    <span class="md-ellipsis">
+      URL
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          
+            <div class="md-content" data-md-component="content">
+              <article class="md-content__inner md-typeset">
+                
+                  
+
+  
+  
+
+
+<h1 id="3-la-saisie-dune-entite-dans-collectiveaccess">3. La saisie d’une entité dans CollectiveAccess<a class="headerlink" href="#3-la-saisie-dune-entite-dans-collectiveaccess" title="Permanent link">¶</a></h1>
+<p>Dans CollectiveAccess, les entités (personnes physiques ou morales) sont gérées comme des autorités, c'est à dire des enregistrements autonomes qui sont ensuite liés à un ou plusieurs autres enregistrements : objets, entités, lieux, etc.. </p>
+<h2 id="comment-creer-une-entite">Comment créer une entité ?<a class="headerlink" href="#comment-creer-une-entite" title="Permanent link">¶</a></h2>
+<p>Pour créer une entité  :</p>
+<ul>
+<li>Depuis l’objet, lors de la saisie d’une personne liée, si celle-ci n’est pas déjà présente dans la base, CollectiveAccess vous propose de la créer au fil de l’eau. L’entité nouvellement créée alimente directement le fichier des entités.</li>
+</ul>
+<p>Sinon :</p>
+<ul>
+<li>Cliquez sur le menu « Nouveau » dans la barre de navigation principale.</li>
+<li>Sélectionnez « Entité » dans le menu déroulant, puis choisissez un type (Famille, Personne physique, organisation etc...) pour créer un nouvel enregistrement.
+<em>NB : la liste des types d'entités dépend de votre paramétrage. (cf. support de cours administration de CollectiveAccess)</em></li>
+</ul>
+<h2 id="ecrans-de-saisie">Ecrans de saisie<a class="headerlink" href="#ecrans-de-saisie" title="Permanent link">¶</a></h2>
+<p>Les écrans contiennent les champs d'informations nécessaires à la création d'une nouvelle entité.<sup id="fnref:1"><a class="footnote-ref" href="#fn:1">1</a></sup> </p>
+<ul>
+<li><a href="#information-basique">les informations de base</a></li>
+<li><a href="#media">les médias</a></li>
+<li><a href="#contact">les informations de contact</a></li>
+<li><a href="#information-complementaire">les informations complémentaires</a></li>
+<li><a href="#liens">les liens avec d'autres sites</a></li>
+</ul>
+<h3 id="informations-de-base-informations-basiques">Informations de base (Informations basiques)<a class="headerlink" href="#informations-de-base-informations-basiques" title="Permanent link">¶</a></h3>
+<p>Cet écran contient les informations élémentaires pour démarrer un nouvel enregistrement.</p>
+<h4 id="nom">Nom<a class="headerlink" href="#nom" title="Permanent link">¶</a></h4>
+<p>Saisissez un nom de famille (champ obligatoire), un prénom, éventuellement un préfixe et/ou un suffixe ; par défaut le sous-champ « nom pour l’affichage » sera constitué du prénom suivi du nom, si vous souhaitez le modifier, saisissez la valeur souhaitée dans la case.
+<a href="../Introduction/#texte-text"><img alt="Nom" src="../Images_Entite/Nom.png" /></a></p>
+<h4 id="precisions-sur-lentite">Précisions sur l'entité<a class="headerlink" href="#precisions-sur-lentite" title="Permanent link">¶</a></h4>
+<p>Indiquez ici les précisions que vous souhaitez apporter.
+<a href="../Introduction/#texte-text"><img alt="Precisions_Entite" src="../Images_Entite/Precisions_Entite.png" /></a></p>
+<h4 id="identifiant-de-personne">Identifiant de personne<a class="headerlink" href="#identifiant-de-personne" title="Permanent link">¶</a></h4>
+<p>Il s’agit de l’identifiant de l’entité, celui-ci peut être généré automatiquement ; il sera rempli du numéro d’autorité en cas d’import.
+<a href="../Introduction/#texte-text"><img alt="Identifiant_Personne" src="../Images_Entite/Identifiant_Personne.png" /></a></p>
+<h4 id="acces">Accès<a class="headerlink" href="#acces" title="Permanent link">¶</a></h4>
+<p>Sélectionnez si vous souhaitez que l’entité soit accessible au public ou non.
+<a href="../Introduction/#1-liste-deroulante"><img alt="Acces" src="../Images_Entite/Acces.png" /></a></p>
+<h4 id="statut">Statut<a class="headerlink" href="#statut" title="Permanent link">¶</a></h4>
+<p>Sélectionnez le statut de création de l'entité.
+<a href="../Introduction/#1-liste-deroulante"><img alt="Statut" src="../Images_Entite/Statut.png" /></a></p>
+<h3 id="media">Média<a class="headerlink" href="#media" title="Permanent link">¶</a></h3>
+<p>Ajoutez ici toute représentation média que vous jugerez utile à afficher/conserver en lien avec l’entité.</p>
+<p>Cliquez sur "choisir un fichier" puis sélectionnez un document pour l'ajouter
+<img alt="Media" src="../Images_Entite/Media.png" /></p>
+<h3 id="contact">Contact<a class="headerlink" href="#contact" title="Permanent link">¶</a></h3>
+<p>Cet écran vous permet de saisir les coordonnées de l’entité personne physique ou organisation.</p>
+<h4 id="adresse">Adresse<a class="headerlink" href="#adresse" title="Permanent link">¶</a></h4>
+<p>Saisissez les deux lignes d'adresse, la ville, le pays et le code postal de l'entité
+<a href="../Introduction/#texte-text"><img alt="Adresse" src="../Images_Entite/Adresse.png" /></a></p>
+<h4 id="tel-fax">Tél / Fax<a class="headerlink" href="#tel-fax" title="Permanent link">¶</a></h4>
+<p>Saisissez le numéro de Téléphone de l'entité
+<a href="../Introduction/#texte-text"><img alt="Telephone" src="../Images_Entite/Telephone.png" /></a></p>
+<h4 id="adresse-email">Adresse Email<a class="headerlink" href="#adresse-email" title="Permanent link">¶</a></h4>
+<p>Indiquez ici l'adresse e-mail de l'entité
+<a href="../Introduction/#texte-text"><img alt="Adresse_Email" src="../Images_Entite/Adresse_Email.png" /></a></p>
+<h4 id="type-dadresse">Type d’adresse<a class="headerlink" href="#type-dadresse" title="Permanent link">¶</a></h4>
+<p>Choisissez le type d'adresse de l'entité 
+<a href="../Introduction/#1-liste-deroulante"><img alt="Type_Adresse" src="../Images_Entite/Type_Adresse.png" /></a></p>
+<h3 id="information-complementaire">Information complémentaire<a class="headerlink" href="#information-complementaire" title="Permanent link">¶</a></h3>
+<p>Vous pouvez donnez ici des compléments d’information sur l’entité :</p>
+<h4 id="culture-populaire">Culture populaire<a class="headerlink" href="#culture-populaire" title="Permanent link">¶</a></h4>
+<p>Saisissez ici la civilisation à laquelle l'entité est associé
+<a href="../Introduction/#texte-text"><img alt="Culture_Populaire" src="../Images_Entite/Culture_Populaire.png" /></a></p>
+<h4 id="groupe-de-gens">Groupe de gens<a class="headerlink" href="#groupe-de-gens" title="Permanent link">¶</a></h4>
+<p>Saisissez ici la communauté à laquelle l'entité est associé
+<a href="../Introduction/#texte-text"><img alt="Groupe_Gens" src="../Images_Entite/Groupe_Gens.png" /></a></p>
+<h4 id="groupe-linguistique">Groupe linguistique<a class="headerlink" href="#groupe-linguistique" title="Permanent link">¶</a></h4>
+<p>La langue parlée par l'entité 
+<a href="../Introduction/#1-liste-deroulante"><img alt="Groupe_Linguistique" src="../Images_Entite/Groupe_Linguistique.png" /></a></p>
+<h4 id="note-biographique-sur-les-personnes">Note biographique sur les personnes<a class="headerlink" href="#note-biographique-sur-les-personnes" title="Permanent link">¶</a></h4>
+<p>Information concernant l'histoire de l'entité
+<a href="../Introduction/#texte-text"><img alt="Note_Biographique" src="../Images_Entite/Note_Biographique.png" /></a></p>
+<h4 id="dates-essentielles">Dates essentielles<a class="headerlink" href="#dates-essentielles" title="Permanent link">¶</a></h4>
+<p>Indiquez ici la date de naissance et de mort de l'entité
+<a href="../Introduction/#date-daterange"><img alt="Dates_Essentielles" src="../Images_Entite/Dates_Essentielles.png" /></a></p>
+<h4 id="genre">Genre<a class="headerlink" href="#genre" title="Permanent link">¶</a></h4>
+<p>Précisez ici le genre de l'entité
+<a href="../Introduction/#1-liste-deroulante"><img alt="Genre" src="../Images_Entite/Genre.png" /></a></p>
+<h4 id="nationalite-dune-personne">Nationalité d'une personne<a class="headerlink" href="#nationalite-dune-personne" title="Permanent link">¶</a></h4>
+<p>Notez ici la nationalité de l'entité
+<a href="../Introduction/#texte-text"><img alt="Nationalite" src="../Images_Entite/Nationalite.png" /></a></p>
+<h4 id="emploi-dune-personne">Emploi d'une personne<a class="headerlink" href="#emploi-dune-personne" title="Permanent link">¶</a></h4>
+<p>Saisissez l'emploi de l'entité
+<a href="../Introduction/#texte-text"><img alt="Emploi" src="../Images_Entite/Emploi.png" /></a></p>
+<h4 id="salutation">Salutation<a class="headerlink" href="#salutation" title="Permanent link">¶</a></h4>
+<p>Terme utilisé pour désigner l'entité (Monsieur, Madame, Docteur, etc..)
+<a href="../Introduction/#texte-text"><img alt="Salutation" src="../Images_Entite/Salutation.png" /></a></p>
+<h4 id="son-style-ecole">Son style / école<a class="headerlink" href="#son-style-ecole" title="Permanent link">¶</a></h4>
+<p>Ce champ est lié au thesaurus « style / école » fourni par le Service des Musées de France
+<a href="../Introduction/#1-liste-deroulante"><img alt="Style" src="../Images_Entite/Style.png" /></a></p>
+<h3 id="liens">Liens<a class="headerlink" href="#liens" title="Permanent link">¶</a></h3>
+<p>Vous pouvez relier l'entité à un (ou plusieurs) site(s) web(s)</p>
+<h4 id="nom-du-site-web">Nom du site web<a class="headerlink" href="#nom-du-site-web" title="Permanent link">¶</a></h4>
+<p>Donner le nom du site de l'entité</p>
+<h4 id="url">URL<a class="headerlink" href="#url" title="Permanent link">¶</a></h4>
+<p>Donner le lien pour accéder au site de l'entité</p>
+<p><a href="../Introduction/#texte-text"><img alt="Liens_Externes" src="../Images_Entite/Liens_Externes.png" /></a></p>
+<div class="footnote">
+<hr />
+<ol>
+<li id="fn:1">
+<p>les champs et écrans de saisie sont entièrement paramétrable (cf. support de cours administration de CollectiveAccess).&#160;<a class="footnote-backref" href="#fnref:1" title="Jump back to footnote 1 in the text">&#8617;</a></p>
+</li>
+</ol>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+                
+              </article>
+            </div>
+          
+          
+<script>var target=document.getElementById(location.hash.slice(1));target&&target.name&&(target.checked=target.name.startsWith("__tabbed_"))</script>
+        </div>
+        
+      </main>
+      
+        <footer class="md-footer">
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-copyright">
+  
+  
+    Made with
+    <a href="https://squidfunk.github.io/mkdocs-material/" target="_blank" rel="noopener">
+      Material for MkDocs
+    </a>
+  
+</div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    
+    
+    <script id="__config" type="application/json">{"base": "..", "features": [], "search": "../assets/javascripts/workers/search.b8dbb3d2.min.js", "translations": {"clipboard.copied": "Copi\u00e9 dans le presse-papier", "clipboard.copy": "Copier dans le presse-papier", "search.result.more.one": "1 de plus sur cette page", "search.result.more.other": "# de plus sur cette page", "search.result.none": "Aucun document trouv\u00e9", "search.result.one": "1 document trouv\u00e9", "search.result.other": "# documents trouv\u00e9s", "search.result.placeholder": "Taper pour d\u00e9marrer la recherche", "search.result.term.missing": "Non trouv\u00e9", "select.version": "S\u00e9lectionner la version"}}</script>
+    
+    
+      <script src="../assets/javascripts/bundle.caa56a14.min.js"></script>
+      
+    
+  </body>
+</html>

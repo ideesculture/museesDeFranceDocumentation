@@ -3,7 +3,7 @@ site_name: Guide utilisateur CollectiveAccess
 site_description: 'Documentation pour les utilisateurs de CollectiveAccess avec le plugin Musées De France'
 site_author: 'idéesculture'
 
-pages:
+nav:
 - Accueil: index.md
 - Utilisation de CollectiveAccess :
     - I. Connexion et démarrage dans Providence: chapterXI_connexion_demarrage.md
@@ -26,7 +26,7 @@ pages:
 - Génération de cette documentation :
     - Logiciels utilisés: tech_logiciels.md
     - Installation: tech_install.md
-
+    - Crédits: credits.md
 
 # Repository
 repo_name: 'GitHub'
@@ -59,12 +59,3 @@ markdown_extensions:
   - toc:
       permalink: '¶'
 
-# Plugins
-plugins:
- - mkpdfs:
-    company: IdéesCulture SAS
-    author: Equipe IdéesCulture
-    toc_title: Table des matières
-    toc_position: pre
-    output_path: pdf/documentation.pdf
-    design: mkpdfs-design/report.css

@@ -2,7 +2,7 @@
 
 ## Publication sur Github Pages
 
-```mkdocs gh-deploy```
+```mkdocs gh-deploy --remote-branch gh-pages```
 
 ## Installation des outils de développement de la documentation
 

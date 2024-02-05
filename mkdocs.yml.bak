@@ -3,85 +3,68 @@ site_name: Guide utilisateur CollectiveAccess
 site_description: 'Documentation pour les utilisateurs de CollectiveAccess avec le plugin Musées De France'
 site_author: 'idéesculture'
 
-nav:
+pages:
 - Accueil: index.md
-- Guide utilisateur Providence:
-    - 1. Introduction: chapter1.md
-    - 2. Structure de la base de données: chapter2.md
-    - 3. Connexion et démarrage dans Providence: chapter3.md
-    - 4. La gestion des recherches: chapter4.md
-    - 5. Création d’un affichage personnalisé: chapaffichage.md
-    - 6. Création d’un formulaire de recherche avancée: chapformrech.md
-    - 7. La saisie d'un objet dans CollectiveAccess: chapter5.md
-    - 8. La saisie d'une entité dans CollectiveAccess: chapter6.md
-    - 9. La saisie des lieux dans CollectiveAccess: chapter7.md
-- Inventaire Musées de France:
-    - 1. Introduction: museesDeFrance/Introduction.md
-    - 2. Catalogage des objets mobiliers dans CollectiveAccess: museesDeFrance/Inventaire.md
-    - 3. Impression: museesDeFrance/Impression.md
-    - 4. Règles d'inventaire: museesDeFrance/Regles.md
+- Utilisation de CollectiveAccess :
+    - I. Connexion et démarrage dans Providence: chapterXI_connexion_demarrage.md
+    - II. Recherche: chapterII_recherche.md
+    - III. Effectuer un traitement par lots: chapterIII_traitements_lots.md
+    - IV. Paramétrage des grilles de saisie: chapterIX_parametrage_grille_saisie.md
+    - V. Paramétrage des listes de vocabulaire: chapterX_Parametrage_listes_vocabulaire.md
+    - VI. Ajouter un objet 3D dans Providence (avec Sketchfab): chapterIV_objet_modelise.md
+    - VII. Importer des médias en lot: chapterVIII_Import_medias_lot.md
+    - VIII. Utiliser Grav comme CMS à côté de CollectiveAccess : chapterVII_configuration_site_internet.md
+- Saisie Joconde :
+    - Introduction : Decrire_Objets_Joconde.md 
+    - I. Présentation de la saisie Joconde: Introduction.md
+    - II. Objets: Saisie_Joconde.md
+    - III. Entités: Saisie_Entite.md
+    - IV. Lieux: Saisie_Lieux.md
+    - V. Récolement: Recolement.md
+    - VI. Export Joconde: Export_Joconde.md
+    - VII. Registre des biens affectés/déposés: Registre_biens.md
+- Génération de cette documentation :
+    - Logiciels utilisés: tech_logiciels.md
+    - Installation: tech_install.md
+
 
 # Repository
 repo_name: 'GitHub'
-repo_url: 'https://github.com/ideesculture/museesDeFranceDocumentation'
-edit_uri: 'edit/main/docs/'
-# Configuration
+repo_url: 'http://github.com/ideesculture/museesDeFranceDocumentation'
+
 theme:
   name: material
-  custom_dir: overrides
-  # Static files
-  static_templates:
-    - 404.html
-
-  # Don't include MkDocs' JavaScript
-  include_search_page: false
-  search_index_only: true
-
-  # Default values, taken from mkdocs_theme.yml
   language: fr
-  features:
-    # - navigation.instant
-    - navigation.sections
-    - navigation.tabs
   palette:
-    scheme: default
     primary: orange
-    accent: orange
-  font:
-    text: Roboto
-    code: Roboto Mono
-  favicon: assets/favicon.png
-  icon:
-    logo: logo
-
-# Options
-extra:
-  version: '1.0'
   logo: 'images/logo.png'
-  author:
-    github: 'ideesculture'
-    twitter: 'ideesculture'
-  faq:
-    url: 'https://ideesculture.zendesk.com/hc/fr'
+  extra:
+    generator: false
+    version: '1.0'
+    author:
+      github: 'ideesculture'
+      twitter: 'ideesculture'
+    faq:
+      url: 'https://ideesculture.zendesk.com/hc/fr'
+    
+  copyright: 2021 IdéesCulture
+
+
 # Extensions
 markdown_extensions:
   - pymdownx.highlight
   - pymdownx.superfences
   - admonition
+  - footnotes
   - toc:
       permalink: '¶'
 
-# Copyright
-copyright: © 2021
-
-# Customization
-extra:
-  social:
-    - icon: fontawesome/brands/github
-      link: https://github.com/ideesculture
-    - icon: fontawesome/brands/twitter
-      link: https://twitter.com/ideesculture
-    - icon: fontawesome/brands/linkedin
-      link: https://linkedin.com/company/idéesculture/
-    - icon: fontawesome/brands/youtube
-      link: https://www.youtube.com/user/ideesculture      
+# Plugins
+plugins:
+ - mkpdfs:
+    company: IdéesCulture SAS
+    author: Equipe IdéesCulture
+    toc_title: Table des matières
+    toc_position: pre
+    output_path: pdf/documentation.pdf
+    design: mkpdfs-design/report.css
