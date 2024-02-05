@@ -1,894 +1,1958 @@
 
-<!DOCTYPE html>
+<!doctype html>
+<html lang="fr" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+        <meta name="description" content="Documentation pour les utilisateurs de CollectiveAccess avec le plugin Musées De France">
+      
+      
+        <meta name="author" content="idéesculture">
+      
+      
+      
+        <link rel="prev" href="../Saisie_Lieux/">
+      
+      
+        <link rel="next" href="../Export_Joconde/">
+      
+      
+      <link rel="icon" href="../assets/images/favicon.png">
+      <meta name="generator" content="mkdocs-1.5.3, mkdocs-material-9.5.7">
+    
+    
+      
+        <title>V. Récolement - Guide utilisateur CollectiveAccess</title>
+      
+    
+    
+      <link rel="stylesheet" href="../assets/stylesheets/main.f2e4d321.min.css">
+      
+        
+        <link rel="stylesheet" href="../assets/stylesheets/palette.06af60db.min.css">
+      
+      
 
-<html class="no-js" lang="fr">
-<head>
-<meta charset="utf-8"/>
-<meta content="width=device-width,initial-scale=1" name="viewport"/>
-<meta content="ie=edge" http-equiv="x-ua-compatible"/>
-<meta content="Documentation pour les utilisateurs de CollectiveAccess avec le plugin Musées De France" name="description"/>
-<meta content="idéesculture" name="author"/>
-<meta content="Copier dans le presse-papier" name="lang:clipboard.copy"/>
-<meta content="Copié dans le presse-papier" name="lang:clipboard.copied"/>
-<meta content="fr" name="lang:search.language"/>
-<meta content="True" name="lang:search.pipeline.stopwords"/>
-<meta content="True" name="lang:search.pipeline.trimmer"/>
-<meta content="Aucun document trouvé" name="lang:search.result.none"/>
-<meta content="1 document trouvé" name="lang:search.result.one"/>
-<meta content="# documents trouvés" name="lang:search.result.other"/>
-<meta content="[\s\-]+" name="lang:search.tokenizer"/>
-<link href="../assets/images/favicon.png" rel="shortcut icon"/>
-<meta content="mkdocs-1.0.4, mkdocs-material-4.6.3" name="generator"/>
-<title>V. Récolement - Guide utilisateur CollectiveAccess</title>
-<link href="../assets/stylesheets/application.adb8469c.css" rel="stylesheet"/>
-<link href="../assets/stylesheets/application-palette.a8b3c06d.css" rel="stylesheet"/>
-<meta content="#fb8c00" name="theme-color"/>
-<script src="../assets/javascripts/modernizr.86422ebf.js"></script>
-<link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
-<link href="https://fonts.googleapis.com/css?family=Roboto:300,400,400i,700%7CRoboto+Mono&amp;display=fallback" rel="stylesheet"/>
-<style>body,input{font-family:"Roboto","Helvetica Neue",Helvetica,Arial,sans-serif}code,kbd,pre{font-family:"Roboto Mono","Courier New",Courier,monospace}</style>
-<link href="../assets/fonts/material-icons.css" rel="stylesheet"/>
-</head>
-<body data-md-color-accent="" data-md-color-primary="orange" dir="ltr">
-<svg class="md-svg">
-<defs>
-<svg height="448" id="__github" viewbox="0 0 416 448" width="416" xmlns="http://www.w3.org/2000/svg"><path d="M160 304q0 10-3.125 20.5t-10.75 19T128 352t-18.125-8.5-10.75-19T96 304t3.125-20.5 10.75-19T128 256t18.125 8.5 10.75 19T160 304zm160 0q0 10-3.125 20.5t-10.75 19T288 352t-18.125-8.5-10.75-19T256 304t3.125-20.5 10.75-19T288 256t18.125 8.5 10.75 19T320 304zm40 0q0-30-17.25-51T296 232q-10.25 0-48.75 5.25Q229.5 240 208 240t-39.25-2.75Q130.75 232 120 232q-29.5 0-46.75 21T56 304q0 22 8 38.375t20.25 25.75 30.5 15 35 7.375 37.25 1.75h42q20.5 0 37.25-1.75t35-7.375 30.5-15 20.25-25.75T360 304zm56-44q0 51.75-15.25 82.75-9.5 19.25-26.375 33.25t-35.25 21.5-42.5 11.875-42.875 5.5T212 416q-19.5 0-35.5-.75t-36.875-3.125-38.125-7.5-34.25-12.875T37 371.5t-21.5-28.75Q0 312 0 260q0-59.25 34-99-6.75-20.5-6.75-42.5 0-29 12.75-54.5 27 0 47.5 9.875t47.25 30.875Q171.5 96 212 96q37 0 70 8 26.25-20.5 46.75-30.25T376 64q12.75 25.5 12.75 54.5 0 21.75-6.75 42 34 40 34 99.5z" fill="currentColor"></path></svg>
-</defs>
-</svg>
-<input autocomplete="off" class="md-toggle" data-md-toggle="drawer" id="__drawer" type="checkbox"/>
-<input autocomplete="off" class="md-toggle" data-md-toggle="search" id="__search" type="checkbox"/>
-<label class="md-overlay" data-md-component="overlay" for="__drawer"></label>
-<a class="md-skip" href="#5-le-recolement-dans-collectiveaccess" tabindex="0">
-        Skip to content
-      </a>
-<header class="md-header" data-md-component="header">
-<nav class="md-header-nav md-grid">
-<div class="md-flex">
-<div class="md-flex__cell md-flex__cell--shrink">
-<a aria-label="Guide utilisateur CollectiveAccess" class="md-header-nav__button md-logo" href=".." title="Guide utilisateur CollectiveAccess">
-<img alt="logo" height="24" src="../images/logo.png" width="24"/>
-</a>
+
+    
+    
+      
+    
+    
+      
+        
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,700,700i%7CRoboto+Mono:400,400i,700,700i&display=fallback">
+        <style>:root{--md-text-font:"Roboto";--md-code-font:"Roboto Mono"}</style>
+      
+    
+    
+    <script>__md_scope=new URL("..",location),__md_hash=e=>[...e].reduce((e,_)=>(e<<5)-e+_.charCodeAt(0),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    
+      
+
+    
+    
+    
+  </head>
+  
+  
+    
+    
+    
+    
+    
+    <body dir="ltr" data-md-color-scheme="default" data-md-color-primary="orange" data-md-color-accent="indigo">
+  
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#5-le-recolement-dans-collectiveaccess" class="md-skip">
+          Aller au contenu
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+    
+      
+
+  
+
+<header class="md-header md-header--shadow" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="En-tête">
+    <a href=".." title="Guide utilisateur CollectiveAccess" class="md-header__button md-logo" aria-label="Guide utilisateur CollectiveAccess" data-md-component="logo">
+      
+  <img src="../images/logo.png" alt="logo">
+
+    </a>
+    <label class="md-header__button md-icon" for="__drawer">
+      
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3V6m0 5h18v2H3v-2m0 5h18v2H3v-2Z"/></svg>
+    </label>
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <span class="md-ellipsis">
+            Guide utilisateur CollectiveAccess
+          </span>
+        </div>
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
+            
+              V. Récolement
+            
+          </span>
+        </div>
+      </div>
+    </div>
+    
+      
+    
+    
+    
+    
+      <label class="md-header__button md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5Z"/></svg>
+      </label>
+      <div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" aria-label="Rechercher" placeholder="Rechercher" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
+      <label class="md-search__icon md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5Z"/></svg>
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12Z"/></svg>
+      </label>
+      <nav class="md-search__options" aria-label="Recherche">
+        
+        <button type="reset" class="md-search__icon md-icon" title="Effacer" aria-label="Effacer" tabindex="-1">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12 19 6.41Z"/></svg>
+        </button>
+      </nav>
+      
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
+            Initialisation de la recherche
+          </div>
+          <ol class="md-search-result__list" role="presentation"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
 </div>
-<div class="md-flex__cell md-flex__cell--shrink">
-<label class="md-icon md-icon--menu md-header-nav__button" for="__drawer"></label>
-</div>
-<div class="md-flex__cell md-flex__cell--stretch">
-<div class="md-flex__ellipsis md-header-nav__title" data-md-component="title">
-<span class="md-header-nav__topic">
-              Guide utilisateur CollectiveAccess
-            </span>
-<span class="md-header-nav__topic">
-              
-                V. Récolement
-              
-            </span>
-</div>
-</div>
-<div class="md-flex__cell md-flex__cell--shrink">
-</div>
-<div class="md-flex__cell md-flex__cell--shrink">
-<div class="md-header-nav__source">
-<a class="md-source" data-md-source="github" href="http://github.com/ideesculture/museesDeFranceDocumentation/" title="Aller au dépôt">
-<div class="md-source__icon">
-<svg height="24" viewbox="0 0 24 24" width="24">
-<use height="24" width="24" xlink:href="#__github"></use>
-</svg>
-</div>
-<div class="md-source__repository">
+    
+    
+      <div class="md-header__source">
+        <a href="http://github.com/ideesculture/museesDeFranceDocumentation" title="Aller au dépôt" class="md-source" data-md-component="source">
+  <div class="md-source__icon md-icon">
+    
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 6.5.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2023 Fonticons, Inc.--><path d="M439.55 236.05 244 40.45a28.87 28.87 0 0 0-40.81 0l-40.66 40.63 51.52 51.52c27.06-9.14 52.68 16.77 43.39 43.68l49.66 49.66c34.23-11.8 61.18 31 35.47 56.69-26.49 26.49-70.21-2.87-56-37.34L240.22 199v121.85c25.3 12.54 22.26 41.85 9.08 55a34.34 34.34 0 0 1-48.55 0c-17.57-17.6-11.07-46.91 11.25-56v-123c-20.8-8.51-24.6-30.74-18.64-45L142.57 101 8.45 235.14a28.86 28.86 0 0 0 0 40.81l195.61 195.6a28.86 28.86 0 0 0 40.8 0l194.69-194.69a28.86 28.86 0 0 0 0-40.81z"/></svg>
+  </div>
+  <div class="md-source__repository">
     GitHub
   </div>
 </a>
-</div>
-</div>
-</div>
-</nav>
+      </div>
+    
+  </nav>
+  
 </header>
-<div class="md-container">
-<main class="md-main" role="main">
-<div class="md-main__inner md-grid" data-md-component="container">
-<div class="md-sidebar md-sidebar--primary" data-md-component="navigation">
-<div class="md-sidebar__scrollwrap">
-<div class="md-sidebar__inner">
-<nav class="md-nav md-nav--primary" data-md-level="0">
-<label class="md-nav__title md-nav__title--site" for="__drawer">
-<a class="md-nav__button md-logo" href=".." title="Guide utilisateur CollectiveAccess">
-<img alt="logo" height="48" src="../images/logo.png" width="48"/>
-</a>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+          
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+
+
+<nav class="md-nav md-nav--primary" aria-label="Navigation" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href=".." title="Guide utilisateur CollectiveAccess" class="md-nav__button md-logo" aria-label="Guide utilisateur CollectiveAccess" data-md-component="logo">
+      
+  <img src="../images/logo.png" alt="logo">
+
+    </a>
     Guide utilisateur CollectiveAccess
   </label>
-<div class="md-nav__source">
-<a class="md-source" data-md-source="github" href="http://github.com/ideesculture/museesDeFranceDocumentation/" title="Aller au dépôt">
-<div class="md-source__icon">
-<svg height="24" viewbox="0 0 24 24" width="24">
-<use height="24" width="24" xlink:href="#__github"></use>
-</svg>
-</div>
-<div class="md-source__repository">
+  
+    <div class="md-nav__source">
+      <a href="http://github.com/ideesculture/museesDeFranceDocumentation" title="Aller au dépôt" class="md-source" data-md-component="source">
+  <div class="md-source__icon md-icon">
+    
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 6.5.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2023 Fonticons, Inc.--><path d="M439.55 236.05 244 40.45a28.87 28.87 0 0 0-40.81 0l-40.66 40.63 51.52 51.52c27.06-9.14 52.68 16.77 43.39 43.68l49.66 49.66c34.23-11.8 61.18 31 35.47 56.69-26.49 26.49-70.21-2.87-56-37.34L240.22 199v121.85c25.3 12.54 22.26 41.85 9.08 55a34.34 34.34 0 0 1-48.55 0c-17.57-17.6-11.07-46.91 11.25-56v-123c-20.8-8.51-24.6-30.74-18.64-45L142.57 101 8.45 235.14a28.86 28.86 0 0 0 0 40.81l195.61 195.6a28.86 28.86 0 0 0 40.8 0l194.69-194.69a28.86 28.86 0 0 0 0-40.81z"/></svg>
+  </div>
+  <div class="md-source__repository">
     GitHub
   </div>
 </a>
-</div>
-<ul class="md-nav__list" data-md-scrollfix="">
-<li class="md-nav__item">
-<a class="md-nav__link" href=".." title="Accueil">
-      Accueil
-    </a>
-</li>
-<li class="md-nav__item md-nav__item--nested">
-<input class="md-toggle md-nav__toggle" data-md-toggle="nav-2" id="nav-2" type="checkbox"/>
-<label class="md-nav__link" for="nav-2">
-      Utilisation de CollectiveAccess
+    </div>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href=".." class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Accueil
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2" >
+        
+          
+          <label class="md-nav__link" for="__nav_2" id="__nav_2_label" tabindex="0">
+            
+  
+  <span class="md-ellipsis">
+    Utilisation de CollectiveAccess
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_2_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_2">
+            <span class="md-nav__icon md-icon"></span>
+            Utilisation de CollectiveAccess
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../chapterXI_connexion_demarrage/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    I. Connexion et démarrage dans Providence
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../chapterII_recherche/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    II. Recherche
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../chapterIII_traitements_lots/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    III. Effectuer un traitement par lots
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../chapterIX_parametrage_grille_saisie/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    IV. Paramétrage des grilles de saisie
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../chapterX_Parametrage_listes_vocabulaire/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    V. Paramétrage des listes de vocabulaire
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../chapterIV_objet_modelise/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    VI. Ajouter un objet 3D dans Providence (avec Sketchfab)
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../chapterVIII_Import_medias_lot/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    VII. Importer des médias en lot
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../chapterVII_configuration_site_internet/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    VIII. Utiliser Grav comme CMS à côté de CollectiveAccess
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+    
+  
+  
+  
+    
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
+      
+        
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3" checked>
+        
+          
+          <label class="md-nav__link" for="__nav_3" id="__nav_3_label" tabindex="0">
+            
+  
+  <span class="md-ellipsis">
+    Saisie Joconde
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_3_label" aria-expanded="true">
+          <label class="md-nav__title" for="__nav_3">
+            <span class="md-nav__icon md-icon"></span>
+            Saisie Joconde
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../Decrire_Objets_Joconde/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Introduction
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../Introduction/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    I. Présentation de la saisie Joconde
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../Saisie_Joconde/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    II. Objets
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../Saisie_Entite/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    III. Entités
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../Saisie_Lieux/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    IV. Lieux
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+    
+  
+  
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  <span class="md-ellipsis">
+    V. Récolement
+  </span>
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
+        
+  
+  <span class="md-ellipsis">
+    V. Récolement
+  </span>
+  
+
+      </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table des matières">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table des matières
     </label>
-<nav class="md-nav" data-md-component="collapsible" data-md-level="1">
-<label class="md-nav__title" for="nav-2">
-        Utilisation de CollectiveAccess
-      </label>
-<ul class="md-nav__list" data-md-scrollfix="">
-<li class="md-nav__item">
-<a class="md-nav__link" href="../chapterXI_connexion_demarrage/" title="I. Connexion et démarrage dans Providence">
-      I. Connexion et démarrage dans Providence
-    </a>
-</li>
-<li class="md-nav__item">
-<a class="md-nav__link" href="../chapterII_recherche/" title="II. Recherche">
-      II. Recherche
-    </a>
-</li>
-<li class="md-nav__item">
-<a class="md-nav__link" href="../chapterIII_traitements_lots/" title="III. Effectuer un traitement par lots">
-      III. Effectuer un traitement par lots
-    </a>
-</li>
-<li class="md-nav__item">
-<a class="md-nav__link" href="../chapterIX_parametrage_grille_saisie/" title="IV. Paramétrage des grilles de saisie">
-      IV. Paramétrage des grilles de saisie
-    </a>
-</li>
-<li class="md-nav__item">
-<a class="md-nav__link" href="../chapterX_Parametrage_listes_vocabulaire/" title="V. Paramétrage des listes de vocabulaire">
-      V. Paramétrage des listes de vocabulaire
-    </a>
-</li>
-<li class="md-nav__item">
-<a class="md-nav__link" href="../chapterIV_objet_modelise/" title="VI. Ajouter un objet 3D dans Providence (avec Sketchfab)">
-      VI. Ajouter un objet 3D dans Providence (avec Sketchfab)
-    </a>
-</li>
-<li class="md-nav__item">
-<a class="md-nav__link" href="../chapterVIII_Import_medias_lot/" title="VII. Importer des médias en lot">
-      VII. Importer des médias en lot
-    </a>
-</li>
-<li class="md-nav__item">
-<a class="md-nav__link" href="../chapterVII_configuration_site_internet/" title="VIII. Utiliser Grav comme CMS à côté de CollectiveAccess">
-      VIII. Utiliser Grav comme CMS à côté de CollectiveAccess
-    </a>
-</li>
-</ul>
-</nav>
-</li>
-<li class="md-nav__item md-nav__item--active md-nav__item--nested">
-<input checked="" class="md-toggle md-nav__toggle" data-md-toggle="nav-3" id="nav-3" type="checkbox"/>
-<label class="md-nav__link" for="nav-3">
-      Saisie Joconde
-    </label>
-<nav class="md-nav" data-md-component="collapsible" data-md-level="1">
-<label class="md-nav__title" for="nav-3">
-        Saisie Joconde
-      </label>
-<ul class="md-nav__list" data-md-scrollfix="">
-<li class="md-nav__item">
-<a class="md-nav__link" href="../Decrire_Objets_Joconde/" title="Introduction">
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#introduction" class="md-nav__link">
+    <span class="md-ellipsis">
       Introduction
-    </a>
-</li>
-<li class="md-nav__item">
-<a class="md-nav__link" href="../Introduction/" title="I. Présentation de la saisie Joconde">
-      I. Présentation de la saisie Joconde
-    </a>
-</li>
-<li class="md-nav__item">
-<a class="md-nav__link" href="../Saisie_Joconde/" title="II. Objets">
-      II. Objets
-    </a>
-</li>
-<li class="md-nav__item">
-<a class="md-nav__link" href="../Saisie_Entite/" title="III. Entités">
-      III. Entités
-    </a>
-</li>
-<li class="md-nav__item">
-<a class="md-nav__link" href="../Saisie_Lieux/" title="IV. Lieux">
-      IV. Lieux
-    </a>
-</li>
-<li class="md-nav__item md-nav__item--active">
-<input class="md-toggle md-nav__toggle" data-md-toggle="toc" id="__toc" type="checkbox"/>
-<label class="md-nav__link md-nav__link--active" for="__toc">
-        V. Récolement
-      </label>
-<a class="md-nav__link md-nav__link--active" href="./" title="V. Récolement">
-      V. Récolement
-    </a>
-<nav class="md-nav md-nav--secondary">
-<label class="md-nav__title" for="__toc">Table des matières</label>
-<ul class="md-nav__list" data-md-scrollfix="">
-<li class="md-nav__item">
-<a class="md-nav__link" href="#introduction">
-    Introduction
+    </span>
   </a>
+  
 </li>
-<li class="md-nav__item">
-<a class="md-nav__link" href="#comment-creer-une-campagne-de-recolement">
-    Comment créer une campagne de récolement ?
+      
+        <li class="md-nav__item">
+  <a href="#comment-creer-une-campagne-de-recolement" class="md-nav__link">
+    <span class="md-ellipsis">
+      Comment créer une campagne de récolement ?
+    </span>
   </a>
-<nav class="md-nav">
-<ul class="md-nav__list">
-<li class="md-nav__item">
-<a class="md-nav__link" href="#presentation-de-lecran-de-saisie">
-    Présentation de l'écran de saisie
+  
+    <nav class="md-nav" aria-label="Comment créer une campagne de récolement ?">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#presentation-de-lecran-de-saisie" class="md-nav__link">
+    <span class="md-ellipsis">
+      Présentation de l'écran de saisie
+    </span>
   </a>
-<nav class="md-nav">
-<ul class="md-nav__list">
-<li class="md-nav__item">
-<a class="md-nav__link" href="#nom-de-la-campagne">
-    Nom de la campagne
+  
+    <nav class="md-nav" aria-label="Présentation de l'écran de saisie">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#nom-de-la-campagne" class="md-nav__link">
+    <span class="md-ellipsis">
+      Nom de la campagne
+    </span>
   </a>
+  
 </li>
-<li class="md-nav__item">
-<a class="md-nav__link" href="#numero-de-la-campagne">
-    Numéro de la campagne
+        
+          <li class="md-nav__item">
+  <a href="#numero-de-la-campagne" class="md-nav__link">
+    <span class="md-ellipsis">
+      Numéro de la campagne
+    </span>
   </a>
+  
 </li>
-<li class="md-nav__item">
-<a class="md-nav__link" href="#recolement-decennal">
-    Récolement décennal
+        
+          <li class="md-nav__item">
+  <a href="#recolement-decennal" class="md-nav__link">
+    <span class="md-ellipsis">
+      Récolement décennal
+    </span>
   </a>
+  
 </li>
-<li class="md-nav__item">
-<a class="md-nav__link" href="#dates-previsionnelles-de-realisation-de-la-campagne">
-    Dates prévisionnelles de réalisation de la campagne
+        
+          <li class="md-nav__item">
+  <a href="#dates-previsionnelles-de-realisation-de-la-campagne" class="md-nav__link">
+    <span class="md-ellipsis">
+      Dates prévisionnelles de réalisation de la campagne
+    </span>
   </a>
+  
 </li>
-<li class="md-nav__item">
-<a class="md-nav__link" href="#dates-effectives-de-realisation-de-la-campagne">
-    Dates effectives de réalisation de la campagne
+        
+          <li class="md-nav__item">
+  <a href="#dates-effectives-de-realisation-de-la-campagne" class="md-nav__link">
+    <span class="md-ellipsis">
+      Dates effectives de réalisation de la campagne
+    </span>
   </a>
+  
 </li>
-<li class="md-nav__item">
-<a class="md-nav__link" href="#intervenants">
-    Intervenants
+        
+          <li class="md-nav__item">
+  <a href="#intervenants" class="md-nav__link">
+    <span class="md-ellipsis">
+      Intervenants
+    </span>
   </a>
+  
 </li>
-<li class="md-nav__item">
-<a class="md-nav__link" href="#contenu-scientifique-de-la-campagne">
-    Contenu scientifique de la campagne
+        
+          <li class="md-nav__item">
+  <a href="#contenu-scientifique-de-la-campagne" class="md-nav__link">
+    <span class="md-ellipsis">
+      Contenu scientifique de la campagne
+    </span>
   </a>
+  
 </li>
-<li class="md-nav__item">
-<a class="md-nav__link" href="#champs-couverts">
-    Champs couverts
+        
+          <li class="md-nav__item">
+  <a href="#champs-couverts" class="md-nav__link">
+    <span class="md-ellipsis">
+      Champs couverts
+    </span>
   </a>
+  
 </li>
-<li class="md-nav__item">
-<a class="md-nav__link" href="#methode-utilisee-pour-la-campagne">
-    Méthode utilisée pour la campagne
+        
+          <li class="md-nav__item">
+  <a href="#methode-utilisee-pour-la-campagne" class="md-nav__link">
+    <span class="md-ellipsis">
+      Méthode utilisée pour la campagne
+    </span>
   </a>
+  
 </li>
-<li class="md-nav__item">
-<a class="md-nav__link" href="#localisation">
-    Localisation
+        
+          <li class="md-nav__item">
+  <a href="#localisation" class="md-nav__link">
+    <span class="md-ellipsis">
+      Localisation
+    </span>
   </a>
+  
 </li>
-<li class="md-nav__item">
-<a class="md-nav__link" href="#caracterisation-de-lespace">
-    Caractérisation de l'espace
+        
+          <li class="md-nav__item">
+  <a href="#caracterisation-de-lespace" class="md-nav__link">
+    <span class="md-ellipsis">
+      Caractérisation de l'espace
+    </span>
   </a>
+  
 </li>
-<li class="md-nav__item">
-<a class="md-nav__link" href="#conditionnement-des-biens-a-recoler">
-    Conditionnement des biens à récoler
+        
+          <li class="md-nav__item">
+  <a href="#conditionnement-des-biens-a-recoler" class="md-nav__link">
+    <span class="md-ellipsis">
+      Conditionnement des biens à récoler
+    </span>
   </a>
+  
 </li>
-<li class="md-nav__item">
-<a class="md-nav__link" href="#accessibilite">
-    Accessibilité
+        
+          <li class="md-nav__item">
+  <a href="#accessibilite" class="md-nav__link">
+    <span class="md-ellipsis">
+      Accessibilité
+    </span>
   </a>
+  
 </li>
-<li class="md-nav__item">
-<a class="md-nav__link" href="#fiches-de-recolement-liees">
-    Fiches de récolement liées
+        
+          <li class="md-nav__item">
+  <a href="#fiches-de-recolement-liees" class="md-nav__link">
+    <span class="md-ellipsis">
+      Fiches de récolement liées
+    </span>
   </a>
+  
 </li>
-<li class="md-nav__item">
-<a class="md-nav__link" href="#date-du-pv">
-    Date du PV
+        
+          <li class="md-nav__item">
+  <a href="#date-du-pv" class="md-nav__link">
+    <span class="md-ellipsis">
+      Date du PV
+    </span>
   </a>
+  
 </li>
-<li class="md-nav__item">
-<a class="md-nav__link" href="#fichier-numerique-attache-a-la-campagne">
-    Fichier numérique attaché à la campagne
+        
+          <li class="md-nav__item">
+  <a href="#fichier-numerique-attache-a-la-campagne" class="md-nav__link">
+    <span class="md-ellipsis">
+      Fichier numérique attaché à la campagne
+    </span>
   </a>
+  
 </li>
-</ul>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#gerer-la-campagne" class="md-nav__link">
+    <span class="md-ellipsis">
+      Gérer la campagne
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Gérer la campagne">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#menu-des-campagnes" class="md-nav__link">
+    <span class="md-ellipsis">
+      Menu des campagnes
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Menu des campagnes">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#partie-gauche" class="md-nav__link">
+    <span class="md-ellipsis">
+      Partie Gauche
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#rafraichir" class="md-nav__link">
+    <span class="md-ellipsis">
+      Rafraîchir
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#tableau-de-progression" class="md-nav__link">
+    <span class="md-ellipsis">
+      Tableau de progression
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#recoler-un-objet" class="md-nav__link">
+    <span class="md-ellipsis">
+      Récoler un objet
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Récoler un objet">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#ecran-de-recolement-de-lobjet" class="md-nav__link">
+    <span class="md-ellipsis">
+      Écran de récolement de l'objet
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Écran de récolement de l'objet">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#objets-lies" class="md-nav__link">
+    <span class="md-ellipsis">
+      Objets liés
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#photographie-specifique-au-recolement" class="md-nav__link">
+    <span class="md-ellipsis">
+      Photographie spécifique au récolement
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#photographie-documentaire" class="md-nav__link">
+    <span class="md-ellipsis">
+      Photographie documentaire
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#numero-de-fiche-du-recolement-precedent" class="md-nav__link">
+    <span class="md-ellipsis">
+      Numéro de fiche du récolement précédent
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#n-de-fiche-de-recolement" class="md-nav__link">
+    <span class="md-ellipsis">
+      N° de fiche de récolement
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#nom-de-lobjet-recole" class="md-nav__link">
+    <span class="md-ellipsis">
+      Nom de l'objet récolé
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#presence-du-numero-dinventaire" class="md-nav__link">
+    <span class="md-ellipsis">
+      Présence du numéro d'inventaire
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#expertise-du-numero-dinventaire" class="md-nav__link">
+    <span class="md-ellipsis">
+      Expertise du numéro d'inventaire
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#presence-dun-autre-numero" class="md-nav__link">
+    <span class="md-ellipsis">
+      Présence d'un autre numéro
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#probleme-didentification" class="md-nav__link">
+    <span class="md-ellipsis">
+      Problème d'identification
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#presence-du-bien-dans-le-recolement-precedent" class="md-nav__link">
+    <span class="md-ellipsis">
+      Présence du bien dans le récolement précédent
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#presence-du-bien-dans-le-recolement-en-cours" class="md-nav__link">
+    <span class="md-ellipsis">
+      Présence du bien dans le récolement en cours
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#date-du-precedent-recolement" class="md-nav__link">
+    <span class="md-ellipsis">
+      Date du précédent récolement
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#date-du-recolement-en-cours" class="md-nav__link">
+    <span class="md-ellipsis">
+      Date du récolement en cours
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#localisation-dans-le-precedent-recolement" class="md-nav__link">
+    <span class="md-ellipsis">
+      Localisation dans le précédent récolement
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#localisation-dans-le-recolement-en-cours" class="md-nav__link">
+    <span class="md-ellipsis">
+      Localisation dans le récolement en cours
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#emplacements-lies" class="md-nav__link">
+    <span class="md-ellipsis">
+      Emplacements liés
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#campagne-liee" class="md-nav__link">
+    <span class="md-ellipsis">
+      Campagne liée
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#constat-detat" class="md-nav__link">
+    <span class="md-ellipsis">
+      Constat d'état
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#objet-inventorie-plusieurs-fois" class="md-nav__link">
+    <span class="md-ellipsis">
+      Objet inventorié plusieurs fois
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#conformite-avec-la-source" class="md-nav__link">
+    <span class="md-ellipsis">
+      Conformité avec la source
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#type-et-references-de-la-source" class="md-nav__link">
+    <span class="md-ellipsis">
+      Type et références de la source
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#inscriptions" class="md-nav__link">
+    <span class="md-ellipsis">
+      Inscriptions
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#recoleur" class="md-nav__link">
+    <span class="md-ellipsis">
+      Récoleur
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#date-de-visualisation" class="md-nav__link">
+    <span class="md-ellipsis">
+      Date de visualisation
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#date-de-validation-du-recolement" class="md-nav__link">
+    <span class="md-ellipsis">
+      Date de validation du récolement
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#valideur" class="md-nav__link">
+    <span class="md-ellipsis">
+      Valideur
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#recolement-fait" class="md-nav__link">
+    <span class="md-ellipsis">
+      Récolement fait
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#occurences-liees" class="md-nav__link">
+    <span class="md-ellipsis">
+      Occurences liées
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#suite-a-donner-au-recolement" class="md-nav__link">
+    <span class="md-ellipsis">
+      Suite à donner au récolement
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#generer-le-proces-verbal" class="md-nav__link">
+    <span class="md-ellipsis">
+      Générer le procès-verbal
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+    </ul>
+  
 </nav>
-</li>
-</ul>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../Export_Joconde/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    VI. Export Joconde
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../Registre_biens/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    VII. Registre des biens affectés/déposés
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_4" >
+        
+          
+          <label class="md-nav__link" for="__nav_4" id="__nav_4_label" tabindex="0">
+            
+  
+  <span class="md-ellipsis">
+    Génération de cette documentation
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_4_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_4">
+            <span class="md-nav__icon md-icon"></span>
+            Génération de cette documentation
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../tech_logiciels/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Logiciels utilisés
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../tech_install/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Installation
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../credits/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Crédits
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+  </ul>
 </nav>
-</li>
-<li class="md-nav__item">
-<a class="md-nav__link" href="#gerer-la-campagne">
-    Gérer la campagne
-  </a>
-<nav class="md-nav">
-<ul class="md-nav__list">
-<li class="md-nav__item">
-<a class="md-nav__link" href="#menu-des-campagnes">
-    Menu des campagnes
-  </a>
-<nav class="md-nav">
-<ul class="md-nav__list">
-<li class="md-nav__item">
-<a class="md-nav__link" href="#partie-gauche">
-    Partie Gauche
-  </a>
-</li>
-<li class="md-nav__item">
-<a class="md-nav__link" href="#rafraichir">
-    Rafraîchir
-  </a>
-</li>
-<li class="md-nav__item">
-<a class="md-nav__link" href="#tableau-de-progression">
-    Tableau de progression
-  </a>
-</li>
-</ul>
-</nav>
-</li>
-</ul>
-</nav>
-</li>
-<li class="md-nav__item">
-<a class="md-nav__link" href="#recoler-un-objet">
-    Récoler un objet
-  </a>
-<nav class="md-nav">
-<ul class="md-nav__list">
-<li class="md-nav__item">
-<a class="md-nav__link" href="#ecran-de-recolement-de-lobjet">
-    Écran de récolement de l'objet
-  </a>
-<nav class="md-nav">
-<ul class="md-nav__list">
-<li class="md-nav__item">
-<a class="md-nav__link" href="#objets-lies">
-    Objets liés
-  </a>
-</li>
-<li class="md-nav__item">
-<a class="md-nav__link" href="#photographie-specifique-au-recolement">
-    Photographie spécifique au récolement
-  </a>
-</li>
-<li class="md-nav__item">
-<a class="md-nav__link" href="#photographie-documentaire">
-    Photographie documentaire
-  </a>
-</li>
-<li class="md-nav__item">
-<a class="md-nav__link" href="#numero-de-fiche-du-recolement-precedent">
-    Numéro de fiche du récolement précédent
-  </a>
-</li>
-<li class="md-nav__item">
-<a class="md-nav__link" href="#n-de-fiche-de-recolement">
-    N° de fiche de récolement
-  </a>
-</li>
-<li class="md-nav__item">
-<a class="md-nav__link" href="#nom-de-lobjet-recole">
-    Nom de l'objet récolé
-  </a>
-</li>
-<li class="md-nav__item">
-<a class="md-nav__link" href="#presence-du-numero-dinventaire">
-    Présence du numéro d'inventaire
-  </a>
-</li>
-<li class="md-nav__item">
-<a class="md-nav__link" href="#expertise-du-numero-dinventaire">
-    Expertise du numéro d'inventaire
-  </a>
-</li>
-<li class="md-nav__item">
-<a class="md-nav__link" href="#presence-dun-autre-numero">
-    Présence d'un autre numéro
-  </a>
-</li>
-<li class="md-nav__item">
-<a class="md-nav__link" href="#probleme-didentification">
-    Problème d'identification
-  </a>
-</li>
-<li class="md-nav__item">
-<a class="md-nav__link" href="#presence-du-bien-dans-le-recolement-precedent">
-    Présence du bien dans le récolement précédent
-  </a>
-</li>
-<li class="md-nav__item">
-<a class="md-nav__link" href="#presence-du-bien-dans-le-recolement-en-cours">
-    Présence du bien dans le récolement en cours
-  </a>
-</li>
-<li class="md-nav__item">
-<a class="md-nav__link" href="#date-du-precedent-recolement">
-    Date du précédent récolement
-  </a>
-</li>
-<li class="md-nav__item">
-<a class="md-nav__link" href="#date-du-recolement-en-cours">
-    Date du récolement en cours
-  </a>
-</li>
-<li class="md-nav__item">
-<a class="md-nav__link" href="#localisation-dans-le-precedent-recolement">
-    Localisation dans le précédent récolement
-  </a>
-</li>
-<li class="md-nav__item">
-<a class="md-nav__link" href="#localisation-dans-le-recolement-en-cours">
-    Localisation dans le récolement en cours
-  </a>
-</li>
-<li class="md-nav__item">
-<a class="md-nav__link" href="#emplacements-lies">
-    Emplacements liés
-  </a>
-</li>
-<li class="md-nav__item">
-<a class="md-nav__link" href="#campagne-liee">
-    Campagne liée
-  </a>
-</li>
-<li class="md-nav__item">
-<a class="md-nav__link" href="#constat-detat">
-    Constat d'état
-  </a>
-</li>
-<li class="md-nav__item">
-<a class="md-nav__link" href="#objet-inventorie-plusieurs-fois">
-    Objet inventorié plusieurs fois
-  </a>
-</li>
-<li class="md-nav__item">
-<a class="md-nav__link" href="#conformite-avec-la-source">
-    Conformité avec la source
-  </a>
-</li>
-<li class="md-nav__item">
-<a class="md-nav__link" href="#type-et-references-de-la-source">
-    Type et références de la source
-  </a>
-</li>
-<li class="md-nav__item">
-<a class="md-nav__link" href="#inscriptions">
-    Inscriptions
-  </a>
-</li>
-<li class="md-nav__item">
-<a class="md-nav__link" href="#recoleur">
-    Récoleur
-  </a>
-</li>
-<li class="md-nav__item">
-<a class="md-nav__link" href="#date-de-visualisation">
-    Date de visualisation
-  </a>
-</li>
-<li class="md-nav__item">
-<a class="md-nav__link" href="#date-de-validation-du-recolement">
-    Date de validation du récolement
-  </a>
-</li>
-<li class="md-nav__item">
-<a class="md-nav__link" href="#valideur">
-    Valideur
-  </a>
-</li>
-<li class="md-nav__item">
-<a class="md-nav__link" href="#recolement-fait">
-    Récolement fait
-  </a>
-</li>
-<li class="md-nav__item">
-<a class="md-nav__link" href="#occurences-liees">
-    Occurences liées
-  </a>
-</li>
-</ul>
-</nav>
-</li>
-<li class="md-nav__item">
-<a class="md-nav__link" href="#suite-a-donner-au-recolement">
-    Suite à donner au récolement
-  </a>
-</li>
-<li class="md-nav__item">
-<a class="md-nav__link" href="#generer-le-proces-verbal">
-    Générer le procès-verbal
-  </a>
-</li>
-</ul>
-</nav>
-</li>
-</ul>
-</nav>
-</li>
-<li class="md-nav__item">
-<a class="md-nav__link" href="../Export_Joconde/" title="VI. Export Joconde">
-      VI. Export Joconde
-    </a>
-</li>
-<li class="md-nav__item">
-<a class="md-nav__link" href="../Registre_biens/" title="VII. Registre des biens affectés/déposés">
-      VII. Registre des biens affectés/déposés
-    </a>
-</li>
-</ul>
-</nav>
-</li>
-<li class="md-nav__item md-nav__item--nested">
-<input class="md-toggle md-nav__toggle" data-md-toggle="nav-4" id="nav-4" type="checkbox"/>
-<label class="md-nav__link" for="nav-4">
-      Génération de cette documentation
+                  </div>
+                </div>
+              </div>
+            
+            
+              
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+<nav class="md-nav md-nav--secondary" aria-label="Table des matières">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table des matières
     </label>
-<nav class="md-nav" data-md-component="collapsible" data-md-level="1">
-<label class="md-nav__title" for="nav-4">
-        Génération de cette documentation
-      </label>
-<ul class="md-nav__list" data-md-scrollfix="">
-<li class="md-nav__item">
-<a class="md-nav__link" href="../tech_logiciels/" title="Logiciels utilisés">
-      Logiciels utilisés
-    </a>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#introduction" class="md-nav__link">
+    <span class="md-ellipsis">
+      Introduction
+    </span>
+  </a>
+  
 </li>
-<li class="md-nav__item">
-<a class="md-nav__link" href="../tech_install/" title="Installation">
-      Installation
-    </a>
+      
+        <li class="md-nav__item">
+  <a href="#comment-creer-une-campagne-de-recolement" class="md-nav__link">
+    <span class="md-ellipsis">
+      Comment créer une campagne de récolement ?
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Comment créer une campagne de récolement ?">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#presentation-de-lecran-de-saisie" class="md-nav__link">
+    <span class="md-ellipsis">
+      Présentation de l'écran de saisie
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Présentation de l'écran de saisie">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#nom-de-la-campagne" class="md-nav__link">
+    <span class="md-ellipsis">
+      Nom de la campagne
+    </span>
+  </a>
+  
 </li>
-</ul>
+        
+          <li class="md-nav__item">
+  <a href="#numero-de-la-campagne" class="md-nav__link">
+    <span class="md-ellipsis">
+      Numéro de la campagne
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#recolement-decennal" class="md-nav__link">
+    <span class="md-ellipsis">
+      Récolement décennal
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#dates-previsionnelles-de-realisation-de-la-campagne" class="md-nav__link">
+    <span class="md-ellipsis">
+      Dates prévisionnelles de réalisation de la campagne
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#dates-effectives-de-realisation-de-la-campagne" class="md-nav__link">
+    <span class="md-ellipsis">
+      Dates effectives de réalisation de la campagne
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#intervenants" class="md-nav__link">
+    <span class="md-ellipsis">
+      Intervenants
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#contenu-scientifique-de-la-campagne" class="md-nav__link">
+    <span class="md-ellipsis">
+      Contenu scientifique de la campagne
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#champs-couverts" class="md-nav__link">
+    <span class="md-ellipsis">
+      Champs couverts
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#methode-utilisee-pour-la-campagne" class="md-nav__link">
+    <span class="md-ellipsis">
+      Méthode utilisée pour la campagne
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#localisation" class="md-nav__link">
+    <span class="md-ellipsis">
+      Localisation
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#caracterisation-de-lespace" class="md-nav__link">
+    <span class="md-ellipsis">
+      Caractérisation de l'espace
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#conditionnement-des-biens-a-recoler" class="md-nav__link">
+    <span class="md-ellipsis">
+      Conditionnement des biens à récoler
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#accessibilite" class="md-nav__link">
+    <span class="md-ellipsis">
+      Accessibilité
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#fiches-de-recolement-liees" class="md-nav__link">
+    <span class="md-ellipsis">
+      Fiches de récolement liées
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#date-du-pv" class="md-nav__link">
+    <span class="md-ellipsis">
+      Date du PV
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#fichier-numerique-attache-a-la-campagne" class="md-nav__link">
+    <span class="md-ellipsis">
+      Fichier numérique attaché à la campagne
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#gerer-la-campagne" class="md-nav__link">
+    <span class="md-ellipsis">
+      Gérer la campagne
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Gérer la campagne">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#menu-des-campagnes" class="md-nav__link">
+    <span class="md-ellipsis">
+      Menu des campagnes
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Menu des campagnes">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#partie-gauche" class="md-nav__link">
+    <span class="md-ellipsis">
+      Partie Gauche
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#rafraichir" class="md-nav__link">
+    <span class="md-ellipsis">
+      Rafraîchir
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#tableau-de-progression" class="md-nav__link">
+    <span class="md-ellipsis">
+      Tableau de progression
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#recoler-un-objet" class="md-nav__link">
+    <span class="md-ellipsis">
+      Récoler un objet
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Récoler un objet">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#ecran-de-recolement-de-lobjet" class="md-nav__link">
+    <span class="md-ellipsis">
+      Écran de récolement de l'objet
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Écran de récolement de l'objet">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#objets-lies" class="md-nav__link">
+    <span class="md-ellipsis">
+      Objets liés
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#photographie-specifique-au-recolement" class="md-nav__link">
+    <span class="md-ellipsis">
+      Photographie spécifique au récolement
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#photographie-documentaire" class="md-nav__link">
+    <span class="md-ellipsis">
+      Photographie documentaire
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#numero-de-fiche-du-recolement-precedent" class="md-nav__link">
+    <span class="md-ellipsis">
+      Numéro de fiche du récolement précédent
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#n-de-fiche-de-recolement" class="md-nav__link">
+    <span class="md-ellipsis">
+      N° de fiche de récolement
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#nom-de-lobjet-recole" class="md-nav__link">
+    <span class="md-ellipsis">
+      Nom de l'objet récolé
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#presence-du-numero-dinventaire" class="md-nav__link">
+    <span class="md-ellipsis">
+      Présence du numéro d'inventaire
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#expertise-du-numero-dinventaire" class="md-nav__link">
+    <span class="md-ellipsis">
+      Expertise du numéro d'inventaire
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#presence-dun-autre-numero" class="md-nav__link">
+    <span class="md-ellipsis">
+      Présence d'un autre numéro
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#probleme-didentification" class="md-nav__link">
+    <span class="md-ellipsis">
+      Problème d'identification
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#presence-du-bien-dans-le-recolement-precedent" class="md-nav__link">
+    <span class="md-ellipsis">
+      Présence du bien dans le récolement précédent
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#presence-du-bien-dans-le-recolement-en-cours" class="md-nav__link">
+    <span class="md-ellipsis">
+      Présence du bien dans le récolement en cours
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#date-du-precedent-recolement" class="md-nav__link">
+    <span class="md-ellipsis">
+      Date du précédent récolement
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#date-du-recolement-en-cours" class="md-nav__link">
+    <span class="md-ellipsis">
+      Date du récolement en cours
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#localisation-dans-le-precedent-recolement" class="md-nav__link">
+    <span class="md-ellipsis">
+      Localisation dans le précédent récolement
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#localisation-dans-le-recolement-en-cours" class="md-nav__link">
+    <span class="md-ellipsis">
+      Localisation dans le récolement en cours
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#emplacements-lies" class="md-nav__link">
+    <span class="md-ellipsis">
+      Emplacements liés
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#campagne-liee" class="md-nav__link">
+    <span class="md-ellipsis">
+      Campagne liée
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#constat-detat" class="md-nav__link">
+    <span class="md-ellipsis">
+      Constat d'état
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#objet-inventorie-plusieurs-fois" class="md-nav__link">
+    <span class="md-ellipsis">
+      Objet inventorié plusieurs fois
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#conformite-avec-la-source" class="md-nav__link">
+    <span class="md-ellipsis">
+      Conformité avec la source
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#type-et-references-de-la-source" class="md-nav__link">
+    <span class="md-ellipsis">
+      Type et références de la source
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#inscriptions" class="md-nav__link">
+    <span class="md-ellipsis">
+      Inscriptions
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#recoleur" class="md-nav__link">
+    <span class="md-ellipsis">
+      Récoleur
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#date-de-visualisation" class="md-nav__link">
+    <span class="md-ellipsis">
+      Date de visualisation
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#date-de-validation-du-recolement" class="md-nav__link">
+    <span class="md-ellipsis">
+      Date de validation du récolement
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#valideur" class="md-nav__link">
+    <span class="md-ellipsis">
+      Valideur
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#recolement-fait" class="md-nav__link">
+    <span class="md-ellipsis">
+      Récolement fait
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#occurences-liees" class="md-nav__link">
+    <span class="md-ellipsis">
+      Occurences liées
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#suite-a-donner-au-recolement" class="md-nav__link">
+    <span class="md-ellipsis">
+      Suite à donner au récolement
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#generer-le-proces-verbal" class="md-nav__link">
+    <span class="md-ellipsis">
+      Générer le procès-verbal
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+    </ul>
+  
 </nav>
-</li>
-</ul>
-</nav>
-</div>
-</div>
-</div>
-<div class="md-sidebar md-sidebar--secondary" data-md-component="toc">
-<div class="md-sidebar__scrollwrap">
-<div class="md-sidebar__inner">
-<nav class="md-nav md-nav--secondary">
-<label class="md-nav__title" for="__toc">Table des matières</label>
-<ul class="md-nav__list" data-md-scrollfix="">
-<li class="md-nav__item">
-<a class="md-nav__link" href="#introduction">
-    Introduction
-  </a>
-</li>
-<li class="md-nav__item">
-<a class="md-nav__link" href="#comment-creer-une-campagne-de-recolement">
-    Comment créer une campagne de récolement ?
-  </a>
-<nav class="md-nav">
-<ul class="md-nav__list">
-<li class="md-nav__item">
-<a class="md-nav__link" href="#presentation-de-lecran-de-saisie">
-    Présentation de l'écran de saisie
-  </a>
-<nav class="md-nav">
-<ul class="md-nav__list">
-<li class="md-nav__item">
-<a class="md-nav__link" href="#nom-de-la-campagne">
-    Nom de la campagne
-  </a>
-</li>
-<li class="md-nav__item">
-<a class="md-nav__link" href="#numero-de-la-campagne">
-    Numéro de la campagne
-  </a>
-</li>
-<li class="md-nav__item">
-<a class="md-nav__link" href="#recolement-decennal">
-    Récolement décennal
-  </a>
-</li>
-<li class="md-nav__item">
-<a class="md-nav__link" href="#dates-previsionnelles-de-realisation-de-la-campagne">
-    Dates prévisionnelles de réalisation de la campagne
-  </a>
-</li>
-<li class="md-nav__item">
-<a class="md-nav__link" href="#dates-effectives-de-realisation-de-la-campagne">
-    Dates effectives de réalisation de la campagne
-  </a>
-</li>
-<li class="md-nav__item">
-<a class="md-nav__link" href="#intervenants">
-    Intervenants
-  </a>
-</li>
-<li class="md-nav__item">
-<a class="md-nav__link" href="#contenu-scientifique-de-la-campagne">
-    Contenu scientifique de la campagne
-  </a>
-</li>
-<li class="md-nav__item">
-<a class="md-nav__link" href="#champs-couverts">
-    Champs couverts
-  </a>
-</li>
-<li class="md-nav__item">
-<a class="md-nav__link" href="#methode-utilisee-pour-la-campagne">
-    Méthode utilisée pour la campagne
-  </a>
-</li>
-<li class="md-nav__item">
-<a class="md-nav__link" href="#localisation">
-    Localisation
-  </a>
-</li>
-<li class="md-nav__item">
-<a class="md-nav__link" href="#caracterisation-de-lespace">
-    Caractérisation de l'espace
-  </a>
-</li>
-<li class="md-nav__item">
-<a class="md-nav__link" href="#conditionnement-des-biens-a-recoler">
-    Conditionnement des biens à récoler
-  </a>
-</li>
-<li class="md-nav__item">
-<a class="md-nav__link" href="#accessibilite">
-    Accessibilité
-  </a>
-</li>
-<li class="md-nav__item">
-<a class="md-nav__link" href="#fiches-de-recolement-liees">
-    Fiches de récolement liées
-  </a>
-</li>
-<li class="md-nav__item">
-<a class="md-nav__link" href="#date-du-pv">
-    Date du PV
-  </a>
-</li>
-<li class="md-nav__item">
-<a class="md-nav__link" href="#fichier-numerique-attache-a-la-campagne">
-    Fichier numérique attaché à la campagne
-  </a>
-</li>
-</ul>
-</nav>
-</li>
-</ul>
-</nav>
-</li>
-<li class="md-nav__item">
-<a class="md-nav__link" href="#gerer-la-campagne">
-    Gérer la campagne
-  </a>
-<nav class="md-nav">
-<ul class="md-nav__list">
-<li class="md-nav__item">
-<a class="md-nav__link" href="#menu-des-campagnes">
-    Menu des campagnes
-  </a>
-<nav class="md-nav">
-<ul class="md-nav__list">
-<li class="md-nav__item">
-<a class="md-nav__link" href="#partie-gauche">
-    Partie Gauche
-  </a>
-</li>
-<li class="md-nav__item">
-<a class="md-nav__link" href="#rafraichir">
-    Rafraîchir
-  </a>
-</li>
-<li class="md-nav__item">
-<a class="md-nav__link" href="#tableau-de-progression">
-    Tableau de progression
-  </a>
-</li>
-</ul>
-</nav>
-</li>
-</ul>
-</nav>
-</li>
-<li class="md-nav__item">
-<a class="md-nav__link" href="#recoler-un-objet">
-    Récoler un objet
-  </a>
-<nav class="md-nav">
-<ul class="md-nav__list">
-<li class="md-nav__item">
-<a class="md-nav__link" href="#ecran-de-recolement-de-lobjet">
-    Écran de récolement de l'objet
-  </a>
-<nav class="md-nav">
-<ul class="md-nav__list">
-<li class="md-nav__item">
-<a class="md-nav__link" href="#objets-lies">
-    Objets liés
-  </a>
-</li>
-<li class="md-nav__item">
-<a class="md-nav__link" href="#photographie-specifique-au-recolement">
-    Photographie spécifique au récolement
-  </a>
-</li>
-<li class="md-nav__item">
-<a class="md-nav__link" href="#photographie-documentaire">
-    Photographie documentaire
-  </a>
-</li>
-<li class="md-nav__item">
-<a class="md-nav__link" href="#numero-de-fiche-du-recolement-precedent">
-    Numéro de fiche du récolement précédent
-  </a>
-</li>
-<li class="md-nav__item">
-<a class="md-nav__link" href="#n-de-fiche-de-recolement">
-    N° de fiche de récolement
-  </a>
-</li>
-<li class="md-nav__item">
-<a class="md-nav__link" href="#nom-de-lobjet-recole">
-    Nom de l'objet récolé
-  </a>
-</li>
-<li class="md-nav__item">
-<a class="md-nav__link" href="#presence-du-numero-dinventaire">
-    Présence du numéro d'inventaire
-  </a>
-</li>
-<li class="md-nav__item">
-<a class="md-nav__link" href="#expertise-du-numero-dinventaire">
-    Expertise du numéro d'inventaire
-  </a>
-</li>
-<li class="md-nav__item">
-<a class="md-nav__link" href="#presence-dun-autre-numero">
-    Présence d'un autre numéro
-  </a>
-</li>
-<li class="md-nav__item">
-<a class="md-nav__link" href="#probleme-didentification">
-    Problème d'identification
-  </a>
-</li>
-<li class="md-nav__item">
-<a class="md-nav__link" href="#presence-du-bien-dans-le-recolement-precedent">
-    Présence du bien dans le récolement précédent
-  </a>
-</li>
-<li class="md-nav__item">
-<a class="md-nav__link" href="#presence-du-bien-dans-le-recolement-en-cours">
-    Présence du bien dans le récolement en cours
-  </a>
-</li>
-<li class="md-nav__item">
-<a class="md-nav__link" href="#date-du-precedent-recolement">
-    Date du précédent récolement
-  </a>
-</li>
-<li class="md-nav__item">
-<a class="md-nav__link" href="#date-du-recolement-en-cours">
-    Date du récolement en cours
-  </a>
-</li>
-<li class="md-nav__item">
-<a class="md-nav__link" href="#localisation-dans-le-precedent-recolement">
-    Localisation dans le précédent récolement
-  </a>
-</li>
-<li class="md-nav__item">
-<a class="md-nav__link" href="#localisation-dans-le-recolement-en-cours">
-    Localisation dans le récolement en cours
-  </a>
-</li>
-<li class="md-nav__item">
-<a class="md-nav__link" href="#emplacements-lies">
-    Emplacements liés
-  </a>
-</li>
-<li class="md-nav__item">
-<a class="md-nav__link" href="#campagne-liee">
-    Campagne liée
-  </a>
-</li>
-<li class="md-nav__item">
-<a class="md-nav__link" href="#constat-detat">
-    Constat d'état
-  </a>
-</li>
-<li class="md-nav__item">
-<a class="md-nav__link" href="#objet-inventorie-plusieurs-fois">
-    Objet inventorié plusieurs fois
-  </a>
-</li>
-<li class="md-nav__item">
-<a class="md-nav__link" href="#conformite-avec-la-source">
-    Conformité avec la source
-  </a>
-</li>
-<li class="md-nav__item">
-<a class="md-nav__link" href="#type-et-references-de-la-source">
-    Type et références de la source
-  </a>
-</li>
-<li class="md-nav__item">
-<a class="md-nav__link" href="#inscriptions">
-    Inscriptions
-  </a>
-</li>
-<li class="md-nav__item">
-<a class="md-nav__link" href="#recoleur">
-    Récoleur
-  </a>
-</li>
-<li class="md-nav__item">
-<a class="md-nav__link" href="#date-de-visualisation">
-    Date de visualisation
-  </a>
-</li>
-<li class="md-nav__item">
-<a class="md-nav__link" href="#date-de-validation-du-recolement">
-    Date de validation du récolement
-  </a>
-</li>
-<li class="md-nav__item">
-<a class="md-nav__link" href="#valideur">
-    Valideur
-  </a>
-</li>
-<li class="md-nav__item">
-<a class="md-nav__link" href="#recolement-fait">
-    Récolement fait
-  </a>
-</li>
-<li class="md-nav__item">
-<a class="md-nav__link" href="#occurences-liees">
-    Occurences liées
-  </a>
-</li>
-</ul>
-</nav>
-</li>
-<li class="md-nav__item">
-<a class="md-nav__link" href="#suite-a-donner-au-recolement">
-    Suite à donner au récolement
-  </a>
-</li>
-<li class="md-nav__item">
-<a class="md-nav__link" href="#generer-le-proces-verbal">
-    Générer le procès-verbal
-  </a>
-</li>
-</ul>
-</nav>
-</li>
-</ul>
-</nav>
-</div>
-</div>
-</div>
-<div class="md-content">
-<article class="md-content__inner md-typeset"><a class="md-content__icon pdf-download-btn" download href="../pdf/documentation.pdf" title="Download"><i class="fa fas fa-download"></i><small> PDF</small></a>
-<a class="md-icon md-content__icon" href="http://github.com/ideesculture/museesDeFranceDocumentation/edit/master/docs/Recolement.md" title="Editer cette page"></a>
+                  </div>
+                </div>
+              </div>
+            
+          
+          
+            <div class="md-content" data-md-component="content">
+              <article class="md-content__inner md-typeset">
+                
+                  
+
+  
+  
+
+
 <h1 id="5-le-recolement-dans-collectiveaccess">5. Le Récolement dans CollectiveAccess<a class="headerlink" href="#5-le-recolement-dans-collectiveaccess" title="Permanent link">¶</a></h1>
 <p>Le récolement permet de vérifier les objets, CollectiveAccess vous accompagne dans cette démarche en proposant une procédure complète grâce à des campagnes de récolement.</p>
 <h2 id="introduction">Introduction<a class="headerlink" href="#introduction" title="Permanent link">¶</a></h2>
@@ -907,53 +1971,53 @@
 <h3 id="presentation-de-lecran-de-saisie">Présentation de l'écran de saisie<a class="headerlink" href="#presentation-de-lecran-de-saisie" title="Permanent link">¶</a></h3>
 <h4 id="nom-de-la-campagne">Nom de la campagne<a class="headerlink" href="#nom-de-la-campagne" title="Permanent link">¶</a></h4>
 <p>Nommez votre campagne de récolement de manière explicite afin de d'expliquer à quoi elle correspond
-<a href="../Introduction/#texte-text"><img alt="Nom_Campagne" src="../Campagne_Recolement/Nom_Campagne.png"/></a></p>
+<a href="../Introduction/#texte-text"><img alt="Nom_Campagne" src="../Campagne_Recolement/Nom_Campagne.png" /></a></p>
 <h4 id="numero-de-la-campagne">Numéro de la campagne<a class="headerlink" href="#numero-de-la-campagne" title="Permanent link">¶</a></h4>
 <p>Un identifiant unique à la campagne
-<a href="../Introduction/#texte-text"><img alt="Numero_Campagne" src="../Campagne_Recolement/Numero_Campagne.png"/></a></p>
+<a href="../Introduction/#texte-text"><img alt="Numero_Campagne" src="../Campagne_Recolement/Numero_Campagne.png" /></a></p>
 <h4 id="recolement-decennal">Récolement décennal<a class="headerlink" href="#recolement-decennal" title="Permanent link">¶</a></h4>
 <p>Définnisez une décennie pour votre récolement (les récolements sont triés par décennie)
-<a href="../Introduction/#texte-text"><img alt="Recolement_Decennal" src="../Campagne_Recolement/Recolement_Decennal.png"/></a></p>
+<a href="../Introduction/#texte-text"><img alt="Recolement_Decennal" src="../Campagne_Recolement/Recolement_Decennal.png" /></a></p>
 <h4 id="dates-previsionnelles-de-realisation-de-la-campagne">Dates prévisionnelles de réalisation de la campagne<a class="headerlink" href="#dates-previsionnelles-de-realisation-de-la-campagne" title="Permanent link">¶</a></h4>
 <p>Notez ici les estimations de début et de fin de la campagne
-<a href="../Introduction/#texte-text"><img alt="Dates_Previsionnelles" src="../Campagne_Recolement/Dates_Previsionnelles.png"/></a></p>
+<a href="../Introduction/#texte-text"><img alt="Dates_Previsionnelles" src="../Campagne_Recolement/Dates_Previsionnelles.png" /></a></p>
 <h4 id="dates-effectives-de-realisation-de-la-campagne">Dates effectives de réalisation de la campagne<a class="headerlink" href="#dates-effectives-de-realisation-de-la-campagne" title="Permanent link">¶</a></h4>
 <p>Notez ici les dates réelles de début et de fin de la campagne
-<a href="../Introduction/#date-daterange"><img alt="Dates_Effectives" src="../Campagne_Recolement/Dates_Effectives.png"/></a></p>
+<a href="../Introduction/#date-daterange"><img alt="Dates_Effectives" src="../Campagne_Recolement/Dates_Effectives.png" /></a></p>
 <h4 id="intervenants">Intervenants<a class="headerlink" href="#intervenants" title="Permanent link">¶</a></h4>
 <p>Ce champ permet de préciser le nom des différents intervenants de la campagne. Ce champ est relié au fichier des <a href="../Saisie_Entite">entités</a>. Si vous ne trouvez pas le nom de l'intervenant, la documentation pour le rajouter est disponible <a href="../Saisie_Entite./#informations-de-base-informations-basiques">ici</a>
-<a href="../Introduction/#3-recherche-par-auto-completion"><img alt="Intervenants" src="../Campagne_Recolement/Intervenants.png"/></a></p>
+<a href="../Introduction/#3-recherche-par-auto-completion"><img alt="Intervenants" src="../Campagne_Recolement/Intervenants.png" /></a></p>
 <h4 id="contenu-scientifique-de-la-campagne">Contenu scientifique de la campagne<a class="headerlink" href="#contenu-scientifique-de-la-campagne" title="Permanent link">¶</a></h4>
 <p>Le contenu scientifique relatif à la campagne
-<a href="../Introduction/#texte-text"><img alt="Contenu_Scientifique" src="../Campagne_Recolement/Contenu_Scientifique.png"/></a></p>
+<a href="../Introduction/#texte-text"><img alt="Contenu_Scientifique" src="../Campagne_Recolement/Contenu_Scientifique.png" /></a></p>
 <h4 id="champs-couverts">Champs couverts<a class="headerlink" href="#champs-couverts" title="Permanent link">¶</a></h4>
 <p>indiquez les differents champs couverts par la campgne et des notes realatifs à ceux-ci. 
-<a href="../Introduction/#texte-text"><img alt="Champ_Couverts" src="../Campagne_Recolement/Champ_Couverts.png"/></a></p>
+<a href="../Introduction/#texte-text"><img alt="Champ_Couverts" src="../Campagne_Recolement/Champ_Couverts.png" /></a></p>
 <h4 id="methode-utilisee-pour-la-campagne">Méthode utilisée pour la campagne<a class="headerlink" href="#methode-utilisee-pour-la-campagne" title="Permanent link">¶</a></h4>
 <p>Indiquez les caractéristiques techniques de la campagne et les differents moyens mis en œuvre pour cette derniere. (Ce champ est au format texte enrichi, vous pouvez appliquez des modifications sur la forme du texte (police,taille,couleur,etc..) comme pour un fichier word)
-<a href="../Introduction/#texte-text"><img alt="Methode_Utilisee" src="../Campagne_Recolement/Methode_Utilisee.png"/></a></p>
+<a href="../Introduction/#texte-text"><img alt="Methode_Utilisee" src="../Campagne_Recolement/Methode_Utilisee.png" /></a></p>
 <h4 id="localisation">Localisation<a class="headerlink" href="#localisation" title="Permanent link">¶</a></h4>
 <p>Localisez où sont les objets à récoler
-<a href="../Introduction/#4-navigation-hierarchique-horizontale"><img alt="Localisation" src="../Campagne_Recolement/Localisation.png"/></a></p>
+<a href="../Introduction/#4-navigation-hierarchique-horizontale"><img alt="Localisation" src="../Campagne_Recolement/Localisation.png" /></a></p>
 <h4 id="caracterisation-de-lespace">Caractérisation de l'espace<a class="headerlink" href="#caracterisation-de-lespace" title="Permanent link">¶</a></h4>
 <p>Selectionnez dans la liste déroulante le résultat le plus proche de l'espace du récolement
-<a href="../Introduction/#1-liste-deroulante"><img alt="Caracterisation_Espace" src="../Campagne_Recolement/Caracterisation_Espace.png"/></a></p>
+<a href="../Introduction/#1-liste-deroulante"><img alt="Caracterisation_Espace" src="../Campagne_Recolement/Caracterisation_Espace.png" /></a></p>
 <h4 id="conditionnement-des-biens-a-recoler">Conditionnement des biens à récoler<a class="headerlink" href="#conditionnement-des-biens-a-recoler" title="Permanent link">¶</a></h4>
 <p>Indiquez le conditionnement des biens à récoler
-<a href="../Introduction/#texte-text"><img alt="Conditionnement_Biens" src="../Campagne_Recolement/Conditionnement_Biens.png"/></a></p>
+<a href="../Introduction/#texte-text"><img alt="Conditionnement_Biens" src="../Campagne_Recolement/Conditionnement_Biens.png" /></a></p>
 <h4 id="accessibilite">Accessibilité<a class="headerlink" href="#accessibilite" title="Permanent link">¶</a></h4>
 <p>Les conditions d'accès physique de la campagne 
-<a href="../Introduction/#texte-text"><img alt="Accessibilite" src="../Campagne_Recolement/Accessibilite.png"/></a></p>
+<a href="../Introduction/#texte-text"><img alt="Accessibilite" src="../Campagne_Recolement/Accessibilite.png" /></a></p>
 <h4 id="fiches-de-recolement-liees">Fiches de récolement liées<a class="headerlink" href="#fiches-de-recolement-liees" title="Permanent link">¶</a></h4>
 <p>Champ affichant la liste des fiches de récolement de la campagne, ce champ est en lecture seule vous ne pouvez pas ajouter de fiches ici.
 Lorsque des fiches sont disponibles cliquez sur celle de votre choix pour accèder à son écran de complétion 
-<a href="../Introduction/#relations"><img alt="Fiches_Liees" src="../Campagne_Recolement/Fiches_Liees.png"/></a></p>
+<a href="../Introduction/#relations"><img alt="Fiches_Liees" src="../Campagne_Recolement/Fiches_Liees.png" /></a></p>
 <h4 id="date-du-pv">Date du PV<a class="headerlink" href="#date-du-pv" title="Permanent link">¶</a></h4>
 <p>Date de génération du procès verbal de la campagne 
-<a href="../Introduction/#date-daterange"><img alt="Date_PV" src="../Campagne_Recolement/Date_PV.png"/></a></p>
+<a href="../Introduction/#date-daterange"><img alt="Date_PV" src="../Campagne_Recolement/Date_PV.png" /></a></p>
 <h4 id="fichier-numerique-attache-a-la-campagne">Fichier numérique attaché à la campagne<a class="headerlink" href="#fichier-numerique-attache-a-la-campagne" title="Permanent link">¶</a></h4>
 <p>Permet d'ajouter n'importe quel fichier à la campagne 
-<img alt="Fichier_Numerique" src="../Campagne_Recolement/Fichier_Numerique.png"/></p>
+<img alt="Fichier_Numerique" src="../Campagne_Recolement/Fichier_Numerique.png" /></p>
 <p>Après avoir saisi votre campagne de récolement, enregistrez la via les boutons du même nom en haut et en bas de la page</p>
 <h2 id="gerer-la-campagne">Gérer la campagne<a class="headerlink" href="#gerer-la-campagne" title="Permanent link">¶</a></h2>
 <p>Pour accéder à la liste de vos campagnes rendez vous dans le menu Procédures Réglementaires &gt; Suivi du récolement</p>
@@ -994,10 +2058,10 @@ Sous ces informations ce trouvent différents liens de documentation ou d'assist
 </li>
 </ul>
 <h2 id="recoler-un-objet">Récoler un objet<a class="headerlink" href="#recoler-un-objet" title="Permanent link">¶</a></h2>
-<p><strong> Important </strong> Vous ne pouvez pas récoler d'objet si vous n'avez pas au moins déjà créé une campagne.</p>
+<p>** Important ** Vous ne pouvez pas récoler d'objet si vous n'avez pas au moins déjà créé une campagne.</p>
 <p>Pour récoler un objet il faut se rendre sur l'écran <em>Informations du PV de récolement</em> depuis <a href="#tableau-de-progression">campagne</a></p>
 <p>Cette page donne un résumé plus complet de la campagne 
-<img alt="Ecran_PV" src="../Campagne_Recolement/Ecran_PV.png"/></p>
+<img alt="Ecran_PV" src="../Campagne_Recolement/Ecran_PV.png" /></p>
 <p>En dessous se trouve le tableau des objets à récoler :</p>
 <ul>
 <li>Le journal permet d'accéder à la page de récolement de l'objet </li>
@@ -1012,7 +2076,7 @@ Sous ces informations ce trouvent différents liens de documentation ou d'assist
 <p><strong>Attention</strong> un objet récolé hors campagne de récolement ne sera donc pas visible dans les statistiques du plugin MuséesDeFrance : les PV de récolement sont rattachés à la campagne.</p>
 <h4 id="objets-lies">Objets liés<a class="headerlink" href="#objets-lies" title="Permanent link">¶</a></h4>
 <p>Définissez ici l'objet à récoler.</p>
-<p><a href="../Introduction/#3-recherche-par-auto-completion"><img alt="Objets_Lies" src="../Campagne_Recolement/Objets_Lies.png"/></a></p>
+<p><a href="../Introduction/#3-recherche-par-auto-completion"><img alt="Objets_Lies" src="../Campagne_Recolement/Objets_Lies.png" /></a></p>
 <h4 id="photographie-specifique-au-recolement">Photographie spécifique au récolement<a class="headerlink" href="#photographie-specifique-au-recolement" title="Permanent link">¶</a></h4>
 <p>L'objet peut déjà posséder une image</p>
 <p>Intégrez une image grâce à ce champ :</p>
@@ -1020,7 +2084,7 @@ Sous ces informations ce trouvent différents liens de documentation ou d'assist
 <li>Écrivez dans label préféré le nom que voous voulez donner à votre image</li>
 <li>Définissez l'accessibilité de l'image dans la liste déroulante "Accès"</li>
 <li>Vous pouvez définir un statut pour la représentation si vous attendez modifications ou si vous les avez réalisées
-<a href="../Introduction/#texte-text"><img alt="Photographie_Specifique" src="../Campagne_Recolement/Photographie_Specifique.png"/></a></li>
+<a href="../Introduction/#texte-text"><img alt="Photographie_Specifique" src="../Campagne_Recolement/Photographie_Specifique.png" /></a></li>
 </ul>
 <h4 id="photographie-documentaire">Photographie documentaire<a class="headerlink" href="#photographie-documentaire" title="Permanent link">¶</a></h4>
 <p>Permet de donner des informations sur les photographies existantes de l'objet (cocher oui/non pour chaque photographie):</p>
@@ -1029,20 +2093,20 @@ Sous ces informations ce trouvent différents liens de documentation ou d'assist
 <li>Photographie des marques</li>
 <li>Photographie du/des numéros d'inventaire</li>
 <li>Photographie réalisée lors du récolement
-<a href="../Introduction/#2-liste-a-cocher-boutons-radio"><img alt="Photographie_Documentaire" src="../Campagne_Recolement/Photographie_Documentaire.png"/></a></li>
+<a href="../Introduction/#2-liste-a-cocher-boutons-radio"><img alt="Photographie_Documentaire" src="../Campagne_Recolement/Photographie_Documentaire.png" /></a></li>
 </ul>
 <h4 id="numero-de-fiche-du-recolement-precedent">Numéro de fiche du récolement précédent<a class="headerlink" href="#numero-de-fiche-du-recolement-precedent" title="Permanent link">¶</a></h4>
 <p>Indiquez le <a href="#n-de-fiche-de-recolement">numéro de fiche</a> du précédent récolement de l'objet si l'objet a déjà été récolé
-<a href="../Introduction/#texte-text"><img alt="Numero_Fiche_Precedent" src="../Campagne_Recolement/Numero_Fiche_Precedent.png"/></a></p>
+<a href="../Introduction/#texte-text"><img alt="Numero_Fiche_Precedent" src="../Campagne_Recolement/Numero_Fiche_Precedent.png" /></a></p>
 <h4 id="n-de-fiche-de-recolement">N° de fiche de récolement<a class="headerlink" href="#n-de-fiche-de-recolement" title="Permanent link">¶</a></h4>
 <p>Indiquez le numéro de la fiche du récolement de l'objet
-<a href="../Introduction/#texte-text"><img alt="Numero_Fiche" src="../Campagne_Recolement/Numero_Fiche.png"/></a></p>
+<a href="../Introduction/#texte-text"><img alt="Numero_Fiche" src="../Campagne_Recolement/Numero_Fiche.png" /></a></p>
 <h4 id="nom-de-lobjet-recole">Nom de l'objet récolé<a class="headerlink" href="#nom-de-lobjet-recole" title="Permanent link">¶</a></h4>
 <p>Indiquez le <a href="../Saisie_Joconde/#titre-de-loeuvre">nom</a> de l'objet récolé
-<a href="../Introduction/#texte-text"><img alt="Nom_Objet" src="../Campagne_Recolement/Nom_Objet.png"/></a></p>
+<a href="../Introduction/#texte-text"><img alt="Nom_Objet" src="../Campagne_Recolement/Nom_Objet.png" /></a></p>
 <h4 id="presence-du-numero-dinventaire">Présence du numéro d'inventaire<a class="headerlink" href="#presence-du-numero-dinventaire" title="Permanent link">¶</a></h4>
 <p>Notez le numéro d'inventaire de l'objet
-<a href="../Introduction/#texte-text"><img alt="Presence_Numero_Inventaire" src="../Campagne_Recolement/Presence_Numero_Inventaire.png"/></a></p>
+<a href="../Introduction/#texte-text"><img alt="Presence_Numero_Inventaire" src="../Campagne_Recolement/Presence_Numero_Inventaire.png" /></a></p>
 <h4 id="expertise-du-numero-dinventaire">Expertise du numéro d'inventaire<a class="headerlink" href="#expertise-du-numero-dinventaire" title="Permanent link">¶</a></h4>
 <p>Permet de donner des informations sur le numéro d'inventaire de l'objet (cocher oui/non pour chaque photographie):</p>
 <ul>
@@ -1052,70 +2116,70 @@ Sous ces informations ce trouvent différents liens de documentation ou d'assist
 <li>Numero d'inventaire non identifiable</li>
 </ul>
 <p>Un champ commentaire est disponible afin d'ajouter des informations sur le numéro d'inventaire
-<a href="../Introduction/#2-liste-a-cocher-boutons-radio"><img alt="Expertise_Numero_Inventaire" src="../Campagne_Recolement/Expertise_Numero_Inventaire.png"/></a></p>
+<a href="../Introduction/#2-liste-a-cocher-boutons-radio"><img alt="Expertise_Numero_Inventaire" src="../Campagne_Recolement/Expertise_Numero_Inventaire.png" /></a></p>
 <h4 id="presence-dun-autre-numero">Présence d'un autre numéro<a class="headerlink" href="#presence-dun-autre-numero" title="Permanent link">¶</a></h4>
 <p>Indiquez si un autre numéro est présent sur l'objet
-<a href="../Introduction/#texte-text"><img alt="Presence_Autre_Numero" src="../Campagne_Recolement/Presence_Autre_Numero.png"/></a></p>
+<a href="../Introduction/#texte-text"><img alt="Presence_Autre_Numero" src="../Campagne_Recolement/Presence_Autre_Numero.png" /></a></p>
 <h4 id="probleme-didentification">Problème d'identification<a class="headerlink" href="#probleme-didentification" title="Permanent link">¶</a></h4>
 <p>Indiquez s'il existe des problèmes d'identification sur le numéro d'inventaire
-<a href="../Introduction/#2-liste-a-cocher-boutons-radio"><img alt="Probleme_Identification" src="../Campagne_Recolement/Probleme_Identification.png"/></a></p>
+<a href="../Introduction/#2-liste-a-cocher-boutons-radio"><img alt="Probleme_Identification" src="../Campagne_Recolement/Probleme_Identification.png" /></a></p>
 <h4 id="presence-du-bien-dans-le-recolement-precedent">Présence du bien dans le récolement précédent<a class="headerlink" href="#presence-du-bien-dans-le-recolement-precedent" title="Permanent link">¶</a></h4>
 <p>Indiquez si le bien était présent lors de son précédent récolement
-<a href="../Introduction/#1-liste-deroulante"><img alt="Presence_Bien_Recolement_Precedent" src="../Campagne_Recolement/Presence_Bien_Recolement_Precedent.png"/></a></p>
+<a href="../Introduction/#1-liste-deroulante"><img alt="Presence_Bien_Recolement_Precedent" src="../Campagne_Recolement/Presence_Bien_Recolement_Precedent.png" /></a></p>
 <h4 id="presence-du-bien-dans-le-recolement-en-cours">Présence du bien dans le récolement en cours<a class="headerlink" href="#presence-du-bien-dans-le-recolement-en-cours" title="Permanent link">¶</a></h4>
 <p>Indiquez si le bien est présent
-<a href="../Introduction/#1-liste-deroulante"><img alt="Presence_Bien_Recolement" src="../Campagne_Recolement/Presence_Bien_Recolement.png"/></a></p>
+<a href="../Introduction/#1-liste-deroulante"><img alt="Presence_Bien_Recolement" src="../Campagne_Recolement/Presence_Bien_Recolement.png" /></a></p>
 <h4 id="date-du-precedent-recolement">Date du précédent récolement<a class="headerlink" href="#date-du-precedent-recolement" title="Permanent link">¶</a></h4>
 <p>Indiquez la date du précédent récolement de l'objet
-<a href="../Introduction/#date-daterange"><img alt="Date_Precedent_Recolement" src="../Campagne_Recolement/Date_Precedent_Recolement.png"/></a></p>
+<a href="../Introduction/#date-daterange"><img alt="Date_Precedent_Recolement" src="../Campagne_Recolement/Date_Precedent_Recolement.png" /></a></p>
 <h4 id="date-du-recolement-en-cours">Date du récolement en cours<a class="headerlink" href="#date-du-recolement-en-cours" title="Permanent link">¶</a></h4>
 <p>Indiquez la date du précédent récolement actuel
-<a href="../Introduction/#date-daterange"><img alt="Date_Recolement" src="../Campagne_Recolement/Date_Recolement.png"/></a></p>
+<a href="../Introduction/#date-daterange"><img alt="Date_Recolement" src="../Campagne_Recolement/Date_Recolement.png" /></a></p>
 <h4 id="localisation-dans-le-precedent-recolement">Localisation dans le précédent récolement<a class="headerlink" href="#localisation-dans-le-precedent-recolement" title="Permanent link">¶</a></h4>
 <p>Indiquez ou se trouvait l'objet lors de son précédent récolement et quand il y a été vu
-<a href="../Introduction/#date-daterange"><img alt="Localisation_Precedent_Recolement" src="../Campagne_Recolement/Localisation_Precedent_Recolement.png"/></a></p>
+<a href="../Introduction/#date-daterange"><img alt="Localisation_Precedent_Recolement" src="../Campagne_Recolement/Localisation_Precedent_Recolement.png" /></a></p>
 <h4 id="localisation-dans-le-recolement-en-cours">Localisation dans le récolement en cours<a class="headerlink" href="#localisation-dans-le-recolement-en-cours" title="Permanent link">¶</a></h4>
 <p>Indiquez ou se trouve l'objet et quand il a été vu
-<a href="../Introduction/#date-daterange"><img alt="Localisation_Recolement" src="../Campagne_Recolement/Localisation_Recolement.png"/></a></p>
+<a href="../Introduction/#date-daterange"><img alt="Localisation_Recolement" src="../Campagne_Recolement/Localisation_Recolement.png" /></a></p>
 <h4 id="emplacements-lies">Emplacements liés<a class="headerlink" href="#emplacements-lies" title="Permanent link">¶</a></h4>
 <p>Indiquez un emplacement lié à l'objet. Ce champ peut faire référence au champ <a href="#localisation-dans-le-recolement-en-cours">localisation dans le récolement en cours</a> car il permet d'être plus précis
-<a href="../Introduction/#4-navigation-hierarchique-horizontale"><img alt="Emplacement_Lies" src="../Campagne_Recolement/Emplacement_Lies.png"/></a></p>
+<a href="../Introduction/#4-navigation-hierarchique-horizontale"><img alt="Emplacement_Lies" src="../Campagne_Recolement/Emplacement_Lies.png" /></a></p>
 <h4 id="campagne-liee">Campagne liée<a class="headerlink" href="#campagne-liee" title="Permanent link">¶</a></h4>
 <p>Vous pouvez lié la fiche de récolement à une campgne. Si l'objet provient d'une campagne elle sera indiquée ici
-<a href="../Introduction/#3-recherche-par-auto-completion"><img alt="Campagne_Liee" src="../Campagne_Recolement/Campagne_Liee.png"/></a></p>
+<a href="../Introduction/#3-recherche-par-auto-completion"><img alt="Campagne_Liee" src="../Campagne_Recolement/Campagne_Liee.png" /></a></p>
 <h4 id="constat-detat">Constat d'état<a class="headerlink" href="#constat-detat" title="Permanent link">¶</a></h4>
 <p>Décrivez l’état de l’objet : date du constat, constat d'état, état global et commentaire ; vous pouvez associer à ce constat tout document numérique souhaité.
-<a href="../Introduction/#texte-text"><img alt="Constat_Etat" src="../Images_Objets/Constat_Etat.png"/></a></p>
+<a href="../Introduction/#texte-text"><img alt="Constat_Etat" src="../Images_Objets/Constat_Etat.png" /></a></p>
 <h4 id="objet-inventorie-plusieurs-fois">Objet inventorié plusieurs fois<a class="headerlink" href="#objet-inventorie-plusieurs-fois" title="Permanent link">¶</a></h4>
 <p>Cochez si l'objet a été inventorié plusieurs fois
-<a href="../Introduction/#2-liste-a-cocher-boutons-radio"><img alt="Objet_Inventorie_Plusieurs_Fois" src="../Campagne_Recolement/Objet_Inventorie_Plusieurs_fois.png"/></a></p>
+<a href="../Introduction/#2-liste-a-cocher-boutons-radio"><img alt="Objet_Inventorie_Plusieurs_Fois" src="../Campagne_Recolement/Objet_Inventorie_Plusieurs_fois.png" /></a></p>
 <h4 id="conformite-avec-la-source">Conformité avec la source<a class="headerlink" href="#conformite-avec-la-source" title="Permanent link">¶</a></h4>
 <p>Définissez si l'objet est conforme avec sa source 
-<a href="../Introduction/#1-liste-deroulante"><img alt="Conformite_Source" src="../Campagne_Recolement/Conformite_Source.png"/></a></p>
+<a href="../Introduction/#1-liste-deroulante"><img alt="Conformite_Source" src="../Campagne_Recolement/Conformite_Source.png" /></a></p>
 <h4 id="type-et-references-de-la-source">Type et références de la source<a class="headerlink" href="#type-et-references-de-la-source" title="Permanent link">¶</a></h4>
 <p>Décrivez le type et les références de la source de l'objet
-<a href="../Introduction/#texte-text"><img alt="Type_Reference_Source" src="../Campagne_Recolement/Type_Reference_Source.png"/></a></p>
+<a href="../Introduction/#texte-text"><img alt="Type_Reference_Source" src="../Campagne_Recolement/Type_Reference_Source.png" /></a></p>
 <h4 id="inscriptions">Inscriptions<a class="headerlink" href="#inscriptions" title="Permanent link">¶</a></h4>
 <p>Notez les inscriptions sur l'objet ici : le texte, son type et s'il est inscrit à la fiche de l'objet
-<a href="../Introduction/#1-liste-deroulante"><img alt="Inscriptions" src="../Campagne_Recolement/Inscriptions.png"/></a></p>
+<a href="../Introduction/#1-liste-deroulante"><img alt="Inscriptions" src="../Campagne_Recolement/Inscriptions.png" /></a></p>
 <h4 id="recoleur">Récoleur<a class="headerlink" href="#recoleur" title="Permanent link">¶</a></h4>
 <p>Indiquez ici le nom du récoleur de l'objet. Ce champ est relié au fichier des <a href="../Saisie_Entite">entités</a> et CollectiveAccess vous permettra de créer la fiche du récoleur au fil de l'au
-<a href="../Introduction/#3-recherche-par-auto-completion"><img alt="Recoleur" src="../Campagne_Recolement/Recoleur.png"/></a></p>
+<a href="../Introduction/#3-recherche-par-auto-completion"><img alt="Recoleur" src="../Campagne_Recolement/Recoleur.png" /></a></p>
 <h4 id="date-de-visualisation">Date de visualisation<a class="headerlink" href="#date-de-visualisation" title="Permanent link">¶</a></h4>
 <p>Notez la date à laquelle l'objet a été vu
-<a href="../Introduction/#date-daterange"><img alt="Date_Visualisation" src="../Campagne_Recolement/Date_Visualisation.png"/></a></p>
+<a href="../Introduction/#date-daterange"><img alt="Date_Visualisation" src="../Campagne_Recolement/Date_Visualisation.png" /></a></p>
 <h4 id="date-de-validation-du-recolement">Date de validation du récolement<a class="headerlink" href="#date-de-validation-du-recolement" title="Permanent link">¶</a></h4>
 <p>Indiquez la date de validation du récolement sur place et la date de validation définitive
-<a href="../Introduction/#date-daterange"><img alt="date_Validation_Recolement" src="../Campagne_Recolement/Date_Validation_Recolement.png"/></a></p>
+<a href="../Introduction/#date-daterange"><img alt="date_Validation_Recolement" src="../Campagne_Recolement/Date_Validation_Recolement.png" /></a></p>
 <h4 id="valideur">Valideur<a class="headerlink" href="#valideur" title="Permanent link">¶</a></h4>
 <p>Indiquez ici le nom du valideur du récolement. Ce champ est relié au fichier des <a href="../Saisie_Entite">entités</a> et CollectiveAccess vous permettra de créer la fiche du valideur au fil de l'au
-<a href="../Introduction/#3-recherche-par-auto-completion"><img alt="Valideur" src="../Campagne_Recolement/Valideur.png"/></a></p>
+<a href="../Introduction/#3-recherche-par-auto-completion"><img alt="Valideur" src="../Campagne_Recolement/Valideur.png" /></a></p>
 <h4 id="recolement-fait">Récolement fait<a class="headerlink" href="#recolement-fait" title="Permanent link">¶</a></h4>
 <p>Cochez si le récolement est fini où non
-<a href="../Introduction/#2-liste-a-cocher-boutons-radio"><img alt="Recolement_Fait" src="../Campagne_Recolement/Recolement_Fait.png"/></a></p>
+<a href="../Introduction/#2-liste-a-cocher-boutons-radio"><img alt="Recolement_Fait" src="../Campagne_Recolement/Recolement_Fait.png" /></a></p>
 <h4 id="occurences-liees">Occurences liées<a class="headerlink" href="#occurences-liees" title="Permanent link">¶</a></h4>
 <p>Vous pouvez relié l'objet à des fiches de récolement (par exemple les anciens récolement de l'objet).
-<a href="../Introduction/#3-recherche-par-auto-completion"><img alt="Occurences_Liees" src="../Campagne_Recolement/Occurences_Liees.png"/></a></p>
+<a href="../Introduction/#3-recherche-par-auto-completion"><img alt="Occurences_Liees" src="../Campagne_Recolement/Occurences_Liees.png" /></a></p>
 <h3 id="suite-a-donner-au-recolement">Suite à donner au récolement<a class="headerlink" href="#suite-a-donner-au-recolement" title="Permanent link">¶</a></h3>
 <p>Après le récolement d'un objet, sélectionnez cet écran afin de noter une ou plusieurs suites à donner au récolement.</p>
 <p>Types de suites disponibles :</p>
@@ -1130,63 +2194,62 @@ Sous ces informations ce trouvent différents liens de documentation ou d'assist
 <li>Notice documentaire à créer</li>
 <li>Recherches complémentaires à poursuivre sur l'objet</li>
 <li>Plainte à déposer
-<a href="../Introduction/#texte-text"><img alt="Suite_Recolement" src="../Campagne_Recolement/Suite_Recolement.png"/></a></li>
+<a href="../Introduction/#texte-text"><img alt="Suite_Recolement" src="../Campagne_Recolement/Suite_Recolement.png" /></a></li>
 </ul>
 <p>Pour chaque suite possible cochez si elle est à réaliser et ajoutez des précisions. Une fois réalisée indiquez la date de réalisation et le détail des opérations effectuées (Pour une plainte déposé un fichier en lien avec la plainte)</p>
 <h3 id="generer-le-proces-verbal">Générer le procès-verbal<a class="headerlink" href="#generer-le-proces-verbal" title="Permanent link">¶</a></h3>
 <p>Après avoir fini le récolement, retournez dans <em>Information du PV de récolement</em> et cliquez sur <strong>Générer le procès verbal</strong> puis sur <strong>télécharger</strong> cela vous donnera un fichier word avec les informations de votre campagne</p>
-</article>
-</div>
-</div>
-</main>
-<footer class="md-footer">
-<div class="md-footer-nav">
-<nav class="md-footer-nav__inner md-grid">
-<a class="md-flex md-footer-nav__link md-footer-nav__link--prev" href="../Saisie_Lieux/" rel="prev" title="IV. Lieux">
-<div class="md-flex__cell md-flex__cell--shrink">
-<i class="md-icon md-icon--arrow-back md-footer-nav__button"></i>
-</div>
-<div class="md-flex__cell md-flex__cell--stretch md-footer-nav__title">
-<span class="md-flex__ellipsis">
-<span class="md-footer-nav__direction">
-                  Précédent
-                </span>
-                IV. Lieux
-              </span>
-</div>
-</a>
-<a class="md-flex md-footer-nav__link md-footer-nav__link--next" href="../Export_Joconde/" rel="next" title="VI. Export Joconde">
-<div class="md-flex__cell md-flex__cell--stretch md-footer-nav__title">
-<span class="md-flex__ellipsis">
-<span class="md-footer-nav__direction">
-                  Suivant
-                </span>
-                VI. Export Joconde
-              </span>
-</div>
-<div class="md-flex__cell md-flex__cell--shrink">
-<i class="md-icon md-icon--arrow-forward md-footer-nav__button"></i>
-</div>
-</a>
-</nav>
-</div>
-<div class="md-footer-meta md-typeset">
-<div class="md-footer-meta__inner md-grid">
-<div class="md-footer-copyright">
+
+
+
+
+
+
+
+
+
+
+
+
+                
+              </article>
+            </div>
+          
+          
+<script>var target=document.getElementById(location.hash.slice(1));target&&target.name&&(target.checked=target.name.startsWith("__tabbed_"))</script>
+        </div>
         
-        powered by
-        <a href="https://www.mkdocs.org" rel="noopener" target="_blank">MkDocs</a>
-        and
-        <a href="https://squidfunk.github.io/mkdocs-material/" rel="noopener" target="_blank">
-          Material for MkDocs</a>
+      </main>
+      
+        <footer class="md-footer">
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-copyright">
+  
+  
+    Made with
+    <a href="https://squidfunk.github.io/mkdocs-material/" target="_blank" rel="noopener">
+      Material for MkDocs
+    </a>
+  
 </div>
-</div>
-</div>
+      
+    </div>
+  </div>
 </footer>
-</div>
-<script src="../assets/javascripts/application.c33a9706.js"></script>
-<script src="../assets/javascripts/lunr/lunr.stemmer.support.js"></script>
-<script src="../assets/javascripts/lunr/lunr.fr.js"></script>
-<script>app.initialize({version:"1.0.4",url:{base:".."}})</script>
-</body>
+      
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    
+    
+    <script id="__config" type="application/json">{"base": "..", "features": [], "search": "../assets/javascripts/workers/search.b8dbb3d2.min.js", "translations": {"clipboard.copied": "Copi\u00e9 dans le presse-papier", "clipboard.copy": "Copier dans le presse-papier", "search.result.more.one": "1 de plus sur cette page", "search.result.more.other": "# de plus sur cette page", "search.result.none": "Aucun document trouv\u00e9", "search.result.one": "1 document trouv\u00e9", "search.result.other": "# documents trouv\u00e9s", "search.result.placeholder": "Taper pour d\u00e9marrer la recherche", "search.result.term.missing": "Non trouv\u00e9", "select.version": "S\u00e9lectionner la version"}}</script>
+    
+    
+      <script src="../assets/javascripts/bundle.caa56a14.min.js"></script>
+      
+    
+  </body>
 </html>
