@@ -38,5 +38,11 @@ AttributeError: module 'mkdocs.utils' has no attribute 'string_types'
 ## Running
 
 ```
+mkdocs build
 mkdocs serve
+```
+
+## Deploy
+```
+mkdocs gh-deploy --remote-branch gh-pages
 ```
