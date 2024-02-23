@@ -34,6 +34,7 @@ repo_url: 'http://github.com/ideesculture/museesDeFranceDocumentation'
 
 theme:
   name: material
+  custom_dir: overrides  
   language: fr
   palette:
     primary: orange
