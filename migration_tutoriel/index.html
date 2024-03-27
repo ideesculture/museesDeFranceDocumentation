@@ -74,7 +74,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#tutoriel-importer-une-feuille-de-calcul-cartographique" class="md-skip">
+        <a href="#tutoriel-importer-une-feuille-de-calcul-de-mapping" class="md-skip">
           Aller au contenu
         </a>
       
@@ -893,9 +893,9 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#importer-une-feuille-de-calcul-cartographique-apercu-des-colonnes" class="md-nav__link">
+  <a href="#importer-une-feuille-de-calcul-de-mapping-apercu-des-colonnes" class="md-nav__link">
     <span class="md-ellipsis">
-      Importer une feuille de calcul cartographique : Aperçu des colonnes
+      Importer une feuille de calcul de mapping : Aperçu des colonnes
     </span>
   </a>
   
@@ -1020,9 +1020,9 @@
 </li>
         
           <li class="md-nav__item">
-  <a href="#importer-une-feuille-de-calcul-cartographique-apercu-des-colonnes_1" class="md-nav__link">
+  <a href="#importer-une-feuille-de-calcul-de-mapping-apercu-des-colonnes_1" class="md-nav__link">
     <span class="md-ellipsis">
-      Importer une feuille de calcul cartographique : Aperçu des colonnes
+      Importer une feuille de calcul de mapping : Aperçu des colonnes
     </span>
   </a>
   
@@ -1550,9 +1550,9 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#importer-une-feuille-de-calcul-cartographique-apercu-des-colonnes" class="md-nav__link">
+  <a href="#importer-une-feuille-de-calcul-de-mapping-apercu-des-colonnes" class="md-nav__link">
     <span class="md-ellipsis">
-      Importer une feuille de calcul cartographique : Aperçu des colonnes
+      Importer une feuille de calcul de mapping : Aperçu des colonnes
     </span>
   </a>
   
@@ -1677,9 +1677,9 @@
 </li>
         
           <li class="md-nav__item">
-  <a href="#importer-une-feuille-de-calcul-cartographique-apercu-des-colonnes_1" class="md-nav__link">
+  <a href="#importer-une-feuille-de-calcul-de-mapping-apercu-des-colonnes_1" class="md-nav__link">
     <span class="md-ellipsis">
-      Importer une feuille de calcul cartographique : Aperçu des colonnes
+      Importer une feuille de calcul de mapping : Aperçu des colonnes
     </span>
   </a>
   
@@ -1816,11 +1816,11 @@
   
 
 
-<h1 id="tutoriel-importer-une-feuille-de-calcul-cartographique"><strong>Tutoriel : Importer une feuille de calcul cartographique</strong><a class="headerlink" href="#tutoriel-importer-une-feuille-de-calcul-cartographique" title="Permanent link">¶</a></h1>
+<h1 id="tutoriel-importer-une-feuille-de-calcul-de-mapping"><strong>Tutoriel : Importer une feuille de calcul de mapping</strong><a class="headerlink" href="#tutoriel-importer-une-feuille-de-calcul-de-mapping" title="Permanent link">¶</a></h1>
 <blockquote>
 <p>Ce chapitre est une traduction adaptée de la documentation officielle de CollectiveAccess. Pour consulter la documentation originale, veuillez cliquer <a href="https://manual.collectiveaccess.org/providence/user/import/c_import_tutorial.html">ici</a>.</p>
 </blockquote>
-<p>Ce didacticiel passe en revue chaque étape de l'import d'une feuille de calcul de cartographie, en utilisant des exemples de données, un exemple de feuille de calcul et un exemple de profil d'installation.</p>
+<p>Ce didacticiel passe en revue chaque étape de l'import d'une feuille de calcul de mapping, en utilisant des exemples de données, un exemple de feuille de calcul et un exemple de profil d'installation.</p>
 <h2 id="ressources-utiles">Ressources utiles<a class="headerlink" href="#ressources-utiles" title="Permanent link">¶</a></h2>
 <p>Pour suivre ce tutoriel, téléchargez les fichiers suivants :</p>
 <p><a href="https://manual.collectiveaccess.org/_downloads/ef9d68ea81160b29a4de14bf414034aa/sample_mapping_tutorial.xlsx">Exemple de feuille de calcul pour la mise en correspondance des imports</a></p>
@@ -1828,28 +1828,28 @@
 <p><a href="https://manual.collectiveaccess.org/_downloads/c0c7555172ff8845650acfc0846f8fb6/Sample_import_profile.xml">Exemple de profil d'installation</a></p>
 <p>Pour créer votre propre carte, téléchargez le modèle suivant :</p>
 <p><a href="https://manual.collectiveaccess.org/_downloads/41fc322785b4267f6fcb03ef0740cd44/Blank_starter_import_mapping.xlsx">Exemple vierge de feuille de calcul pour la mise en correspondance des imports</a></p>
-<p>Autres ressources utiles pour créer une cartographie des imports :</p>
+<p>Autres ressources utiles pour créer un mapping des imports :</p>
 <p><a href="file:///Users/charlotteposever/Documents/ca_manual/providence/user/import/import_reference.html">Importer des pages de référence</a></p>
 <p><a href="https://jsonlint.com/">Validateur et formateur JSON en ligne</a></p>
-<h2 id="importer-une-feuille-de-calcul-cartographique-apercu-des-colonnes">Importer une feuille de calcul cartographique : Aperçu des colonnes<a class="headerlink" href="#importer-une-feuille-de-calcul-cartographique-apercu-des-colonnes" title="Permanent link">¶</a></h2>
+<h2 id="importer-une-feuille-de-calcul-de-mapping-apercu-des-colonnes">Importer une feuille de calcul de mapping : Aperçu des colonnes<a class="headerlink" href="#importer-une-feuille-de-calcul-de-mapping-apercu-des-colonnes" title="Permanent link">¶</a></h2>
 <p>Téléchargez et ouvrez l'exemple de données d'import (données source) et l'exemple de feuille de calcul pour la mise en correspondance des imports. Une fois ouvert, l'échantillon de données d'import (données source) se présente comme suit :</p>
 <p><img alt="" src="../9b15e3255be22e8ea4a70e6dc2946d71.png" /></p>
 <p><em>L'échantillon de données d'import (données source). Notez les colonnes numérotées de 1 à 10.</em></p>
-<p>Une fois ouverte, la feuille de calcul de l'échantillon de cartographie des imports se présente comme suit :</p>
+<p>Une fois ouverte, la feuille de calcul de l'échantillon de mapping des imports se présente comme suit :</p>
 <p><img alt="Une image contenant texte, reçu, ligne Description générée automatiquement" src="../ed3bad319de453e0439c61c4d12ad3cb.png" /></p>
-<p><em>L'exemple de feuille de calcul pour la cartographie des imports.</em></p>
-<p>Notez que dans l'échantillon de données d'import, les colonnes sont numérotées de 1 à 10 dans Excel. Ces numéros apparaissent dans la colonne 2 de la feuille de calcul de l'échantillon de données d'import. Poursuivez votre lecture pour obtenir une vue d'ensemble de chaque aspect de la feuille de calcul de l'échantillon de cartographie des imports et de son lien avec les données d'import de l'échantillon (données sources).</p>
+<p><em>L'exemple de feuille de calcul pour le mapping de données.</em></p>
+<p>Notez que dans l'échantillon de données d'import, les colonnes sont numérotées de 1 à 10 dans Excel. Ces numéros apparaissent dans la colonne 2 de la feuille de calcul de l'échantillon de données d'import. Poursuivez votre lecture pour obtenir une vue d'ensemble de chaque aspect de la feuille de calcul de l'échantillon de mapping des imports et de son lien avec les données d'import de l'échantillon (données sources).</p>
 <h2 id="parametres">Paramètres<a class="headerlink" href="#parametres" title="Permanent link">¶</a></h2>
 <p><img alt="" src="../393051e971701fb085cbdd92fa84fc84.png" /></p>
-<p><em>Paramètres définis dans la partie inférieure de la feuille de calcul Exemple de cartographie des imports.</em></p>
-<p>Les paramètres sont une partie fondamentale de chaque cartographie d'import qui définit certains aspects de l'import et détermine également la façon dont les données importées seront traitées dans CollectiveAccess. Dans l'exemple de feuille de calcul de correspondance d'import, les paramètres se trouvent au bas de la feuille de calcul, comme illustré ci-dessus.</p>
-<p>Dans les paramètres de la cartographie d'échantillon, le nom du fichier de feuille de calcul, en texte arbitraire et sans caractères spéciaux ni espaces, est fourni : <strong>Sample mapping</strong>, et <strong>sample_mapping</strong>. En outre, le format d'entrée des données source est spécifié dans les paramètres de toute feuille de calcul d'import, indiquant à CollectiveAccess le format de fichier dans lequel les données d'origine sont fournies. Comme les données d'échantillon fournies sont au <strong>format Excel (XLXS)</strong>, c'est ce type de fichier qui a été sélectionné.</p>
+<p><em>Paramètres définis dans la partie inférieure de la feuille de calcul Exemple de mapping des imports.</em></p>
+<p>Les paramètres sont une partie fondamentale de chaque mapping d'import qui définit certains aspects de l'import et détermine également la façon dont les données importées seront traitées dans CollectiveAccess. Dans l'exemple de feuille de calcul de correspondance d'import, les paramètres se trouvent au bas de la feuille de calcul, comme illustré ci-dessus.</p>
+<p>Dans les paramètres de le mapping de données, le nom du fichier de feuille de calcul, en texte arbitraire et sans caractères spéciaux ni espaces, est fourni : <strong>Sample mapping</strong>, et <strong>sample_mapping</strong>. En outre, le format d'entrée des données source est spécifié dans les paramètres de toute feuille de calcul d'import, indiquant à CollectiveAccess le format de fichier dans lequel les données d'origine sont fournies. Comme les données d'échantillon fournies sont au <strong>format Excel (XLXS)</strong>, c'est ce type de fichier qui a été sélectionné.</p>
 <p>Les données sources se rapportent à des objets, c'est pourquoi la table est définie sur <strong>ca_objects</strong> ; les données sources seront donc importées sous forme d'enregistrements d'objets. D'autres paramètres permettent de déterminer comment les enregistrements existants (le cas échéant) sont comparés à l'import, comment les erreurs d'import sont gérées, le type et les lignes de la feuille de calcul qui doivent être ignorées.</p>
 <p>Pour ce tutoriel, on suppose qu'<em>aucun enregistrement n'a</em> été importé auparavant dans CollectiveAccess ; cet exemple est la première import. Par conséquent, le paramètre <strong>existingRecordPolicy</strong> est défini sur <strong>none (aucun)</strong>. Le nombre de lignes à ignorer est fixé à <em>1</em> ; en regardant l'exemple de données d'import fourni, la toute première ligne de la feuille de calcul ne contient pas de données, mais des titres de rubriques qui ne sont pas nécessaires lors de l'import. La valeur 1 de numInitialRowsToSkip indique à l'importateur d'ignorer cette ligne d'en-tête. Toutefois, ce nombre est arbitraire et dépend du format des données sources. Des descriptions et d'autres notes concernant ces paramètres sont fournies dans la section Paramètres pour plus de clarté.</p>
 <h3 id="colonne-1-types-de-regles">Colonne 1 : Types de règles<a class="headerlink" href="#colonne-1-types-de-regles" title="Permanent link">¶</a></h3>
 <p><img alt="" src="../4277d06b9672c28896ea6cc401d6f31d.png" /></p>
-<p><em>Colonne "Rule Type" dans l'exemple de feuille de calcul de la cartographie des imports. Notez que ces règles sont sélectionnées à partir d'un menu déroulant préexistant.</em></p>
-<p>Les types de règles constituent la première colonne d'une cartographie d'import. Les règles définies dans cette colonne déterminent la manière dont chaque ligne de la feuille de calcul sera importée.</p>
+<p><em>Colonne "Rule Type" dans l'exemple de feuille de calcul de le mapping de données. Notez que ces règles sont sélectionnées à partir d'un menu déroulant préexistant.</em></p>
+<p>Les types de règles constituent la première colonne d'un mapping d'import. Les règles définies dans cette colonne déterminent la manière dont chaque ligne de la feuille de calcul sera importée.</p>
 <ul>
 <li>
 <p><strong>Mapping</strong> : La ligne peut être mappée, ce qui signifie qu'elle sera importée.</p>
@@ -1873,9 +1873,9 @@
 <p>Voir <a href="file:///Users/charlotteposever/Documents/ca_manual/providence/user/import/c_creating_mapping.html#column-1-rule-types">ici</a> pour plus de détails sur les types de règles.</p>
 <h3 id="colonne-2-source">Colonne 2 : Source<a class="headerlink" href="#colonne-2-source" title="Permanent link">¶</a></h3>
 <p><img alt="" src="../dc0aaf771b5a1f8cedc2e235abd35649.png" /></p>
-<p><em>La colonne source dans l'exemple de feuille de calcul de la cartographie des imports. Notez que les valeurs sont des nombres de 1 à 10 et correspondent aux colonnes 1 à 10 de l'exemple de données d'import. La valeur "created" de la ligne 5 correspond au type de règle Constant de la colonne 1.</em></p>
+<p><em>La colonne source dans l'exemple de feuille de calcul de le mapping de données. Notez que les valeurs sont des nombres de 1 à 10 et correspondent aux colonnes 1 à 10 de l'exemple de données d'import. La valeur "created" de la ligne 5 correspond au type de règle Constant de la colonne 1.</em></p>
 <p>La deuxième colonne de la feuille de calcul de la correspondance des imports est celle où les colonnes de données sources spécifiques sont citées. Cette colonne indique l'emplacement des données sources dans la feuille de calcul des données échantillons, formant ainsi la première partie du tableau de concordance. En fonction du format des données source, cette colonne sera différente ; étant donné que les données d'import de l'échantillon sont au format Excel, les valeurs de cette colonne correspondent aux numéros de colonne des données d'import de l'échantillon (1, 2, 3, etc.) ; toutefois, si les données source sont dans un autre format de fichier pris en charge, les valeurs de cette colonne seront différentes.</p>
-<p>La feuille de calcul de l'exemple contient 10 colonnes de données et, par conséquent, 10 lignes de valeurs dans l'exemple de mapping. Les valeurs de données constantes sont définies dans cette colonne (uniquement si le type de règle est défini sur "Constant", comme à la ligne 5 de la feuille de calcul de la cartographie des imports). Dans ce cas, la colonne source, au lieu d'un numéro provenant de la feuille de calcul des données source, sera définie comme la valeur ou l'identifiant de l'élément de liste provenant de la configuration de CollectiveAccess telle que définie dans l'exemple de profil. Dans l'exemple de mapping d'import, cette valeur se trouve à la ligne 5 et est définie sur "created".</p>
+<p>La feuille de calcul de l'exemple contient 10 colonnes de données et, par conséquent, 10 lignes de valeurs dans l'exemple de mapping. Les valeurs de données constantes sont définies dans cette colonne (uniquement si le type de règle est défini sur "Constant", comme à la ligne 5 de la feuille de calcul de le mapping de données). Dans ce cas, la colonne source, au lieu d'un numéro provenant de la feuille de calcul des données source, sera définie comme la valeur ou l'identifiant de l'élément de liste provenant de la configuration de CollectiveAccess telle que définie dans l'exemple de profil. Dans l'exemple de mapping d'import, cette valeur se trouve à la ligne 5 et est définie sur "created".</p>
 <p><strong>Note</strong></p>
 <p>Les colonnes de données source peuvent également être référencées ailleurs dans le mapping d'import (généralement dans les colonnes Options ou Raffinage décrites ci-dessous) en faisant précéder le numéro de la colonne d'un "\^" (par exemple, "\^10"), ce qui indique au mapping que la valeur de la colonne 10 doit être insérée. Cette méthode permet de combiner plusieurs colonnes à l'aide d'options et est fréquemment utilisée dans les raffineries pour créer des entités, des collections et d'autres paramètres plus complexes. Un exemple est donné à la ligne 10 de la feuille de calcul du mapping d'import, dans la colonne 7.</p>
 <h3 id="colonne-3-ca_tableelement_code">Colonne 3 : CA_table.element_code<a class="headerlink" href="#colonne-3-ca_tableelement_code" title="Permanent link">¶</a></h3>
@@ -1892,17 +1892,17 @@
 <h3 id="colonne-4-groupe">Colonne 4 : Groupe<a class="headerlink" href="#colonne-4-groupe" title="Permanent link">¶</a></h3>
 <p><img alt="" src="../fdf75f458d532db6234e07e1f0fcf775.png" /></p>
 <p><em>Colonnes 3 et 4 de l'exemple de mapping d'import, montrant un groupe personnalisé pour le champ Date.</em></p>
-<p>La colonne 4 de la feuille de calcul de la cartographie d'import est utilisée pour déclarer les groupes. La présence de groupes est facultative, mais elle est requise pour les éléments de métadonnées mappés dans un <strong>conteneur</strong>. Un conteneur est un élément de métadonnées ou un champ qui contient des sous-éléments ; dans l'exemple de mapping, cet élément de métadonnées est la date. Les sous-éléments définissant la date et le type de date résident dans l'élément de métadonnées Date. L'utilisation de groupes est un moyen simple de s'assurer que tous les mappings vers un conteneur aboutissent effectivement dans la même instance de conteneur. Pour en savoir plus, voir <a href="file:///Users/charlotteposever/Documents/ca_manual/providence/user/import/containers.html#import-containers">Conteneurs</a>.</p>
+<p>La colonne 4 de la feuille de calcul du mapping d'import est utilisée pour déclarer les groupes. La présence de groupes est facultative, mais elle est requise pour les éléments de métadonnées mappés dans un <strong>conteneur</strong>. Un conteneur est un élément de métadonnées ou un champ qui contient des sous-éléments ; dans l'exemple de mapping, cet élément de métadonnées est la date. Les sous-éléments définissant la date et le type de date résident dans l'élément de métadonnées Date. L'utilisation de groupes est un moyen simple de s'assurer que tous les mappings vers un conteneur aboutissent effectivement dans la même instance de conteneur. Pour en savoir plus, voir <a href="file:///Users/charlotteposever/Documents/ca_manual/providence/user/import/containers.html#import-containers">Conteneurs</a>.</p>
 <p>Dans l'exemple de mapping d'import, deux sous-éléments de <strong>ca_objects.date</strong> sont déclarés en tant que codes de liasse <strong>ca_objects.date.date_value</strong> et <strong>ca_objects.date.date_type</strong>. Pour importer des sous-éléments spécifiques d'un conteneur, les codes de l'élément du conteneur lui-même, <strong>ca_objects.date, ainsi que le</strong> code du sous-élément qui est votre cible finale, <strong>date_value</strong> et <strong>date_type</strong>, doivent être cités.</p>
 <p>Le groupe créé pour le champ Date dans l'exemple de mapping d'import s'appelle simplement "date", mais pour tout mapping d'import, le nom du groupe peut être personnalisé et arbitraire. Pour affecter des éléments au même conteneur, le nom du groupe doit toutefois correspondre.</p>
 <h3 id="colonne-5-options">Colonne 5 : Options<a class="headerlink" href="#colonne-5-options" title="Permanent link">¶</a></h3>
 <p><img alt="" src="../f02e44e39cd2b3f86f5b0ec195f768f4.png" /></p>
-<p><em>Colonne 5 avec deux options définies dans la feuille de calcul de la cartographie des imports.</em></p>
+<p><em>Colonne 5 avec deux options définies dans la feuille de calcul de le mapping de données.</em></p>
 <p>Les options permettent de définir diverses conditions pour l'import elle-même. Les options peuvent traiter les données qui ont besoin d'être nettoyées, ignorer les cellules de données vides ou formater les données avec des modèles spécifiques. Les options doivent être écrites en code (<a href="https://www.json.org/json-en.html">JSON</a>). Dans l'exemple de mapping d'import, deux options communes sont utilisées pour définir des conditions sur des colonnes particulières des données sources importées.</p>
 <p>La ligne 6 de l'exemple de mapping de l'import correspond à la colonne Source 4 de l'exemple de données d'import. Deux enregistrements de la colonne Source 4 contiennent plusieurs valeurs de sujet dans la même cellule, séparées par des points-virgules :</p>
 <p><img alt="" src="../4ef14e188053405cefff337b5cdb5afe.png" /></p>
 <p>Il est nécessaire de définir l'option de délimitation dans le mapping d'import (voir ligne 6, colonne 5), car elle garantit que ces valeurs avec des points-virgules sont analysées correctement et importées dans des instances distinctes du champ Subject dans CollectiveAccess. En définissant le délimiteur comme un point-virgule, vous vous assurez que les valeurs sont séparées par les points-virgules présents dans les données source. Sans l'option de délimitation, la chaîne entière finirait par former une instance unique du champ Sujet.</p>
-<p>La ligne 8 de la feuille de calcul de la cartographie des imports correspond à la colonne Source 6 de l'échantillon de données d'import, qui contient des notes internes en texte libre. Cependant, seuls deux enregistrements contiennent ces notes ; l'autre enregistrement a une cellule vide dans cette colonne :</p>
+<p>La ligne 8 de la feuille de calcul de le mapping de données correspond à la colonne Source 6 de l'échantillon de données d'import, qui contient des notes internes en texte libre. Cependant, seuls deux enregistrements contiennent ces notes ; l'autre enregistrement a une cellule vide dans cette colonne :</p>
 <p><img alt="Une image contenant texte, capture d’écran, Police, reçu Description générée automatiquement" src="../93b9fbd8277ba29de193628f4d7e6a38.png" /></p>
 <p>L'utilisation de l'option <strong>skipIfEmpty</strong> garantit que la valeur vide de cette colonne n'est pas importée dans le système d'accès collectif. La déclaration du chiffre un après les deux points de l'option indique que la cellule sera ignorée si elle est vide (1= oui, 0= non).</p>
 <p>Le tableau ci-dessous présente une liste des options courantes utilisées dans une feuille de calcul de conversion des imports. Pour une liste complète des options de mapping, voir <a href="file:///Users/charlotteposever/Documents/ca_manual/providence/user/import/mappings/mappingOptions.html?highlight=options">Options de mapping</a>.</p>
@@ -1959,7 +1959,7 @@
 </table>
 <h3 id="colonne-6-raffinerie">Colonne 6 : Raffinerie<a class="headerlink" href="#colonne-6-raffinerie" title="Permanent link">¶</a></h3>
 <p><img alt="" src="../08cee42c5358264b2d53b58d6df4ccda.png" /></p>
-<p><em>La colonne 6 de la feuille de calcul de la cartographie des imports contient deux raffineries.</em></p>
+<p><em>La colonne 6 de la feuille de calcul de le mapping de données contient deux raffineries.</em></p>
 <p>Les raffineurs sont utilisés pour prendre un format de données spécifique à partir des données sources et le transformer via un comportement spécifique lorsqu'il est importé dans CollectiveAccess. Les raffineries permettent de créer des enregistrements connexes et de faire correspondre des enregistrements existants dans CollectiveAccess. Les raffineries sont facultatives, mais elles sont généralement utilisées dans les données sources qui font référence à d'autres tables connexes.</p>
 <p>Dans la feuille de calcul de l'exemple de mapping d'import, notez que les raffineries ne sont pas utilisées dans chaque ligne de données (rappelez-vous que chaque ligne représente une colonne des données source). Elles ne sont présentes que dans les lignes 9 et 10 de l'exemple de mapping des imports, ou dans les colonnes 7 et 8 de l'exemple de données d'import. Ces lignes font référence à deux autres tables : Entités et Lots d'objets :</p>
 <p><img alt="" src="../93d1955a65d1a785badcc3cf7e754385.png" /></p>
@@ -1976,7 +1976,7 @@
 <tbody>
 <tr>
 <td>séparateur d'entités</td>
-<td>Crée un enregistrement d'entité ou trouve une correspondance exacte avec le nom de l'entité et crée une relation telle que définie dans la cartographie d'import. Décompose les parties de noms, définit le type d'entité et d'autres paramètres.</td>
+<td>Crée un enregistrement d'entité ou trouve une correspondance exacte avec le nom de l'entité et crée une relation telle que définie dans le mapping d'import. Décompose les parties de noms, définit le type d'entité et d'autres paramètres.</td>
 </tr>
 <tr>
 <td>entityJoiner</td>
@@ -2002,14 +2002,14 @@
 </table>
 <h3 id="colonne-7-parametres-de-la-raffinerie">Colonne 7 : Paramètres de la raffinerie<a class="headerlink" href="#colonne-7-parametres-de-la-raffinerie" title="Permanent link">¶</a></h3>
 <p><img alt="Une image contenant texte, capture d’écran, reçu, Police Description générée automatiquement" src="../618b1291a672dbfd75673e8e11aa757b.png" /></p>
-<p><em>Colonnes 6 et 7 de la feuille de calcul de la cartographie des imports indiquant les raffineries et les paramètres de raffinage correspondants, écrits en code.</em></p>
+<p><em>Colonnes 6 et 7 de la feuille de calcul de le mapping de données indiquant les raffineries et les paramètres de raffinage correspondants, écrits en code.</em></p>
 <p>Les paramètres de raffinerie définissent les conditions d'utilisation de la raffinerie dans le mapping d'import. Chaque fois qu'une raffinerie est utilisée dans un mapping, un paramètre de raffinerie doit être utilisé pour indiquer à l'importateur comment manipuler les données sources et créer des enregistrements distincts. Comme les options, les paramètres de raffinage sont écrits en code (JSON).</p>
 <p>Dans l'exemple de mapping d'import, le paramètre Refinery <strong>EntitySplitter</strong> indique que des enregistrements d'entités distincts et apparentés seront créés à partir de la colonne Creators dans les données source. Le paramètre Refinery spécifie simplement le type de relation que ces enregistrements auront avec d'autres enregistrements d'objets dans l'import (créateur), ainsi que le type d'entité créée (individu). Pour plus d'informations, voir <a href="file:///Users/charlotteposever/Documents/ca_manual/providence/user/import/lists_and_vocab_in_mapping.html#import-lists-and-vocab-in-mapping">Utilisation de listes et de vocabulaires dans un mapping d'import.</a></p>
 <p>Le paramètre de raffinage <strong>ObjectLotSplitter</strong> indique que des enregistrements de lots d'objets distincts et apparentés seront créés à partir de la colonne Accession des données sources. Le paramètre Refinery spécifie que ces enregistrements de lots d'objets seront affichés en tant que "cadeaux" et contiendront le numéro d'acquisition de la colonne 9 des données sources.</p>
 <p>Le tableau ci-dessous présente une liste des paramètres courants des raffineries. Pour une liste complète des raffineries et des paramètres de raffinage, voir <a href="file:///Users/charlotteposever/Documents/ca_manual/providence/user/import/mappings/refineries.html?highlight=refineries">Raffineries et paramètres de raffinage</a>.</p>
 <h3 id="colonne-8-valeurs-originales">Colonne 8 : Valeurs originales<a class="headerlink" href="#colonne-8-valeurs-originales" title="Permanent link">¶</a></h3>
 <p><img alt="" src="../c3334c3b32a4c3b38a86e41639a90b91.png" /></p>
-<p><em>Les valeurs originales figurent à la ligne 12 de la feuille de calcul de la cartographie des imports.</em></p>
+<p><em>Les valeurs originales figurent à la ligne 12 de la feuille de calcul de le mapping de données.</em></p>
 <p>Il se peut que certaines valeurs des données sources doivent être remplacées par de nouvelles valeurs lors de l'import. Il s'agit d'un scénario courant pour les données qui ne correspondent pas exactement au code d'un élément de liste pour les valeurs correspondantes dans CollectiveAccess, mais qui doivent correspondre pour être importées correctement. Il s'agit d'une colonne facultative, qui dépend du format des données sources.</p>
 <p>Dans l'exemple de données d'import, la colonne 10 contient les valeurs suivantes :</p>
 <p><img alt="" src="../9853b1c54bc080b33d5a4272084830f5.png" /></p>
@@ -2018,18 +2018,18 @@
 <p>Pour plus d'informations sur l'utilisation des valeurs d'origine et de remplacement, voir <a href="file:///Users/charlotteposever/Documents/ca_manual/providence/user/import/orig_replace_example.html">Utilisation des colonnes Valeur d'origine/Valeur de remplacement</a>.</p>
 <h3 id="colonne-9-valeurs-de-remplacement">Colonne 9 : Valeurs de remplacement<a class="headerlink" href="#colonne-9-valeurs-de-remplacement" title="Permanent link">¶</a></h3>
 <p><img alt="Une image contenant texte, capture d’écran, reçu, nombre Description générée automatiquement" src="../c3334c3b32a4c3b38a86e41639a90b91.png" /></p>
-<p><em>Valeurs de remplacement dans la colonne 9 de la feuille de calcul de la cartographie des imports.</em></p>
+<p><em>Valeurs de remplacement dans la colonne 9 de la feuille de calcul de le mapping de données.</em></p>
 <p>C'est dans cette colonne que sont saisies les nouvelles valeurs d'un code d'élément de liste correspondant pour CollectiveAccess, qui remplaceront les valeurs d'origine dans les données d'import de l'échantillon. Plusieurs valeurs peuvent être ajoutées à une seule cellule (voir ci-dessus), à condition que les valeurs de remplacement correspondent aux valeurs d'origine ligne par ligne. L'utilisation des colonnes Original et Remplacement est suffisante pour transformer une petite plage de valeurs lors de l'import.</p>
 <h3 id="colonne-10-description-de-la-source">Colonne 10 : Description de la source<a class="headerlink" href="#colonne-10-description-de-la-source" title="Permanent link">¶</a></h3>
 <p><img alt="Une image contenant texte, capture d’écran, Police, nombre Description générée automatiquement" src="../ca5b776bdd67d0bc0cebc9cbe7c1d18f.png" /></p>
-<p><em>Description des sources dans la feuille de calcul de la cartographie des imports.</em></p>
+<p><em>Description des sources dans la feuille de calcul de le mapping de données.</em></p>
 <p>Il s'agit d'une colonne facultative dans la feuille de calcul de la correspondance d'import. Description de la source est l'endroit où l'on peut mettre une étiquette ou un nom en texte clair pour la colonne source originale ; cela permet de se référer facilement aux champs qui sont mis en correspondance et peut faciliter le flux de travail lors de la création d'une mise en correspondance d'import.</p>
-<p>Dans l'exemple de cartographie d'import, quelques-unes de ces valeurs ont été copiées à partir de la feuille de calcul de l'exemple de données d'import, indiquant quelles lignes contiennent quelles valeurs de l'exemple de données source.</p>
+<p>Dans l'exemple de mapping d'import, quelques-unes de ces valeurs ont été copiées à partir de la feuille de calcul de l'exemple de données d'import, indiquant quelles lignes contiennent quelles valeurs de l'exemple de données source.</p>
 <h3 id="colonne-11-notes">Colonne 11 : Notes<a class="headerlink" href="#colonne-11-notes" title="Permanent link">¶</a></h3>
 <p><img alt="Une image contenant texte, capture d’écran, Police, nombre Description générée automatiquement" src="../5adf42a5dc251e42b376f105d18411b4.png" /></p>
-<p><em>Notes dans la feuille de calcul de la cartographie des imports.</em></p>
-<p>Il s'agit d'une colonne facultative de la feuille de calcul de la cartographie des imports qui permet d'expliquer comment et pourquoi une certaine ligne est cartographiée de la manière dont elle l'est. Les colonnes 10 et 11 de la feuille de calcul de la cartographie d'import peuvent être utiles pour une référence ultérieure si une cartographie est destinée à être utilisée à plusieurs reprises, afin de s'assurer que la cartographie sélectionnée correspond aux données sources. En outre, les notes sont également utiles si les cartographies sont le fruit d'un travail de collaboration, car elles peuvent expliquer en texte clair pourquoi certaines décisions ont été prises.</p>
-<p>Dans l'exemple de cartographie d'import, ces notes comprennent de brefs commentaires clarifiant divers aspects de la cartographie.</p>
+<p><em>Notes dans la feuille de calcul de le mapping de données.</em></p>
+<p>Il s'agit d'une colonne facultative de la feuille de calcul de le mapping de données qui permet d'expliquer comment et pourquoi une certaine ligne est mappée de la manière dont elle l'est. Les colonnes 10 et 11 de la feuille de calcul du mapping d'import peuvent être utiles pour une référence ultérieure si un mapping est destinée à être utilisée à plusieurs reprises, afin de s'assurer que le mapping sélectionnée correspond aux données sources. En outre, les notes sont également utiles si les mappings sont le fruit d'un travail de collaboration, car elles peuvent expliquer en texte clair pourquoi certaines décisions ont été prises.</p>
+<p>Dans l'exemple de mapping d'import, ces notes comprennent de brefs commentaires clarifiant divers aspects du mapping.</p>
 <p><a href="https://manual.collectiveaccess.org/providence/user/import/running.html">Suivant</a>  <a href="https://manual.collectiveaccess.org/providence/user/import/c_creating_mapping.html">Précédent</a></p>
 <ul>
 <li>
@@ -2048,7 +2048,7 @@
 <p><a href="https://manual.collectiveaccess.org/providence/user/import/c_import_tutorial.html#column-11-notes">Colonne 11 : Notes</a></p>
 </li>
 </ul>
-<p>Ce didacticiel passe en revue chaque étape de l'import d'une feuille de calcul de cartographie, en utilisant des exemples de données, un exemple de feuille de calcul et un exemple de profil d'installation.</p>
+<p>Ce didacticiel passe en revue chaque étape de l'import d'une feuille de calcul de mapping, en utilisant des exemples de données, un exemple de feuille de calcul et un exemple de profil d'installation.</p>
 <h3 id="ressources-utiles_1">Ressources utiles<a class="headerlink" href="#ressources-utiles_1" title="Permanent link">¶</a></h3>
 <p>Pour suivre ce tutoriel, téléchargez les fichiers suivants :</p>
 <p><a href="https://manual.collectiveaccess.org/_downloads/ef9d68ea81160b29a4de14bf414034aa/sample_mapping_tutorial.xlsx">Exemple de feuille de calcul pour la mise en correspondance des imports</a></p>
@@ -2056,28 +2056,28 @@
 <p><a href="https://manual.collectiveaccess.org/_downloads/c0c7555172ff8845650acfc0846f8fb6/Sample_import_profile.xml">Exemple de profil d'installation</a></p>
 <p>Pour créer votre propre carte, téléchargez le modèle suivant :</p>
 <p><a href="https://manual.collectiveaccess.org/_downloads/41fc322785b4267f6fcb03ef0740cd44/Blank_starter_import_mapping.xlsx">Exemple vierge de feuille de calcul pour la mise en correspondance des imports</a></p>
-<p>Autres ressources utiles pour créer une cartographie des imports :</p>
+<p>Autres ressources utiles pour créer un mapping des imports :</p>
 <p><a href="file:///Users/charlotteposever/Documents/ca_manual/providence/user/import/import_reference.html">Importer des pages de référence</a></p>
 <p><a href="https://jsonlint.com/">Validateur et formateur JSON en ligne</a></p>
-<h3 id="importer-une-feuille-de-calcul-cartographique-apercu-des-colonnes_1">Importer une feuille de calcul cartographique : Aperçu des colonnes<a class="headerlink" href="#importer-une-feuille-de-calcul-cartographique-apercu-des-colonnes_1" title="Permanent link">¶</a></h3>
+<h3 id="importer-une-feuille-de-calcul-de-mapping-apercu-des-colonnes_1">Importer une feuille de calcul de mapping : Aperçu des colonnes<a class="headerlink" href="#importer-une-feuille-de-calcul-de-mapping-apercu-des-colonnes_1" title="Permanent link">¶</a></h3>
 <p>Téléchargez et ouvrez l'exemple de données d'import (données source) et l'exemple de feuille de calcul pour la mise en correspondance des imports. Une fois ouvert, l'exemple de données d'import (données source) se présente comme suit :</p>
 <p><img alt="" src="../9b15e3255be22e8ea4a70e6dc2946d71.png" /></p>
 <p><em>L'échantillon de données d'import (données source). Notez les colonnes numérotées de 1 à 10.</em></p>
-<p>Une fois ouverte, la feuille de calcul de l'échantillon de cartographie des imports se présente comme suit :</p>
+<p>Une fois ouverte, la feuille de calcul de l'échantillon de mapping des imports se présente comme suit :</p>
 <p><img alt="" src="../ed3bad319de453e0439c61c4d12ad3cb.png" /></p>
-<p><em>L'exemple de feuille de calcul pour la cartographie des imports.</em></p>
-<p>Notez que dans l'échantillon de données d'import, les colonnes sont numérotées de 1 à 10 dans Excel. Ces numéros apparaissent dans la colonne 2 de la feuille de calcul de l'échantillon de données d'import. Poursuivez votre lecture pour obtenir une vue d'ensemble de chaque aspect de la feuille de calcul de la cartographie des imports et de son lien avec les données d'import de l'échantillon (données source).</p>
+<p><em>L'exemple de feuille de calcul pour le mapping de données.</em></p>
+<p>Notez que dans l'échantillon de données d'import, les colonnes sont numérotées de 1 à 10 dans Excel. Ces numéros apparaissent dans la colonne 2 de la feuille de calcul de l'échantillon de données d'import. Poursuivez votre lecture pour obtenir une vue d'ensemble de chaque aspect de la feuille de calcul de le mapping de données et de son lien avec les données d'import de l'échantillon (données source).</p>
 <h3 id="parametres_1">Paramètres<a class="headerlink" href="#parametres_1" title="Permanent link">¶</a></h3>
 <p><img alt="" src="../393051e971701fb085cbdd92fa84fc84.png" /></p>
-<p><em>Paramètres définis dans la partie inférieure de la feuille de calcul Exemple de cartographie des imports.</em></p>
-<p>Les paramètres sont une partie fondamentale de chaque cartographie d'import qui définit certains aspects de l'import et détermine également la façon dont les données importées seront traitées dans CollectiveAccess. Dans l'exemple de feuille de calcul de correspondance d'import, les paramètres se trouvent au bas de la feuille de calcul, comme illustré ci-dessus.</p>
-<p>Dans les paramètres de la cartographie d'échantillon, le nom du fichier de feuille de calcul, en texte arbitraire et sans caractères spéciaux ni espaces, est fourni : <strong>Sample mapping</strong>, et <strong>sample_mapping</strong>. En outre, le format d'entrée des données source est spécifié dans les paramètres de toute feuille de calcul d'import, indiquant à CollectiveAccess le format de fichier dans lequel les données d'origine sont fournies. Comme les données d'échantillon fournies sont au <strong>format Excel (XLXS)</strong>, c'est ce type de fichier qui a été sélectionné.</p>
+<p><em>Paramètres définis dans la partie inférieure de la feuille de calcul Exemple de mapping des imports.</em></p>
+<p>Les paramètres sont une partie fondamentale de chaque mapping d'import qui définit certains aspects de l'import et détermine également la façon dont les données importées seront traitées dans CollectiveAccess. Dans l'exemple de feuille de calcul de correspondance d'import, les paramètres se trouvent au bas de la feuille de calcul, comme illustré ci-dessus.</p>
+<p>Dans les paramètres de le mapping de données, le nom du fichier de feuille de calcul, en texte arbitraire et sans caractères spéciaux ni espaces, est fourni : <strong>Sample mapping</strong>, et <strong>sample_mapping</strong>. En outre, le format d'entrée des données source est spécifié dans les paramètres de toute feuille de calcul d'import, indiquant à CollectiveAccess le format de fichier dans lequel les données d'origine sont fournies. Comme les données d'échantillon fournies sont au <strong>format Excel (XLXS)</strong>, c'est ce type de fichier qui a été sélectionné.</p>
 <p>Les données sources se rapportent à des objets, c'est pourquoi la table est définie sur <strong>ca_objects</strong> ; les données sources seront donc importées sous forme d'enregistrements d'objets. D'autres paramètres permettent de déterminer comment les enregistrements existants (le cas échéant) sont comparés à l'import, comment les erreurs d'import sont gérées, le type et les lignes de la feuille de calcul qui doivent être ignorées.</p>
 <p>Pour ce tutoriel, on suppose qu'<em>aucun enregistrement n'a</em> été importé auparavant dans CollectiveAccess ; cet exemple est la première import. Par conséquent, le paramètre <strong>existingRecordPolicy</strong> est défini sur <strong>none (aucun)</strong>. Le nombre de lignes à ignorer est fixé à <em>1</em> ; en regardant l'exemple de données d'import fourni, la toute première ligne de la feuille de calcul ne contient pas de données, mais des titres de rubriques qui ne sont pas nécessaires lors de l'import. La valeur 1 de numInitialRowsToSkip indique à l'importateur d'ignorer cette ligne d'en-tête. Toutefois, ce nombre est arbitraire et dépend du format des données sources. Des descriptions et d'autres notes concernant ces paramètres sont fournies dans la section Paramètres pour plus de clarté.</p>
 <h3 id="colonne-1-types-de-regles_1">Colonne 1 : Types de règles<a class="headerlink" href="#colonne-1-types-de-regles_1" title="Permanent link">¶</a></h3>
 <p><img alt="" src="../4277d06b9672c28896ea6cc401d6f31d.png" /></p>
-<p><em>Colonne "Rule Type" dans l'exemple de feuille de calcul de la cartographie des imports. Notez que ces règles sont sélectionnées à partir d'un menu déroulant préexistant.</em></p>
-<p>Les types de règles constituent la première colonne d'une cartographie d'import. Les règles définies dans cette colonne déterminent la manière dont chaque ligne de la feuille de calcul sera importée.</p>
+<p><em>Colonne "Rule Type" dans l'exemple de feuille de calcul de le mapping de données. Notez que ces règles sont sélectionnées à partir d'un menu déroulant préexistant.</em></p>
+<p>Les types de règles constituent la première colonne d'un mapping d'import. Les règles définies dans cette colonne déterminent la manière dont chaque ligne de la feuille de calcul sera importée.</p>
 <ul>
 <li>
 <p><strong>Mapping</strong> : La ligne peut être mappée, ce qui signifie qu'elle sera importée.</p>
@@ -2101,9 +2101,9 @@
 <p>Voir <a href="file:///Users/charlotteposever/Documents/ca_manual/providence/user/import/c_creating_mapping.html#column-1-rule-types">ici</a> pour plus de détails sur les types de règles.</p>
 <h3 id="colonne-2-source_1">Colonne 2 : Source<a class="headerlink" href="#colonne-2-source_1" title="Permanent link">¶</a></h3>
 <p><img alt="" src="../dc0aaf771b5a1f8cedc2e235abd35649.png" /></p>
-<p><em>La colonne source dans l'exemple de feuille de calcul de la cartographie des imports. Notez que les valeurs sont des nombres de 1 à 10 et correspondent aux colonnes 1 à 10 de l'exemple de données d'import. La valeur "created" de la ligne 5 correspond au type de règle Constant de la colonne 1.</em></p>
+<p><em>La colonne source dans l'exemple de feuille de calcul de le mapping de données. Notez que les valeurs sont des nombres de 1 à 10 et correspondent aux colonnes 1 à 10 de l'exemple de données d'import. La valeur "created" de la ligne 5 correspond au type de règle Constant de la colonne 1.</em></p>
 <p>La deuxième colonne de la feuille de calcul de la correspondance des imports est celle où les colonnes de données sources spécifiques sont citées. Cette colonne indique l'emplacement des données sources dans la feuille de calcul des données échantillons, formant ainsi la première partie du tableau de concordance. En fonction du format des données source, cette colonne sera différente ; étant donné que les données d'import de l'échantillon sont au format Excel, les valeurs de cette colonne correspondent aux numéros de colonne des données d'import de l'échantillon (1, 2, 3, etc.) ; toutefois, si les données source sont dans un autre format de fichier pris en charge, les valeurs de cette colonne seront différentes.</p>
-<p>La feuille de calcul de l'exemple contient 10 colonnes de données et, par conséquent, 10 lignes de valeurs dans l'exemple de mapping. Les valeurs de données constantes sont définies dans cette colonne (uniquement si le type de règle est défini sur "Constant", comme dans la ligne 5 de la feuille de calcul de la cartographie des imports). Dans ce cas, la colonne source, au lieu d'un numéro provenant de la feuille de calcul des données source, sera définie comme la valeur ou l'identifiant de l'élément de liste provenant de la configuration de CollectiveAccess telle que définie dans l'exemple de profil. Dans l'exemple de mapping d'import, cette valeur se trouve à la ligne 5 et est définie sur "created".</p>
+<p>La feuille de calcul de l'exemple contient 10 colonnes de données et, par conséquent, 10 lignes de valeurs dans l'exemple de mapping. Les valeurs de données constantes sont définies dans cette colonne (uniquement si le type de règle est défini sur "Constant", comme dans la ligne 5 de la feuille de calcul de le mapping de données). Dans ce cas, la colonne source, au lieu d'un numéro provenant de la feuille de calcul des données source, sera définie comme la valeur ou l'identifiant de l'élément de liste provenant de la configuration de CollectiveAccess telle que définie dans l'exemple de profil. Dans l'exemple de mapping d'import, cette valeur se trouve à la ligne 5 et est définie sur "created".</p>
 <p><strong>Note</strong></p>
 <p>Les colonnes de données sources peuvent également être référencées ailleurs dans le mapping d'import (généralement dans les colonnes Options ou Raffinage décrites ci-dessous) en faisant précéder le numéro de la colonne d'un "\^" (par exemple, "\^10"), ce qui indique au mapping que la valeur de la colonne 10 doit être insérée. Cette méthode permet de combiner plusieurs colonnes à l'aide d'options et est fréquemment utilisée dans les raffineries pour créer des entités, des collections et d'autres paramètres plus complexes. Un exemple est donné à la ligne 10 de la feuille de calcul du mapping d'import, dans la colonne 7.</p>
 <h3 id="colonne-3-ca_tableelement_code_1">Colonne 3 : CA_table.element_code<a class="headerlink" href="#colonne-3-ca_tableelement_code_1" title="Permanent link">¶</a></h3>
@@ -2120,17 +2120,17 @@
 <h3 id="colonne-4-groupe_1">Colonne 4 : Groupe<a class="headerlink" href="#colonne-4-groupe_1" title="Permanent link">¶</a></h3>
 <p><img alt="" src="../fdf75f458d532db6234e07e1f0fcf775.png" /></p>
 <p><em>Colonnes 3 et 4 de l'exemple de mapping d'import, montrant un groupe personnalisé pour le champ Date.</em></p>
-<p>La colonne 4 de la feuille de calcul de la cartographie d'import est utilisée pour déclarer les groupes. La présence de groupes est facultative, mais elle est requise pour les éléments de métadonnées mappés dans un <strong>conteneur</strong>. Un conteneur est un élément de métadonnées ou un champ qui contient des sous-éléments ; dans l'exemple de mapping, cet élément de métadonnées est la date. Les sous-éléments définissant la date et le type de date résident dans l'élément de métadonnées Date. L'utilisation de groupes est un moyen simple de s'assurer que tous les mappings vers un conteneur aboutissent effectivement dans la même instance de conteneur. Pour en savoir plus, voir <a href="file:///Users/charlotteposever/Documents/ca_manual/providence/user/import/containers.html#import-containers">Conteneurs</a>.</p>
+<p>La colonne 4 de la feuille de calcul du mapping d'import est utilisée pour déclarer les groupes. La présence de groupes est facultative, mais elle est requise pour les éléments de métadonnées mappés dans un <strong>conteneur</strong>. Un conteneur est un élément de métadonnées ou un champ qui contient des sous-éléments ; dans l'exemple de mapping, cet élément de métadonnées est la date. Les sous-éléments définissant la date et le type de date résident dans l'élément de métadonnées Date. L'utilisation de groupes est un moyen simple de s'assurer que tous les mappings vers un conteneur aboutissent effectivement dans la même instance de conteneur. Pour en savoir plus, voir <a href="file:///Users/charlotteposever/Documents/ca_manual/providence/user/import/containers.html#import-containers">Conteneurs</a>.</p>
 <p>Dans l'exemple de mapping d'import, deux sous-éléments de <strong>ca_objects.date</strong> sont déclarés en tant que codes de liasse <strong>ca_objects.date.date_value</strong> et <strong>ca_objects.date.date_type</strong>. Pour importer des sous-éléments spécifiques d'un conteneur, les codes de l'élément du conteneur lui-même, <strong>ca_objects.date, ainsi que le</strong> code du sous-élément qui est votre cible finale, <strong>date_value</strong> et <strong>date_type</strong>, doivent être cités.</p>
 <p>Le groupe créé pour le champ Date dans l'exemple de mapping d'import s'appelle simplement "date", mais pour tout mapping d'import, le nom du groupe peut être personnalisé et arbitraire. Pour affecter des éléments au même conteneur, le nom du groupe doit toutefois correspondre.</p>
 <h3 id="colonne-5-options_1">Colonne 5 : Options<a class="headerlink" href="#colonne-5-options_1" title="Permanent link">¶</a></h3>
 <p><img alt="" src="../f02e44e39cd2b3f86f5b0ec195f768f4.png" /></p>
-<p><em>Colonne 5 avec deux options définies dans la feuille de calcul de la cartographie des imports.</em></p>
+<p><em>Colonne 5 avec deux options définies dans la feuille de calcul de le mapping de données.</em></p>
 <p>Les options permettent de définir diverses conditions pour l'import elle-même. Les options peuvent traiter les données qui ont besoin d'être nettoyées, ignorer les cellules de données vides ou formater les données avec des modèles spécifiques. Les options doivent être écrites en code (<a href="https://www.json.org/json-en.html">JSON</a>). Dans l'exemple de mapping d'import, deux options communes sont utilisées pour définir des conditions sur des colonnes particulières des données sources importées.</p>
 <p>La ligne 6 de l'exemple de mapping de l'import correspond à la colonne Source 4 de l'exemple de données d'import. Deux enregistrements de la colonne Source 4 contiennent plusieurs valeurs de sujet dans la même cellule, séparées par des points-virgules :</p>
 <p><img alt="" src="../4ef14e188053405cefff337b5cdb5afe.png" /></p>
 <p>Il est nécessaire de définir l'option de délimitation dans le mapping d'import (voir ligne 6, colonne 5), car elle garantit que ces valeurs avec des points-virgules sont analysées correctement et importées dans des instances distinctes du champ Subject dans CollectiveAccess. En définissant le délimiteur comme un point-virgule, vous vous assurez que les valeurs sont séparées par les points-virgules présents dans les données source. Sans l'option de délimitation, la chaîne entière finirait par former une instance unique du champ Sujet.</p>
-<p>La ligne 8 de la feuille de calcul de la cartographie des imports correspond à la colonne Source 6 de l'échantillon de données d'import, qui contient des notes internes en texte libre. Cependant, seuls deux enregistrements contiennent ces notes ; l'autre enregistrement a une cellule vide dans cette colonne :</p>
+<p>La ligne 8 de la feuille de calcul de le mapping de données correspond à la colonne Source 6 de l'échantillon de données d'import, qui contient des notes internes en texte libre. Cependant, seuls deux enregistrements contiennent ces notes ; l'autre enregistrement a une cellule vide dans cette colonne :</p>
 <p><img alt="" src="../93b9fbd8277ba29de193628f4d7e6a38.png" /></p>
 <p>L'utilisation de l'option <strong>skipIfEmpty</strong> garantit que la valeur vide de cette colonne n'est pas importée dans le système d'accès collectif. La déclaration du chiffre un après les deux points de l'option indique que la cellule sera ignorée si elle est vide (1= oui, 0= non).</p>
 <p>Le tableau ci-dessous présente une liste des options courantes utilisées dans une feuille de calcul de mapping d'import. Pour une liste complète des options de mapping, voir <a href="file:///Users/charlotteposever/Documents/ca_manual/providence/user/import/mappings/mappingOptions.html?highlight=options">Options de mapping</a>.</p>
@@ -2187,7 +2187,7 @@
 </table>
 <h3 id="colonne-6-raffinerie_1">Colonne 6 : Raffinerie<a class="headerlink" href="#colonne-6-raffinerie_1" title="Permanent link">¶</a></h3>
 <p><img alt="" src="../08cee42c5358264b2d53b58d6df4ccda.png" /></p>
-<p><em>La colonne 6 de la feuille de calcul de la cartographie des imports contient deux raffineries.</em></p>
+<p><em>La colonne 6 de la feuille de calcul de le mapping de données contient deux raffineries.</em></p>
 <p>Les raffineurs sont utilisés pour prendre un format de données spécifique à partir des données sources et le transformer via un comportement spécifique lorsqu'il est importé dans CollectiveAccess. Les raffineries permettent de créer des enregistrements connexes et de faire correspondre des enregistrements existants dans CollectiveAccess. Les raffineries sont facultatives, mais elles sont généralement utilisées dans les données sources qui font référence à d'autres tables connexes.</p>
 <p>Dans la feuille de calcul de l'exemple de mapping d'import, notez que les raffineries ne sont pas utilisées dans chaque ligne de données (rappelez-vous que chaque ligne représente une colonne des données source). Elles ne sont présentes que dans les lignes 9 et 10 de l'exemple de mapping des imports, ou dans les colonnes 7 et 8 de l'exemple de données d'import. Ces lignes font référence à deux autres tables : Entités et Lots d'objets :</p>
 <p><img alt="" src="../93d1955a65d1a785badcc3cf7e754385.png" /></p>
@@ -2204,7 +2204,7 @@
 <tbody>
 <tr>
 <td>séparateur d'entités</td>
-<td>Crée un enregistrement d'entité ou trouve une correspondance exacte avec le nom de l'entité et crée une relation telle que définie dans la cartographie d'import. Décompose les parties de noms, définit le type d'entité et d'autres paramètres.</td>
+<td>Crée un enregistrement d'entité ou trouve une correspondance exacte avec le nom de l'entité et crée une relation telle que définie dans le mapping d'import. Décompose les parties de noms, définit le type d'entité et d'autres paramètres.</td>
 </tr>
 <tr>
 <td>entityJoiner</td>
@@ -2230,14 +2230,14 @@
 </table>
 <h3 id="colonne-7-parametres-de-la-raffinerie_1">Colonne 7 : Paramètres de la raffinerie<a class="headerlink" href="#colonne-7-parametres-de-la-raffinerie_1" title="Permanent link">¶</a></h3>
 <p><img alt="" src="../618b1291a672dbfd75673e8e11aa757b.png" /></p>
-<p><em>Colonnes 6 et 7 de la feuille de calcul de la cartographie des imports indiquant les raffineries et les paramètres de raffinage correspondants, écrits en code.</em></p>
+<p><em>Colonnes 6 et 7 de la feuille de calcul de le mapping de données indiquant les raffineries et les paramètres de raffinage correspondants, écrits en code.</em></p>
 <p>Les paramètres de raffinerie définissent les conditions d'utilisation de la raffinerie dans le mapping d'import. Chaque fois qu'une raffinerie est utilisée dans un mapping, un paramètre de raffinerie doit être utilisé pour indiquer à l'importateur comment manipuler les données sources et créer des enregistrements distincts. Comme les options, les paramètres de raffinage sont écrits en code (JSON).</p>
 <p>Dans l'exemple de mapping d'import, le paramètre Refinery <strong>EntitySplitter</strong> indique que des enregistrements d'entités distincts et apparentés seront créés à partir de la colonne Creators dans les données source. Le paramètre Refinery spécifie simplement le type de relation que ces enregistrements auront avec d'autres enregistrements d'objets dans l'import (créateur), ainsi que le type d'entité créée (individu). Pour plus d'informations, voir <a href="file:///Users/charlotteposever/Documents/ca_manual/providence/user/import/lists_and_vocab_in_mapping.html#import-lists-and-vocab-in-mapping">Utilisation de listes et de vocabulaires dans un mapping d'import.</a></p>
 <p>Le paramètre de raffinage <strong>ObjectLotSplitter</strong> indique que des enregistrements de lots d'objets distincts et apparentés seront créés à partir de la colonne Accession des données sources. Le paramètre Refinery spécifie que ces enregistrements de lots d'objets seront affichés en tant que "cadeaux" et contiendront le numéro d'acquisition de la colonne 9 des données sources.</p>
 <p>Le tableau ci-dessous présente une liste des paramètres courants des raffineries. Pour une liste complète des raffineries et des paramètres de raffinage, voir <a href="file:///Users/charlotteposever/Documents/ca_manual/providence/user/import/mappings/refineries.html?highlight=refineries">Raffineries et paramètres de raffinage</a>.</p>
 <h3 id="colonne-8-valeurs-originales_1">Colonne 8 : Valeurs originales<a class="headerlink" href="#colonne-8-valeurs-originales_1" title="Permanent link">¶</a></h3>
 <p><img alt="" src="../c3334c3b32a4c3b38a86e41639a90b91.png" /></p>
-<p><em>Les valeurs originales figurent à la ligne 12 de la feuille de calcul de la cartographie des imports.</em></p>
+<p><em>Les valeurs originales figurent à la ligne 12 de la feuille de calcul de le mapping de données.</em></p>
 <p>Il se peut que certaines valeurs des données sources doivent être remplacées par de nouvelles valeurs lors de l'import. Il s'agit d'un scénario courant pour les données qui ne correspondent pas exactement au code d'un élément de liste pour les valeurs correspondantes dans CollectiveAccess, mais qui doivent correspondre pour être importées correctement. Il s'agit d'une colonne facultative, qui dépend du format des données sources.</p>
 <p>Dans l'exemple de données d'import, la colonne 10 contient les valeurs suivantes :</p>
 <p><img alt="" src="../9853b1c54bc080b33d5a4272084830f5.png" /></p>
@@ -2246,18 +2246,18 @@
 <p>Pour plus d'informations sur l'utilisation des valeurs d'origine et de remplacement, voir <a href="file:///Users/charlotteposever/Documents/ca_manual/providence/user/import/orig_replace_example.html">Utilisation des colonnes Valeur d'origine/Valeur de remplacement</a>.</p>
 <h3 id="colonne-9-valeurs-de-remplacement_1">Colonne 9 : Valeurs de remplacement<a class="headerlink" href="#colonne-9-valeurs-de-remplacement_1" title="Permanent link">¶</a></h3>
 <p><img alt="" src="../c3334c3b32a4c3b38a86e41639a90b91.png" /></p>
-<p><em>Valeurs de remplacement dans la colonne 9 de la feuille de calcul de la cartographie des imports.</em></p>
+<p><em>Valeurs de remplacement dans la colonne 9 de la feuille de calcul de le mapping de données.</em></p>
 <p>C'est dans cette colonne que sont saisies les nouvelles valeurs d'un code d'élément de liste correspondant pour CollectiveAccess, qui remplaceront les valeurs d'origine dans les données d'import de l'échantillon. Plusieurs valeurs peuvent être ajoutées à une seule cellule (voir ci-dessus), à condition que les valeurs de remplacement correspondent aux valeurs d'origine ligne par ligne. L'utilisation des colonnes Original et Remplacement est suffisante pour transformer une petite plage de valeurs lors de l'import.</p>
 <h3 id="colonne-10-description-de-la-source_1">Colonne 10 : Description de la source<a class="headerlink" href="#colonne-10-description-de-la-source_1" title="Permanent link">¶</a></h3>
 <p><img alt="" src="../ca5b776bdd67d0bc0cebc9cbe7c1d18f.png" /></p>
-<p><em>Description des sources dans la feuille de calcul de la cartographie des imports.</em></p>
+<p><em>Description des sources dans la feuille de calcul de le mapping de données.</em></p>
 <p>Il s'agit d'une colonne facultative dans la feuille de calcul de la correspondance d'import. Description de la source est l'endroit où l'on peut mettre une étiquette ou un nom en texte clair pour la colonne source originale ; cela permet de se référer facilement aux champs qui sont mis en correspondance et peut faciliter le flux de travail lors de la création d'une mise en correspondance d'import.</p>
-<p>Dans l'exemple de cartographie d'import, quelques-unes de ces valeurs ont été copiées à partir de la feuille de calcul de l'exemple de données d'import, indiquant quelles lignes contiennent quelles valeurs de l'exemple de données source.</p>
+<p>Dans l'exemple de mapping d'import, quelques-unes de ces valeurs ont été copiées à partir de la feuille de calcul de l'exemple de données d'import, indiquant quelles lignes contiennent quelles valeurs de l'exemple de données source.</p>
 <h3 id="colonne-11-notes_1">Colonne 11 : Notes<a class="headerlink" href="#colonne-11-notes_1" title="Permanent link">¶</a></h3>
 <p><img alt="" src="../5adf42a5dc251e42b376f105d18411b4.png" /></p>
-<p><em>Notes dans la feuille de calcul de la cartographie des imports.</em></p>
-<p>Il s'agit d'une colonne facultative de la feuille de calcul de la cartographie des imports qui permet d'expliquer comment et pourquoi une certaine ligne est cartographiée de la manière dont elle l'est. Les colonnes 10 et 11 de la feuille de calcul de la cartographie d'import peuvent être utiles pour une référence ultérieure si une cartographie est destinée à être utilisée à plusieurs reprises, afin de s'assurer que la cartographie sélectionnée correspond aux données sources. En outre, les notes sont également utiles si les cartographies sont le fruit d'un travail de collaboration, car elles peuvent expliquer en texte clair pourquoi certaines décisions ont été prises.</p>
-<p>Dans l'exemple de cartographie d'import, ces notes comprennent de brefs commentaires clarifiant divers aspects de la cartographie.</p>
+<p><em>Notes dans la feuille de calcul de le mapping de données.</em></p>
+<p>Il s'agit d'une colonne facultative de la feuille de calcul de le mapping de données qui permet d'expliquer comment et pourquoi une certaine ligne est mappée de la manière dont elle l'est. Les colonnes 10 et 11 de la feuille de calcul du mapping d'import peuvent être utiles pour une référence ultérieure si un mapping est destinée à être utilisée à plusieurs reprises, afin de s'assurer que le mapping sélectionnée correspond aux données sources. En outre, les notes sont également utiles si les mappings sont le fruit d'un travail de collaboration, car elles peuvent expliquer en texte clair pourquoi certaines décisions ont été prises.</p>
+<p>Dans l'exemple de mapping d'import, ces notes comprennent de brefs commentaires clarifiant divers aspects du mapping.</p>
 
 
 

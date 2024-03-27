@@ -1296,7 +1296,7 @@
 <tr>
 <td>séparateur d'entités</td>
 <td>délimiteur ; relationshipType ; entityType ; attributs ; relationshipTypeDefault ; entityTypeDefault ; interstitiel ; relatedEntities ; nonPreferredLabels ; parents ; skipIfValue ; relationships ; matchOn ; displaynameFormat ; doNotParse ; dontCreate ; ignoreParent</td>
-<td>Crée un enregistrement d'entité ou trouve une correspondance exacte avec le nom de l'entité et crée une relation telle que définie dans la cartographie d'importation. Décompose les parties de noms, définit le type d'entité et d'autres paramètres.</td>
+<td>Crée un enregistrement d'entité ou trouve une correspondance exacte avec le nom de l'entité et crée une relation telle que définie dans le mapping d'importation. Décompose les parties de noms, définit le type d'entité et d'autres paramètres.</td>
 <td>Aucun</td>
 </tr>
 <tr>
@@ -1326,7 +1326,7 @@
 <tr>
 <td>placeSplitter</td>
 <td>délimiteur ; relationshipType ; placeType ; attributs ; relationshipTypeDefault ; placeTypeDefault ; placeHierarchy ; nonPreferredLabels ; interstitiel ; parents ; relations ; matchOn ; ignoreParent ; dontCreate</td>
-<td>Crée un enregistrement de lieu ou trouve une correspondance exacte sur le nom, et crée une relation telle que définie dans la cartographie d'importation.</td>
+<td>Crée un enregistrement de lieu ou trouve une correspondance exacte sur le nom, et crée une relation telle que définie dans le mapping d'importation.</td>
 <td>Aucun</td>
 </tr>
 <tr>
@@ -1539,7 +1539,7 @@
 </tr>
 <tr>
 <td>parents</td>
-<td>Construit des enregistrements hiérarchiques au-dessus de l'entité générée ou mise en correspondance par l'entitySplitter. Le paramètre parent possède plusieurs sous-paramètres, notamment : idno : indique l'idno spécifique au niveau name : mappe l'étiquette préférée spécifique au niveau type : correspond au type d'enregistrement spécifique au niveau (doit correspondre exactement à l'idno de l'élément) attributs : mappe les métadonnées (facultatives) spécifiques au niveau. Comprend le code de l'élément de métadonnées et la source de données. rules : permet de cartographier les règles spécifiques à un niveau (facultatif)</td>
+<td>Construit des enregistrements hiérarchiques au-dessus de l'entité générée ou mise en correspondance par l'entitySplitter. Le paramètre parent possède plusieurs sous-paramètres, notamment : idno : indique l'idno spécifique au niveau name : mappe l'étiquette préférée spécifique au niveau type : correspond au type d'enregistrement spécifique au niveau (doit correspondre exactement à l'idno de l'élément) attributs : mappe les métadonnées (facultatives) spécifiques au niveau. Comprend le code de l'élément de métadonnées et la source de données. rules : permet de mapper les règles spécifiques à un niveau (facultatif)</td>
 <td><strong>{</strong> <strong>"parents" : [</strong> <strong>{</strong> "idno" : "\^5", "name" : "\^6", "type" : "organisation", "attributs" : { "ca_entities.description" : "\^7" } } ] }</td>
 </tr>
 <tr>
@@ -1621,7 +1621,7 @@
 </tr>
 <tr>
 <td>parents</td>
-<td>Cartographie ou construit les niveaux parents au-dessus de l'enregistrement lié latéralement aux données importées. Le paramètre "parent" comporte plusieurs sous-paramètres, notamment idno : indique l'idno spécifique au niveau name : mappe l'étiquette préférée spécifique au niveau type : correspond au type d'enregistrement spécifique au niveau (doit correspondre exactement à l'idno de l'élément) attributs : mappe les métadonnées (facultatives) spécifiques au niveau. Comprend le code de l'élément de métadonnées et la source de données. rules : permet d'appliquer des règles (facultatives) spécifiques à un niveau.</td>
+<td>Fait correspondre ou construit les niveaux parents au-dessus de l'enregistrement lié latéralement aux données importées. Le paramètre "parent" comporte plusieurs sous-paramètres, notamment idno : indique l'idno spécifique au niveau name : mappe l'étiquette préférée spécifique au niveau type : correspond au type d'enregistrement spécifique au niveau (doit correspondre exactement à l'idno de l'élément) attributs : mappe les métadonnées (facultatives) spécifiques au niveau. Comprend le code de l'élément de métadonnées et la source de données. rules : permet d'appliquer des règles (facultatives) spécifiques à un niveau.</td>
 <td><strong>{</strong> <strong>"parents" : [</strong> <strong>{</strong> "idno" : "\^/inm:SeriesNo", "name" : "\^/inm:SeriesTitle", "type" : "series", "attributes" : {"ca_collections.description" : "\^7"} }, { "idno" : "\^/inm:CollectionNo", "name" : "\^/inm:CollectionTitle", "type" : "collection", "rules" : [ <strong>{</strong> "trigger" : "\^/inm:Status = 'en cours'", "actions" : [ <strong>{</strong> "action" : "SET", "target" : "ca_collections.status", "value" : "edit" } ] } ] } ] }</td>
 </tr>
 <tr>
@@ -1718,7 +1718,7 @@
 </tr>
 <tr>
 <td>parents</td>
-<td>Placez les parents à créer, si nécessaire. Le paramètre "parent" comporte plusieurs sous-paramètres, notamment idno : indique l'idno spécifique au niveau name : mappe l'étiquette préférée spécifique au niveau type : correspond au type d'enregistrement spécifique au niveau (doit correspondre exactement à l'idno de l'élément) attributs : mappe les métadonnées (facultatives) spécifiques au niveau. Comprend le code de l'élément de métadonnées et la source de données. rules : permet de cartographier les règles spécifiques à un niveau (facultatif)</td>
+<td>Placez les parents à créer, si nécessaire. Le paramètre "parent" comporte plusieurs sous-paramètres, notamment idno : indique l'idno spécifique au niveau name : mappe l'étiquette préférée spécifique au niveau type : correspond au type d'enregistrement spécifique au niveau (doit correspondre exactement à l'idno de l'élément) attributs : mappe les métadonnées (facultatives) spécifiques au niveau. Comprend le code de l'élément de métadonnées et la source de données. rules : permet de mapper les règles spécifiques à un niveau (facultatif)</td>
 <td><strong>{</strong> <strong>"parents" : [</strong> <strong>{</strong> "idno" : "\^5", "name" : "\^6", "type" : "pays", "attributs" : { "ca_places.description" : "\^7" } } ] }</td>
 </tr>
 <tr>
@@ -2048,7 +2048,7 @@
 </tr>
 <tr>
 <td>parents</td>
-<td>Cartographie ou construit les niveaux parents au-dessus de l'enregistrement lié latéralement aux données importées. Le paramètre "parent" comporte plusieurs sous-paramètres, notamment idno : indique l'idno spécifique au niveau name : mappe l'étiquette préférée spécifique au niveau type : correspond au type d'enregistrement spécifique au niveau (doit correspondre exactement à l'idno de l'élément) attributs : mappe les métadonnées (facultatives) spécifiques au niveau. Comprend le code de l'élément de métadonnées et la source de données. rules : permet d'appliquer des règles (facultatives) spécifiques à un niveau.</td>
+<td>Fait correspondre ou construit les niveaux parents au-dessus de l'enregistrement lié latéralement aux données importées. Le paramètre "parent" comporte plusieurs sous-paramètres, notamment idno : indique l'idno spécifique au niveau name : mappe l'étiquette préférée spécifique au niveau type : correspond au type d'enregistrement spécifique au niveau (doit correspondre exactement à l'idno de l'élément) attributs : mappe les métadonnées (facultatives) spécifiques au niveau. Comprend le code de l'élément de métadonnées et la source de données. rules : permet d'appliquer des règles (facultatives) spécifiques à un niveau.</td>
 <td><strong>{</strong> <strong>"parents" : [</strong> <strong>{</strong> "idno" : "\^12", "name" : "\^14", "type" : "concept", "attributes" : {"ca_list_items.description" : "\^7"} }, { "idno" : "\^16", "name" : "\^17", "type" : "guide", "règles" : [ <strong>{</strong> "trigger" : "\^3= 'en cours'", "actions" : [ <strong>{</strong> "action" : "SET", "target" : "ca_list_items.status", "value" : "edit" } ] } ] } ] }</td>
 </tr>
 <tr>
@@ -2120,7 +2120,7 @@
 </tr>
 <tr>
 <td>parents</td>
-<td>Cartographie ou construit les niveaux parents au-dessus de l'enregistrement lié latéralement aux données importées. Le paramètre "parent" comporte plusieurs sous-paramètres, notamment idno : indique l'idno spécifique au niveau name : mappe l'étiquette préférée spécifique au niveau type : correspond au type d'enregistrement spécifique au niveau (doit correspondre exactement à l'idno de l'élément) attributs : mappe les métadonnées (facultatives) spécifiques au niveau. Comprend le code de l'élément de métadonnées et la source de données. rules : permet d'appliquer des règles (facultatives) spécifiques à un niveau.</td>
+<td>Fait correspondre ou construit les niveaux parents au-dessus de l'enregistrement lié latéralement aux données importées. Le paramètre "parent" comporte plusieurs sous-paramètres, notamment idno : indique l'idno spécifique au niveau name : mappe l'étiquette préférée spécifique au niveau type : correspond au type d'enregistrement spécifique au niveau (doit correspondre exactement à l'idno de l'élément) attributs : mappe les métadonnées (facultatives) spécifiques au niveau. Comprend le code de l'élément de métadonnées et la source de données. rules : permet d'appliquer des règles (facultatives) spécifiques à un niveau.</td>
 <td><strong>{</strong> <strong>"parents" : [</strong> <strong>{</strong> "idno" : "\^10", "name" : "\^12", "type" : "cabinet", "attributes" : {"ca_storage_location.description" : "\^7"} }, { "idno" : "\^14", "name" : "\^16", "type" : "chambre", "règles" : [ <strong>{</strong> "trigger" : "\^18= 'en cours'", "actions" : [ <strong>{</strong> "action" : "SET", "target" : "ca_storage_locations.status", "value" : "edit" } ] } ] } ] }</td>
 </tr>
 <tr>
@@ -2227,7 +2227,7 @@
 </tr>
 <tr>
 <td>parents</td>
-<td>Les parents de prêt à créer, le cas échéant. Le paramètre "parent" comporte plusieurs sous-paramètres : idno : indique l'idno spécifique au niveau name : mappe l'étiquette préférée spécifique au niveau type : correspond au type d'enregistrement spécifique au niveau (doit correspondre exactement à l'idno de l'élément) attributs : mappe les métadonnées (facultatives) spécifiques au niveau. Comprend le code de l'élément de métadonnées et la source de données. rules : permet de cartographier les règles spécifiques à un niveau (facultatif)</td>
+<td>Les parents de prêt à créer, le cas échéant. Le paramètre "parent" comporte plusieurs sous-paramètres : idno : indique l'idno spécifique au niveau name : mappe l'étiquette préférée spécifique au niveau type : correspond au type d'enregistrement spécifique au niveau (doit correspondre exactement à l'idno de l'élément) attributs : mappe les métadonnées (facultatives) spécifiques au niveau. Comprend le code de l'élément de métadonnées et la source de données. rules : permet de mapper les règles spécifiques à un niveau (facultatif)</td>
 <td><strong>{</strong> <strong>"parents" : [</strong> <strong>{</strong> "idno" : "\^5", "name" : "\^6", "type" : "in", "attributes" : { "ca_loans.description" : "\^7" } } ] }</td>
 </tr>
 <tr>
