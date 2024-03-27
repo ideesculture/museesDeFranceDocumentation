@@ -13,10 +13,6 @@
       
       
       
-        <link rel="prev" href="../migration_refinery/">
-      
-      
-        <link rel="next" href="../Decrire_Objets_Joconde/">
       
       
       <link rel="icon" href="../assets/images/favicon.png">
@@ -24,7 +20,7 @@
     
     
       
-        <title>IV. Réaliser un import - Guide utilisateur CollectiveAccess</title>
+        <title>Gestion des enregistrements déjà présents (conflits à l'import) - Guide utilisateur CollectiveAccess</title>
       
     
     
@@ -74,7 +70,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#lancer-une-migration" class="md-skip">
+        <a href="#gestion-des-enregistrements-deja-presents-conflits-a-limport" class="md-skip">
           Aller au contenu
         </a>
       
@@ -420,7 +416,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              IV. Réaliser un import
+              Gestion des enregistrements déjà présents (conflits à l'import)
             
           </span>
         </div>
@@ -777,19 +773,17 @@
       
   
   
-    
   
   
-  
     
     
     
     
-    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
+    <li class="md-nav__item md-nav__item--nested">
       
         
         
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3" checked>
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3" >
         
           
           <label class="md-nav__link" for="__nav_3" id="__nav_3_label" tabindex="0">
@@ -803,7 +797,7 @@
             <span class="md-nav__icon md-icon"></span>
           </label>
         
-        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_3_label" aria-expanded="true">
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_3_label" aria-expanded="false">
           <label class="md-nav__title" for="__nav_3">
             <span class="md-nav__icon md-icon"></span>
             Migration de données
@@ -877,30 +871,10 @@
                 
   
   
-    
   
   
-  
-    <li class="md-nav__item md-nav__item--active">
-      
-      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
-      
-      
-        
-      
-      
-        <label class="md-nav__link md-nav__link--active" for="__toc">
-          
-  
-  <span class="md-ellipsis">
-    IV. Réaliser un import
-  </span>
-  
-
-          <span class="md-nav__icon md-icon"></span>
-        </label>
-      
-      <a href="./" class="md-nav__link md-nav__link--active">
+    <li class="md-nav__item">
+      <a href="../migration_lancer_une_migration/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -909,53 +883,6 @@
   
 
       </a>
-      
-        
-
-<nav class="md-nav md-nav--secondary" aria-label="Table des matières">
-  
-  
-  
-    
-  
-  
-    <label class="md-nav__title" for="__toc">
-      <span class="md-nav__icon md-icon"></span>
-      Table des matières
-    </label>
-    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
-      
-        <li class="md-nav__item">
-  <a href="#execution-dun-import-de-donnees" class="md-nav__link">
-    <span class="md-ellipsis">
-      Exécution d'un import de données
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#etapes-de-base-pour-lexecution-dun-import-de-donnees" class="md-nav__link">
-    <span class="md-ellipsis">
-      Étapes de base pour l'exécution d'un import de données
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#execution-dun-import-a-partir-du-terminal" class="md-nav__link">
-    <span class="md-ellipsis">
-      Exécution d'un import à partir du terminal
-    </span>
-  </a>
-  
-</li>
-      
-    </ul>
-  
-</nav>
-      
     </li>
   
 
@@ -1310,29 +1237,152 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#execution-dun-import-de-donnees" class="md-nav__link">
+  <a href="#remarque" class="md-nav__link">
     <span class="md-ellipsis">
-      Exécution d'un import de données
+      Remarque
     </span>
   </a>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#etapes-de-base-pour-lexecution-dun-import-de-donnees" class="md-nav__link">
+  <a href="#quand-utiliser-chaque-politique-denregistrement-existante" class="md-nav__link">
     <span class="md-ellipsis">
-      Étapes de base pour l'exécution d'un import de données
+      Quand utiliser chaque politique d'enregistrement existante ?
     </span>
   </a>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#execution-dun-import-a-partir-du-terminal" class="md-nav__link">
+  <a href="#politiques-relatives-aux-enregistrements-existants" class="md-nav__link">
     <span class="md-ellipsis">
-      Exécution d'un import à partir du terminal
+      Politiques relatives aux enregistrements existants
     </span>
   </a>
+  
+    <nav class="md-nav" aria-label="Politiques relatives aux enregistrements existants">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#none" class="md-nav__link">
+    <span class="md-ellipsis">
+      none
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#skip_on_idno" class="md-nav__link">
+    <span class="md-ellipsis">
+      skip_on_idno
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#merge_on_idno" class="md-nav__link">
+    <span class="md-ellipsis">
+      merge_on_idno
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#merge_on_idno_with_replace" class="md-nav__link">
+    <span class="md-ellipsis">
+      merge_on_idno_with_replace
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#overwrite_on_idno" class="md-nav__link">
+    <span class="md-ellipsis">
+      overwrite_on_idno
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#skip_on_preferred_labels" class="md-nav__link">
+    <span class="md-ellipsis">
+      skip_on_preferred_labels
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#merge_on_preferred_labels" class="md-nav__link">
+    <span class="md-ellipsis">
+      merge_on_preferred_labels
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#merge_on_preferred_labels_with_replace" class="md-nav__link">
+    <span class="md-ellipsis">
+      merge_on_preferred_labels_with_replace
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#overwrite_on_preferred_labels" class="md-nav__link">
+    <span class="md-ellipsis">
+      overwrite_on_preferred_labels
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#skip_on_idno_and_preferred_labels" class="md-nav__link">
+    <span class="md-ellipsis">
+      skip_on_idno_and_preferred_labels
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#merge_on_idno_and_preferred_labels" class="md-nav__link">
+    <span class="md-ellipsis">
+      merge_on_idno_and_preferred_labels
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#merge_on_idno_with_preferred_labels_with_replace" class="md-nav__link">
+    <span class="md-ellipsis">
+      merge_on_idno_with_preferred_labels_with_replace
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#overwrite_on_idno_and_preferred_labels" class="md-nav__link">
+    <span class="md-ellipsis">
+      overwrite_on_idno_and_preferred_labels
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
   
 </li>
       
@@ -1354,129 +1404,53 @@
   
 
 
-<h1 id="lancer-une-migration">Lancer une migration<a class="headerlink" href="#lancer-une-migration" title="Permanent link">¶</a></h1>
-<h2 id="execution-dun-import-de-donnees">Exécution d'un import de données<a class="headerlink" href="#execution-dun-import-de-donnees" title="Permanent link">¶</a></h2>
-<p>Une fois le mappage d'import créé, les données peuvent être importées dans CollectiveAccess. Il existe deux façons d'importer des données dans CollectiveAccess :</p>
-<ol>
+<h1 id="gestion-des-enregistrements-deja-presents-conflits-a-limport">Gestion des enregistrements déjà présents (conflits à l'import)<a class="headerlink" href="#gestion-des-enregistrements-deja-presents-conflits-a-limport" title="Permanent link">¶</a></h1>
+<p>Les règles relatives aux enregistrements existants sont une option de la section Paramètres d'une feuille de calcul de correspondance d'import de données. </p>
+<p>Il existe plusieurs règles à choisir lors de l'établissement d'une correspondance, et ces règles déterminent comment les enregistrements qui se trouvent déjà dans un système CollectiveAccess sont traités et vérifiés par rapport aux données sources importées. Bien qu'il existe une politique pour un système CollectiveAccess qui n'a pas d'enregistrements importés(vide), la plupart des imports se font dans des bases ayant déjà des enregistrements. </p>
+<p>A noter, il n'est possible de définir qu'un unique comportement pour la gestion des enregistrements déjà présents. Il n'est pas possible de spécifier que dans un cas on doublonne, dans un autre on dédoublonne, dans un troisième cas on ignore ; tout cela au sein d'une même feuille d'import.</p>
+<h2 id="remarque">Remarque<a class="headerlink" href="#remarque" title="Permanent link">¶</a></h2>
+<p>Pour comprendre les règles relatives aux enregistrements existants et leur signification, il est utile de savoir que dans CollectiveAccess, le champ d'identification principal de chaque enregistrement est "idno" (numéro d'identification), tandis que le champ principal du titre/nom est "preferred_label" (étiquette préférée).</p>
+<p>Les politiques relatives aux enregistrements existants déterminent la manière dont les enregistrements créés par la correspondance d'import sont intégrés, fusionnés ou séparés des autres enregistrements existants. Ces règles sont conçues pour être utilisées dans les importations de données qui contiennent plusieurs parties ou, en d'autres termes, qui utilisent plusieurs correspondances d'importation. En outre, ces règles peuvent être utilisées lors de la révision d'une feuille de calcul de correspondance d'import. Toutes les règles relatives aux enregistrements existants disponibles depuis la version 1.8 de CollectiveAccess sont définies ci-dessous.</p>
+<h2 id="quand-utiliser-chaque-politique-denregistrement-existante">Quand utiliser chaque politique d'enregistrement existante ?<a class="headerlink" href="#quand-utiliser-chaque-politique-denregistrement-existante" title="Permanent link">¶</a></h2>
+<p>Il est utile de réfléchir à la nature exacte des données représentées dans une correspondance d'importation et, le cas échéant, aux données déjà importées dans le système CollectiveAccess.</p>
+<p>Il est également utile d'envisager le contexte plus large de la façon dont les données sources seront représentées dans CollectiveAccess. Cela peut parfois s'avérer difficile, car la feuille de correspondance d'import n'est qu'un tableau de concordance et n'est pas censée représenter l'aspect réel des données sources une fois importées dans un système CollectiveAccess.</p>
+<p>Voici quelques questions utiles à se poser lors du choix d'une politique d'enregistrement existant :</p>
+<ul>
 <li>
-<p><strong>Directement à partir de la ligne de commande (terminal)</strong>. Cette méthode est recommandée pour les imports importantes, afin que l'import ne soit pas bloquée par un navigateur web.</p>
+<p>Ai-je déjà des données importées dans mon système CollectiveAccess ?</p>
 </li>
 <li>
-<p><strong>Par le biais d'un navigateur web</strong> dans l'interface utilisateur Providence de CollectiveAccess.</p>
-</li>
-</ol>
-<p>Les deux options nécessitent une feuille de calcul d'import et des données sources dans un format de données pris en charge.</p>
-<p><strong>Avertissement</strong></p>
-<p>Les correspondances d'import contiennent un code. Si le code n'est pas valide, l'importateur de données dans l'interface utilisateur refusera de télécharger le mappage. Les espaces, les guillemets et l'orthographe sont les endroits les plus courants où des erreurs peuvent se produire dans les phrases de code. Vérifiez que les phrases de code ne présentent pas d'incohérences ; un <a href="https://jsonlint.com/">validateur de code et un formateur</a> en ligne sont généralement très utiles pour détecter les erreurs.</p>
-<p><strong>Note</strong></p>
-<p>N'oubliez pas de toujours sauvegarder votre base de données avant d'effectuer un import, car vous devrez probablement modifier les imports à plusieurs reprises.</p>
-<h2 id="etapes-de-base-pour-lexecution-dun-import-de-donnees">Étapes de base pour l'exécution d'un import de données<a class="headerlink" href="#etapes-de-base-pour-lexecution-dun-import-de-donnees" title="Permanent link">¶</a></h2>
-<p>Pour exécuter un import de données dans le terminal ou via l'interface utilisateur CollectiveAccess, huit étapes de base sont nécessaires :</p>
-<ol>
-<li>
-<p><strong>Créez une feuille de calcul de correspondance d'import.</strong> Cette feuille peut être créée dans Excel ou dans Google Sheets et servira de passerelle entre les données sources et les données de destination dans CollectiveAccess. Cette étape est nécessaire quelle que soit la manière dont l'import est exécutée. Voir le <a href="file:///Users/charlotteposever/Documents/ca_manual/providence/user/import/c_import_tutorial.html">Tutoriel : Importer une feuille de calcul</a> pour obtenir des instructions complètes.</p>
+<p>Quel type de données est déjà importé, le cas échéant ?</p>
 </li>
 <li>
-<p><strong>Créez une sauvegarde de la base de données</strong> en exécutant un vidage de données avant de lancer l'import.</p>
+<p>Quel type de données est représenté dans mes données sources et dans la correspondance d'importation subséquente ? (Ceci peut être vu dans le paramètre " Tableau ").</p>
 </li>
 <li>
-<p><strong>Exécutez l'import</strong> à partir de la ligne de commande (terminal) ou de l'interface utilisateur graphique de CollectiveAccess.</p>
+<p>Comment ces données doivent-elles interagir avec les autres données que j'ai déjà importées ?</p>
 </li>
-<li>
-<p><strong>Vérifiez les données qui ont</strong> été importées dans CollectiveAccess. Recherchez les erreurs ou les incohérences. Les erreurs sont généralement signalées par des messages d'erreur lors de l'import, mais il est nécessaire de procéder à des contrôles de qualité généraux dans le système.</p>
-</li>
-<li>
-<p><strong>Réviser le mapping</strong> en conséquence.</p>
-</li>
-<li>
-<p><strong>Chargez le vidage de données de</strong> manière à ce que le système revienne à l'état où il se trouvait avant l'import, ou qu'il revienne à l'état vide. Pour importer les modifications avec succès, il est recommandé de nettoyer le système afin que les anciennes imports ne soient pas confondues avec les nouvelles.</p>
-</li>
-<li>
-<p><strong>Exécutez à nouveau l'import</strong> (voir étape 3). Les révisions apparaîtront dans le nouveau système.</p>
-</li>
-<li>
-<p><strong>Répétez les étapes 3 à 7</strong> jusqu'à ce que vous soyez satisfait de l'import des données.</p>
-</li>
-</ol>
-<p>Les étapes de l'import de données à partir du terminal et de l'import de données à partir de l'interface utilisateur dans Collective Access sont expliquées ci-dessous. Ces étapes supposent que les données sources sont disponibles dans un format de fichier pris en charge et qu'une feuille de calcul de correspondance d'import a été créée.</p>
-<h2 id="execution-dun-import-a-partir-du-terminal">Exécution d'un import à partir du terminal<a class="headerlink" href="#execution-dun-import-a-partir-du-terminal" title="Permanent link">¶</a></h2>
-<p>Suivez les étapes décrites ci-dessous pour générer un import réussi à partir du terminal ou de la ligne de commande.</p>
-<ol>
-<li><strong>Créez un endroit où les</strong> données et les correspondances d'import de données sont facilement accessibles, sans que le chemin d'accès au fichier soit trop long. Par exemple, le matériel d'import pourrait se trouver dans un répertoire Providence à l'adresse suivante</li>
-</ol>
-<div class="highlight"><pre><span></span><code>/support/projet/mappings et /support/projet/data
-</code></pre></div>
-<ol>
-<li><strong>Sauvegardez vos données</strong>. Avant d'importer, sauvegardez votre base de données :</li>
-</ol>
-<div class="highlight"><pre><span></span><code>mysqldump -u\#nom -p\#motdepasse projet \&gt; \~/projet_date.dump
-</code></pre></div>
-<ol>
-<li><strong>Définir un import</strong>. Cette opération est réalisée à l'aide de l'option load-import-mapping de caUtils :</li>
-</ol>
-<div class="highlight"><pre><span></span><code>cd /path_to_Providence/support
-bin/caUtils load-import-mapping --file=project/mappings/mapping1.xlsx
-</code></pre></div>
-<ol>
-<li><strong>Exécuter l'</strong>import. Une fois l'import créée, elle peut être utilisée. À l'aide de l'utilitaire import-data, donnez le nom correct au paramètre -mapping. Par exemple :</li>
-</ol>
-<p><strong>Note</strong></p>
-<p>Lorsque l'extension PHP ncurses est installée, un écran affiche des indicateurs d'état en mouvement, notamment la progression de l'import et les erreurs récentes.</p>
-<ol>
-<li>
-<p><strong>Vérifiez les données qui ont</strong> été importées dans CollectiveAccess.</p>
-</li>
-<li>
-<p><strong>Modifier l'import et</strong> réexécuter l'utilitaire si quelque chose a mal tourné. Pour modifier votre import et réexécuter l'utilitaire, il suffit de restaurer votre base de données :</p>
-</li>
-</ol>
-<div class="highlight"><pre><span></span><code>mysql -u\#nom -p\#motdepasse projet \&lt; \~/projet_date.dump
-</code></pre></div>
-<ol>
-<li><strong>Répétez les étapes 1 à 4</strong> jusqu'à ce que vous soyez satisfait de l'import des données.</li>
-</ol>
-<p><strong>Lancer un import à partir de l'interface utilisateur</strong></p>
-<p>L'import de données via l'interface utilisateur de CollectiveAccess est une excellente option pour ceux qui ne sont pas familiarisés avec la ligne de commande, car elle n'implique pas l'exécution de commandes. L'import à partir de l'interface utilisateur consiste simplement à télécharger les fichiers pris en charge, mais il y a quelques étapes à suivre.</p>
-<p><strong>Note</strong></p>
-<p>L'interface utilisateur permet également d'ajouter, de supprimer ou de télécharger facilement des correspondances d'import. Pour cette méthode, il est nécessaire de disposer d'une correspondance d'import et de données sources dans un format de fichier pris en charge.</p>
-<p>Suivez les étapes ci-dessous pour exécuter un import à partir de l'interface utilisateur de CollectiveAccess :</p>
-<ol>
-<li><strong>Naviguez vers import/Données</strong> dans CollectiveAccess. La fonction d'import de CollectiveAccess s'affiche :</li>
-</ol>
-<p><img alt="Une image contenant texte, Police, capture d’écran, reçu Description générée automatiquement" src="../2a293028ead57b3e65e298f2a8cf43ad.png" /></p>
-<ol>
-<li>
-<p><strong>Sélectionnez l'icône du signe plus</strong><img alt="icon" src="../68dd7cab8bcac344026304ae7aaf1140.png" /> dans le coin supérieur droit. Une zone intitulée "Drag importer worksheets here to add or update" apparaît, dans laquelle la feuille de calcul d'import peut être glissée ou téléchargée dans l'interface utilisateur. En outre, la feuille de calcul peut être chargée à l'aide d'une URL depuis GoogleDrive.</p>
-</li>
-<li>
-<p><strong>Glissez ou déposez</strong> la feuille de calcul de le mapping des imports directement dans l'interface utilisateur, ou ajoutez le lien Google Drive à votre mapping d'import.</p>
-</li>
-<li>
-<p><strong>Sélectionnez</strong> le chevron (icône validation) <img alt="caret" src="../7018b123061411578197ef028d506c81.png" /> .</p>
-</li>
-<li>
-<p><strong>Disposez de vos données sources</strong>. En plus de la feuille de calcul de le mapping d'import, il sera également nécessaire de télécharger le jeu de données source spécifique dans l'interface utilisateur au cours de ce processus, en le faisant glisser ou en le téléchargeant à partir d'un emplacement sur l'ordinateur. Ce fichier (ou ces fichiers) doit être disponible dans un format supporté.</p>
-</li>
-<li>
-<p><strong>Télécharger</strong> les données sources.</p>
-</li>
-<li>
-<p><strong>Configurez les paramètres nécessaires</strong>. Sélectionnez le niveau de journalisation et les options de test. Pour plus d'informations, voir <a href="https://manual.collectiveaccess.org/providence/user/import/ui_import_options.html#import-ui-import-options">Data Importer (UI) : Options d'import</a>.</p>
-</li>
-<li>
-<p><strong>Exécutez l'import</strong> en sélectionnant Exécuter l'import de données.</p>
-</li>
-<li>
-<p><strong>Réviser</strong> le mapping en conséquence.</p>
-</li>
-<li>
-<p><strong>Réimporter</strong> en répétant les étapes 1 à 6.</p>
-</li>
-</ol>
-<p><strong>Ordre d'import</strong></p>
-<p>Pour les données comportant plus d'une feuille de calcul de mappage d'import (comme les objets, les entités, les lots, etc.), l'ordre dans lequel les mappages sont importés est important. Notez toutefois que cet ordre diffère pour chaque ensemble de données.</p>
-<p>Pour certains ensembles de données, l'ordre d'import est moins important, car les enregistrements apparentés sont créés à partir d'un seul mappage. Lorsque ce n'est pas le cas, l'ordre d'import peut déterminer si les enregistrements sont correctement appariés et permet d'éviter les erreurs lors de l'import.</p>
-<p>En fonction de l'ensemble de données, l'ordre d'import aura également une incidence sur la valeur de la <a href="https://manual.collectiveaccess.org/providence/user/import/exist_rec_policy.html#import-exist-rec-policy">règle relative aux enregistrements existants</a> dans les paramètres d'une feuille de calcul de mappage des imports.</p>
+</ul>
+<h2 id="politiques-relatives-aux-enregistrements-existants">Politiques relatives aux enregistrements existants<a class="headerlink" href="#politiques-relatives-aux-enregistrements-existants" title="Permanent link">¶</a></h2>
+<h3 id="none">none<a class="headerlink" href="#none" title="Permanent link">¶</a></h3>
+<p>Un système CollectiveAccess est " vide ", c'est-à-dire qu'il ne contient aucune autre donnée importée. Il n'est pas nécessaire de définir des règles relatives aux enregistrements existants, car il n'y a pas d'enregistrements existants dans le système. Pour les importations comportant plusieurs parties, ce paramètre s'applique souvent à la toute première importation de données.</p>
+<h3 id="skip_on_idno">skip_on_idno<a class="headerlink" href="#skip_on_idno" title="Permanent link">¶</a></h3>
+<p>Ignorer si déjà présent dans la base.</p>
+<h3 id="merge_on_idno">merge_on_idno<a class="headerlink" href="#merge_on_idno" title="Permanent link">¶</a></h3>
+<p>Les enregistrements de la feuille de calcul de correspondance des importations seront fusionnés avec tous les enregistrements existants dans le système CollectiveAccess sur la base d'un numéro d'enregistrement partagé ou d'un numéro d'identification d'un enregistrement.</p>
+<h3 id="merge_on_idno_with_replace">merge_on_idno_with_replace<a class="headerlink" href="#merge_on_idno_with_replace" title="Permanent link">¶</a></h3>
+<p>Les enregistrements de la feuille de calcul de la correspondance d'importation seront fusionnés avec tous les enregistrements existants dans le système CollectiveAccess sur la base d'un numéro d'enregistrement partagé ou du numéro d'identification d'un enregistrement. En outre, les enregistrements spécifiés dans la correspondance d'import qui partagent un numéro d'identification avec des enregistrements du système remplaceront ceux qui existent déjà dans le système CollectiveAccess.</p>
+<h3 id="overwrite_on_idno">overwrite_on_idno<a class="headerlink" href="#overwrite_on_idno" title="Permanent link">¶</a></h3>
+<p>Si déjà présent dans la base, l'enregistrement existant est écrasé.</p>
+<h3 id="skip_on_preferred_labels">skip_on_preferred_labels<a class="headerlink" href="#skip_on_preferred_labels" title="Permanent link">¶</a></h3>
+<h3 id="merge_on_preferred_labels">merge_on_preferred_labels<a class="headerlink" href="#merge_on_preferred_labels" title="Permanent link">¶</a></h3>
+<p>Les enregistrements de la feuille de calcul de la correspondance importée seront fusionnés avec tous les enregistrements existants dans le système CollectiveAccess en fonction du titre ou du nom d'un enregistrement.</p>
+<h3 id="merge_on_preferred_labels_with_replace">merge_on_preferred_labels_with_replace<a class="headerlink" href="#merge_on_preferred_labels_with_replace" title="Permanent link">¶</a></h3>
+<p>Les enregistrements de la feuille de calcul de la correspondance importée seront fusionnés avec tous les enregistrements existants dans le système CollectiveAccess par correspondance avec le titre ou le nom partagé d'un enregistrement, ou son étiquette_préférée. En outre, les enregistrements spécifiés dans la correspondance d'import qui partagent des titres ou des noms avec des enregistrements du système remplaceront ceux qui existent déjà dans le système CollectiveAccess.</p>
+<h3 id="overwrite_on_preferred_labels">overwrite_on_preferred_labels<a class="headerlink" href="#overwrite_on_preferred_labels" title="Permanent link">¶</a></h3>
+<h3 id="skip_on_idno_and_preferred_labels">skip_on_idno_and_preferred_labels<a class="headerlink" href="#skip_on_idno_and_preferred_labels" title="Permanent link">¶</a></h3>
+<h3 id="merge_on_idno_and_preferred_labels">merge_on_idno_and_preferred_labels<a class="headerlink" href="#merge_on_idno_and_preferred_labels" title="Permanent link">¶</a></h3>
+<p>Les enregistrements de la feuille de calcul de correspondance importée seront fusionnés avec tous les enregistrements existants dans le système CollectiveAccess sur la base d'un numéro d'identification partagé et d'une étiquette préférée partagée.</p>
+<h3 id="merge_on_idno_with_preferred_labels_with_replace">merge_on_idno_with_preferred_labels_with_replace<a class="headerlink" href="#merge_on_idno_with_preferred_labels_with_replace" title="Permanent link">¶</a></h3>
+<h3 id="overwrite_on_idno_and_preferred_labels">overwrite_on_idno_and_preferred_labels<a class="headerlink" href="#overwrite_on_idno_and_preferred_labels" title="Permanent link">¶</a></h3>
 
 
 
@@ -1527,54 +1501,6 @@ bin/caUtils load-import-mapping --file=project/mappings/mapping1.xlsx
 <footer class="md-footer">
 
   <!-- Link to previous and/or next page -->
-  
-    <nav
-      class="md-footer__inner md-grid"
-      aria-label="footer.title"
-    >
-
-      <!-- Link to previous page -->
-      
-        <a
-          href="../migration_refinery/"
-          class="md-footer__link md-footer__link--prev"
-          rel="prev"
-        >
-          <div class="md-footer__button md-icon">
-            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12Z"/></svg>
-          </div>
-          <div class="md-footer__title">
-            <div class="md-ellipsis">
-              <span class="md-footer__direction">
-                Précédent
-              </span>
-              III. Importer les relations, les refinery
-            </div>
-          </div>
-        </a>
-      
-
-      <!-- Link to next page -->
-      
-        <a
-          href="../Decrire_Objets_Joconde/"
-          class="md-footer__link md-footer__link--next"
-          rel="next"
-        >
-          <div class="md-footer__title">
-            <div class="md-ellipsis">
-              <span class="md-footer__direction">
-                Suivant
-              </span>
-              Introduction
-            </div>
-          </div>
-          <div class="md-footer__button md-icon">
-            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M4 11v2h12l-5.5 5.5 1.42 1.42L19.84 12l-7.92-7.92L10.5 5.5 16 11H4Z"/></svg>
-          </div>
-        </a>
-      
-    </nav>
   
 
   <!-- Further information -->
