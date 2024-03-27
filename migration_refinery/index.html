@@ -73,6 +73,11 @@
     <label class="md-overlay" for="__drawer"></label>
     <div data-md-component="skip">
       
+        
+        <a href="#refinery" class="md-skip">
+          Aller au contenu
+        </a>
+      
     </div>
     <div data-md-component="announce">
       
@@ -860,6 +865,8 @@
       <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
       
       
+        
+      
       
       <a href="./" class="md-nav__link md-nav__link--active">
         
@@ -1236,6 +1243,8 @@
   
   
   
+    
+  
   
 </nav>
                   </div>
@@ -1253,46 +1262,24 @@
   
 
 
-  <h1>III. Importer les relations, les refinery</h1>
-
-<p><strong>Refinery</strong></p>
-<ul>
-<li>
-<p><a href="https://manual.collectiveaccess.org/providence/user/import/mappings/refineries.html#what-is-a-refinery">Qu'est-ce qu'une Refinery ?</a></p>
-</li>
-<li>
-<p><a href="https://manual.collectiveaccess.org/providence/user/import/mappings/refineries.html#types-of-refineries">Types de Refinery</a></p>
-</li>
-<li>
-<p><a href="https://manual.collectiveaccess.org/providence/user/import/mappings/refineries.html#refinery-parameter">Paramètres de la Refinery</a></p>
-</li>
-<li>
-<p><a href="https://manual.collectiveaccess.org/import/mappings/splitters.html?highlight=refinery#refinery-options">Séparateurs</a></p>
-</li>
-<li>
-<p><a href="file:///Users/charlotteposever/Documents/ca_manual/providence/user/import/mappings/builders.html?highlight=builders">Bâtisseurs</a></p>
-</li>
-<li>
-<p><a href="https://manual.collectiveaccess.org/providence/user/import/mappings/refineries.html#joiners">Menuisiers</a></p>
-</li>
-</ul>
-<p><strong>Qu'est-ce qu'une Refinery ?</strong></p>
-<p>Un refinery est une commande qui crée un enregistrement tout en créant simultanément une relation et un type de relation associés à ce même enregistrement. Un refinery peut également correspondre à un enregistrement existant dans une base de données et créer une relation entre cet enregistrement et les données sources.</p>
-<p>Une Refinery prend un format de données particulier dans des données sources données, et le transforme par un comportement spécifique lorsqu'il est importé dans CollectiveAccess. En d'autres termes, les Refinery indiquent à CollectiveAccess <em>comment</em> importer certaines données, telles que les noms, les dates et les relations, par le biais d'une commande texte spécifique. Cette commande détermine ensuite la manière dont les données seront affichées une fois importées.</p>
-<p>Une Refinery, à un niveau simpliste, est ce qu'elle semble être - elle affine un mappage d'importation de données individuel et permet une plus grande complexité dans la représentation des données.</p>
+<h1 id="refinery">Refinery<a class="headerlink" href="#refinery" title="Permanent link">¶</a></h1>
+<p><strong>Qu'est-ce qu'un Refinery ?</strong></p>
+<p>Un refinery permet de créer un enregistrement lié depuis l'enregistrement créé lors d'un import (une colonne indiquant le nom d'un artiste dans l'import d'une liste d'oeuvres par exemple). Un refinery peut également établir une correspondance à un enregistrement déjà existant dans la  base de données et le lié à l'enregistrement importé.</p>
+<p>Un Refinery prend un format de données particulier dans des données sources données, et le transforme par un comportement spécifique lorsqu'il est importé dans CollectiveAccess. En d'autres termes, les Refinery indiquent à CollectiveAccess <em>comment</em> importer certaines données, telles que les noms, les dates et les relations, par le biais d'une commande texte spécifique. Cette commande détermine ensuite la manière dont les données seront affichées une fois importées.</p>
+<p>Un Refinery, à un niveau simpliste, correspond à la traduction de son nom, la précision méticuleuse d'un import de données spécifiques liées.</p>
 <p><strong>Note</strong></p>
-<p>Si un import de données nécessite des enregistrements liés, des Refinery doivent être utilisées. Pour en savoir plus sur la manière de les mettre en œuvre dans un mappage d'importation, et pourquoi, voir la page <a href="file:///Users/charlotteposever/Documents/ca_manual/providence/user/dataModelling/relationships.html?highlight=relationship">Relations</a> et <a href="file:///Users/charlotteposever/Documents/ca_manual/providence/user/import/c_creating_mapping.html">création d'un mappage d'importation : Vue d'ensemble</a>.</p>
+<p>Si un import de données nécessite des enregistrements liés, des Refinery doivent être utilisés. </p>
 <p><strong>Types de Refinery</strong></p>
 <p>Quelques types de Refinery sont couramment utilisés dans CollectiveAccess :</p>
 <ul>
 <li>
-<p><strong>Splitters :</strong> Un séparateur crée des enregistrements, fait correspondre des enregistrements avec des données existantes ou analyse des éléments de données spécifiques, en " séparant " littéralement des valeurs, telles que le prénom et le nom de famille. Les séparateurs peuvent être appliqués à une variété de tables primaires dans CollectiveAccess. Pour en savoir plus sur les séparateurs, reportez-vous à la section <a href="https://manual.collectiveaccess.org/import/mappings/splitters.html?highlight=refinery#refinery-options">séparateurs</a> du didacticiel sur le mappage d'importation.</p>
+<p><strong>Splitters :</strong> Un splitteur crée des enregistrements, fait correspondre des enregistrements avec des données existantes ou analyse des éléments de données spécifiques, en "découpant" littéralement des valeurs, telles que le prénom et le nom de famille. Les séparateurs peuvent être appliqués à une variété de tables primaires dans CollectiveAccess. </p>
 </li>
 <li>
 <p><strong>Joiners :</strong> Une jointure est utilisée principalement pour les données qui comprennent des noms et des dates. Les jointures sont utilisées lorsque deux ou plusieurs parties d'un nom situées dans des zones différentes de la source de données doivent être réunies en un seul enregistrement. Un dateJoiner crée une plage unique à partir de deux dates ou plus dans la source de données.</p>
 </li>
 <li>
-<p><strong>Builders :</strong> Un constructeur crée une hiérarchie supérieure au-dessus des données à importer. Pour plus d'informations, voir <a href="https://manual.collectiveaccess.org/import/mappings/builders.html">Constructeurs</a>.</p>
+<p><strong>Builders :</strong> Un constructeur crée une hiérarchie supérieure au-dessus des données à importer. </p>
 </li>
 </ul>
 <p>Pour une liste complète des Refinery, voir le tableau ci-dessous.</p>
