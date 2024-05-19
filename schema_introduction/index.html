@@ -13,6 +13,10 @@
       
       
       
+        <link rel="prev" href="../Registre_biens/">
+      
+      
+        <link rel="next" href="../schema_texte/">
       
       
       <link rel="icon" href="../assets/images/favicon.png">
@@ -20,7 +24,7 @@
     
     
       
-        <title>Module Musées de France - Récolement décennal - Guide utilisateur CollectiveAccess</title>
+        <title>I. Introduction à la gestion des données dans CollectiveAccess - Guide utilisateur CollectiveAccess</title>
       
     
     
@@ -70,7 +74,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#module-musees-de-france-recolement-decennal" class="md-skip">
+        <a href="#gestion-des-donnees-dans-collectiveaccess" class="md-skip">
           Aller au contenu
         </a>
       
@@ -416,7 +420,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              Module Musées de France - Récolement décennal
+              I. Introduction à la gestion des données dans CollectiveAccess
             
           </span>
         </div>
@@ -1130,17 +1134,19 @@
       
   
   
+    
   
   
+  
     
     
     
     
-    <li class="md-nav__item md-nav__item--nested">
+    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
       
         
         
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_5" >
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_5" checked>
         
           
           <label class="md-nav__link" for="__nav_5" id="__nav_5_label" tabindex="0">
@@ -1154,7 +1160,7 @@
             <span class="md-nav__icon md-icon"></span>
           </label>
         
-        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_5_label" aria-expanded="false">
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_5_label" aria-expanded="true">
           <label class="md-nav__title" for="__nav_5">
             <span class="md-nav__icon md-icon"></span>
             Schéma de la base de données MariaDB
@@ -1165,10 +1171,30 @@
                 
   
   
+    
   
   
-    <li class="md-nav__item">
-      <a href="../schema_introduction/" class="md-nav__link">
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  <span class="md-ellipsis">
+    I. Introduction à la gestion des données dans CollectiveAccess
+  </span>
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
         
   
   <span class="md-ellipsis">
@@ -1177,6 +1203,35 @@
   
 
       </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table des matières">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table des matières
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#tables-primaires-et-champs-intrinseques" class="md-nav__link">
+    <span class="md-ellipsis">
+      Tables primaires et champs intrinsèques
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
     </li>
   
 
@@ -1363,207 +1418,9 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#presentation-et-structure" class="md-nav__link">
+  <a href="#tables-primaires-et-champs-intrinseques" class="md-nav__link">
     <span class="md-ellipsis">
-      Présentation et structure
-    </span>
-  </a>
-  
-    <nav class="md-nav" aria-label="Présentation et structure">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#preambule-cadre-reglementaire" class="md-nav__link">
-    <span class="md-ellipsis">
-      Préambule : Cadre réglementaire
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#deroulement-des-operations" class="md-nav__link">
-    <span class="md-ellipsis">
-      Déroulement des opérations
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#verifier-le-parametrage" class="md-nav__link">
-    <span class="md-ellipsis">
-      Vérifier le paramétrage
-    </span>
-  </a>
-  
-</li>
-        
-      </ul>
-    </nav>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#saisie-du-recolement" class="md-nav__link">
-    <span class="md-ellipsis">
-      Saisie du récolement
-    </span>
-  </a>
-  
-    <nav class="md-nav" aria-label="Saisie du récolement">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#creation-dune-campagne-de-recolement" class="md-nav__link">
-    <span class="md-ellipsis">
-      Création d'une campagne de récolement
-    </span>
-  </a>
-  
-    <nav class="md-nav" aria-label="Création d'une campagne de récolement">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#menu-nouveau-campagne-de-recolement" class="md-nav__link">
-    <span class="md-ellipsis">
-      Menu Nouveau, Campagne de récolement
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#saisie" class="md-nav__link">
-    <span class="md-ellipsis">
-      Saisie
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#rechercher-une-fiche-campagne" class="md-nav__link">
-    <span class="md-ellipsis">
-      Rechercher une fiche campagne
-    </span>
-  </a>
-  
-</li>
-        
-      </ul>
-    </nav>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#organisation-des-campagnes-et-generation-du-recolement" class="md-nav__link">
-    <span class="md-ellipsis">
-      Organisation des campagnes et génération du récolement
-    </span>
-  </a>
-  
-    <nav class="md-nav" aria-label="Organisation des campagnes et génération du récolement">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#creer-un-ensemble-dobjets-a-recoler" class="md-nav__link">
-    <span class="md-ellipsis">
-      Créer un ensemble d'objets à récoler
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#recolement-objet-par-objet" class="md-nav__link">
-    <span class="md-ellipsis">
-      Récolement objet par objet
-    </span>
-  </a>
-  
-    <nav class="md-nav" aria-label="Récolement objet par objet">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#suivi-du-recolement" class="md-nav__link">
-    <span class="md-ellipsis">
-      Suivi du récolement
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#generer-les-fiches" class="md-nav__link">
-    <span class="md-ellipsis">
-      Générer les fiches
-    </span>
-  </a>
-  
-</li>
-        
-      </ul>
-    </nav>
-  
-</li>
-        
-      </ul>
-    </nav>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#recolement-dun-objet" class="md-nav__link">
-    <span class="md-ellipsis">
-      Récolement d'un objet
-    </span>
-  </a>
-  
-    <nav class="md-nav" aria-label="Récolement d'un objet">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#ecran-saisie-du-recolement" class="md-nav__link">
-    <span class="md-ellipsis">
-      Ecran "saisie du récolement"
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#ecran-suites-a-donner-au-recolement" class="md-nav__link">
-    <span class="md-ellipsis">
-      Ecran Suites à donner au récolement
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#ecran-recolement-identification" class="md-nav__link">
-    <span class="md-ellipsis">
-      Ecran récolement - identification
-    </span>
-  </a>
-  
-</li>
-        
-      </ul>
-    </nav>
-  
-</li>
-        
-      </ul>
-    </nav>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#generation-du-pv-de-recolement" class="md-nav__link">
-    <span class="md-ellipsis">
-      Génération du PV  de récolement
+      Tables primaires et champs intrinsèques
     </span>
   </a>
   
@@ -1587,200 +1444,142 @@
   
 
 
-<h1 id="module-musees-de-france-recolement-decennal">Module Musées de France - Récolement décennal<a class="headerlink" href="#module-musees-de-france-recolement-decennal" title="Permanent link">¶</a></h1>
-<h2 id="presentation-et-structure">Présentation et structure<a class="headerlink" href="#presentation-et-structure" title="Permanent link">¶</a></h2>
-<h3 id="preambule-cadre-reglementaire">Préambule : Cadre réglementaire<a class="headerlink" href="#preambule-cadre-reglementaire" title="Permanent link">¶</a></h3>
-<p><em>Notamment dans son article 13 : "Chaque campagne de récolement fait l'objet d'un procès-verbal rédigé par le professionnel responsable des collections au sens de l'article L. 442-8 du code du patrimoine. Le procès-verbal est conservé par le musée. Le procès-verbal décrit la méthode adoptée, le champ couvert par le récolement, ainsi que les résultats de la campagne, notamment la liste des biens non vus ou manquants, la liste des biens détruits, la liste des biens inventoriés ou à inventorier à l'issue du récolement. Pour les musées dont les collections appartiennent à l'Etat, la copie du procès-verbal est adressée à l'issue de chaque campagne de récolement au ministre chargé de la culture et, le cas échéant, au ministre compétent)".</em>
-<em>Et dans son annexe 5.a. Collecte et enregistrement des informations : "Pour chaque bien, les opérations de récolement réalisées et les informations rassemblées sont notées sur des fiches de récolement. L'utilisation de l'exemplaire original de l'inventaire pour la réalisation du récolement est proscrite.  La confirmation de la présence d'un bien inventorié est reportée dans les fichiers de gestion des collections, manuels ou informatiques définis à l'article 5 du présent arrêté, accompagnée de la date du récolement, de la localisation du bien et de l'identité de l'agent chargé du récolement.)".</em>
-<em>La procédure du récolement décennal implique donc la production de plusieurs documents :
-           • </em><em>les fiches de récolement    • le procès-verbal    • les listes de biens annexées au procès-verbal</em>**
-[http://www2.culture.gouv.fr/documentation/joconde/fr/partenaires/AIDEMUSEES/informatisation-recolement.htm]</p>
-<h3 id="deroulement-des-operations">Déroulement des opérations<a class="headerlink" href="#deroulement-des-operations" title="Permanent link">¶</a></h3>
-<p>Il est nécessaire de suivre plusieurs étapes pour réaliser un récolement informatisé des collections dans CollectiveAccess.
-1. Etablir une fiche Campagne de récolement 
-2. Générer une fiche de récolement par objet récolé 
-3.  Suivi du récolement
-4.  Générer le PV de récolement</p>
-<h3 id="verifier-le-parametrage">Vérifier le paramétrage<a class="headerlink" href="#verifier-le-parametrage" title="Permanent link">¶</a></h3>
-<ul>
-<li>
-<p>Interfaces de saisie : </p>
-<ul>
-<li>Des écrans de saisie spécifiques ont été configurés par idéesculture lors de l'installation de CollectiveAccess.</li>
-<li>il est possible de les modifier et de les organiser différemment depuis le menu Gérer &gt; administration &gt; interfaces de saisie</li>
-<li>Cliquer sur le bouton modifier de "Editeur de procédure Campagne/récolement" puis sur le bouton modifier de chaque écran
-<img alt="Image64" src="../img/image64.png" />
-Interface de saisie "Editeur de procédure</li>
-</ul>
-</li>
-<li>
-<p>vérifier les préférences utilisateurs : il s'agit ici de vérifier que les grilles de saisies sont bien associées au type d'enregistrement </p>
-<ul>
-<li>Menu Gérer &gt; Mes préférences &gt; modification</li>
-<li>vérifier que les lignes "campagne de récolement", "récolement" soient associées à l'interface de saisie  "Editeur de procédure Campagne / récolement"
-<img alt="Image65" src="../img/image65.png" />
-Préférences utilisateurs</li>
-</ul>
-</li>
-</ul>
-<h2 id="saisie-du-recolement">Saisie du récolement<a class="headerlink" href="#saisie-du-recolement" title="Permanent link">¶</a></h2>
-<h3 id="creation-dune-campagne-de-recolement">Création d'une campagne de récolement<a class="headerlink" href="#creation-dune-campagne-de-recolement" title="Permanent link">¶</a></h3>
-<h4 id="menu-nouveau-campagne-de-recolement">Menu Nouveau, Campagne de récolement<a class="headerlink" href="#menu-nouveau-campagne-de-recolement" title="Permanent link">¶</a></h4>
-<h4 id="saisie">Saisie<a class="headerlink" href="#saisie" title="Permanent link">¶</a></h4>
-<p>Remplir les informations de description de la campagne
-- Nom : <em>ex : Campagne cartons à dessin</em>
-- Numéro : <em>ex campagne-1</em>
-- dates prévisionnelles de la campagne : <em>ex 2018-2024</em>
--  dates effectives 
-- intervenant de la campagne : lien vers les personnes liées
-- contenu scientifique : <em>champ de description qui apparaitra dans le PV</em>
-- champs couverts :<em> champ de description qui apparaitra dans le PV</em>
-- méthode utilisée : <em>champ de description qui apparaitra dans le PV</em>
-- caractérisation de l'espace : <em>champ de description qui apparaitra dans le PV</em>
-- conditionnement des biens à récoler : <em>champ de description</em>
-- localisation : <em>emplacement lié</em>
-- Fiches de récolement liées : <em>le lien vers les fiches de récolement apparaîtra automatiquement lors de la génération des fiches.</em></p>
-<h4 id="rechercher-une-fiche-campagne">Rechercher une fiche campagne<a class="headerlink" href="#rechercher-une-fiche-campagne" title="Permanent link">¶</a></h4>
-<ul>
-<li>à tout moment, il est possible de revenir sur la fiche campagne pour la modifier et la compléter</li>
-<li>en utilisant l'une des différentes possibilités de recherche <ul>
-<li>recherche rapide</li>
-<li>recherche simple, avancée ou parcourir du menu "Chercher - Campagne"</li>
-</ul>
-</li>
-<li>saisir un mot du nom de la campagne ou l'identifiant <ul>
-<li>saisie de l'identifiant en recherche rapide :on parvient directement sur la fiche campagne</li>
-<li>saisie d'un mot du nom en recherche rapide <em>ex dessin</em> : on obtient plusieurs résultats triés par type d'enregistrement (objet, entités....)
-<img alt="Image66" src="../img/image66.png" />
-Recherche rapide campagne</li>
-<li>cliquer sur le bouton + de la ligne "occurrences" pour visualiser les résultats proposés ou sur "full result" (tous les résultats)
-<img alt="Image67" src="../img/image67.png" />
-Recherche rapide - bouton + déplié</li>
-<li>cliquer sur le lien pour arriver en modification sur la fiche campagne <em>ex :"Campagne - Cartons à dessin"</em></li>
-</ul>
-</li>
-</ul>
-<h3 id="organisation-des-campagnes-et-generation-du-recolement">Organisation des campagnes et génération du récolement<a class="headerlink" href="#organisation-des-campagnes-et-generation-du-recolement" title="Permanent link">¶</a></h3>
-<h4 id="creer-un-ensemble-dobjets-a-recoler">Créer un ensemble d'objets à récoler<a class="headerlink" href="#creer-un-ensemble-dobjets-a-recoler" title="Permanent link">¶</a></h4>
-<p>Il s'agit ici de procéder petit à petit dans le récolement et de créer au fil de l'eau des ensembles d'objets à récoler
-<em>ex : tous les objets de la collection permanente ou de tel espace *
-- rechercher les objets souhaités 
-- les placer dans un ensemble 
-- possible de placer plusieurs recherches successives dans le même ensemble 
-</em>NB : se reporter au support de cours "gestion des recherches" pour plus de précisions sur la gestion des recherches et  des ensembles*</p>
-<h4 id="recolement-objet-par-objet">Récolement objet par objet<a class="headerlink" href="#recolement-objet-par-objet" title="Permanent link">¶</a></h4>
-<h5 id="suivi-du-recolement">Suivi du récolement<a class="headerlink" href="#suivi-du-recolement" title="Permanent link">¶</a></h5>
-<ul>
-<li>Menu Procédures réglementaires &gt; Suivi du récolement </li>
-<li>visualisation de toutes les campagnes de récolement reliées au récolement décennal en cours (ici 2014-2024)
-<img alt="Image68" src="../img/image68.png" />
-Suivi du récolement </li>
-<li>2 parties<ul>
-<li>suivi graphique</li>
-<li>tableau de progression des campagne</li>
-</ul>
-</li>
-<li>actions possibles<ul>
-<li>un clic sur bouton "page" : permet de modifier la fiche campagne </li>
-</ul>
-</li>
-</ul>
-<h5 id="generer-les-fiches">Générer les fiches<a class="headerlink" href="#generer-les-fiches" title="Permanent link">¶</a></h5>
-<ul>
-<li>cliquer sur le bouton "générer les fiches" de la campagne</li>
-<li>choisir un ensemble d'objet pour préparer le récolement dans la liste déroulante 
-<strong><em>Attention :</em></strong>*tous les ensembles d'objets créés précédemment dans CollectiveAccess apparaissent.</li>
-<li>tous les ensembles d'objets effectués dans CollectiveAccess sont présents dans la liste**</li>
-<li>cliquer sur "soumettre"
- <strong>Attention : cette action ne peut être annulée</strong></li>
-<li>une fiche de récolement est générée par objet présent dans l'ensemble 
-<img alt="Image69" src="../img/image69.png" />
-Fiches de récolement générées</li>
-</ul>
-<h3 id="recolement-dun-objet">Récolement d'un objet<a class="headerlink" href="#recolement-dun-objet" title="Permanent link">¶</a></h3>
-<p><img alt="Image70" src="../img/image70.png" />
-Liste des fiches de récolement
-- cliquer sur le bouton "page" pour modifier
-- on arrive sur la fiche de récolement générée
-<img alt="Image71" src="../img/image71.png" />
-Fiche de récolement
-- réitérer l'opération pour toutes les fiches récolement générées pour l'ensemble
-- pour ajouter un nouvel ensemble, cliquer sur le bouton plus de la barre de progression, zone "avancement"</p>
-<h4 id="ecran-saisie-du-recolement">Ecran "saisie du récolement"<a class="headerlink" href="#ecran-saisie-du-recolement" title="Permanent link">¶</a></h4>
-<ul>
-<li>objet lié : lien créé <em>automatiquement</em> lors de la génération de la fiche</li>
-<li>nom de l'objet récolé : reprise <em>automatiquement</em> du nom de l'objet</li>
-<li>n° de fiche de récolement : généré <em>automatiquement</em> (construit de la manière suivante : n°inventaire de l'objetRECOLidendifiant de la campagne)
-Tous les champs qui suivent sont à remplir en fonction de l'objet que l'on récole, et selon les préconisations du Service des Musées de France</li>
-<li>Photographie spécifique au récolement : associer ici une photographie de l'objet récolé, utile pour préciser / annoter le récolement
-<strong>Attention : </strong>au cas où l'on souhaiterait associer une image ou un média à la notice documentaire de l'objet : penser à le réaliser directement depuis la fiche de l'objet - écran Média
-<em>astuce : "clic droit ouvrir dans un nouvel onglet" sur  le lien vers l'objet lié permet d'ouvrir la fiche de l'objet sans perdre la saisie de la fiche de récolement</em></li>
-<li>Photographie documentaire : cocher les cases</li>
-<li>numéro de fiche du récolement précédent : remplir si info existante</li>
-<li>présence du numéro d'inventaire : cocher la case</li>
-<li>expertise du numéro d'inventaire : cocher les cases et préciser si besoin</li>
-<li>présence d'un autre numéro : cocher la case et préciser si besoin</li>
-<li>problème d'identification : cocher si oui</li>
-<li>présence du bien dans le récolement précédent : cocher </li>
-<li>présence du bien dans le récolement en cours  : cocher  la case (<em>alimentera le PV le suivi du récolement</em>)</li>
-<li>date du précédent récolement : à remplir le cas échéant</li>
-<li>date du récolement en cours : date du jour</li>
-<li>localisation dans le précédent récolement : indiquer une date et sélectionner la localisation parmi la liste de choix proposés (liste définie par le Service des Musées de France)</li>
-<li>localisation dans le récolement en cours :  : indiquer une date et sélectionner la localisation parmi la liste de choix proposés (liste définie par le Service des Musées de France)</li>
-<li>emplacement : emplacement de stockage de l'objet récolé</li>
-<li>campagne liée : rempli automatiquement lors de la génération de la fiche</li>
-<li>constat d'état : à compléter</li>
-<li>objet inventorié plusieurs fois : cocher la case correspondante</li>
-<li>conformité avec la source :  : cocher la case correspondante</li>
-<li>type et référence de la source : préciser la source</li>
-<li>inscription : si des marques et inscriptions sont indiquées sur l'objet, les préciser ici</li>
-<li>récoleur : lien vers les personnes liées</li>
-<li>date de visualisation : date de visualisation de l'objet pour le récolement</li>
-<li>date de validation </li>
-<li>valideur : lien vers les personnes liées (peut être la même personne que le récoleur, selon la taille de l'équipe)</li>
-<li>récolement fait : cocher oui quand le récolement de l'objet en question est terminé *alimente le PV *</li>
-</ul>
-<h4 id="ecran-suites-a-donner-au-recolement">Ecran Suites à donner au récolement<a class="headerlink" href="#ecran-suites-a-donner-au-recolement" title="Permanent link">¶</a></h4>
-<ul>
-<li>Il s'agit ici de préciser toutes les opérations à effectuer ou non sur l'objet suite au récolement :<ul>
-<li>la liste des objets concernés par des traitements pourra ensuite être retrouvée en recherche</li>
-<li>chaque indication se retrouve dans le PV de récolement et est comptabilisée</li>
-</ul>
-</li>
-<li>Liste des champs à compléter<ul>
-<li>objet à identifier</li>
-<li>objet à inventorier</li>
-<li>objet à marquer</li>
-<li>objet à photographier</li>
-<li>objet à localiser</li>
-<li>objet à traiter</li>
-<li>objet à récoler ultérieurement</li>
-<li>notice documentaire à créer</li>
-<li>recherches complémentaires à poursuivre</li>
-<li>plainte à déposer</li>
-</ul>
-</li>
-</ul>
-<h4 id="ecran-recolement-identification">Ecran récolement - identification<a class="headerlink" href="#ecran-recolement-identification" title="Permanent link">¶</a></h4>
-<ul>
-<li>rappel de toutes les informations d'identifications de l'objet</li>
-</ul>
-<h2 id="generation-du-pv-de-recolement">Génération du PV  de récolement<a class="headerlink" href="#generation-du-pv-de-recolement" title="Permanent link">¶</a></h2>
-<p>Une fois que tous les objets ont été récolés, il s'agit de générer le PV de récolement afin de le transmettre.
-<img alt="Image72" src="../img/image72.png" />
-Générer le PV</p>
-<ul>
-<li>cliquer sur le bouton "Générer le procès-verbal de récolement"</li>
-<li>cliquer sur "Télécharger"</li>
-<li>les informations du PV sont :<ul>
-<li>normalisées et stipulées par le Service des Musées de France</li>
-<li>reprises en partie de la fiche campagne</li>
-<li>calculées et générées automatiquement grâce aux informations indiquées dans les fiches récolement d'où l'importance de bien cocher les cases</li>
-</ul>
-</li>
-<li>possible de générer le PV à tout moment pour visualiser les informations</li>
-</ul>
-<p>*le PV est généré au format .docx et lisible sous Word ou Openoffice, le transformer ensuite en pdf pour le transmettre aux services compétents.</p>
+<h1 id="gestion-des-donnees-dans-collectiveaccess">Gestion des données dans CollectiveAccess<a class="headerlink" href="#gestion-des-donnees-dans-collectiveaccess" title="Permanent link">¶</a></h1>
+<p>Traduit depuis manual.collectiveaccess.org par Gautier Michelin pour IdéesCulture (mai 2024)
+ ## Introduction à la gestion des données dans CollectiveAccess</p>
+<p><strong>Tables et enregistrements primaires</strong>
+CollectiveAccess est structuré autour de plusieurs tables primaires d'éléments de métadonnées, tels que les objets, les entités, les collections, etc. Chaque table primaire possède des données intrinsèques et son propre ensemble de labels préférés et non préférés (titre ou nom par exemple).</p>
+<p><strong>Bundles</strong>
+Un bundle est un terme de haut niveau qui désigne les différentes structures de CollectiveAccess utilisées pour stocker le contenu catalogué. Il existe quatre types distincts de bundles, chacun ayant son propre ensemble de caractéristiques et d'utilisations : les labels, les métadonnées intrinsèques, les éléments de métadonnées et les relations. Les enregistrements (entités, objets, lieux, emplacements de stockages, représentations, …) sont simplement des assemblages de différentes bundles, choisis pour répondre à des exigences de description spécifiques.</p>
+<p><strong>Labels</strong>
+Les labels sont utilisés pour stocker les noms ou les titres des documents. Il existe deux types de labels : les labels préférés et les labels non préférés. Chaque enregistrement possède un, et un seul, label préféré qui représente le "nom" actuel de l'enregistrement et qui est utilisé comme titre d'affichage par défaut.</p>
+<p>Les enregistrements peuvent avoir un nombre quelconque de labels non préférés. Les labels non préférés sont généralement utilisées pour enregistrer des noms/titres alternatifs, qui peuvent être utilisés dans les recherches et éventuellement affichés.</p>
+<p>Les labels préférés et non préférés sont toujours disponibles pour tous les enregistrements dans CollectiveAccess. Aucune configuration particulière n'est requise. Notez que (à quelques exceptions près) chaque enregistrement dans CollectiveAccess doit avoir un label préféré. Des options de configuration peuvent être définies pour gérer l'unicité des labels, pour distinguer les différents types de labels non préférés (une exigence de certains standards de descriptions des métadonnées) et plus encore.</p>
+<p><strong>Métadonnées Intrinsèques</strong>
+Les éléments intrinsèques sont des champs intégraux présents dans tous les systèmes CollectiveAccess. Tout comme les labels, les métadonnées intrinsèques sont toujours disponibles et ne nécessitent pas de configuration particulière. Il s'agit de valeurs simples, qui ne se répètent pas et qui existent généralement pour prendre en charge une fonctionnalité spécifique ou, plus rarement, pour des raisons historiques. Elles ne peuvent pas être supprimées de CollectiveAccess, mais dans la plupart des cas, elles peuvent être masquées si elles ne sont pas nécessaires.</p>
+<p>Les champs intrinsèques couramment utilisés sont <strong>idno</strong> (identifiant de l'enregistrement), <strong>type_id</strong> (type d'enregistrement), <strong>access</strong> (visibilité sur le site web public) et <strong>status</strong> (statut du flux de travail de l'enregistrement). Les descriptions de tous les champs intrinsèques disponibles se trouvent dans la documentation de la table primaire.</p>
+<p><strong>Éléments de métadonnées</strong>
+Les éléments de métadonnées sont des champs de données configurables liés aux différents enregistrements de votre schéma de données. Les éléments de métadonnées peuvent accepter une gamme riche et variée de types de données, peuvent se répéter, peuvent prendre en charge des valeurs multilingues et peuvent être composés en champs complexes à valeurs multiples à l'aide d'éléments conteneurs. La majeure partie du schéma de données d'un système typique sera mise en œuvre à l'aide d'éléments de métadonnées pour construire des structures de données spécifiques à l'installation.</p>
+<p><strong>Relations</strong>
+Les relations sont des liens bidirectionnels entre des paires d'enregistrements. Ils peuvent être créés entre des enregistrements de n'importe quelle table primaire sans restriction. Tous les liens comprennent des références à des types de relations - des descripteurs configurables qui distinguent les différents types de liens possibles. Les types de relations entre les enregistrements d'objets et d'entités peuvent inclure, par exemple, "créateur", "donateur" et "sujet".</p>
+<p>Il est possible de créer un nombre illimité de relations entre deux enregistrements, et chaque relation peut éventuellement intégrer des éléments de métadonnées supplémentaires. Les relations prennent également en charge une poignée d'éléments intrinsèques, mais n'acceptent pas de label.</p>
+<p><strong>Profils d'installation</strong>
+Les profils d'installation sont les documents XML qui créent votre modèle de données et configurent votre base de données. Chaque instance de CollectiveAccess doit disposer d'un profil d'installation. De nombreuses options sont préchargées, mais vous devez généralement en personnaliser un en fonction de vos besoins.</p>
+<h2 id="tables-primaires-et-champs-intrinseques">Tables primaires et champs intrinsèques<a class="headerlink" href="#tables-primaires-et-champs-intrinseques" title="Permanent link">¶</a></h2>
+<p>CollectiveAccess est structuré autour de plusieurs tables primaires, avec des éditeurs qui peuvent être activés (ou désactivés) en fonction des exigences du projet. Chaque tableau primaire possède des lots intrinsèques et son propre ensemble de lots d'étiquettes préférées et non préférées. Des interfaces utilisateur distinctes peuvent être configurées pour chaque table et, au sein de celles-ci, une même table peut avoir plusieurs interfaces utilisateur restreintes par type.</p>
+<p>Les éditeurs qui ne sont pas pertinents pour votre système (vous ne cataloguez pas les lieux par exemple) peuvent être désactivés dans le fichier de configuration app.conf, en définissant les différentes directives *_disable ci-dessous à une valeur non nulle.</p>
+<p>Voici à quoi ressemble le fichier app.conf :</p>
+<h1 id="editor-disable-switches">Editor "disable" switches<a class="headerlink" href="#editor-disable-switches" title="Permanent link">¶</a></h1>
+<h1 id="-">-------------------<a class="headerlink" href="#-" title="Permanent link">¶</a></h1>
+<p>ca_objects_disable = 0
+ca_entities_disable = 0
+ca_places_disable = 0
+ca_occurrences_disable = 0
+ca_collections_disable = 0
+ca_object_lots_disable = 0
+ca_storage_locations_disable = 0
+ca_loans_disable = 0
+ca_movements_disable = 1
+ca_tours_disable = 1
+ca_tour_stops_disable = 1
+ca_object_representations_disable = 1</p>
+<h3 id="objets-ca_objects">Objets (ca_objects)<a class="headerlink" href="#objets-ca_objects" title="Permanent link">¶</a></h3>
+<p>Les enregistrements d'objets représentent des éléments ou des biens d'une collection, généralement des éléments physiques ou numériques gérés. Chaque enregistrement d'objet a un "type" qui détermine les champs qui lui sont pertinents. La liste des types disponibles dans votre système peut être personnalisée pour répondre à vos besoins spécifiques en matière de catalogage.</p>
+<h3 id="lots-dobjets-ca_object_lots">Lots d'objets (ca_object_lots)<a class="headerlink" href="#lots-dobjets-ca_object_lots" title="Permanent link">¶</a></h3>
+<p>Les lots enregistrent l'adhésion ou l'acquisition d'un ou plusieurs objets. Les lots sont couramment utilisés par les institutions de collection qui peuvent acquérir plus d'un objet unique par acquisition. Les informations relatives à l'enregistrement, telles que l'acte de donation, peuvent être enregistrées dans une fiche de lot, tandis que le catalogage de chaque objet acquis reste au niveau de l'objet.</p>
+<h3 id="entites-ca_entities">Entités (ca_entities)<a class="headerlink" href="#entites-ca_entities" title="Permanent link">¶</a></h3>
+<p>Les enregistrements d'entités représentent des personnes et des organisations spécifiques. Des relations peuvent être créées entre les enregistrements d'entités et d'objets (ou tout autre enregistrement dans n'importe quelle autre table) avec des types de relations entièrement personnalisables. Par exemple, un enregistrement d'entité pour une personne peut être lié à un enregistrement d'objet en tant que créateur de l'objet, ou en tant que photographe, donateur, éditeur, artiste, etc.</p>
+<h3 id="lieux-ca_places">Lieux (ca_places)<a class="headerlink" href="#lieux-ca_places" title="Permanent link">¶</a></h3>
+<p>Les enregistrements de lieux représentent des emplacements physiques, géographiques ou autres. Les lieux sont intrinsèquement hiérarchiques, ce qui permet d'imbriquer des enregistrements de lieux plus spécifiques dans des enregistrements plus généraux. Comme pour les entités, les lieux peuvent être liés à des enregistrements d'autres tables. Les lieux sont généralement utilisés pour modéliser les autorités de localisation spécifiques à votre système. Pour le catalogage des noms de lieux géographiques courants, pensez à utiliser le support intégré de CollectiveAccess pour GoogleMaps, OpenStreetMap, GeoNames et/ou le Getty Thesaurus of Geographic Names (TGN).</p>
+<h3 id="occurrences-ca_occurrences">Occurrences (ca_occurrences)<a class="headerlink" href="#occurrences-ca_occurrences" title="Permanent link">¶</a></h3>
+<p>Les occurrences sont utilisées pour représenter des concepts temporels tels que des événements, des expositions, des productions ou des citations.</p>
+<h3 id="collections-ca_collections">Collections (ca_collections)<a class="headerlink" href="#collections-ca_collections" title="Permanent link">¶</a></h3>
+<p>Les collections représentent des regroupements significatifs d'objets. Elles peuvent faire référence à des collections physiques, à des collections symboliques d'éléments associés par certains critères, ou à tout autre regroupement. Les notices de collection sont souvent utilisées pour gérer le traitement formel des archives et la création d'instruments de recherche, en configurant les notices de manière à ce qu'elles soient conformes à la norme de contenu Describing Archives (DACS).</p>
+<h3 id="emplacements-de-stockage-ca_storage_locations">Emplacements de stockage (ca_storage_locations)<a class="headerlink" href="#emplacements-de-stockage-ca_storage_locations" title="Permanent link">¶</a></h3>
+<p>Les enregistrements relatifs aux lieux de stockage représentent les emplacements physiques où les objets peuvent être situés, exposés ou stockés. Comme les enregistrements de lieux, les emplacements de stockage sont hiérarchiques et peuvent être imbriqués pour permettre la notation de l'emplacement à différents niveaux de spécificité (bâtiment, pièce, armoire, tiroir, etc.). Comme pour les autres tables primaires, chaque lieu de stockage peut faire l'objet d'un catalogage arbitrairement riche, comprenant des restrictions d'accès, des coordonnées géographiques, des mots-clés et d'autres informations.</p>
+<h3 id="prets-ca_loans">Prêts (ca_loans)<a class="headerlink" href="#prets-ca_loans" title="Permanent link">¶</a></h3>
+<p>Les fiches de prêt enregistrent les détails des prêts d'objets, qu'ils soient entrants ou sortants. Les enregistrements de prêts, comme ceux de toutes les autres tables, sont entièrement personnalisables et peuvent être utilisés pour suivre tous les aspects d'un prêt, y compris les dates, l'expédition et les informations relatives à l'assurance.</p>
+<h3 id="mouvements-ca_movements">Mouvements (ca_movements)<a class="headerlink" href="#mouvements-ca_movements" title="Permanent link">¶</a></h3>
+<p>Pour les besoins plus complexes de localisation, les enregistrements de mouvements peuvent être utilisés pour enregistrer avec précision les mouvements d'objets entre les lieux de stockage, lors de prêts ou d'expositions. Utilisés dans le cadre d'une politique de localisation ou d'historique d'utilisation, les mouvements peuvent fournir un enregistrement solide de chaque mouvement dans l'histoire d'un objet.</p>
+<h3 id="representations-dobjets-ca_object_representations">Représentations d'objets (ca_object_representations)<a class="headerlink" href="#representations-dobjets-ca_object_representations" title="Permanent link">¶</a></h3>
+<p>Les représentations décrivent les médias numériques représentatifs (images, vidéo, audio, PDF) des objets. Les notices de représentation ne contiennent généralement qu'un fichier multimédia, mais peuvent contenir un catalogage supplémentaire spécifique au fichier multimédia (et non à l'objet que le fichier dépeint ou représente) si cela est souhaité. Lorsqu'elles sont utilisées, les métadonnées de représentation comprennent souvent des légendes, des crédits, des informations d'accès, des droits et des restrictions de reproduction.</p>
+<h3 id="parcours-de-visite-ca_tours">Parcours de visite (ca_tours)<a class="headerlink" href="#parcours-de-visite-ca_tours" title="Permanent link">¶</a></h3>
+<p>Les enregistrements de parcours saisissent des informations sur les visites sur place ou en ligne d'objets, de lieux, de collections ou de tout autre enregistrement de la base de données.</p>
+<h3 id="pois-du-parcours-ca_tour_stops">POIs du parcours (ca_tour_stops)<a class="headerlink" href="#pois-du-parcours-ca_tour_stops" title="Permanent link">¶</a></h3>
+<p>Chaque parcours de visite comporte un nombre quelconque de points d’intérêt (POIs) ordonnés. Chaque POIs contient des métadonnées sur l’arrêt (texte descriptif, coordonnées géographiques, etc.) ainsi que des relations avec des objets et des entités pertinents, etc.</p>
+<h3 id="tables-de-label">Tables de label<a class="headerlink" href="#tables-de-label" title="Permanent link">¶</a></h3>
+<p>Les labels sont des noms ou des titres d'enregistrements. Toutes les tables primaires sont accompagnées de tables de labels. Il existe deux types de labels : les labels préférés et les labels non préférées. Chaque enregistrement possède une, et un seul, label préféré. Le label préféré est utilisée comme titre d'affichage par défaut de l'enregistrement. Les enregistrements peuvent avoir un nombre quelconque de labels non préférés, qui sont considérés comme des titres alternatifs et peuvent être utilisées dans les recherches. Les labels sont toujours présents et n'ont pas besoin d'être configurés pour exister.</p>
+<p>L'abréviation suivante est couramment utilisée pour référencer les libellés préférés : <tablename>.preferred_labels.<label table name field>. Par exemple, le label préféré d'un objet se code comme suit :
+ca_objects.preferred_labels.name
+Voir les champs de labels ci-dessous pour les champs de nom spécifiques aux tables.</p>
+<h2 id="elements-de-metadonnees">Eléments de métadonnées<a class="headerlink" href="#elements-de-metadonnees" title="Permanent link">¶</a></h2>
+<h3 id="types-dattributs-de-metadonnees">Types d’attributs de métadonnées<a class="headerlink" href="#types-dattributs-de-metadonnees" title="Permanent link">¶</a></h3>
+<p>Les types d'attributs représentent toutes les variétés de champs prises en charge par CollectiveAccess. Chacun d'entre eux est légèrement différent car il est conçu pour accepter et normaliser des données dans des formats différents. Voir ci-dessous pour plus de détails sur la nature unique de chaque type d'attribut. La liste complète des types d'attributs se trouve ici.</p>
+<p><strong>Conteneur (container)</strong>
+Contrairement à tous les autres types d'attributs, les conteneurs ne représentent pas de valeurs de données. Leur seule fonction est d'organiser les attributs en groupes pour l'affichage. Dans un ensemble de valeurs multi-attributs (par exemple une adresse avec des attributs distincts pour le numéro de rue, la ville, l'État, le pays et le code postal), il y aura au moins un conteneur servant de "racine" (ou de sommet) de la hiérarchie des attributs. D'autres conteneurs peuvent servir à regrouper les éléments de l'ensemble d'attributs multiples en sous-groupes affichés sur des lignes distinctes d'un formulaire.</p>
+<p><strong>Texte (text)</strong>
+Représente une valeur en texte libre.</p>
+<p><strong>Date (DateRange)</strong>
+Représente une plage de dates historiques acceptant des expressions de plage de dates et d'heures dans les formats acceptés par le module CA TimeExpressionParser.</p>
+<p><strong>Liste (list)</strong>
+Représente une valeur choisie dans une liste déroulante remplie de valeurs provenant d'une liste spécifiée, telle que définie dans la table ca_lists.</p>
+<p><strong>Geocode</strong>
+Représente une ou plusieurs coordonnées de latitude/longitude. Les coordonnées peuvent être saisies sous forme de paires décimales latitude/longitude (ex. 40.321,-74.55) ou au format degrés-minutes-secondes (ex. 40° 23' 10N, 74° 30' 5W). Les coordonnées multiples de latitude/longitude doivent être séparées par des points-virgules (" ;"). Les entrées non coordonnées sont converties en coordonnées à l'aide du service de géocodage de Google Maps, qui fonctionne bien pour la plupart des adresses complètes et partielles dans le monde entier. Pour distinguer sans ambiguïté les données de coordonnées des données d'adresses à géocoder, il est fortement conseillé de placer les listes de coordonnées entre crochets 
+[40.321,-74.55;41.321,-74.55;41.321,-75.55;40.321,-75.55;40.321,-74.55]</p>
+<p><strong>URL</strong>
+Accepte une valeur URL correctement formatée. Actuellement, la vérification de la syntaxe générale et du protocole spécifié est assez limitée. Il pourrait être étendu à l'avenir pour vérifier le code de retour HTTP de l'URL.</p>
+<p><strong>Devise (Currency)</strong>
+Accepte une valeur monétaire composée d'un spécificateur de devise et d'un nombre décimal. Le spécificateur actuel doit être un code de devise standard à trois lettres (voir http://www.xe.com/iso4217.php) ou l'un des symboles de devise spéciaux suivants : $ (dollar américain), ¥ (yen japonais), £ (livre anglaise) ou € (euro). Exemples d'entrées valides : $14.95, £32.50, CAD 20, DKK 75.</p>
+<p><strong>Longueur (length)</strong>
+Accepte les mesures de longueur en unités métriques, anglaises et en points (ces derniers étant des points typographiques). Les entrées sont simplement une quantité numérique + un spécificateur d'unité. Les spécificateurs d'unités pris en charge sont décrits sur la page des formats d'entrée des mesures. Alors que toute unité de longueur prise en charge peut être utilisée pour l'entrée, les unités d’affichage ou d’export sont dictées par les préférences de l'utilisateur en matière d'unités. Cette préférence peut être réglée pour utiliser les unités anglaises, les unités métriques ou pour afficher la mesure en utilisant les unités avec lesquelles elle a été initialement saisie.</p>
+<p><strong>Poids (weight)</strong>
+Accepte les mesures de poids en unités métriques et anglaises. Les entrées sont simplement une quantité numérique + un spécificateur d'unité. Les spécificateurs d'unités pris en charge sont décrits sur la page des formats d'entrée des mesures. Alors que toute unité de poids prise en charge peut être utilisée pour l'entrée, les unités d’affichage ou d’export sont dictées par un paramètre des préférences de l'utilisateur. Cette préférence peut être réglée pour utiliser les unités anglaises, les unités métriques ou pour afficher la mesure en utilisant les unités avec lesquelles elle a été initialement saisie.</p>
+<p><strong>TimeCode</strong>
+Accepte les décalages temporels dans un certain nombre de formats de code temporel. Les valeurs de code temporel sont généralement utilisées pour exprimer une durée ou une position temporelle dans un média basé sur le temps (par exemple, un emplacement dans un flux vidéo ou audio). Les formats pris en charge sont les suivants : hh:mm:ss (ex. 2:10:52 = 2 heures, 10 minutes, 52 secondes) ; XXh XXm XXs (ex. 2h 10m 52s) ; ou XXs (ex. 7852s = 7852 secondes).</p>
+<p><strong>Entier (integer)</strong>
+Accepte les valeurs entières, mais pas les valeurs flottantes. En fait, tout ce qui contient uniquement les chiffres 0-9 est accepté.</p>
+<p><strong>Numérique (numeric)</strong>
+Accepte les valeurs numériques. Les chaînes numériques se composent d'un signe facultatif, d'un nombre quelconque de chiffres, d'une partie décimale facultative et d'une partie exponentielle facultative. Ainsi, +0123.45e6 est une valeur numérique valide. La notation hexadécimale (0xFF) est également autorisée, mais uniquement sans le signe, la partie décimale et la partie exponentielle.</p>
+<p><strong>LCSH</strong>
+Valeur de la vedette-matière de la Library of Congress. Prend la vedette des LCSH ou la première partie de la vedette (le service de recherche des LCSH ne prend en charge que les recherches par troncature), effectue une recherche et renvoie une liste de correspondances possibles. La vedette LCSH sélectionnée est stockée sous forme de texte et d'identifiant URL du service.</p>
+<p><strong>Geonames</strong>
+Valeur GeoNames. Prend le texte de la recherche, le transmet au service de recherche GeoNames et fournit une liste déroulante avec les résultats de la recherche (classés par score). Le nom géographique sélectionné est stocké sous forme de texte (nom, pays, continent et ID) et d'identifiant URL du service.</p>
+<p><strong>Fichier (file)</strong>
+Fichier téléchargé. L'autorité de certification tentera d'identifier le fichier et d'extraire des métadonnées limitées, mais même si elle ne parvient pas à identifier le fichier, elle l'acceptera et le stockera.</p>
+<p><strong>Media</strong>
+Média téléchargé (image, son, vidéo). L'autorité de certification tentera d'identifier le fichier, d'extraire les métadonnées et de créer des produits dérivés conformément à la configuration du fichier media_processing.conf. Si l'autorité de certification ne peut pas identifier et analyser le fichier, elle le rejettera.</p>
+<p><strong>Taxonomie (taxonomy)</strong>
+Nom taxonomique tel qu'il est renvoyé par un service de noms taxonomiques. Prend actuellement en charge les recherches dans les services ITIS et uBio.</p>
+<p><strong>Service d'information (InformationService)</strong>
+Consultation à distance de services web. Consultation des valeurs des services web, y compris le Getty TGN, ULAN et AAT, une autre instance de CollectiveAccess, Wikipedia, WorldCat et uBio.</p>
+<p><strong>Représentations d'objets (ObjectRepresentations)</strong>
+Références à des représentations d'objets au sein de votre instance CollectiveAccess.</p>
+<p><strong>Entités (entities)</strong>
+Valeur de l'entité. Recherche dans l'autorité de l'entité CollectiveAccess le texte donné et crée une pseudo-relation sans type avec l'entité sélectionnée.</p>
+<p><strong>Lieux (places)</strong>
+Valeur de lieu. Recherche l'autorité de lieu CollectiveAccess pour un texte donné et crée une pseudo-relation sans type avec le lieu sélectionné. Peut être limité à un seul type de lieu.</p>
+<p><strong>Occurrences</strong>
+Valeur d'occurrence. Recherche l'autorité d'occurrence CollectiveAccess pour un texte donné et crée une pseudo-relation sans type avec l'occurrence sélectionnée. Peut (et doit) être limité à un seul type d'occurrence.</p>
+<p><strong>Collections</strong>
+Valeur de la collection. Recherche dans l'autorité de collection CollectiveAccess un texte donné et crée une pseudo-relation sans type avec la collection sélectionnée (sans type). Peut être limité à un seul type d'occurrence.</p>
+<p><strong>Emplacements de stockage</strong>
+Valeur de l'emplacement de stockage. Recherche dans l'autorité des emplacements de stockage CollectiveAccess un texte donné et crée une pseudo-relation sans type avec l'emplacement de stockage sélectionné (sans type). Peut être limité à un seul type d'emplacement de stockage.</p>
+<p><strong>Prêts (loans)</strong>
+Valeur du prêt. Recherche dans l'autorité de prêt CollectiveAccess le texte donné et crée une pseudo-relation sans type avec le prêt sélectionné (sans type). Peut être limité à un seul type d'occurrence.</p>
+<p><strong>Mouvements (movements)</strong>
+Valeur du mouvement. Recherche dans l'autorité de mouvement CollectiveAccess le texte donné et crée une pseudo-relation sans type avec le mouvement sélectionné (sans type). Peut être limité à un seul type de mouvement.</p>
+<p><strong>Objets (objects)</strong>
+Valeur de l'objet. Recherche dans l'autorité des objets CollectiveAccess un texte donné et crée une pseudo-relation sans type avec l'objet sélectionné (sans type). Peut être limité à un seul type d'objet.</p>
+<p><strong>Lots d’objets (ObjectLots)</strong>
+Valeur du lot d'objets. Recherche dans l'autorité des lots d'objets de CollectiveAccess le texte donné et crée une pseudo-relation sans type avec le lot d'objets sélectionné (sans type). Peut être limité à un seul type de lot d'objets.</p>
+<p><strong>Plan d'étage (floorplan)</strong>
+Mise en place d'une interface utilisateur interactive pour les plans d'occupation des sols pour les enregistrements d'autorité de lieu</p>
+<p><strong>Couleur (color)</strong>
+Représente une couleur au format hexadécimal RVB standard (ex. FFCC33). Dans l'interface d'édition, ce type de données est généralement affiché avec un sélecteur de couleurs.</p>
+<p><strong>Taille de fichier (filetiez)</strong>
+Accepte les valeurs de taille des fichiers numériques avec les suffixes couramment utilisés (B, KB, KiB, MB, MiB, GB, GiB, TB, TiB, PB, PiB). Disponible à partir de la version 1.8.</p>
+<h3 id="parametres-specifiques-en-fonction-du-type-de-metadonnee">Paramètres spécifiques en fonction du type de métadonnée<a class="headerlink" href="#parametres-specifiques-en-fonction-du-type-de-metadonnee" title="Permanent link">¶</a></h3>
+<p>Consulter la page [https://manual.collectiveaccess.org/providence/user/dataModelling/metadata/AttributeTypeSettings.html] (en anglais)</p>
 
 
 
@@ -1831,6 +1630,54 @@ Générer le PV</p>
 <footer class="md-footer">
 
   <!-- Link to previous and/or next page -->
+  
+    <nav
+      class="md-footer__inner md-grid"
+      aria-label="footer.title"
+    >
+
+      <!-- Link to previous page -->
+      
+        <a
+          href="../Registre_biens/"
+          class="md-footer__link md-footer__link--prev"
+          rel="prev"
+        >
+          <div class="md-footer__button md-icon">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12Z"/></svg>
+          </div>
+          <div class="md-footer__title">
+            <div class="md-ellipsis">
+              <span class="md-footer__direction">
+                Précédent
+              </span>
+              VII. Registre des biens affectés/déposés
+            </div>
+          </div>
+        </a>
+      
+
+      <!-- Link to next page -->
+      
+        <a
+          href="../schema_texte/"
+          class="md-footer__link md-footer__link--next"
+          rel="next"
+        >
+          <div class="md-footer__title">
+            <div class="md-ellipsis">
+              <span class="md-footer__direction">
+                Suivant
+              </span>
+              I. Structure de la base de données
+            </div>
+          </div>
+          <div class="md-footer__button md-icon">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M4 11v2h12l-5.5 5.5 1.42 1.42L19.84 12l-7.92-7.92L10.5 5.5 16 11H4Z"/></svg>
+          </div>
+        </a>
+      
+    </nav>
   
 
   <!-- Further information -->
