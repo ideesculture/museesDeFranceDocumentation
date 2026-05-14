@@ -60,3 +60,20 @@ markdown_extensions:
   - toc:
       permalink: '¶'
 
+
+# Analyse visiteurs
+extra:
+  analytics:
+    provider: google
+    property: G-NKYNH7SBB4
+    feedback:
+      title: Cette page vous a-t-elle été utile ?
+      ratings:
+        - icon: material/emoticon-happy-outline
+          name: Oui
+          data: 1
+          note: Merci pour votre retour !
+        - icon: material/emoticon-sad-outline
+          name: Non
+          data: 0
+          note: Aidez-nous à améliorer cette page — décrivez ce qui manque sur GitHub.
