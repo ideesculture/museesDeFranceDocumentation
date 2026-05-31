@@ -23,6 +23,12 @@ nav:
     - V. Récolement: Recolement.md
     - VI. Export Joconde: Export_Joconde.md
     - VII. Registre des biens affectés/déposés: Registre_biens.md
+- Plugin Articles pour Pawtucket :
+    - Introduction: articles_introduction.md
+    - I. Créer un article et ses propriétés: articles_creation.md
+    - II. Rédiger avec l'éditeur de blocs: articles_editeur.md
+    - III. Les blocs CollectiveAccess: articles_blocs_ca.md
+    - IV. Publier et historique des versions: articles_publication.md
 - Génération de cette documentation :
     - Logiciels utilisés: tech_logiciels.md
     - Installation: tech_install.md
