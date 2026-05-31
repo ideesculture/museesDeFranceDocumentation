@@ -1,5 +1,7 @@
 # BUILD.md
 
+Installer l'environnement de documentation
+
 ```
 brew install python3
 pip3 install mkdocs
@@ -35,14 +37,14 @@ Modifier :
 https://github.com/comwes/mkpdfs-mkdocs-plugin/issues/14
 AttributeError: module 'mkdocs.utils' has no attribute 'string_types'
 
-## Running
+## Executer
 
 ```
 mkdocs build
 mkdocs serve
 ```
 
-## Deploy
+## Déployer
 ```
 mkdocs gh-deploy --remote-branch gh-pages
 ```
