@@ -5,9 +5,15 @@ site_author: 'idéesculture'
 
 nav:
 - Accueil: index.md
+- Structure des données :
+    - I. Introduction aux données: modelisation_introduction.md
+    - II. Tables principales et champs intrinsèques: modelisation_tables_principales.md
+    - III. Métadonnées: modelisation_metadonnees.md
+    - IV. Données interstitielles: interstitiel.md
 - Utilisation de CollectiveAccess :
     - I. Connexion et démarrage dans Providence: chapterXI_connexion_demarrage.md
     - II. Recherche: chapterII_recherche.md
+    - II bis. Syntaxe de recherche (référence): recherche_syntaxe.md
     - III. Effectuer un traitement par lots: chapterIII_traitements_lots.md
     - IV. Paramétrage des grilles de saisie: chapterIX_parametrage_grille_saisie.md
     - V. Paramétrage des listes de vocabulaire: chapterX_Parametrage_listes_vocabulaire.md
@@ -21,7 +27,7 @@ nav:
     - IV. Réaliser un import: migration_lancer_une_migration.md
     - V. Références pour le traitement des conflits à l'import: migration_enregistrements_existants.md
 - Saisie Joconde :
-    - Introduction : Decrire_Objets_Joconde.md 
+    - Introduction : Decrire_Objets_Joconde.md
     - I. Présentation de la saisie Joconde: Introduction.md
     - II. Objets: Saisie_Joconde.md
     - III. Entités: Saisie_Entite.md
@@ -29,6 +35,11 @@ nav:
     - V. Récolement: Recolement.md
     - VI. Export Joconde: Export_Joconde.md
     - VII. Registre des biens affectés/déposés: Registre_biens.md
+- "Avancé : gestion des affichages" :
+    - Introduction: affichage_introduction.md
+    - I. Syntaxe des modèles d'affichage: affichage_modeles.md
+    - II. Les unités <unit>: affichage_unites.md
+    - III. Les expressions: affichage_expressions.md
 - Schéma de la base de données MariaDB :
     - I. Introduction à la gestion des données dans CollectiveAccess : schema_introduction.md
     - I. Structure de la base de données: schema_texte.md
