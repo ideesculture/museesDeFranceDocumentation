@@ -267,7 +267,7 @@ Facette Média
 ##### a) **Formats d’affichages** 
 
 - menu déroulant propose au choix plusieurs formats d’affichages 
-- *Ces affichages sont créés et modifiés dans Gérer > Mes affichages (cf. Support de cours* *"Gestion des affichages"* )
+- *Ces affichages sont créés et modifiés dans Gérer > Mes affichages* : voir [Créer un affichage personnalisé](chapaffichage.md)
 
 - en fonction de l'affichage et de la mise en page sélectionnée : les données affichées pour les résultats seront différentes 
 

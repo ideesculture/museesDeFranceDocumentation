@@ -53,7 +53,7 @@ Si l’enregistrement recherché n’apparaît pas dans la liste déroulante, n�
 L’écran Résumé récapitule les informations saisies dans la fiche de l'enregistrement selon le format d’affichage sélectionné dans le menu déroulant présent en haut à droite de l’écran à coté de bouton 
 vous permettant de télécharger le résumé de l'enregistrement en pdf.[^1]
 
-[^1]:Vous pouvez créer de nouveaux formats d’affichages en allant dans le menu Gérer \> Mes affichages. (cf. Support administration de CollectiveAccess, gestion des formats d’affichages).
+[^1]:Vous pouvez créer de nouveaux formats d’affichages en allant dans le menu Gérer \> Mes affichages. (voir [Créer un affichage personnalisé](chapaffichage.md)).
 Si le menu et le bouton ne sont pas présents c'est qu'aucun affichage n'as été crée.
 
 #### Les logs

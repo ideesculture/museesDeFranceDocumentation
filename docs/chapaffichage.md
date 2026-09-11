@@ -1,4 +1,4 @@
-# 5. Création d’un affichage personnalisé
+# Création d’un affichage personnalisé
 Les formats d’affichages sont utilisés lors de l’affichage des résultats de recherche, ainsi que lors de leur export. 
 
 Voici la démarche à suivre pour créer un nouvel affichage d’objets:
