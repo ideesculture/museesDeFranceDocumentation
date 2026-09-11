@@ -33,6 +33,8 @@ Le résultat affiche tous les enregistrements contenant le mot ou la phrase sais
 
 - liste de tous les enregistrements avec leur nom et leur identifiant. 
 - Pour afficher un objet en particulier, cliquer sur le lien. 
+- seuls les 100 résultats les plus pertinents sont affichés pour chaque type d'enregistrement : cliquer sur l'icône « Tous les résultats » du type concerné pour obtenir la liste complète. 
+- un astérisque seul (`*`) affiche les 100 premiers enregistrements de chaque type. 
 
 Une fois un enregistrement affiché, vous pouvez toujours revenir à votre résultat de recherche précédent, en cliquant sur le lien « Résultats » dans le coin supérieur gauche de l'écran de saisie.  
 
@@ -42,6 +44,7 @@ Possible d'effectuer une recherche très précise en indiquant le nom du champ d
 
 - ex : on souhaite rechercher l’objet dont l'identifiant est 2752 : idno:2752 
 - on arrive alors directement sur la fiche concernée 
+- la même syntaxe `champ:valeur` fonctionne en recherche simple et permet de chercher sur les dates, les mesures, les relations, les champs vides ou la date de dernière modification : voir la page [Syntaxe de recherche (référence)](recherche_syntaxe.md) 
 
 ![Image1003](img/image1003.png)
 
@@ -94,6 +97,16 @@ stat* : le résultat obtenu donne tous les objets dont un des termes commence pa
 - Menu Chercher > Objets > Recherche avancée 
 - sélectionner le formulaire souhaité dans le menu déroulant  
 - recherche multi-critère à l'aide de champs présélectionnés,  
+- les formulaires proposés sont paramétrables : voir [Formulaires de recherche avancée](chapformrech.md) 
+
+#### I) Le Search builder (constructeur de recherche) 
+
+- Menu Chercher > Objets > Search builder (libellé non traduit dans la localisation française standard) 
+- permet de composer une requête sans connaître la syntaxe : chaque **règle** associe un champ, un opérateur et une valeur 
+- les opérateurs proposés dépendent du type de champ : contient / ne contient pas, égal / différent, commence par, est vide / n'est pas vide, entre, inférieur / supérieur… 
+- « Ajouter une règle » ajoute un critère, « Ajouter un groupe » crée un sous-ensemble de règles combinées par ET ou OU 
+- la requête obtenue peut être enregistrée comme les autres recherches (cf. F) 
+- sa présence dépend de la configuration de l'installation et des droits du rôle de l'utilisateur 
 
 ### D) Astuces pour optimiser ses recherches 
 
@@ -117,6 +130,31 @@ Pour utiliser les opérateurs booléens, il suffit d'ajouter les termes suivants
 >
 
 *Pour une meilleure visibilité du résultat, vous pouvez masquer le formulaire de recherche en cliquant sur « masquer le formulaire de recherche » et sur « montrer le formulaire de recherche » pour l'afficher de nouveau.* 
+
+#### II) Retrouver les fiches créées ou modifiées 
+
+Utile pour relire les saisies d'une campagne, d'un stagiaire ou d'une journée de récolement. 
+
+- `created:"12/04/2026"` : fiches créées le 12 avril 2026 
+- `modified:"avril 2026"` : fiches modifiées en avril 2026 
+- `modified.catherine:"entre 01/03/2026 et 31/03/2026"` : fiches modifiées en mars 2026 par l'utilisateur dont le login est « catherine » 
+- `created.catherine:"aujourd'hui"` : fiches créées aujourd'hui par cet utilisateur 
+- indiquer le **login** de l'utilisateur (son identifiant de connexion), pas son nom complet 
+- dates au format français jour/mois/année, entre guillemets doubles ; pour une plage, écrire « entre … et … » (« du … au … » n'est pas reconnu) 
+- `créé` et `modifié` peuvent remplacer `created` et `modified` 
+- combinable avec d'autres critères : `modified.catherine:"avril 2026" AND ca_objects.description:"[BLANK]"` 
+
+#### III) Repérer les champs vides ou renseignés 
+
+Utile pour le contrôle qualité de la saisie : retrouver les fiches auxquelles il manque une information. 
+
+- `ca_objects.description:"[BLANK]"` (ou `"[VIDE]"`) : objets sans description 
+- `ca_objects.historique:"[DEFINI]"` : objets dont l'historique est renseigné 
+- toujours préciser le champ (table + code de l'élément) et mettre le terme entre guillemets doubles 
+- dans l'interface en français, `[SET]` (forme anglaise de `[DEFINI]`) ne fonctionne pas : utiliser `[DEFINI]`, sans accent 
+- codes des éléments dans le profil Musées de France standard : par exemple `description` (Description) ou `historique` (Historique) ; la liste complète est consultable par un administrateur dans l'éditeur d'éléments de métadonnées (menu Gérer > Configuration du système) 
+
+Pour toutes les autres possibilités (dates, mesures, relations, décomptes…), voir la page [Syntaxe de recherche (référence)](recherche_syntaxe.md). 
 
 ### E) Historique des recherches 
 

@@ -14,6 +14,7 @@ nav:
     - I. Connexion et démarrage dans Providence: chapterXI_connexion_demarrage.md
     - II. Recherche: chapterII_recherche.md
     - II bis. Syntaxe de recherche (référence): recherche_syntaxe.md
+    - II ter. Formulaires de recherche avancée: chapformrech.md
     - III. Effectuer un traitement par lots: chapterIII_traitements_lots.md
     - IV. Paramétrage des grilles de saisie: chapterIX_parametrage_grille_saisie.md
     - V. Paramétrage des listes de vocabulaire: chapterX_Parametrage_listes_vocabulaire.md

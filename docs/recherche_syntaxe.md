@@ -46,6 +46,9 @@ ca_entities.preferred_labels.displayname/depicts:"Cynthia Hopkins"
 
 utilisée pour trouver des objets renverra tous les objets liés à Cynthia Hopkins par une relation « depicts » (représente).
 
+!!! tip "Complément idéesculture"
+    La barre verticale `|` est acceptée à la place de la barre oblique : `ca_entities.preferred_labels.displayname|depicts:"Cynthia Hopkins"`. C'est utile quand la requête est transmise dans une URL, où la barre oblique pose des problèmes d'encodage.
+
 ## Rechercher sur des dates
 
 Pour rechercher sur une date ou une plage de dates, restreignez votre recherche à un élément de type plage de dates puis recherchez la date voulue, dans l'un des formats décrits sur la page des formats de date et d'heure. Vous pouvez utiliser tout format pris en charge et toute précision : le moteur trouvera toute date (et éventuellement heure) qui chevauche votre plage de recherche. La correspondance est par défaut très souple : tout chevauchement renvoie l'élément. Vous pouvez restreindre la correspondance aux éléments dont les dates sont entièrement englobées par votre date de recherche en préfixant celle-ci d'un « # ». Ex. `#May 10 2005`.
@@ -124,6 +127,21 @@ Depuis la version 1.4, vous pouvez rechercher les éléments sans contenu dans u
 ca_objects.description:"[BLANK]"
 ```
 
+!!! tip "Complément idéesculture"
+    Dans une interface en français, `[VIDE]` est accepté en plus de `[BLANK]`.
+
+## Rechercher les valeurs renseignées
+
+*Section ajoutée par idéesculture : ce terme n'est pas décrit dans la documentation amont, mais il est présent dans le code de Providence au moins depuis la version 1.7.8.*
+
+Le terme spécial `[SET]` fait l'inverse de `[BLANK]` : il renvoie les enregistrements qui ont au moins une valeur dans le champ indiqué. Comme `[BLANK]`, il s'utilise avec une spécification de champ et entre guillemets doubles.
+
+Ce terme est traduit selon la langue de l'interface et **seule la forme traduite est reconnue**. Dans une interface en français, tapez `[DEFINI]` (sans accent) : `[SET]` n'y fonctionne pas. L'exemple suivant renvoie tous les objets qui ont une description :
+
+```
+ca_objects.description:"[DEFINI]"
+```
+
 ## Points d'accès
 
 Taper `ca_objects.description:graffiti` chaque fois que vous voulez chercher le mot « graffiti » dans l'élément « description » devient vite fastidieux, et n'est guère élégant. Pour simplifier la formulation des recherches limitées à un champ ou un élément, CollectiveAccess permet de définir des **points d'accès**. Un point d'accès est simplement une liste de spécifications de champs et d'éléments, définie dans le fichier `search_indexing.conf`, dont le nom peut remplacer la spécification réelle. Par exemple, vous pourriez faire la recherche « description » ainsi :
@@ -158,6 +176,15 @@ trouvera les objets ayant SOIT une valeur d'estimation inférieure ou égale à 
 
 Si vous omettez `AND`/`OR` entre deux expressions de recherche, `AND` est supposé.
 
+!!! tip "Complément idéesculture"
+    Le moteur SqlSearch (moteur par défaut) gère aussi :
+
+    - l'exclusion, avec `NOT` ou le signe `-` accolé au terme : `statue NOT bronze` ou `statue -bronze` renvoient les enregistrements qui contiennent « statue » mais pas « bronze » ;
+    - le regroupement entre parenthèses : `(statue OR buste) AND marbre` ;
+    - la recherche d'une expression exacte entre guillemets doubles : `"statue équestre"` ne renvoie que les enregistrements où ces mots se suivent, dans cet ordre.
+
+    Placez l'exclusion après au moins un terme positif : une requête qui commence par `NOT` renvoie tous les enregistrements sauf ceux qui correspondent au terme exclu. La recherche floue (`~`) et la pondération (`^`) de la syntaxe Lucene ne sont pas prises en charge par SqlSearch.
+
 ## Jokers
 
 L'astérisque (`*`) sert de caractère joker : il correspond à n'importe quel texte. Les jokers ne peuvent être utilisés qu'à la fin d'un mot, pour trouver les mots commençant par votre terme de recherche. Par exemple :
@@ -167,6 +194,9 @@ wri*
 ```
 
 trouverait les enregistrements associés à des mots commençant par « wri ». Notez que si votre installation a la racinisation (*stemming*) activée, de nombreux mots anglais verront automatiquement leurs suffixes tronqués et un joker ajouté. Ainsi, avec la racinisation, une requête sur « baking », « baked » ou « baker » serait transformée en « bak* ». Le raciniseur est assez intelligent pour ne pas tronquer un terme auquel vous avez vous-même ajouté un joker : si vous recherchez « bake* », il le laisse tel quel.
+
+!!! tip "Complément idéesculture"
+    Le raciniseur de SqlSearch, le moteur par défaut, repose sur l'algorithme Snowball **anglais**. La documentation amont de `search.conf` indique qu'il donne de mauvais résultats sur des contenus non anglophones et conseille de le désactiver dans ce cas (`search_sql_search_do_stemming = 0`). Si une recherche en français renvoie des résultats inattendus, faites vérifier ce réglage par votre administrateur.
 
 ## Rechercher sur les dates de création et de modification
 
@@ -190,7 +220,14 @@ Vous pouvez limiter les éléments renvoyés à ceux créés ou modifiés par un
 modified.catherine:"4/2012"
 ```
 
-Notez que le nom d'utilisateur est séparé du point d'accès par un point (« . »), et qu'il s'agit du nom de connexion de l'utilisateur, pas de son nom complet. Ce nom de connexion peut être, mais n'est pas toujours, l'adresse e-mail de l'utilisateur.
+Notez que le nom d'utilisateur est séparé du point d'accès par un point (« . »), et qu'il s'agit du nom de connexion de l'utilisateur, pas de son nom complet.
+
+!!! tip "Complément idéesculture : interface en français"
+    - Les dates sont interprétées dans la langue de l'interface de l'utilisateur. En français, une date numérique se lit jour/mois/année : `created:"12/04/2012"` désigne le 12 avril 2012, alors que `created:"4/12/2012"` désigne le 4 décembre 2012. Les noms de mois s'écrivent en français : `created:"avril 2012"` fonctionne, alors que `created:"April 12 2012"` (exemple ci-dessus) ne renvoie aucun résultat.
+    - Les points d'accès traduits `créé` et `modifié` sont acceptés en plus de `created` et `modified` : `modifié.catherine:"avril 2012"`.
+    - Pour une plage, utilisez `entre … et …` ou un tiret entouré d'espaces : `modified:"entre 01/03/2026 et 31/03/2026"` ou `modified:"01/03/2026 - 31/03/2026"`. Évitez `du … au …` : le parseur de dates français supprime le mot « au », qu'il traite comme un article, et la plage n'est pas reconnue.
+    - Les mots `hier` et `aujourd'hui` sont reconnus : `modified.catherine:"aujourd'hui"`.
+    - Les jokers (`*`) sont ignorés dans ces requêtes.
 
 ## Rechercher sur des décomptes
 

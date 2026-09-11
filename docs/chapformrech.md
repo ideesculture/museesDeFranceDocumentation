@@ -1,4 +1,4 @@
-# 6. Création d’un formulaire de recherche avancée
+# Création d’un formulaire de recherche avancée
 
 ## Créez et configurez vos formulaires de recherche avancée
 
