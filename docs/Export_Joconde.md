@@ -20,11 +20,11 @@ Avec le menu de gauche vous pouvez :
 
 ![Menu_Gauche_Baguette](./Export_Joconde/Menu_Gauche_Baguette.png)
 
-- Dupliquer [l'ensemble](../chapterIII_traitements_lots) joconde actuel pour créer un nouvel ensemble
+- Dupliquer [l'ensemble](chapterIII_traitements_lots.md) joconde actuel pour créer un nouvel ensemble
 
 ![Dupliquer](./Export_Joconde/Dupliquer.png)
 
-- Importer l'ensemble joconde actuel dans le [registre des bien affectés](../Registre_biens)/déposés
+- Importer l'ensemble joconde actuel dans le [registre des bien affectés](Registre_biens.md)/déposés
 
 ![Registres](./Export_Joconde/Registres.png)
 
@@ -37,8 +37,8 @@ Le menu central vous permet de :
 - Réaliser un Export PDF de l'ensemble actuel
 - Consulter les objets présents et d'en ajouter :
     - Pour ajouter un objet rentrez son nom ou son identifiant dans le champ *Ajouter objet*
-    [![Ajouter_Objet](./Export_Joconde/Ajouter_Objet.png)](../Introduction/#3-recherche-par-auto-completion)
-    - Pour chaque objet vous pouvez accéder à sa [fiche objet](../Saisie_Joconde) en cliquant sur la feuille à gauche de l'objet
+    [![Ajouter_Objet](./Export_Joconde/Ajouter_Objet.png)](Introduction.md#3-recherche-par-auto-completion)
+    - Pour chaque objet vous pouvez accéder à sa [fiche objet](Saisie_Joconde.md) en cliquant sur la feuille à gauche de l'objet
     - Pour chaque objet il est marqué une image (s'il y en a une pour l'objet), son nom et son identifiant
     - pour retirer un objet de l'ensemble, cliquez sur la croix à droite de l'objet
     ![Infos_Objet](./Export_Joconde/Infos_Objet.png)

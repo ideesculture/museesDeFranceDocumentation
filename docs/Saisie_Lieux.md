@@ -1,5 +1,5 @@
 # 4. La saisie des lieux dans CollectiveAccess
-CollectiveAccess vous propose une gestion des lieux sous la forme d’une [arborescence (hiérarchie)](../Introduction/#4-navigation-hiérarchique-horizontale), deux possibilités s’offrent à vous :
+CollectiveAccess vous propose une gestion des lieux sous la forme d’une [arborescence (hiérarchie)](Introduction.md#4-navigation-hierarchique-horizontale), deux possibilités s’offrent à vous :
 
 - nous pouvons importer une arborescence de lieux si vous nous sollicitez ou dans le cadre de votre marché
 - vous pouvez créer une arborescence de lieux directement depuis Providence, ou modifier l’arborescence importée le cas échéant.
@@ -34,15 +34,15 @@ Cet écran contient les informations nécessaires à un nouvel enregistrement.
 
 #### Labels préférés
 Nommez le nouveau lieu.
-[![Labels_Preferes](./Images_Lieu/Labels_Preferes.png)](../Introduction/#texte-text)
+[![Labels_Preferes](./Images_Lieu/Labels_Preferes.png)](Introduction.md#texte-text)
 
 #### Identifiant du lieu 
 Attribuez un identifiant (code) au lieu.
-[![Identifiant_Lieu](./Images_Lieu/Identifiant_Lieu.png)](../Introduction/#texte-text)
+[![Identifiant_Lieu](./Images_Lieu/Identifiant_Lieu.png)](Introduction.md#texte-text)
 
 #### Notes (usage interne seulement)
 Si besoin, décrivez plus précisément le lieu créé.
-[![Notes](./Images_Lieu/Notes.png)](../Introduction/#texte-text)
+[![Notes](./Images_Lieu/Notes.png)](Introduction.md#texte-text)
 
 ### Liens
 Vous pouvez relier le lieu à un (ou plusieurs) site(s) web(s)
@@ -52,7 +52,7 @@ Donner le nom du site du lieu
 
 #### URL
 Donner le lien pour accéder au site du lieu
-[![Liens_Externes](./Images_Lieu/Liens_Externes.png)](../Introduction/#texte-text)
+[![Liens_Externes](./Images_Lieu/Liens_Externes.png)](Introduction.md#texte-text)
 
 
 
