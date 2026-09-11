@@ -16,7 +16,7 @@
         <link rel="prev" href="../chapterXI_connexion_demarrage/">
       
       
-        <link rel="next" href="../chapterIII_traitements_lots/">
+        <link rel="next" href="../recherche_syntaxe/">
       
       
         
@@ -123,10 +123,9 @@
 
   
 
-<!-- Supranav retiré le 2026-08-29 : la documentation est intégrée au portail client
-     (help.ideesculture.com/documentation), qui porte déjà sa propre navigation.
-     ⚠️ Cette branche gh-pages est CE QUI EST PUBLIÉ ; la source du thème est
-     overrides/partials/header.html sur main. -->
+<!-- Supranav retiré le 2026-08-29 : la documentation est désormais
+     intégrée au portail client (help.ideesculture.com/documentation), qui porte
+     déjà sa propre navigation. -->
 <style>
   /* En-tête en gris clair plutôt qu'orange : la documentation est encadrée dans le portail
      help.ideesculture.com, dont la barre supérieure est sombre — l'orange jurait.
@@ -141,6 +140,7 @@
   /* Sans l'aplat coloré, un filet est nécessaire pour détacher l'en-tête du contenu. */
   .md-header { border-bottom: 1px solid #dcdcdc; }
 </style>
+
 
 <!-- Header -->
 <header class="md-header md-header--shadow" data-md-component="header">
@@ -321,6 +321,172 @@
       
   
   
+  
+  
+    
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2" >
+        
+          
+          <label class="md-nav__link" for="__nav_2" id="__nav_2_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Structure des données
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_2_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_2">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Structure des données
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../modelisation_introduction/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    I. Introduction aux données
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../modelisation_tables_principales/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    II. Tables principales et champs intrinsèques
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../modelisation_metadonnees/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    III. Métadonnées
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../interstitiel/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    IV. Données interstitielles
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
     
   
   
@@ -334,10 +500,10 @@
       
         
         
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2" checked>
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3" checked>
         
           
-          <label class="md-nav__link" for="__nav_2" id="__nav_2_label" tabindex="0">
+          <label class="md-nav__link" for="__nav_3" id="__nav_3_label" tabindex="0">
             
   
   
@@ -355,8 +521,8 @@
             <span class="md-nav__icon md-icon"></span>
           </label>
         
-        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_2_label" aria-expanded="true">
-          <label class="md-nav__title" for="__nav_2">
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_3_label" aria-expanded="true">
+          <label class="md-nav__title" for="__nav_3">
             <span class="md-nav__icon md-icon"></span>
             
   
@@ -533,6 +699,23 @@
     </span>
   </a>
   
+    <nav class="md-nav" aria-label="C) La recherche avancée">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#i-le-search-builder-constructeur-de-recherche" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        I) Le Search builder (constructeur de recherche)
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
 </li>
         
           <li class="md-nav__item">
@@ -552,6 +735,28 @@
     <span class="md-ellipsis">
       
         I) Les opérateurs booléens et jokers
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#ii-retrouver-les-fiches-creees-ou-modifiees" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        II) Retrouver les fiches créées ou modifiées
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#iii-reperer-les-champs-vides-ou-renseignes" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        III) Repérer les champs vides ou renseignés
       
     </span>
   </a>
@@ -750,6 +955,62 @@
   
   
     <li class="md-nav__item">
+      <a href="../recherche_syntaxe/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    II bis. Syntaxe de recherche (référence)
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../chapformrech/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    II ter. Formulaires de recherche avancée
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
       <a href="../chapterIII_traitements_lots/" class="md-nav__link">
         
   
@@ -933,10 +1194,10 @@
       
         
         
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3" >
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_4" >
         
           
-          <label class="md-nav__link" for="__nav_3" id="__nav_3_label" tabindex="0">
+          <label class="md-nav__link" for="__nav_4" id="__nav_4_label" tabindex="0">
             
   
   
@@ -954,8 +1215,8 @@
             <span class="md-nav__icon md-icon"></span>
           </label>
         
-        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_3_label" aria-expanded="false">
-          <label class="md-nav__title" for="__nav_3">
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_4_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_4">
             <span class="md-nav__icon md-icon"></span>
             
   
@@ -1127,10 +1388,10 @@
       
         
         
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_4" >
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_5" >
         
           
-          <label class="md-nav__link" for="__nav_4" id="__nav_4_label" tabindex="0">
+          <label class="md-nav__link" for="__nav_5" id="__nav_5_label" tabindex="0">
             
   
   
@@ -1148,8 +1409,8 @@
             <span class="md-nav__icon md-icon"></span>
           </label>
         
-        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_4_label" aria-expanded="false">
-          <label class="md-nav__title" for="__nav_4">
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_5_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_5">
             <span class="md-nav__icon md-icon"></span>
             
   
@@ -1405,10 +1666,176 @@
       
         
         
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_5" >
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_6" >
         
           
-          <label class="md-nav__link" for="__nav_5" id="__nav_5_label" tabindex="0">
+          <label class="md-nav__link" for="__nav_6" id="__nav_6_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Avancé : gestion des affichages
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_6_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_6">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Avancé : gestion des affichages
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../affichage_introduction/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Introduction
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../affichage_modeles/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    I. Syntaxe des modèles d'affichage
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../affichage_unites/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    II. Les unités <unit>
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../affichage_expressions/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    III. Les expressions
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_7" >
+        
+          
+          <label class="md-nav__link" for="__nav_7" id="__nav_7_label" tabindex="0">
             
   
   
@@ -1426,8 +1853,8 @@
             <span class="md-nav__icon md-icon"></span>
           </label>
         
-        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_5_label" aria-expanded="false">
-          <label class="md-nav__title" for="__nav_5">
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_7_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_7">
             <span class="md-nav__icon md-icon"></span>
             
   
@@ -1543,10 +1970,10 @@
       
         
         
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_6" >
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_8" >
         
           
-          <label class="md-nav__link" for="__nav_6" id="__nav_6_label" tabindex="0">
+          <label class="md-nav__link" for="__nav_8" id="__nav_8_label" tabindex="0">
             
   
   
@@ -1564,8 +1991,8 @@
             <span class="md-nav__icon md-icon"></span>
           </label>
         
-        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_6_label" aria-expanded="false">
-          <label class="md-nav__title" for="__nav_6">
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_8_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_8">
             <span class="md-nav__icon md-icon"></span>
             
   
@@ -1737,10 +2164,10 @@
       
         
         
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_7" >
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_9" >
         
           
-          <label class="md-nav__link" for="__nav_7" id="__nav_7_label" tabindex="0">
+          <label class="md-nav__link" for="__nav_9" id="__nav_9_label" tabindex="0">
             
   
   
@@ -1758,8 +2185,8 @@
             <span class="md-nav__icon md-icon"></span>
           </label>
         
-        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_7_label" aria-expanded="false">
-          <label class="md-nav__title" for="__nav_7">
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_9_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_9">
             <span class="md-nav__icon md-icon"></span>
             
   
@@ -1961,6 +2388,23 @@
     </span>
   </a>
   
+    <nav class="md-nav" aria-label="C) La recherche avancée">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#i-le-search-builder-constructeur-de-recherche" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        I) Le Search builder (constructeur de recherche)
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
 </li>
         
           <li class="md-nav__item">
@@ -1980,6 +2424,28 @@
     <span class="md-ellipsis">
       
         I) Les opérateurs booléens et jokers
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#ii-retrouver-les-fiches-creees-ou-modifiees" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        II) Retrouver les fiches créées ou modifiées
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#iii-reperer-les-champs-vides-ou-renseignes" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        III) Repérer les champs vides ou renseignés
       
     </span>
   </a>
@@ -2213,6 +2679,8 @@
 <ul>
 <li>liste de tous les enregistrements avec leur nom et leur identifiant. </li>
 <li>Pour afficher un objet en particulier, cliquer sur le lien. </li>
+<li>seuls les 100 résultats les plus pertinents sont affichés pour chaque type d'enregistrement : cliquer sur l'icône « Tous les résultats » du type concerné pour obtenir la liste complète. </li>
+<li>un astérisque seul (<code>*</code>) affiche les 100 premiers enregistrements de chaque type. </li>
 </ul>
 <p>Une fois un enregistrement affiché, vous pouvez toujours revenir à votre résultat de recherche précédent, en cliquant sur le lien « Résultats » dans le coin supérieur gauche de l'écran de saisie.  </p>
 <h4 id="i-effectuer-une-recherche-precise-via-une-recherche-rapide">I) Effectuer une recherche précise via une recherche rapide<a class="headerlink" href="#i-effectuer-une-recherche-precise-via-une-recherche-rapide" title="Permanent link">¶</a></h4>
@@ -2220,6 +2688,7 @@
 <ul>
 <li>ex : on souhaite rechercher l’objet dont l'identifiant est 2752 : idno:2752 </li>
 <li>on arrive alors directement sur la fiche concernée </li>
+<li>la même syntaxe <code>champ:valeur</code> fonctionne en recherche simple et permet de chercher sur les dates, les mesures, les relations, les champs vides ou la date de dernière modification : voir la page <a href="../recherche_syntaxe/">Syntaxe de recherche (référence)</a> </li>
 </ul>
 <p><img alt="Image1003" src="../img/image1003.png" /></p>
 <blockquote>
@@ -2270,6 +2739,16 @@
 <li>Menu Chercher &gt; Objets &gt; Recherche avancée </li>
 <li>sélectionner le formulaire souhaité dans le menu déroulant  </li>
 <li>recherche multi-critère à l'aide de champs présélectionnés,  </li>
+<li>les formulaires proposés sont paramétrables : voir <a href="../chapformrech/">Formulaires de recherche avancée</a> </li>
+</ul>
+<h4 id="i-le-search-builder-constructeur-de-recherche">I) Le Search builder (constructeur de recherche)<a class="headerlink" href="#i-le-search-builder-constructeur-de-recherche" title="Permanent link">¶</a></h4>
+<ul>
+<li>Menu Chercher &gt; Objets &gt; Search builder (libellé non traduit dans la localisation française standard) </li>
+<li>permet de composer une requête sans connaître la syntaxe : chaque <strong>règle</strong> associe un champ, un opérateur et une valeur </li>
+<li>les opérateurs proposés dépendent du type de champ : contient / ne contient pas, égal / différent, commence par, est vide / n'est pas vide, entre, inférieur / supérieur… </li>
+<li>« Ajouter une règle » ajoute un critère, « Ajouter un groupe » crée un sous-ensemble de règles combinées par ET ou OU </li>
+<li>la requête obtenue peut être enregistrée comme les autres recherches (cf. F) </li>
+<li>sa présence dépend de la configuration de l'installation et des droits du rôle de l'utilisateur </li>
 </ul>
 <h3 id="d-astuces-pour-optimiser-ses-recherches">D) Astuces pour optimiser ses recherches<a class="headerlink" href="#d-astuces-pour-optimiser-ses-recherches" title="Permanent link">¶</a></h3>
 <h4 id="i-les-operateurs-booleens-et-jokers">I) Les opérateurs booléens et jokers<a class="headerlink" href="#i-les-operateurs-booleens-et-jokers" title="Permanent link">¶</a></h4>
@@ -2290,6 +2769,28 @@
 </p>
 </blockquote>
 <p><em>Pour une meilleure visibilité du résultat, vous pouvez masquer le formulaire de recherche en cliquant sur « masquer le formulaire de recherche » et sur « montrer le formulaire de recherche » pour l'afficher de nouveau.</em> </p>
+<h4 id="ii-retrouver-les-fiches-creees-ou-modifiees">II) Retrouver les fiches créées ou modifiées<a class="headerlink" href="#ii-retrouver-les-fiches-creees-ou-modifiees" title="Permanent link">¶</a></h4>
+<p>Utile pour relire les saisies d'une campagne, d'un stagiaire ou d'une journée de récolement. </p>
+<ul>
+<li><code>created:"12/04/2026"</code> : fiches créées le 12 avril 2026 </li>
+<li><code>modified:"avril 2026"</code> : fiches modifiées en avril 2026 </li>
+<li><code>modified.catherine:"entre 01/03/2026 et 31/03/2026"</code> : fiches modifiées en mars 2026 par l'utilisateur dont le login est « catherine » </li>
+<li><code>created.catherine:"aujourd'hui"</code> : fiches créées aujourd'hui par cet utilisateur </li>
+<li>indiquer le <strong>login</strong> de l'utilisateur (son identifiant de connexion), pas son nom complet </li>
+<li>dates au format français jour/mois/année, entre guillemets doubles ; pour une plage, écrire « entre … et … » (« du … au … » n'est pas reconnu) </li>
+<li><code>créé</code> et <code>modifié</code> peuvent remplacer <code>created</code> et <code>modified</code> </li>
+<li>combinable avec d'autres critères : <code>modified.catherine:"avril 2026" AND ca_objects.description:"[BLANK]"</code> </li>
+</ul>
+<h4 id="iii-reperer-les-champs-vides-ou-renseignes">III) Repérer les champs vides ou renseignés<a class="headerlink" href="#iii-reperer-les-champs-vides-ou-renseignes" title="Permanent link">¶</a></h4>
+<p>Utile pour le contrôle qualité de la saisie : retrouver les fiches auxquelles il manque une information. </p>
+<ul>
+<li><code>ca_objects.description:"[BLANK]"</code> (ou <code>"[VIDE]"</code>) : objets sans description </li>
+<li><code>ca_objects.historique:"[DEFINI]"</code> : objets dont l'historique est renseigné </li>
+<li>toujours préciser le champ (table + code de l'élément) et mettre le terme entre guillemets doubles </li>
+<li>dans l'interface en français, <code>[SET]</code> (forme anglaise de <code>[DEFINI]</code>) ne fonctionne pas : utiliser <code>[DEFINI]</code>, sans accent </li>
+<li>codes des éléments dans le profil Musées de France standard : par exemple <code>description</code> (Description) ou <code>historique</code> (Historique) ; la liste complète est consultable par un administrateur dans l'éditeur d'éléments de métadonnées (menu Gérer &gt; Configuration du système) </li>
+</ul>
+<p>Pour toutes les autres possibilités (dates, mesures, relations, décomptes…), voir la page <a href="../recherche_syntaxe/">Syntaxe de recherche (référence)</a>. </p>
 <h3 id="e-historique-des-recherches">E) Historique des recherches<a class="headerlink" href="#e-historique-des-recherches" title="Permanent link">¶</a></h3>
 <p>Historique </p>
 <ul>
@@ -2640,7 +3141,7 @@
       <!-- Link to next page -->
       
         <a
-          href="../chapterIII_traitements_lots/"
+          href="../recherche_syntaxe/"
           class="md-footer__link md-footer__link--next"
           rel="next"
         >
@@ -2649,7 +3150,7 @@
               <span class="md-footer__direction">
                 Suivant
               </span>
-              III. Effectuer un traitement par lots
+              II bis. Syntaxe de recherche (référence)
             </div>
           </div>
           <div class="md-footer__button md-icon">

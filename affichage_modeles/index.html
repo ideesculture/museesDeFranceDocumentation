@@ -1,0 +1,3075 @@
+
+<!doctype html>
+<html lang="fr" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+        <meta name="description" content="Documentation pour les utilisateurs de CollectiveAccess avec le plugin Musées De France">
+      
+      
+        <meta name="author" content="idéesculture">
+      
+      
+      
+        <link rel="prev" href="../affichage_introduction/">
+      
+      
+        <link rel="next" href="../affichage_unites/">
+      
+      
+        
+      
+      
+      <link rel="icon" href="../assets/images/favicon.png">
+      <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.7.6">
+    
+    
+      
+        <title>I. Syntaxe des modèles d'affichage - Guide utilisateur CollectiveAccess</title>
+      
+    
+    
+      <link rel="stylesheet" href="../assets/stylesheets/main.484c7ddc.min.css">
+      
+        
+        <link rel="stylesheet" href="../assets/stylesheets/palette.ab4e12ef.min.css">
+      
+      
+
+
+    
+    
+      
+    
+    
+      
+        
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,700,700i%7CRoboto+Mono:400,400i,700,700i&display=fallback">
+        <style>:root{--md-text-font:"Roboto";--md-code-font:"Roboto Mono"}</style>
+      
+    
+    
+    <script>__md_scope=new URL("..",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    
+      
+  
+
+
+  
+  
+
+<script id="__analytics">function __md_analytics(){function e(){dataLayer.push(arguments)}window.dataLayer=window.dataLayer||[],e("js",new Date),e("config","G-NKYNH7SBB4"),document.addEventListener("DOMContentLoaded",(function(){document.forms.search&&document.forms.search.query.addEventListener("blur",(function(){this.value&&e("event","search",{search_term:this.value})}));document$.subscribe((function(){var t=document.forms.feedback;if(void 0!==t)for(var a of t.querySelectorAll("[type=submit]"))a.addEventListener("click",(function(a){a.preventDefault();var n=document.location.pathname,d=this.getAttribute("data-md-value");e("event","feedback",{page:n,data:d}),t.firstElementChild.disabled=!0;var r=t.querySelector(".md-feedback__note [data-md-value='"+d+"']");r&&(r.hidden=!1)})),t.hidden=!1})),location$.subscribe((function(t){e("config","G-NKYNH7SBB4",{page_path:t.pathname})}))}));var t=document.createElement("script");t.async=!0,t.src="https://www.googletagmanager.com/gtag/js?id=G-NKYNH7SBB4",document.getElementById("__analytics").insertAdjacentElement("afterEnd",t)}</script>
+  
+    <script>"undefined"!=typeof __md_analytics&&__md_analytics()</script>
+  
+
+    
+    
+  </head>
+  
+  
+    
+    
+    
+    
+    
+    <body dir="ltr" data-md-color-scheme="default" data-md-color-primary="orange" data-md-color-accent="indigo">
+  
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#syntaxe-des-modeles-daffichage" class="md-skip">
+          Aller au contenu
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+    
+      <!--
+  Copyright (c) 2016-2024 Martin Donath <martin.donath@squidfunk.com>
+
+  Permission is hereby granted, free of charge, to any person obtaining a copy
+  of this software and associated documentation files (the "Software"), to
+  deal in the Software without restriction, including without limitation the
+  rights to use, copy, modify, merge, publish, distribute, sublicense, and/or
+  sell copies of the Software, and to permit persons to whom the Software is
+  furnished to do so, subject to the following conditions:
+
+  The above copyright notice and this permission notice shall be included in
+  all copies or substantial portions of the Software.
+
+  THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+  IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+  FITNESS FOR A PARTICULAR PURPOSE AND NON-INFRINGEMENT. IN NO EVENT SHALL THE
+  AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+  LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING
+  FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS
+  IN THE SOFTWARE.
+-->
+
+<!-- Determine classes -->
+
+
+  
+
+<!-- Supranav retiré le 2026-08-29 : la documentation est désormais
+     intégrée au portail client (help.ideesculture.com/documentation), qui porte
+     déjà sa propre navigation. -->
+<style>
+  /* En-tête en gris clair plutôt qu'orange : la documentation est encadrée dans le portail
+     help.ideesculture.com, dont la barre supérieure est sombre — l'orange jurait.
+     On surcharge la palette Material « orange » : le texte de l'en-tête y est déjà sombre
+     (#000000de), il reste donc lisible sur ce fond. Les liens du corps de page, eux, gardent
+     leur couleur propre (--md-typeset-a-color), volontairement inchangée. */
+  [data-md-color-primary=orange] {
+    --md-primary-fg-color: #f0f0f0;
+    --md-primary-fg-color--light: #f0f0f0;
+    --md-primary-fg-color--dark: #e3e3e3;
+  }
+  /* Sans l'aplat coloré, un filet est nécessaire pour détacher l'en-tête du contenu. */
+  .md-header { border-bottom: 1px solid #dcdcdc; }
+</style>
+
+
+<!-- Header -->
+<header class="md-header md-header--shadow" data-md-component="header">
+  <nav
+    class="md-header__inner md-grid"
+    aria-label="En-tête"
+  >
+
+    <!-- Link to home -->
+    <!-- Button to open drawer -->
+    <label class="md-header__button md-icon" for="__drawer">
+      
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3zm0 5h18v2H3zm0 5h18v2H3z"/></svg>
+    </label>
+
+    <!-- Header title -->
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <span class="md-ellipsis">
+            Guide utilisateur CollectiveAccess
+          </span>
+        </div>
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
+            
+              I. Syntaxe des modèles d'affichage
+            
+          </span>
+        </div>
+      </div>
+    </div>
+
+    <!-- Color palette toggle -->
+    
+      
+    
+
+    <!-- User preference: color palette -->
+    
+
+    <!-- Site language selector -->
+    
+
+    <!-- Button to open search modal -->
+    
+      <label class="md-header__button md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+      </label>
+
+      <!-- Search interface -->
+      <div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" aria-label="Rechercher" placeholder="Rechercher" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
+      <label class="md-search__icon md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"/></svg>
+      </label>
+      <nav class="md-search__options" aria-label="Recherche">
+        
+        <button type="reset" class="md-search__icon md-icon" title="Effacer" aria-label="Effacer" tabindex="-1">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"/></svg>
+        </button>
+      </nav>
+      
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" tabindex="0" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
+            Initialisation de la recherche
+          </div>
+          <ol class="md-search-result__list" role="presentation"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+    
+
+    <!-- Repository information -->
+    
+      <div class="md-header__source">
+        <a href="http://github.com/ideesculture/museesDeFranceDocumentation" title="Aller au dépôt" class="md-source" data-md-component="source">
+  <div class="md-source__icon md-icon">
+    
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 7.1.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2025 Fonticons, Inc.--><path d="M439.6 236.1 244 40.5c-5.4-5.5-12.8-8.5-20.4-8.5s-15 3-20.4 8.4L162.5 81l51.5 51.5c27.1-9.1 52.7 16.8 43.4 43.7l49.7 49.7c34.2-11.8 61.2 31 35.5 56.7-26.5 26.5-70.2-2.9-56-37.3L240.3 199v121.9c25.3 12.5 22.3 41.8 9.1 55-6.4 6.4-15.2 10.1-24.3 10.1s-17.8-3.6-24.3-10.1c-17.6-17.6-11.1-46.9 11.2-56v-123c-20.8-8.5-24.6-30.7-18.6-45L142.6 101 8.5 235.1C3 240.6 0 247.9 0 255.5s3 15 8.5 20.4l195.6 195.7c5.4 5.4 12.7 8.4 20.4 8.4s15-3 20.4-8.4l194.7-194.7c5.4-5.4 8.4-12.8 8.4-20.4s-3-15-8.4-20.4"/></svg>
+  </div>
+  <div class="md-source__repository">
+    GitHub
+  </div>
+</a>
+      </div>
+    
+  </nav>
+
+  <!-- Navigation tabs (sticky) -->
+  
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+          
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+
+
+<nav class="md-nav md-nav--primary" aria-label="Navigation" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href=".." title="Guide utilisateur CollectiveAccess" class="md-nav__button md-logo" aria-label="Guide utilisateur CollectiveAccess" data-md-component="logo">
+      
+  <img src="../images/logo.png" alt="logo">
+
+    </a>
+    Guide utilisateur CollectiveAccess
+  </label>
+  
+    <div class="md-nav__source">
+      <a href="http://github.com/ideesculture/museesDeFranceDocumentation" title="Aller au dépôt" class="md-source" data-md-component="source">
+  <div class="md-source__icon md-icon">
+    
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 7.1.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2025 Fonticons, Inc.--><path d="M439.6 236.1 244 40.5c-5.4-5.5-12.8-8.5-20.4-8.5s-15 3-20.4 8.4L162.5 81l51.5 51.5c27.1-9.1 52.7 16.8 43.4 43.7l49.7 49.7c34.2-11.8 61.2 31 35.5 56.7-26.5 26.5-70.2-2.9-56-37.3L240.3 199v121.9c25.3 12.5 22.3 41.8 9.1 55-6.4 6.4-15.2 10.1-24.3 10.1s-17.8-3.6-24.3-10.1c-17.6-17.6-11.1-46.9 11.2-56v-123c-20.8-8.5-24.6-30.7-18.6-45L142.6 101 8.5 235.1C3 240.6 0 247.9 0 255.5s3 15 8.5 20.4l195.6 195.7c5.4 5.4 12.7 8.4 20.4 8.4s15-3 20.4-8.4l194.7-194.7c5.4-5.4 8.4-12.8 8.4-20.4s-3-15-8.4-20.4"/></svg>
+  </div>
+  <div class="md-source__repository">
+    GitHub
+  </div>
+</a>
+    </div>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href=".." class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Accueil
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2" >
+        
+          
+          <label class="md-nav__link" for="__nav_2" id="__nav_2_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Structure des données
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_2_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_2">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Structure des données
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../modelisation_introduction/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    I. Introduction aux données
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../modelisation_tables_principales/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    II. Tables principales et champs intrinsèques
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../modelisation_metadonnees/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    III. Métadonnées
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../interstitiel/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    IV. Données interstitielles
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3" >
+        
+          
+          <label class="md-nav__link" for="__nav_3" id="__nav_3_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Utilisation de CollectiveAccess
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_3_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_3">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Utilisation de CollectiveAccess
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../chapterXI_connexion_demarrage/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    I. Connexion et démarrage dans Providence
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../chapterII_recherche/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    II. Recherche
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../recherche_syntaxe/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    II bis. Syntaxe de recherche (référence)
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../chapformrech/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    II ter. Formulaires de recherche avancée
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../chapterIII_traitements_lots/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    III. Effectuer un traitement par lots
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../chapterIX_parametrage_grille_saisie/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    IV. Paramétrage des grilles de saisie
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../chapterX_Parametrage_listes_vocabulaire/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    V. Paramétrage des listes de vocabulaire
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../chapterIV_objet_modelise/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    VI. Ajouter un objet 3D dans Providence (avec Sketchfab)
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../chapterVIII_Import_medias_lot/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    VII. Importer des médias en lot
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../chapterVII_configuration_site_internet/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    VIII. Utiliser Grav comme CMS à côté de CollectiveAccess
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_4" >
+        
+          
+          <label class="md-nav__link" for="__nav_4" id="__nav_4_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Migration de données
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_4_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_4">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Migration de données
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../migration_introduction/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    I. Introduction
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../migration_tutoriel/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    II. Tutoriel de découverte
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../migration_refinery/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    III. Importer les relations, les refinery
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../migration_lancer_une_migration/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    IV. Réaliser un import
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../migration_enregistrements_existants/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    V. Références pour le traitement des conflits à l'import
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_5" >
+        
+          
+          <label class="md-nav__link" for="__nav_5" id="__nav_5_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Saisie Joconde
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_5_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_5">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Saisie Joconde
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../Decrire_Objets_Joconde/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Introduction
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../Introduction/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    I. Présentation de la saisie Joconde
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../Saisie_Joconde/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    II. Objets
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../Saisie_Entite/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    III. Entités
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../Saisie_Lieux/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    IV. Lieux
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../Recolement/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    V. Récolement
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../Export_Joconde/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    VI. Export Joconde
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../Registre_biens/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    VII. Registre des biens affectés/déposés
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+    
+  
+  
+  
+    
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_6" checked>
+        
+          
+          <label class="md-nav__link" for="__nav_6" id="__nav_6_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Avancé : gestion des affichages
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_6_label" aria-expanded="true">
+          <label class="md-nav__title" for="__nav_6">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Avancé : gestion des affichages
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../affichage_introduction/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Introduction
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+    
+  
+  
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    I. Syntaxe des modèles d'affichage
+  
+
+    
+  </span>
+  
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    I. Syntaxe des modèles d'affichage
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table des matières">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table des matières
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#definir-des-modeles" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Définir des modèles
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#syntaxe-des-modeles" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Syntaxe des modèles
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#options-de-marqueur" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Options de marqueur
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#remonter-des-metadonnees-a-travers-une-relation" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Remonter des métadonnées à travers une relation
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#mettre-en-forme-avec-unit" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Mettre en forme avec &lt;unit&gt;
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Mettre en forme avec &lt;unit&gt;">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#attributs" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Attributs
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#balises-contextuelles-more-et-between" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Balises contextuelles : &lt;more&gt; et &lt;between&gt;
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#balises-conditionnelles-ifdef-ifnotdef-ifcount-if" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Balises conditionnelles : &lt;ifdef&gt;, &lt;ifnotdef&gt;, &lt;ifcount&gt;, &lt;if&gt;
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#encore-plus-conditionnel-la-balise-case" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Encore plus conditionnel : la balise &lt;case&gt;
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#expressions" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Expressions
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#mettre-en-forme-les-affichages-hierarchiques" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Mettre en forme les affichages hiérarchiques
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#creer-des-liens-vers-dautres-enregistrements" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Créer des liens vers d'autres enregistrements
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#utiliser-du-html" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Utiliser du HTML
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#marqueurs-speciaux" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Marqueurs spéciaux
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#decouper-une-plage-de-dates-en-points-de-donnees-distincts" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Découper une plage de dates en points de données distincts
+      
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../affichage_unites/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    II. Les unités <unit>
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../affichage_expressions/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    III. Les expressions
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_7" >
+        
+          
+          <label class="md-nav__link" for="__nav_7" id="__nav_7_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Schéma de la base de données MariaDB
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_7_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_7">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Schéma de la base de données MariaDB
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../schema_introduction/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    I. Introduction à la gestion des données dans CollectiveAccess
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../schema_texte/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    I. Structure de la base de données
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../schema_image/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    II. Schéma image de la base de données
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_8" >
+        
+          
+          <label class="md-nav__link" for="__nav_8" id="__nav_8_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Plugin Articles pour Pawtucket
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_8_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_8">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Plugin Articles pour Pawtucket
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../articles_introduction/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Introduction
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../articles_creation/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    I. Créer un article et ses propriétés
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../articles_editeur/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    II. Rédiger avec l'éditeur de blocs
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../articles_blocs_ca/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    III. Les blocs CollectiveAccess
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../articles_publication/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    IV. Publier et historique des versions
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_9" >
+        
+          
+          <label class="md-nav__link" for="__nav_9" id="__nav_9_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Génération de cette documentation
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_9_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_9">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Génération de cette documentation
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../tech_logiciels/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Logiciels utilisés
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../tech_install/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Installation
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../credits/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Crédits
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+<nav class="md-nav md-nav--secondary" aria-label="Table des matières">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table des matières
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#definir-des-modeles" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Définir des modèles
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#syntaxe-des-modeles" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Syntaxe des modèles
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#options-de-marqueur" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Options de marqueur
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#remonter-des-metadonnees-a-travers-une-relation" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Remonter des métadonnées à travers une relation
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#mettre-en-forme-avec-unit" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Mettre en forme avec &lt;unit&gt;
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Mettre en forme avec &lt;unit&gt;">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#attributs" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Attributs
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#balises-contextuelles-more-et-between" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Balises contextuelles : &lt;more&gt; et &lt;between&gt;
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#balises-conditionnelles-ifdef-ifnotdef-ifcount-if" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Balises conditionnelles : &lt;ifdef&gt;, &lt;ifnotdef&gt;, &lt;ifcount&gt;, &lt;if&gt;
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#encore-plus-conditionnel-la-balise-case" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Encore plus conditionnel : la balise &lt;case&gt;
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#expressions" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Expressions
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#mettre-en-forme-les-affichages-hierarchiques" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Mettre en forme les affichages hiérarchiques
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#creer-des-liens-vers-dautres-enregistrements" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Créer des liens vers d'autres enregistrements
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#utiliser-du-html" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Utiliser du HTML
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#marqueurs-speciaux" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Marqueurs spéciaux
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#decouper-une-plage-de-dates-en-points-de-donnees-distincts" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Découper une plage de dates en points de données distincts
+      
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          
+            <div class="md-content" data-md-component="content">
+              
+              <article class="md-content__inner md-typeset">
+                
+                  
+
+
+  
+  
+
+
+<h1 id="syntaxe-des-modeles-daffichage">Syntaxe des modèles d'affichage<a class="headerlink" href="#syntaxe-des-modeles-daffichage" title="Permanent link">¶</a></h1>
+<p>Les modèles d'affichage servent à mettre en forme les données issues des blocs (les éléments de métadonnées stockés dans CollectiveAccess) pour l'affichage à l'écran, la production d'éditions et la présentation des résultats de recherche. En l'absence de modèle d'affichage défini, CollectiveAccess restitue les données du bloc de la façon la plus simple possible, en général sous forme de liste de valeurs séparées par des points-virgules. Pour les blocs constitués d'une seule valeur (par exemple un simple élément de métadonnée texte), c'est souvent suffisant. Pour les blocs complexes composés de plusieurs valeurs distinctes — une adresse postale par exemple — un modèle est généralement nécessaire pour mettre en forme la valeur correctement. Les modèles d'affichage de blocs sont également utiles dans les cas suivants :</p>
+<ul>
+<li>Pour définir la mise en forme : titres, gras et italiques autour des éléments du bloc.</li>
+<li>Pour mettre en forme et insérer conditionnellement des séparateurs et des suffixes entre les valeurs d'un bloc complexe. Par exemple, dans un bloc avec des dimensions largeur, longueur et hauteur, on peut placer un séparateur « x » entre chaque dimension. Un affichage permet de restituer les valeurs dans l'ordre largeur/longueur/hauteur (ou tout autre ordre). Ainsi un bloc avec longueur = 24", hauteur = 8" et largeur = 3" peut être restitué en 3" x 24" x 8"… ou 3"l x 24"L x 8"H… ou 3"l x 8"H si la longueur n'est pas renseignée (car les affichages savent omettre intelligemment le séparateur et le suffixe).</li>
+<li>Pour afficher des données rattachées à des enregistrements liés. Par exemple, pour afficher à la fois le nom et les dates de vie d'entités liées, un modèle d'affichage de bloc peut extraire et mettre en forme ces données. Toute donnée rattachée à l'entité liée peut être affichée.</li>
+<li>Pour afficher des données liées en traversant un nombre quelconque de relations intermédiaires. Exemple simple : imaginons un objet lié à une collection, elle-même liée à un donateur. Il n'est pas nécessaire de cataloguer le donateur directement sur l'objet pour afficher son adresse ici, puisqu'il est possible de remonter l'adresse à travers la relation avec la collection. Autre exemple courant dans les archives du film et du spectacle : des objets peuvent être liés à des « œuvres » (occurrences) qui ont elles-mêmes des relations avec des entités (« réalisateur », « acteur », « chorégraphe »). Un modèle d'affichage peut présenter les informations de l'objet aux côtés des données d'entité liées à une œuvre, elle-même liée à l'objet.</li>
+<li>Pour appliquer l'un de plusieurs formats d'affichage en fonction de conditions portant sur une ou plusieurs valeurs de données.</li>
+</ul>
+<p>Les modèles d'affichage sont également très utilisés par Pawtucket 2.0 pour la mise en forme dans les thèmes. C'est la méthode de mise en forme privilégiée dans Pawtucket 2.0, même si le code mixte HTML/PHP reste pris en charge.</p>
+<h2 id="definir-des-modeles">Définir des modèles<a class="headerlink" href="#definir-des-modeles" title="Permanent link">¶</a></h2>
+<p>Des modèles d'affichage par défaut peuvent être définis pour les éléments de métadonnées dans le cadre de leur configuration. Cette mise en forme par défaut peut être surchargée par des modèles supplémentaires propres à un contexte, au sein d'un affichage ou d'une interface utilisateur.</p>
+<p>Le modèle par défaut d'un élément de métadonnée se définit dans l'interface de configuration. Les modèles liés à un affichage ou à une interface utilisateur se définissent dans leurs éditeurs de configuration respectifs, bloc par bloc. Lorsqu'un modèle est défini pour un élément de métadonnée au sein d'un affichage ou d'une interface utilisateur de saisie, il prend le pas sur les modèles définis dans la configuration de l'élément.</p>
+<h2 id="syntaxe-des-modeles">Syntaxe des modèles<a class="headerlink" href="#syntaxe-des-modeles" title="Permanent link">¶</a></h2>
+<p>Dans leur forme la plus simple, les modèles ne sont que du texte contenant des marqueurs destinés à être remplacés par les valeurs des blocs. Un marqueur commence toujours par un accent circonflexe (<code>^</code>) suivi d'un spécificateur de bloc, un identifiant non ambigu d'élément de métadonnée. Par exemple, si vous avez dans une fiche objet un élément de métadonnée dont le code est <code>description</code> et que vous souhaitez préfixer sa valeur par l'intitulé « Description : », le modèle serait :</p>
+<div class="highlight"><pre><span></span><code>Description : ^ca_objects.description
+</code></pre></div>
+<p>où <code>ca_objects</code> indique une fiche objet et <code>description</code> est le code de l'élément de métadonnée.</p>
+<p>Si la valeur de l'élément <code>description</code> est vide, ce modèle affichera l'intitulé « Description : » sans valeur à la suite, ce qui est disgracieux. Pour éviter les espaces vides indésirables, on peut conditionner un modèle d'affichage à la présence d'une valeur dans un champ. Un modèle qui n'affiche quelque chose que si une description est disponible ressemblerait à ceci :</p>
+<div class="highlight"><pre><span></span><code>&lt;ifdef code=&quot;ca_objects.description&quot;&gt;Description : ^ca_objects.description&lt;/ifdef&gt;
+</code></pre></div>
+<p>Tout ce qui se trouve entre <code>&lt;ifdef&gt;</code> et <code>&lt;/ifdef&gt;</code> n'est restitué pour le bloc correspondant (indiqué sans le <code>^</code> dans la balise <code>&lt;ifdef&gt;</code>, car il s'agit ici d'un code et non d'un marqueur) que lorsque ce bloc a effectivement une valeur.</p>
+<p>La sortie conditionnelle ne sert pas qu'aux intitulés. Pour les dimensions et autres ensembles de quantités, elle permet de gérer les cas où toutes les valeurs ne sont pas disponibles. Par exemple, supposons un conteneur de métadonnées nommé <code>dimensions</code> sur une fiche objet, avec trois sous-éléments : width, height et depth, tous de type Longueur. Afficher le conteneur <code>ca_objects.dimensions</code> sans modèle produirait trois valeurs séparées par des points-virgules, le séparateur par défaut :</p>
+<div class="highlight"><pre><span></span><code>12&quot;; 6&quot;; 9&quot;
+</code></pre></div>
+<p>(on suppose ici un affichage en unités anglo-saxonnes)</p>
+<p>Pour le rendre plus clair, on peut mettre en forme le conteneur avec ce modèle :</p>
+<div class="highlight"><pre><span></span><code>^ca_objects.dimensions.width l x ^ca_objects.dimensions.height H x ^ca_objects.dimensions.depth P
+</code></pre></div>
+<p>Ce qui affichera :</p>
+<div class="highlight"><pre><span></span><code>12&quot; l x 6&quot; H x 9&quot; P
+</code></pre></div>
+<p>Comme on le voit, une syntaxe particulière est utilisée pour exprimer les éléments d'un conteneur. Ce n'est plus seulement <code>^ca_objects.dimensions</code> dans notre exemple, mais le code du conteneur parent accompagné du sous-élément précis que vous voulez afficher.</p>
+<p>Si la valeur depth est vide dans certains cas, la sortie ressemblerait parfois à ceci :</p>
+<div class="highlight"><pre><span></span><code>12&quot; l x 6&quot; H x P
+</code></pre></div>
+<p>Pour corriger cela, on utilise la sortie conditionnelle :</p>
+<div class="highlight"><pre><span></span><code>&lt;ifdef code=&quot;ca_objects.dimensions.width&quot;&gt;^ca_objects.dimensions.width l x&lt;/ifdef&gt;
+&lt;ifdef code=&quot;ca_objects.dimensions.height&quot;&gt;^ca_objects.dimensions.height H x&lt;/ifdef&gt;
+&lt;ifdef code=&quot;ca_objects.dimensions.depth&quot;&gt;^ca_objects.dimensions.depth P&lt;/ifdef&gt;
+</code></pre></div>
+<p>On peut aussi utiliser les conditions pour supprimer l'espace entre <code>^ca_objects.dimensions.width</code> et le « l », <code>^ca_objects.dimensions.height</code> et le « H », <code>^ca_objects.dimensions.depth</code> et le « P ». Normalement, un espace est requis entre le marqueur et tout texte qui n'est pas un marqueur, afin de délimiter clairement la fin du marqueur. Avec une condition, vous pouvez séparer le marqueur du texte sans recourir à des espaces, comme dans cet exemple :</p>
+<div class="highlight"><pre><span></span><code>^ca_objects.dimensions.width&lt;ifdef code=&quot;ca_objects.dimensions.width&quot;&gt;l x&lt;/ifdef&gt; ^ca_objects.dimensions.height&lt;ifdef code=&quot;ca_objects.dimensions.height&quot;&gt;H x&lt;/ifdef&gt; ^ca_objects.dimensions.depth&lt;ifdef code=&quot;ca_objects.dimensions.depth&quot;&gt;P&lt;/ifdef&gt;
+</code></pre></div>
+<p>Si vous devez conditionner une partie de votre modèle à la présence de plusieurs valeurs, listez simplement les noms de marqueurs dans la valeur de <code>code</code>, séparés par des virgules :</p>
+<div class="highlight"><pre><span></span><code>&lt;ifdef code=&quot;ca_objects.dimensions.width,ca_objects.dimensions.height,ca_objects.dimensions.depth&quot;&gt;Dimensions : &lt;/ifdef&gt;^ca_objects.dimensions.width&lt;ifdef code=&quot;ca_objects.dimensions.width&quot;&gt;l x&lt;/ifdef&gt; ^ca_objects.dimensions.height&lt;ifdef code=&quot;ca_objects.dimensions.height&quot;&gt;H x&lt;/ifdef&gt; ^ca_objects.dimensions.depth&lt;ifdef code=&quot;ca_objects.dimensions.depth&quot;&gt;P&lt;/ifdef&gt;
+</code></pre></div>
+<p>« Dimensions : » ne sera affiché que si width, height et depth ont tous une valeur. Pour que le texte s'affiche dès qu'au moins une des valeurs de la liste <code>code</code> est renseignée, séparez les noms de marqueurs par des barres verticales (<code>|</code>, le caractère « pipe ») :</p>
+<div class="highlight"><pre><span></span><code>&lt;ifdef code=&quot;ca_objects.dimensions.width|ca_objects.dimensions.height|ca_objects.dimensions.depth&quot;&gt;Dimensions : &lt;/ifdef&gt;^ca_objects.dimensions.width&lt;ifdef code=&quot;ca_objects.dimensions.width&quot;&gt;l x&lt;/ifdef&gt; ^ca_objects.dimensions.height&lt;ifdef code=&quot;ca_objects.dimensions.height&quot;&gt;H x&lt;/ifdef&gt; ^ca_objects.dimensions.depth&lt;ifdef code=&quot;ca_objects.dimensions.depth&quot;&gt;P&lt;/ifdef&gt;
+</code></pre></div>
+<p>Dans certains cas, vous aurez besoin de conditionner une partie de modèle à l'<strong>absence</strong> d'une ou plusieurs valeurs. La balise <code>&lt;ifnotdef&gt;</code> le permet, de façon symétrique à <code>&lt;ifdef&gt;</code>. Par exemple, pour afficher un message « Aucune dimension » quand aucune valeur n'est définie :</p>
+<div class="highlight"><pre><span></span><code>&lt;ifnotdef code=&quot;ca_objects.dimensions.width,ca_objects.dimensions.height,ca_objects.dimensions.depth&quot;&gt;Aucune dimension renseignée&lt;/ifnotdef&gt;^ca_objects.dimensions.width&lt;ifdef code=&quot;ca_objects.dimensions.width&quot;&gt;l x&lt;/ifdef&gt; ^ca_objects.dimensions.height&lt;ifdef code=&quot;ca_objects.dimensions.height&quot;&gt;H x&lt;/ifdef&gt; ^ca_objects.dimensions.depth&lt;ifdef code=&quot;ca_objects.dimensions.depth&quot;&gt;P&lt;/ifdef&gt;
+</code></pre></div>
+<h2 id="options-de-marqueur">Options de marqueur<a class="headerlink" href="#options-de-marqueur" title="Permanent link">¶</a></h2>
+<p>La valeur d'un marqueur peut être modifiée par des options ajoutées sous forme de paramètres nommés. Les options sont séparées du marqueur par un caractère <code>%</code> et listées en paires <code>&lt;nom&gt;=&lt;valeur&gt;</code> délimitées par des caractères <code>&amp;</code> ou <code>%</code> (le <code>&amp;</code> est utilisé dans les anciens modèles, mais peut désormais s'employer indifféremment avec <code>%</code>). Par exemple :</p>
+<div class="highlight"><pre><span></span><code>^ca_objects.hierarchy.preferred_labels.name%maxLevelsFromBottom=4&amp;delimiter=_➜_
+</code></pre></div>
+<p>affichera une liste de titres d'objets hiérarchiques composée des quatre derniers titres en partant du bas, séparés par des flèches. Sans ces options, les valeurs par défaut s'appliqueraient : ici, la hiérarchie entière séparée par des points-virgules.</p>
+<p>On peut ajouter autant d'options que l'on veut à un marqueur.</p>
+<p>Notez que les espaces sont interdits dans les options, car ils servent à séparer les marqueurs. Utilisez l'encodage URL (par exemple <code>%20</code> pour un espace) ou des tirets bas à la place des espaces.</p>
+<p>Les options suivantes permettent de mettre en forme la valeur texte de n'importe quel marqueur :</p>
+<table>
+<thead>
+<tr>
+<th>Option</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>toUpper</code></td>
+<td>Force le texte tout en majuscules lorsqu'elle vaut une valeur non nulle.</td>
+</tr>
+<tr>
+<td><code>toLower</code></td>
+<td>Force le texte tout en minuscules lorsqu'elle vaut une valeur non nulle.</td>
+</tr>
+<tr>
+<td><code>makeFirstUpper</code></td>
+<td>Met la première lettre en majuscule lorsqu'elle vaut une valeur non nulle.</td>
+</tr>
+<tr>
+<td><code>useSingular</code></td>
+<td>Convertit le label au singulier lorsqu'elle vaut une valeur non nulle.</td>
+</tr>
+<tr>
+<td><code>trim</code></td>
+<td>Supprime les espaces en début et fin de valeur.</td>
+</tr>
+<tr>
+<td><code>start</code></td>
+<td>Coupe le début du texte pour qu'il commence au caractère indiqué ; ex. « This is a test » avec <code>start=2</code> devient « is is a test ».</td>
+</tr>
+<tr>
+<td><code>length</code></td>
+<td>Tronque le texte au nombre de caractères indiqué. Combinable avec <code>start</code> pour extraire des portions de texte, ou seule pour garantir une longueur maximale.</td>
+</tr>
+<tr>
+<td><code>truncate</code></td>
+<td>Tronque le texte à la longueur maximale indiquée. Équivaut à <code>start=0</code> avec <code>length</code> réglée sur la longueur de troncature.</td>
+</tr>
+<tr>
+<td><code>ellipsis</code></td>
+<td>Ajoute des points de suspension (« … ») au texte tronqué lorsqu'elle vaut une valeur non nulle. Le texte obtenu fait la longueur indiquée, points de suspension compris. Ainsi un texte tronqué à 12 caractères comprend 9 caractères de texte et 3 caractères de points de suspension.</td>
+</tr>
+</tbody>
+</table>
+<p>Pour les options booléennes simples vrai/faux comme <code>toUpper</code>, vous pouvez omettre le <code>=</code> et la valeur. Ces deux modèles sont équivalents :</p>
+<div class="highlight"><pre><span></span><code>^ca_objects.preferred_labels.name%trim=1
+</code></pre></div>
+<p>et</p>
+<div class="highlight"><pre><span></span><code>^ca_objects.preferred_labels.name%trim
+</code></pre></div>
+<h2 id="remonter-des-metadonnees-a-travers-une-relation">Remonter des métadonnées à travers une relation<a class="headerlink" href="#remonter-des-metadonnees-a-travers-une-relation" title="Permanent link">¶</a></h2>
+<p>Dans les exemples précédents, les données affichées proviennent toujours d'une fiche objet donnée — l'enregistrement « primaire ». Les modèles sont toujours évalués relativement à l'enregistrement primaire. Si vous mettez en forme des résultats de recherche d'objets, par exemple, votre modèle sera évalué de façon répétée pour chaque objet du jeu de résultats, chaque objet devenant tour à tour le primaire. C'est évident mais utile à rappeler : les marqueurs renvoyant directement à des données du primaire (<code>^ca_objects.idno</code> par exemple) tirent leur valeur du primaire. Si un bloc se répète pour un enregistrement, vous pouvez obtenir plusieurs valeurs, mais toutes les valeurs renvoyant au primaire seront toujours prises sur le primaire. N'importe quel enregistrement peut être primaire. Le caractère « primaire » est simplement le contexte dans lequel un modèle est évalué.</p>
+<p>Il est souvent nécessaire d'afficher des métadonnées issues d'enregistrements liés au primaire. Par exemple, vous pourriez vouloir afficher les entités liées à un objet (le primaire) en présentant la période de vie et le lieu de naissance de chaque entité à côté de son nom. Ou afficher les collections liées, avec le nom, les restrictions d'accès et les informations de disponibilité. Ou encore un affichage des objets liés à l'objet primaire courant.</p>
+<p>Pour les cas simples, afficher des données liées ressemble à afficher des données du primaire. Pour les marqueurs qui renvoient à des données non primaires, CollectiveAccess recherche les enregistrements de ce type directement liés au primaire. Pour un marqueur <code>^ca_entities.preferred_labels.displayname</code> dans un affichage de résultats d'objets, CollectiveAccess remontera les noms de toutes les entités directement liées à l'objet primaire. Avec nos données d'exemple :</p>
+<div class="highlight"><pre><span></span><code>^ca_entities.preferred_labels.displayname
+</code></pre></div>
+<p>produira une liste de noms d'affichage des entités liées, séparés par des points-virgules (le séparateur par défaut) :</p>
+<div class="highlight"><pre><span></span><code>George Tilyou; Elmer Dundy
+</code></pre></div>
+<p>Pour remonter des données d'enregistrements liés du même type que le primaire (ex. des objets liés à un objet), ajoutez <code>related</code> au spécificateur de bloc :</p>
+<div class="highlight"><pre><span></span><code>^ca_objects.related.preferred_labels.displayname
+</code></pre></div>
+<p>Avec nos données d'exemple, cela renverra le titre de l'objet lié au primaire. Vous pouvez inclure <code>related</code> dans les spécificateurs pour tout type d'enregistrement lié, mais ce n'est nécessaire que lorsque les choses seraient ambiguës sans lui.</p>
+<p>Vous pouvez remonter n'importe quelle donnée des fiches d'entités liées à l'aide de marqueurs construits de la même façon. Par exemple, ce modèle :</p>
+<div class="highlight"><pre><span></span><code>^ca_entities.preferred_labels.displayname (Dates de vie : ^ca_entities.life_span)
+</code></pre></div>
+<p>renverra :</p>
+<div class="highlight"><pre><span></span><code>George Tilyou; Elmer Dundy; (Dates de vie : 1865 - 1914; 1862 - 1907)
+</code></pre></div>
+<p>Chaque marqueur est évalué séparément et une liste de valeurs est renvoyée à sa place. Pour mettre en forme plusieurs données liées dans un bloc cohérent, afficher des données liées indirectement (comme les lieux de naissance de l'entité liée), définir des séparateurs personnalisés et d'autres options, une nouvelle directive de modèle est nécessaire : la balise <code>&lt;unit&gt;</code>.</p>
+<h2 id="mettre-en-forme-avec-unit">Mettre en forme avec <code>&lt;unit&gt;</code><a class="headerlink" href="#mettre-en-forme-avec-unit" title="Permanent link">¶</a></h2>
+<p>Les balises <code>&lt;unit&gt;</code> permettent de découper vos modèles en sous-modèles évalués indépendamment, puis réassemblés pour la sortie finale. Grâce à l'attribut <code>relativeTo</code> de <code>&lt;unit&gt;</code>, l'enregistrement primaire du modèle peut être transformé en un ou plusieurs enregistrements liés, en valeurs répétées du primaire (par exemple les valeurs d'un conteneur répétable) ou en un ensemble de valeurs hiérarchiques, et le sous-modèle est évalué pour chacun.</p>
+<p><code>&lt;unit&gt;</code> et <code>relativeTo</code> permettent une foule de transformations de mise en forme utiles (et souvent complexes) :</p>
+<ul>
+<li>Lorsqu'un enregistrement comporte des conteneurs répétables. Imaginons un conteneur d'adresse répétable sur une fiche entité, pour gérer plusieurs changements d'adresse. Si vous mettez en forme votre modèle sans préciser que chaque occurrence du conteneur doit être affichée comme une unité, le résultat sera une seule adresse, quel que soit le nombre d'adresses saisies, et chaque marqueur contiendra les valeurs de toutes les adresses — une façon absurde d'afficher une liste d'adresses. Encadrer la partie adresse du modèle par des balises <code>&lt;unit&gt;</code> et préciser qu'elle doit être évaluée relativement à l'élément adresse répétable, plutôt qu'au primaire lui-même, force le modèle contenu à être évalué une fois par valeur d'adresse répétée, produisant une valeur mise en forme indépendamment pour chaque adresse. Ex. :</li>
+</ul>
+<div class="highlight"><pre><span></span><code>&lt;unit relativeTo=&quot;ca_entities.address&quot;&gt;
+^ca_entities.address.street_address&lt;br/&gt;^ca_entities.address.city, ^ca_entities.address.state ^ca_entities.address.zip_code&lt;br/&gt;
+&lt;/unit&gt;
+</code></pre></div>
+<p>L'option <code>relativeTo</code> de la balise <code>&lt;unit&gt;</code> force le sous-modèle à être évalué une fois par valeur d'adresse de l'enregistrement primaire.</p>
+<ul>
+<li>Lorsque vous devez présenter côte à côte plusieurs données issues d'enregistrements liés. Dans la section précédente, on a vu que différents marqueurs renvoyant aux mêmes enregistrements liés produisent toujours des listes séparées, une par marqueur. Affichées côte à côte, le résultat est une série de listes plutôt que les blocs distincts de sortie pour chaque élément lié, généralement souhaités. Les balises <code>&lt;unit&gt;</code> permettent de définir des sous-modèles évalués de façon répétée, autant de fois qu'il y a d'enregistrements liés. Notre exemple de la section précédente, reformulé avec des balises <code>&lt;unit&gt;</code> :</li>
+</ul>
+<div class="highlight"><pre><span></span><code>&lt;unit relativeTo=&quot;ca_entities&quot;&gt;^ca_entities.preferred_labels.displayname (Dates de vie : ^ca_entities.life_span)&lt;/unit&gt;
+</code></pre></div>
+<p>donne ce résultat :</p>
+<div class="highlight"><pre><span></span><code>George Tilyou (Dates de vie : 1865 - 1914); Elmer Dundy (Dates de vie : 1862 - 1907)
+</code></pre></div>
+<p>Ici, l'option <code>relativeTo</code> de <code>&lt;unit&gt;</code> déplace l'enregistrement primaire vers chaque entité liée tour à tour, dans le seul sous-modèle défini par <code>&lt;unit&gt;</code>.</p>
+<ul>
+<li>Lorsque vous devez définir des options d'affichage pour une partie de modèle. Les balises <code>&lt;unit&gt;</code> offrent des options pour modifier la sortie des sous-modèles. Vous pouvez définir le séparateur des valeurs répétées avec l'option <code>delimiter</code>, ou restreindre les éléments liés affichés par type de relation ou par type d'élément lié avec respectivement <code>restrictToRelationshipTypes</code> et <code>restrictToTypes</code> (ou leurs contreparties <code>excludeRelationshipTypes</code> et <code>excludeTypes</code>). (Vous pouvez aussi définir des options sur des marqueurs individuels, mais déclarer les options sur les balises <code>&lt;unit&gt;</code> est généralement plus pratique et toujours plus lisible.) Ex. :</li>
+</ul>
+<div class="highlight"><pre><span></span><code>&lt;unit relativeTo=&quot;ca_entities&quot; restrictToRelationshipTypes=&quot;actor, director, producer&quot;&gt;
+^ca_entities.preferred_labels.displayname (Dates de vie : ^ca_entities.life_span)
+&lt;/unit&gt;
+</code></pre></div>
+<ul>
+<li>Lorsque vous devez afficher des métadonnées relatives à des enregistrements hiérarchiques. Sans la balise <code>&lt;unit&gt;</code>, impossible de lister individuellement les enregistrements enfants et leurs métadonnées dans un affichage. Avec <code>&lt;unit&gt;</code>, vous pouvez afficher les enregistrements parents et/ou enfants et les chemins hiérarchiques sous forme d'unités distinctes et complexes, en rendant l'unité <code>relativeTo</code> l'ensemble hiérarchique. Ex. :</li>
+</ul>
+<div class="highlight"><pre><span></span><code>&lt;unit relativeTo=&quot;ca_list_items.hierarchy&quot;&gt;&lt;p&gt;^ca_list_items.preferred_labels.name_plural (ca_list_items.idno)&lt;/p&gt;&lt;/unit&gt;
+</code></pre></div>
+<p>Ici, l'option <code>relativeTo</code> de <code>&lt;unit&gt;</code> déplace l'enregistrement primaire vers chaque élément de liste de la hiérarchie tour à tour, dans le seul sous-modèle défini par <code>&lt;unit&gt;</code>.</p>
+<ul>
+<li>Lorsque vous devez remonter des métadonnées à travers une relation indirecte. Sans la balise <code>&lt;unit&gt;</code>, seules les métadonnées d'enregistrements directement liés au primaire peuvent être affichées. Dans nos données d'exemple, cela signifie que seules les entités liées à l'objet primaire peuvent être affichées, mais pas le lieu de naissance lié à chaque entité. En imbriquant des balises <code>&lt;unit&gt;</code> les unes dans les autres et en précisant l'option <code>relativeTo</code>, on peut déplacer l'enregistrement primaire d'un sous-modèle à travers un nombre quelconque de relations. On pourrait appeler cela « les six degrés de séparation de Kevin Bacon pour CollectiveAccess » où A est lié à B, lui-même lié à C. Par exemple, si le primaire est un objet et que vous devez afficher des données de lieu issues des entités liées aux objets (et non des lieux liés directement à l'objet), le modèle suivant ferait l'affaire :</li>
+</ul>
+<div class="highlight"><pre><span></span><code>Objet : ^ca_objects.preferred_labels.name;
+Entités : &lt;unit relativeTo=&quot;ca_entities&quot;&gt;^ca_entities.preferred_labels.displayname
+(Lieu de naissance : &lt;unit relativeTo=&quot;ca_places&quot;&gt;^ca_places.preferred_labels.name&lt;/unit&gt;&lt;/unit&gt;
+</code></pre></div>
+<p>Chaque <code>unit</code> déplace le primaire d'un « saut » relationnel. L'imbrication des <code>&lt;unit&gt;</code> permet aux déplacements de se cumuler, car ils sont toujours évalués relativement à leur contexte. Ainsi, les entités liées aux objets sont récupérées, puis les lieux liés à ces entités.</p>
+<h3 id="attributs">Attributs<a class="headerlink" href="#attributs" title="Permanent link">¶</a></h3>
+<p>Les balises <code>&lt;unit&gt;</code> acceptent les attributs suivants :</p>
+<table>
+<thead>
+<tr>
+<th>Attribut</th>
+<th>Description</th>
+<th>Par défaut</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>relativeTo</code></td>
+<td>Transforme l'enregistrement primaire du modèle ou de la <code>&lt;unit&gt;</code> englobante (quand les <code>&lt;unit&gt;</code> sont imbriquées) en un ensemble d'enregistrements liés, d'enregistrements liés hiérarchiquement ou de valeurs répétées.</td>
+<td>Aucun ; doit être défini</td>
+</tr>
+<tr>
+<td><code>restrictToTypes</code></td>
+<td>Pour les <code>&lt;unit&gt;</code> <code>relativeTo</code> une relation (ex. <code>relativeTo='ca_entities'</code>) ou une hiérarchie (ex. <code>relativeTo='ca_objects.hierarchy'</code>, <code>.parent</code>, <code>.siblings</code>, <code>.children</code>), restreint l'ensemble aux enregistrements des types indiqués. Utilisez les identifiants de type, séparés par des virgules.</td>
+<td>Aucune restriction</td>
+</tr>
+<tr>
+<td><code>restrictToRelationshipTypes</code></td>
+<td>Pour les <code>&lt;unit&gt;</code> <code>relativeTo</code> une relation, restreint l'ensemble aux enregistrements liés par les types de relation indiqués. Utilisez les codes de type de relation, séparés par des virgules.</td>
+<td>Aucune restriction</td>
+</tr>
+<tr>
+<td><code>excludeTypes</code></td>
+<td>Comme <code>restrictToTypes</code>, mais exclut les enregistrements des types indiqués.</td>
+<td>Aucune restriction</td>
+</tr>
+<tr>
+<td><code>excludeRelationshipTypes</code></td>
+<td>Comme <code>restrictToRelationshipTypes</code>, mais exclut les enregistrements liés par les types de relation listés.</td>
+<td>Aucune restriction</td>
+</tr>
+<tr>
+<td><code>sort</code></td>
+<td>Un ou plusieurs spécificateurs de bloc sur lesquels trier l'ensemble. Les spécificateurs doivent être pertinents pour le type d'enregistrements récupérés par <code>relativeTo</code>.</td>
+<td>Aucun</td>
+</tr>
+<tr>
+<td><code>sortDirection</code></td>
+<td>Sens du tri : <code>ASC</code> (croissant) ou <code>DESC</code> (décroissant).</td>
+<td><code>ASC</code></td>
+</tr>
+<tr>
+<td><code>skipIfExpression</code></td>
+<td>Une expression à évaluer. Si elle est vraie, la <code>&lt;unit&gt;</code> est ignorée et ne produit aucune sortie. Il faut échapper (préfixer d'un <code>\</code>) les guillemets entourants lors de l'usage d'expressions.</td>
+<td>Aucun</td>
+</tr>
+<tr>
+<td><code>skipWhen</code></td>
+<td>Teste chaque itération du modèle contre une expression et ignore l'itération si l'expression est vraie. Si défini, toutes les itérations sont générées et testées, même quand <code>start</code> et <code>length</code> sont définis.</td>
+<td>Aucun</td>
+</tr>
+<tr>
+<td><code>start</code></td>
+<td>Pour les valeurs répétées, l'index de la première valeur à renvoyer. Les index commencent à zéro. Ex. pour commencer à la deuxième valeur, réglez <code>start</code> sur 1.</td>
+<td><code>0</code></td>
+</tr>
+<tr>
+<td><code>length</code></td>
+<td>Le nombre maximal de valeurs à renvoyer. Si non défini, toutes les valeurs sont renvoyées.</td>
+<td>aucun</td>
+</tr>
+<tr>
+<td><code>unique</code></td>
+<td>Supprime les valeurs en double dans l'unité par comparaison directe de chaînes. Si non défini, toutes les valeurs sont renvoyées.</td>
+<td><code>0</code></td>
+</tr>
+<tr>
+<td><code>aggregateUnique</code></td>
+<td>Supprime les doublons dans les unités en comparant les valeurs individuelles avant leur conversion en chaîne. La différence avec <code>unique</code> est subtile : <code>unique</code> n'élimine que les listes identiques caractère pour caractère, alors que <code>aggregateUnique</code> compare les valeurs sous-jacentes avant mise en chaîne (dédoublonnage plus agressif, insensible à l'ordre).</td>
+<td><code>0</code></td>
+</tr>
+<tr>
+<td><code>omitBlanks</code></td>
+<td>Supprime les valeurs vides de l'ensemble renvoyé. Par défaut, les valeurs vides sont incluses. (Version 1.7.9)</td>
+<td><code>0</code></td>
+</tr>
+<tr>
+<td><code>filter</code></td>
+<td>Une expression régulière ou une série de valeurs texte pour filtrer la sortie de l'unité. Les valeurs ne contenant pas le texte indiqué, ou ne correspondant pas à l'expression régulière, sont supprimées. (Version 1.7.9)</td>
+<td></td>
+</tr>
+<tr>
+<td><code>filterNonPrimaryRepresentations</code></td>
+<td>Pour les unités relatives à <code>ca_object_representations</code>, contrôle l'affichage des représentations non primaires. Par défaut <code>yes</code> : elles ne sont pas affichées. Réglez sur <code>0</code> ou <code>no</code> pour les afficher.</td>
+<td><code>1</code></td>
+</tr>
+</tbody>
+</table>
+<p>Vous pouvez limiter le nombre de valeurs renvoyées par une <code>&lt;unit&gt;</code> portant sur une valeur répétée à l'aide des attributs <code>start</code> et <code>length</code> décrits ci-dessus. Vous pouvez afficher un texte indiquant combien de valeurs n'ont pas été montrées à l'aide de la balise <code>&lt;whenunitomits&gt;</code> placée après une <code>&lt;unit&gt;</code>. Par exemple, pour afficher les 5 premières entités liées puis un message avec le total :</p>
+<div class="highlight"><pre><span></span><code>&lt;unit relativeTo=&quot;ca_entities&quot; delimiter=&quot;, &quot; start=&quot;0&quot; length=&quot;5&quot;&gt;^ca_entities.preferred_labels.displayname&lt;/unit&gt;&lt;whenunitomits&gt; et ^omitcount de plus&lt;/whenunitomits&gt;
+</code></pre></div>
+<p>Le marqueur <code>^omitcount</code> peut être utilisé à l'intérieur de la balise <code>&lt;unit&gt;</code> ou <code>&lt;whenunitomits&gt;</code>. La balise <code>&lt;whenunitomits&gt;</code> se réfère toujours au nombre de valeurs omises dans la <code>&lt;unit&gt;</code> qui la précède dans le modèle, et est supprimée quand aucune valeur de la <code>&lt;unit&gt;</code> précédente n'est masquée.</p>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>La balise <code>&lt;unit&gt;</code> offre de nombreuses possibilités de mise en forme complexe, détaillées avec des exemples dans le chapitre <a href="../affichage_unites/">Les unités <code>&lt;unit&gt;</code></a>.</p>
+</div>
+<h2 id="balises-contextuelles-more-et-between">Balises contextuelles : <code>&lt;more&gt;</code> et <code>&lt;between&gt;</code><a class="headerlink" href="#balises-contextuelles-more-et-between" title="Permanent link">¶</a></h2>
+<p>Les modèles utilisant <code>&lt;ifdef&gt;</code> et <code>&lt;ifnotdef&gt;</code> peuvent devenir longs et difficiles à gérer lorsqu'ils comportent de nombreux éléments dépendant de l'état de plusieurs marqueurs. Pour rendre ces modèles plus maniables, deux balises contrôlent la sortie en fonction de leur seule position dans le modèle, évitant les longues listes de noms de marqueurs.</p>
+<p>La balise <code>&lt;more&gt;</code> affiche son contenu si l'un des marqueurs qui la suivent a une valeur. Ainsi ce modèle :</p>
+<div class="highlight"><pre><span></span><code>^ca_objects.description &lt;more&gt;&lt;br/&gt;Source : &lt;/more&gt;^ca_objects.description_source
+</code></pre></div>
+<p>affichera ceci (en supposant <code>description</code> = « Un plat en métal » et <code>description_source</code> = « catalogue de vente 1978 ») :</p>
+<div class="highlight"><pre><span></span><code>Un plat en métal
+Source : catalogue de vente 1978
+</code></pre></div>
+<p>Si <code>description_source</code> était vide, la sortie serait :</p>
+<div class="highlight"><pre><span></span><code>Un plat en métal
+</code></pre></div>
+<p>La balise <code>&lt;between&gt;</code> affiche son contenu si des marqueurs situés avant elle dans le modèle, ainsi que le marqueur la suivant immédiatement, ont des valeurs. Cela rend la délimitation de listes de valeurs plus compacte qu'avec <code>&lt;ifdef&gt;</code> :</p>
+<div class="highlight"><pre><span></span><code>^ca_objects.dimensions.width &lt;between&gt;x&lt;/between&gt; ^ca_objects.dimensions.height &lt;between&gt;x&lt;/between&gt; ^depth
+</code></pre></div>
+<p>La sortie serait les dimensions renseignées avec un unique séparateur « x » entre chaque paire.</p>
+<h2 id="balises-conditionnelles-ifdef-ifnotdef-ifcount-if">Balises conditionnelles : <code>&lt;ifdef&gt;</code>, <code>&lt;ifnotdef&gt;</code>, <code>&lt;ifcount&gt;</code>, <code>&lt;if&gt;</code><a class="headerlink" href="#balises-conditionnelles-ifdef-ifnotdef-ifcount-if" title="Permanent link">¶</a></h2>
+<p>Comme indiqué plus haut, vous pouvez conditionner l'affichage de portions de modèle en les entourant de balises <code>&lt;ifdef&gt;</code> et <code>&lt;ifnotdef&gt;</code>. Les deux balises prennent un attribut <code>code</code> contenant un ou plusieurs spécificateurs de bloc. Si la valeur du bloc n'est pas vide, <code>&lt;ifdef&gt;</code> affiche la portion qu'elle encadre. À l'inverse, si la valeur est vide, <code>&lt;ifnotdef&gt;</code> affiche son contenu.</p>
+<p>Par exemple :</p>
+<div class="highlight"><pre><span></span><code>Titre : ^ca_objects.preferred_labels.name &lt;ifdef code=&quot;ca_objects.description&quot;&gt;Description : ^ca_objects.description&lt;/ifdef&gt;
+</code></pre></div>
+<p>Notez que le spécificateur dans l'attribut <code>code</code> n'est pas un marqueur et ne prend donc pas de préfixe <code>^</code>.</p>
+<p>Vous pouvez conditionner <code>ifdef</code> et <code>ifnotdef</code> à plusieurs blocs en les listant dans l'attribut <code>code</code>, séparés par des virgules ou des barres verticales (<code>|</code>). Séparés par des virgules, tous les blocs doivent être définis (<code>&lt;ifdef&gt;</code>) ou non définis (<code>&lt;ifnotdef&gt;</code>) pour que la balise affiche son contenu. Séparés par des barres verticales, il suffit qu'un seul des blocs soit défini (<code>&lt;ifdef&gt;</code>) ou non défini (<code>&lt;ifnotdef&gt;</code>).</p>
+<p>La balise <code>&lt;ifcount&gt;</code> contrôle l'affichage du contenu en fonction du nombre de valeurs disponibles pour le spécificateur de bloc indiqué dans <code>code</code>. Elle est utile lorsque vous ne voulez afficher du contenu que si le nombre de valeurs d'un bloc est dans une plage donnée. Par exemple, pour n'afficher une liste d'entités liées que s'il y a entre 2 et 5 relations :</p>
+<div class="highlight"><pre><span></span><code>&lt;ifcount code=&quot;ca_entities.related&quot; min=&quot;2&quot; max=&quot;5&quot;&gt;Entités liées : ^ca_entities.preferred_labels.displayname&lt;/ifcount&gt;
+</code></pre></div>
+<p>Vous pouvez afficher du contenu dès que le nombre dépasse un seuil en omettant l'attribut <code>max</code> :</p>
+<div class="highlight"><pre><span></span><code>&lt;ifcount code=&quot;ca_entities.related&quot; min=&quot;2&quot;&gt;Entités liées : ^ca_entities.preferred_labels.displayname&lt;/ifcount&gt;
+</code></pre></div>
+<p>Si l'attribut <code>min</code> est omis, il est supposé valoir zéro.</p>
+<p>Pour n'afficher du contenu que lorsque le nombre vaut exactement une valeur, réglez <code>min</code> et <code>max</code> sur le même nombre :</p>
+<div class="highlight"><pre><span></span><code>&lt;ifcount code=&quot;ca_entities.related&quot; min=&quot;1&quot; max=&quot;1&quot;&gt;Entité liée : ^ca_entities.preferred_labels.displayname&lt;/ifcount&gt;
+</code></pre></div>
+<p>La balise <code>&lt;if&gt;</code> offre un contrôle maximal en utilisant des <a href="../affichage_expressions/">expressions</a> pour déterminer quand le contenu est affiché. Par exemple, pour n'afficher le contenu que si <code>current</code> est sélectionné dans la liste déroulante de type d'un conteneur de mention de crédit répétable :</p>
+<div class="highlight"><pre><span></span><code>&lt;unit relativeTo=&quot;ca_objects.credit_line&quot;&gt;&lt;if rule=&quot;^credit_type =~ /current/&quot;&gt;^ca_objects.credit_line.credit_text
+(^ca_objects.credit_line.credit_type)&lt;/if&gt;&lt;/unit&gt;
+</code></pre></div>
+<p>L'attribut <code>rule</code> doit être une expression valide, qui peut utiliser n'importe quel marqueur valide disponible dans le modèle.</p>
+<p><code>&lt;ifcount&gt;</code> et <code>&lt;ifdef&gt;</code> incluent les valeurs vides dans leur évaluation. À partir de la version 1.7.9, les valeurs vides peuvent être supprimées en réglant l'option facultative <code>omitBlanks</code> sur une valeur non nulle. C'est souvent utile pour la mise en forme. Si <code>omitBlanks</code> est défini, <code>&lt;ifcount&gt;</code> renvoie le nombre de valeurs non vides et <code>&lt;ifdef&gt;</code> n'est vrai que si le bloc a au moins une valeur non vide. Notez que <code>&lt;if&gt;</code> ne prend pas en charge l'option <code>omitBlanks</code> : vous devez filtrer les valeurs vides dans l'expression.</p>
+<h2 id="encore-plus-conditionnel-la-balise-case">Encore plus conditionnel : la balise <code>&lt;case&gt;</code><a class="headerlink" href="#encore-plus-conditionnel-la-balise-case" title="Permanent link">¶</a></h2>
+<p>Il faut parfois choisir l'un de plusieurs modèles selon des critères variables. Par exemple, en listant les entités liées à un objet, vous pourriez vouloir faire varier le texte précédant la liste selon le nombre d'entités. Il existe plusieurs façons de le faire avec les modèles d'affichage, mais la plus propre est la balise <code>&lt;case&gt;</code> :</p>
+<div class="highlight"><pre><span></span><code>&lt;case&gt;
+     &lt;ifcount code=&quot;ca_entities.related&quot; max=&quot;0&quot;&gt;Aucune entité liée&lt;/ifcount&gt;
+     &lt;ifcount code=&quot;ca_entities.related&quot; min=&quot;1&quot; max=&quot;1&quot;&gt;Entité liée : ^ca_entities.preferred_labels.name&lt;/ifcount&gt;
+     &lt;ifcount code=&quot;ca_entities.related&quot; min=&quot;2&quot;&gt;Entités liées : ^ca_entities.preferred_labels.name%delimiter=,_&lt;/ifcount&gt;
+&lt;/case&gt;
+</code></pre></div>
+<p>La balise <code>&lt;case&gt;</code> évalue chaque balise <code>&lt;ifcount&gt;</code> dans l'ordre et s'arrête à la première qui produit une sortie. Vous pouvez inclure des modèles commençant par <code>&lt;ifdef&gt;</code>, <code>&lt;ifnotdef&gt;</code> et <code>&lt;if&gt;</code> aussi bien que <code>&lt;ifcount&gt;</code>. Si une balise <code>&lt;unit&gt;</code> est incluse comme dernier modèle d'un <code>&lt;case&gt;</code>, elle sert de cas par défaut si aucun autre modèle ne produit de sortie.</p>
+<p>Comme les balises <code>&lt;case&gt;</code> cessent d'évaluer dès qu'elles trouvent un modèle produisant une sortie, elles constituent généralement la façon la plus performante de choisir un modèle dans une liste de possibilités.</p>
+<h2 id="expressions">Expressions<a class="headerlink" href="#expressions" title="Permanent link">¶</a></h2>
+<p>Il est également possible de produire le résultat d'une <a href="../affichage_expressions/">expression</a> tel quel. Un cas d'usage : rendre certaines statistiques sur vos métadonnées interrogeables. Par exemple, vous pourriez utiliser le pré-remplissage (<em>Prepopulate</em>) pour conserver en permanence le nombre actuel de relations d'entité de vos objets dans un champ masqué (mais interrogeable et triable).</p>
+<p>L'usage de la balise <code>&lt;expression&gt;</code> est simple : tout ce qui se trouve à l'intérieur est traité comme une expression. Vous pouvez utiliser vos marqueurs habituels préfixés par <code>^</code> et même des balises <code>&lt;unit&gt;</code>. Les balises <code>&lt;unit&gt;</code> sont évaluées et remplacées en premier lorsque CollectiveAccess exécute les modèles d'affichage, vous pouvez donc utiliser le résultat d'une <code>&lt;unit&gt;</code> dans votre expression. Quelques exemples de base :</p>
+<div class="highlight"><pre><span></span><code>&lt;expression&gt;5 + 4&lt;/expression&gt;
+&lt;expression&gt;length(^ca_objects.preferred_labels)&lt;/expression&gt;
+</code></pre></div>
+<p>Celui-ci affiche les noms des entités liées et la longueur de chaque chaîne :</p>
+<div class="highlight"><pre><span></span><code>&lt;unit relativeTo=&quot;ca_entities&quot;&gt;^ca_entities.preferred_labels, &lt;expression&gt;length(^ca_entities.preferred_labels)&lt;/expression&gt;&lt;/unit&gt;
+</code></pre></div>
+<p>Le suivant compte le nombre de relations d'entité de l'enregistrement courant. On utilise une balise <code>&lt;unit&gt;</code> pour générer les paramètres de la fonction <code>sizeof</code> :</p>
+<div class="highlight"><pre><span></span><code>&lt;expression&gt;sizeof(&lt;unit relativeTo=&quot;ca_entities&quot; delimiter=&quot;,&quot;&gt;^ca_entities.entity_id&lt;/unit&gt;)&lt;/expression&gt;
+</code></pre></div>
+<p>Celui-ci calcule l'âge d'Alan Turing :</p>
+<div class="highlight"><pre><span></span><code>&lt;expression&gt;age(&quot;23 June 1912&quot;, &quot;7 June 1954&quot;)&lt;/expression&gt;
+</code></pre></div>
+<h2 id="mettre-en-forme-les-affichages-hierarchiques">Mettre en forme les affichages hiérarchiques<a class="headerlink" href="#mettre-en-forme-les-affichages-hierarchiques" title="Permanent link">¶</a></h2>
+<p>De nombreux types d'enregistrements peuvent être organisés hiérarchiquement. Pour récupérer tout ou partie de la hiérarchie en vue d'un affichage, utilisez un spécificateur de bloc hiérarchique. C'est un spécificateur normal auquel on ajoute un modificateur hiérarchique (<code>hierarchy</code>, <code>parent</code>, <code>children</code>).</p>
+<p>Par exemple, pour un primaire <code>object</code>, un marqueur <code>^ca_objects.hierarchy.preferred_labels.name</code> renverra les noms de tous les objets de la hiérarchie, du haut vers le bas. Vous voudrez probablement définir un séparateur entre chaque élément de la hiérarchie. Vous pouvez le faire en ajoutant une option de marqueur : ajoutez un signe pourcentage et <code>delimiter=&lt;mon séparateur&gt;</code> au spécificateur de bloc, ainsi :</p>
+<div class="highlight"><pre><span></span><code>^ca_objects.hierarchy.preferred_labels.name%delimiter=_➔_
+</code></pre></div>
+<p>Lors de la définition du séparateur, on utilise des <strong>tirets bas</strong> à la place des espaces. Les espaces servent à délimiter les spécificateurs de bloc, le séparateur ne peut donc pas comporter d'espace flottant au-delà de l'espace associé au spécificateur. Les tirets bas seront convertis en espaces à l'affichage.</p>
+<p>Vous obtenez plus de contrôle sur les affichages hiérarchiques avec une <code>&lt;unit&gt;</code> définie relativement à une hiérarchie. Pour notre primaire objet :</p>
+<div class="highlight"><pre><span></span><code>&lt;unit relativeTo=&quot;ca_objects.hierarchy&quot;&gt;^ca_objects.preferred_labels.name (^ca_objects.idno)&lt;/unit&gt;
+</code></pre></div>
+<p>évaluera la <code>&lt;unit&gt;</code> pour chaque enregistrement de la hiérarchie tour à tour défini comme primaire. Les données liées sont également accessibles, et des <code>&lt;unit&gt;</code> supplémentaires peuvent être imbriquées.</p>
+<p>Les modificateurs <code>parent</code> et <code>children</code> fonctionnent comme <code>hierarchy</code>, mais renvoient respectivement le parent immédiat d'un enregistrement ou ses enfants immédiats.</p>
+<p>Plusieurs options de marqueur permettent de modifier l'affichage des données hiérarchiques :</p>
+<table>
+<thead>
+<tr>
+<th>Option</th>
+<th>Description</th>
+<th>Par défaut</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>delimiter</code></td>
+<td>Texte à utiliser comme séparateur entre plusieurs valeurs.</td>
+<td><code>;</code></td>
+</tr>
+<tr>
+<td><code>maxLevelsFromTop</code></td>
+<td>Limite le nombre de niveaux renvoyés à ceux du haut, en commençant par la racine.</td>
+<td>Aucun</td>
+</tr>
+<tr>
+<td><code>maxLevelsFromBottom</code></td>
+<td>Limite le nombre de niveaux renvoyés à ceux du bas, en commençant par le niveau le plus profond.</td>
+<td>Aucun</td>
+</tr>
+<tr>
+<td><code>hierarchyDirection</code></td>
+<td>Ordre de restitution des niveaux hiérarchiques : <code>asc</code> (de la racine vers le bas) ou <code>desc</code> (de l'enfant le plus éloigné vers la racine).</td>
+<td><code>asc</code></td>
+</tr>
+<tr>
+<td><code>allDescendants</code></td>
+<td>Renvoie tous les éléments de toute la profondeur de la hiérarchie lors de la récupération des enfants avec le modificateur <code>children</code>. Par défaut, seuls les enfants immédiats sont renvoyés.</td>
+<td><code>FALSE</code></td>
+</tr>
+</tbody>
+</table>
+<h2 id="creer-des-liens-vers-dautres-enregistrements">Créer des liens vers d'autres enregistrements<a class="headerlink" href="#creer-des-liens-vers-dautres-enregistrements" title="Permanent link">¶</a></h2>
+<p>La balise <code>&lt;l&gt;</code> permet de créer des liens dans le modèle. Les liens pointent toujours vers l'enregistrement primaire. Dans Providence, le lien mène à l'<strong>interface d'édition</strong> de l'enregistrement ; dans Pawtucket, il mène à l'<strong>affichage de détail</strong>. Il est possible d'écrire des plugins qui surchargent ce comportement pour créer d'autres types de liens.</p>
+<p>N'importe quelle portion du modèle peut devenir un lien. Par exemple, en supposant que le primaire est une entité :</p>
+<div class="highlight"><pre><span></span><code>&lt;l&gt;^ca_entities.preferred_labels.displayname&lt;/l&gt; &lt;ifdef code=&quot;ca_entities.address.address1&quot;&gt;(&lt;/ifdef&gt;^ca_entities.address.address1&lt;ifdef code=&quot;ca_entities.address.address1&quot;&gt;)&lt;/ifdef&gt;
+</code></pre></div>
+<p>Cliquer sur le nom de l'entité dans Providence amènerait le catalogueur vers l'<strong>éditeur</strong> de la fiche entité ; dans Pawtucket, vers le <strong>détail</strong> de l'entité.</p>
+<p>Les liens pointent toujours vers l'enregistrement primaire. Si vous utilisez des balises <code>&lt;l&gt;</code> à l'intérieur d'une <code>&lt;unit&gt;</code>, les liens pointeront vers le primaire de la <code>&lt;unit&gt;</code>.</p>
+<h2 id="utiliser-du-html">Utiliser du HTML<a class="headerlink" href="#utiliser-du-html" title="Permanent link">¶</a></h2>
+<p>Vous pouvez librement utiliser des balises HTML pour la mise en forme dans vos modèles, à condition de respecter les règles et d'écrire un balisage bien formé. Veillez à fermer toute balise ouverte. Les balises spéciales de modèle comme <code>&lt;ifdef&gt;</code> comptent dans la bonne formation du balisage, même si elles ne s'affichent pas. Ainsi, ceci est incorrect et s'affichera de façon imprévisible :</p>
+<div class="highlight"><pre><span></span><code>&lt;l&gt;^ca_occurrences.preferred_labels.names&lt;/l&gt; &lt;ifdef code=&quot;ca_occurrences.exhibit_date&quot;&gt;&lt;b&gt;(Dates : &lt;/ifdef&gt;^ca_occurrences.exhibit_date&lt;ifdef code=&quot;ca_occurrences.exhibit_date&quot;&gt;)&lt;/b&gt;&lt;/ifdef&gt; ^ca_occurrences.description
+</code></pre></div>
+<p>Remarquez que la balise <code>&lt;b&gt;</code> du premier <code>&lt;ifdef&gt;</code> n'est pas fermée avant le <code>&lt;/ifdef&gt;</code> fermant, produisant un balisage invalide. Il y a bien une balise <code>&lt;/b&gt;</code> plus loin, mais elle est elle aussi isolée par les balises <code>&lt;ifdef&gt;</code> qui l'entourent. La façon correcte d'écrire ce modèle est :</p>
+<div class="highlight"><pre><span></span><code>&lt;l&gt;^ca_occurrences.preferred_labels.names&lt;/l&gt; &lt;ifdef code=&quot;ca_occurrences.exhibit_date&quot;&gt;&lt;b&gt;(Dates : ^ca_occurrences.exhibit_date&lt;/b&gt;&lt;/ifdef&gt; ^ca_occurrences.description
+</code></pre></div>
+<h2 id="marqueurs-speciaux">Marqueurs spéciaux<a class="headerlink" href="#marqueurs-speciaux" title="Permanent link">¶</a></h2>
+<p>Quelques marqueurs ont une signification particulière pour certains types d'enregistrements primaires :</p>
+<table>
+<thead>
+<tr>
+<th>Marqueur</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>^date</code></td>
+<td>Affiche la date courante. Valide dans tout modèle, quel que soit le type de primaire. La date est formatée en « jour mois année » (ex. « 10 janvier 2014 ») sauf si un format est précisé via l'option de marqueur <code>format</code>, qui prend une chaîne de formatage de style <code>date()</code> de PHP (ex. <code>^date%format=c</code>).</td>
+</tr>
+<tr>
+<td><code>^relationship_typename</code></td>
+<td>Affiche le nom du type de relation lorsque le primaire est un enregistrement de relation tel que <code>ca_objects_x_entities</code>. Les modèles remontant des enregistrements liés dans les affichages de blocs sont évalués relativement au primaire représentant la relation, et non l'enregistrement lié. Ce marqueur et les autres <code>^relationship_*</code> sont donc disponibles par défaut lors de la remontée de données liées dans les affichages de blocs.</td>
+</tr>
+<tr>
+<td><code>^relationship_type_id</code></td>
+<td>Le <code>type_id</code> numérique interne du type de relation lorsque le primaire est un enregistrement de relation.</td>
+</tr>
+<tr>
+<td><code>^relationship_typecode</code></td>
+<td>Le code alphanumérique du type de relation lorsque le primaire est un enregistrement de relation.</td>
+</tr>
+<tr>
+<td><code>^primary</code></td>
+<td>Affiche le nom du primaire du modèle ou du sous-modèle <code>&lt;unit&gt;</code> courant. Utile pour le débogage.</td>
+</tr>
+<tr>
+<td><code>^count</code></td>
+<td>Affiche le nombre de valeurs dans le primaire courant du modèle ou du sous-modèle <code>&lt;unit&gt;</code>.</td>
+</tr>
+<tr>
+<td><code>^index</code></td>
+<td>Affiche l'index (à base 1) de la valeur courante dans le primaire ou le sous-modèle <code>&lt;unit&gt;</code>. À mesure qu'une <code>&lt;unit&gt;</code> parcourt chaque valeur, <code>^index</code> s'incrémente de un jusqu'à atteindre <code>^count</code>.</td>
+</tr>
+</tbody>
+</table>
+<p>À partir de la version 1.7.9, plusieurs marqueurs spéciaux sont aussi disponibles pour les représentations d'objet et renvoient des métadonnées propres au média, déjà formatées. Utilisez-les sous la forme <code>^ca_object_representations.&lt;marqueur&gt;</code>. Ils servent généralement à formater le texte d'affichage dans les listes de représentations :</p>
+<table>
+<thead>
+<tr>
+<th>Marqueur</th>
+<th>Description</th>
+<th>Exemple</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>transcription_count</code></td>
+<td>Nombre de transcriptions générées par les utilisateurs rattachées à la représentation.</td>
+<td>1</td>
+</tr>
+<tr>
+<td><code>page_count</code></td>
+<td>Nombre de pages d'un document multipage. Nul si non applicable.</td>
+<td>10</td>
+</tr>
+<tr>
+<td><code>preview_count</code></td>
+<td>Nombre d'aperçus disponibles pour un document multipage ou un média temporel. Nul si non applicable. Synonyme de <code>page_count</code>.</td>
+<td>10</td>
+</tr>
+<tr>
+<td><code>media_dimensions</code></td>
+<td>Dimensions en pixels du média, formatées pour l'affichage. Option : <code>version=&lt;version&gt;</code> (défaut <code>original</code>).</td>
+<td>1024p x 2048p</td>
+</tr>
+<tr>
+<td><code>media_duration</code></td>
+<td>Durée d'un média temporel, formatée. Options : <code>durationFormat</code> (<code>delimited</code>, <code>hms</code>, <code>hm</code>, <code>seconds</code> ; défaut <code>hms</code>) et <code>version</code> (défaut <code>original</code>).</td>
+<td>1h 24m 10s</td>
+</tr>
+<tr>
+<td><code>media_class</code></td>
+<td>Type général du média d'origine : <code>image</code>, <code>video</code>, <code>audio</code> ou <code>document</code>.</td>
+<td><code>image</code></td>
+</tr>
+<tr>
+<td><code>media_format</code></td>
+<td>Format du média d'origine, pour l'affichage.</td>
+<td><code>JPEG, TIFF</code></td>
+</tr>
+<tr>
+<td><code>media_filesize</code></td>
+<td>Taille du fichier média, formatée. Option : <code>version</code> (défaut <code>original</code>).</td>
+<td><code>43.2mb</code></td>
+</tr>
+<tr>
+<td><code>media_colorspace</code></td>
+<td>Espace colorimétrique du média, formaté. Option : <code>version</code> (défaut <code>original</code>).</td>
+<td><code>RGB, CMYK</code></td>
+</tr>
+<tr>
+<td><code>media_resolution</code></td>
+<td>Résolution en pixels du média, formatée. Peut ne pas être disponible pour tous les formats. Option : <code>version</code> (défaut <code>original</code>).</td>
+<td><code>300ppi</code></td>
+</tr>
+<tr>
+<td><code>media_bitdepth</code></td>
+<td>Profondeur de bits du média, formatée. Peut ne pas être disponible pour tous les formats. Option : <code>version</code> (défaut <code>original</code>).</td>
+<td>8bpp</td>
+</tr>
+<tr>
+<td><code>media_center_x</code></td>
+<td>Coordonnée X du point de recadrage central défini par l'utilisateur pour une image. Fraction décimale de la largeur de l'image.</td>
+<td>0.43</td>
+</tr>
+<tr>
+<td><code>media_center_y</code></td>
+<td>Coordonnée Y du point de recadrage central défini par l'utilisateur pour une image. Fraction décimale de la largeur de l'image.</td>
+<td>0.22</td>
+</tr>
+</tbody>
+</table>
+<h2 id="decouper-une-plage-de-dates-en-points-de-donnees-distincts">Découper une plage de dates en points de données distincts<a class="headerlink" href="#decouper-une-plage-de-dates-en-points-de-donnees-distincts" title="Permanent link">¶</a></h2>
+<p>Les valeurs de date uniques exprimées sous forme de plages (par exemple 2000-2018) peuvent être décomposées en points de données distincts pour la date de début et la date de fin. Par exemple, si vous souhaitez exporter vers MS Excel avec des colonnes distinctes pour la première et la dernière date de la plage. La syntaxe est la suivante :</p>
+<div class="highlight"><pre><span></span><code>^ca_objects.your_date_element_code%start_as_iso8601=1
+^ca_objects.your_date_element_code%end_as_iso8601=1
+</code></pre></div>
+
+
+
+
+
+
+
+
+
+  
+
+
+
+  <form class="md-feedback" name="feedback" hidden>
+    <fieldset>
+      <legend class="md-feedback__title">
+        Cette page vous a-t-elle été utile ?
+      </legend>
+      <div class="md-feedback__inner">
+        <div class="md-feedback__list">
+          
+            <button class="md-feedback__icon md-icon" type="submit" title="Oui" data-md-value="1">
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 12a8 8 0 0 0-8-8 8 8 0 0 0-8 8 8 8 0 0 0 8 8 8 8 0 0 0 8-8m2 0a10 10 0 0 1-10 10A10 10 0 0 1 2 12 10 10 0 0 1 12 2a10 10 0 0 1 10 10M10 9.5c0 .8-.7 1.5-1.5 1.5S7 10.3 7 9.5 7.7 8 8.5 8s1.5.7 1.5 1.5m7 0c0 .8-.7 1.5-1.5 1.5S14 10.3 14 9.5 14.7 8 15.5 8s1.5.7 1.5 1.5m-5 7.73c-1.75 0-3.29-.73-4.19-1.81L9.23 14c.45.72 1.52 1.23 2.77 1.23s2.32-.51 2.77-1.23l1.42 1.42c-.9 1.08-2.44 1.81-4.19 1.81"/></svg>
+            </button>
+          
+            <button class="md-feedback__icon md-icon" type="submit" title="Non" data-md-value="0">
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 12a8 8 0 0 0-8-8 8 8 0 0 0-8 8 8 8 0 0 0 8 8 8 8 0 0 0 8-8m2 0a10 10 0 0 1-10 10A10 10 0 0 1 2 12 10 10 0 0 1 12 2a10 10 0 0 1 10 10m-6.5-4c.8 0 1.5.7 1.5 1.5s-.7 1.5-1.5 1.5-1.5-.7-1.5-1.5.7-1.5 1.5-1.5M10 9.5c0 .8-.7 1.5-1.5 1.5S7 10.3 7 9.5 7.7 8 8.5 8s1.5.7 1.5 1.5m2 4.5c1.75 0 3.29.72 4.19 1.81l-1.42 1.42C14.32 16.5 13.25 16 12 16s-2.32.5-2.77 1.23l-1.42-1.42C8.71 14.72 10.25 14 12 14"/></svg>
+            </button>
+          
+        </div>
+        <div class="md-feedback__note">
+          
+            <div data-md-value="1" hidden>
+              
+              
+                
+              
+              
+              
+                
+                
+              
+              Merci pour votre retour !
+            </div>
+          
+            <div data-md-value="0" hidden>
+              
+              
+                
+              
+              
+              
+                
+                
+              
+              Aidez-nous à améliorer cette page — décrivez ce qui manque sur GitHub.
+            </div>
+          
+        </div>
+      </div>
+    </fieldset>
+  </form>
+
+
+                
+              </article>
+            </div>
+          
+          
+<script>var target=document.getElementById(location.hash.slice(1));target&&target.name&&(target.checked=target.name.startsWith("__tabbed_"))</script>
+        </div>
+        
+      </main>
+      
+        <!--
+  Copyright (c) 2016-2021 Martin Donath <martin.donath@squidfunk.com>
+
+  Permission is hereby granted, free of charge, to any person obtaining a copy
+  of this software and associated documentation files (the "Software"), to
+  deal in the Software without restriction, including without limitation the
+  rights to use, copy, modify, merge, publish, distribute, sublicense, and/or
+  sell copies of the Software, and to permit persons to whom the Software is
+  furnished to do so, subject to the following conditions:
+
+  The above copyright notice and this permission notice shall be included in
+  all copies or substantial portions of the Software.
+
+  THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+  IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+  FITNESS FOR A PARTICULAR PURPOSE AND NON-INFRINGEMENT. IN NO EVENT SHALL THE
+  AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+  LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING
+  FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS
+  IN THE SOFTWARE.
+-->
+
+
+
+<!-- Footer -->
+<footer class="md-footer">
+
+  <!-- Link to previous and/or next page -->
+  
+    <nav
+      class="md-footer__inner md-grid"
+      aria-label="footer.title"
+    >
+
+      <!-- Link to previous page -->
+      
+        <a
+          href="../affichage_introduction/"
+          class="md-footer__link md-footer__link--prev"
+          rel="prev"
+        >
+          <div class="md-footer__button md-icon">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"/></svg>
+          </div>
+          <div class="md-footer__title">
+            <div class="md-ellipsis">
+              <span class="md-footer__direction">
+                Précédent
+              </span>
+              Introduction
+            </div>
+          </div>
+        </a>
+      
+
+      <!-- Link to next page -->
+      
+        <a
+          href="../affichage_unites/"
+          class="md-footer__link md-footer__link--next"
+          rel="next"
+        >
+          <div class="md-footer__title">
+            <div class="md-ellipsis">
+              <span class="md-footer__direction">
+                Suivant
+              </span>
+              II. Les unités <unit>
+            </div>
+          </div>
+          <div class="md-footer__button md-icon">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M4 11v2h12l-5.5 5.5 1.42 1.42L19.84 12l-7.92-7.92L10.5 5.5 16 11z"/></svg>
+          </div>
+        </a>
+      
+    </nav>
+  
+
+  <!-- Further information -->
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+
+      <!-- Copyright and theme information -->
+      <div class="md-footer-copyright">
+        
+        <a href="https://www.ideesculture.com">idéesculture</a>
+      </div>
+
+      <!-- Social links -->
+      
+<div class="md-social">
+  
+</div>
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    
+    
+    
+      
+      
+      <script id="__config" type="application/json">{"annotate": null, "base": "..", "features": [], "search": "../assets/javascripts/workers/search.2c215733.min.js", "tags": null, "translations": {"clipboard.copied": "Copi\u00e9 dans le presse-papier", "clipboard.copy": "Copier dans le presse-papier", "search.result.more.one": "1 de plus sur cette page", "search.result.more.other": "# de plus sur cette page", "search.result.none": "Aucun document trouv\u00e9", "search.result.one": "1 document trouv\u00e9", "search.result.other": "# documents trouv\u00e9s", "search.result.placeholder": "Taper pour d\u00e9marrer la recherche", "search.result.term.missing": "Non trouv\u00e9", "select.version": "S\u00e9lectionner la version"}, "version": null}</script>
+    
+    
+      <script src="../assets/javascripts/bundle.79ae519e.min.js"></script>
+      
+    
+  </body>
+</html>

@@ -13,6 +13,10 @@
       
       
       
+        <link rel="prev" href="../modelisation_metadonnees/">
+      
+      
+        <link rel="next" href="../chapterXI_connexion_demarrage/">
       
       
         
@@ -23,7 +27,7 @@
     
     
       
-        <title>Summary - Guide utilisateur CollectiveAccess</title>
+        <title>IV. Données interstitielles - Guide utilisateur CollectiveAccess</title>
       
     
     
@@ -82,7 +86,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#summary" class="md-skip">
+        <a href="#donnees-interstitielles" class="md-skip">
           Aller au contenu
         </a>
       
@@ -163,7 +167,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              Summary
+              IV. Données interstitielles
             
           </span>
         </div>
@@ -317,18 +321,20 @@
       
   
   
+    
   
   
+  
     
     
     
     
     
-    <li class="md-nav__item md-nav__item--nested">
+    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
       
         
         
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2" >
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2" checked>
         
           
           <label class="md-nav__link" for="__nav_2" id="__nav_2_label" tabindex="0">
@@ -349,7 +355,7 @@
             <span class="md-nav__icon md-icon"></span>
           </label>
         
-        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_2_label" aria-expanded="false">
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_2_label" aria-expanded="true">
           <label class="md-nav__title" for="__nav_2">
             <span class="md-nav__icon md-icon"></span>
             
@@ -448,10 +454,37 @@
                 
   
   
+    
   
   
-    <li class="md-nav__item">
-      <a href="../interstitiel/" class="md-nav__link">
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    IV. Données interstitielles
+  
+
+    
+  </span>
+  
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
         
   
   
@@ -467,6 +500,37 @@
   
 
       </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table des matières">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table des matières
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#modifier-les-enregistrements-de-relation" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Modifier les enregistrements de relation
+      
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
     </li>
   
 
@@ -1941,6 +2005,25 @@
     
   
   
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table des matières
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#modifier-les-enregistrements-de-relation" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Modifier les enregistrements de relation
+      
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
 </nav>
                   </div>
                 </div>
@@ -1959,17 +2042,18 @@
   
 
 
-<h1 id="summary">Summary<a class="headerlink" href="#summary" title="Permanent link">¶</a></h1>
-<ul>
-<li><a href="../README">Guide utilisateur Providence</a></li>
-<li><a href="../chapter1">1.Introduction</a></li>
-<li><a href="../chapter2">2.Structure de la base de données</a></li>
-<li><a href="../chapter3">3.Connexion et démarrage dans Providence</a></li>
-<li><a href="../chapter4">4.La gestion des recherches</a></li>
-<li><a href="../chapter5">5.La saisie d'un objet dans CollectiveAccess</a></li>
-<li><a href="../chapter6">6. La saisie d'une entité dans CollectiveAccess</a></li>
-<li><a href="../chapter7">7. La saisie des lieux dans CollectiveAccess</a></li>
-</ul>
+<h1 id="donnees-interstitielles">Données interstitielles<a class="headerlink" href="#donnees-interstitielles" title="Permanent link">¶</a></h1>
+<p>Depuis la version 1.4, CollectiveAccess prend en charge les <strong>enregistrements de relation</strong>, aussi appelés enregistrements « interstitiels ». Cette fonction permet aux catalogueurs de décrire une relation au-delà du simple choix d'un type de relation. Supposons par exemple que vous ayez deux entités mariées pendant un certain temps, puis divorcées. L'enregistrement de relation permet d'ajouter une plage de dates, un texte narratif et/ou d'autres éléments de métadonnées de votre choix dans l'interstice entre ces deux individus. Les enregistrements de relation sont entièrement facultatifs et ne sont d'ailleurs accessibles que si une interface utilisateur est définie pour eux. Ils ne se limitent pas aux entités : deux enregistrements quelconques peuvent porter cette description interstitielle, à condition que des métadonnées et une interface utilisateur aient été créées. Parmi les exemples courants de relations susceptibles de nécessiter des métadonnées interstitielles : objets vers lieux, objets vers entités, entités vers lieux, etc.</p>
+<div class="admonition note">
+<p class="admonition-title">Concept</p>
+<p>Une donnée <strong>interstitielle</strong> est une métadonnée portée par la relation elle-même, et non par l'un des deux enregistrements liés. Elle vit « entre » les deux enregistrements. C'est le mécanisme qui permet, par exemple, de dater un prêt ou de qualifier le rôle d'une entité dans une relation.</p>
+</div>
+<h2 id="modifier-les-enregistrements-de-relation">Modifier les enregistrements de relation<a class="headerlink" href="#modifier-les-enregistrements-de-relation" title="Permanent link">¶</a></h2>
+<p>Lorsqu'une relation dispose d'éléments de métadonnées et d'une interface utilisateur dédiés, une petite icône d'édition apparaît sur les relations concernées, après leur premier enregistrement. Cliquer sur cette icône 📎 (un trombone dans l'interface) ouvre l'enregistrement de relation dans une fenêtre en surimpression.</p>
+<div class="admonition info">
+<p class="admonition-title">Source</p>
+<p>Traduction de la documentation officielle <a href="https://providence.readthedocs.io/en/latest/">CollectiveAccess / Providence</a>, section <em>Data Modelling — Interstitial Data</em>. Terminologie alignée sur le fichier de localisation <code>fr_FR</code> de l'application.</p>
+</div>
 
 
 
@@ -2072,6 +2156,54 @@
 <footer class="md-footer">
 
   <!-- Link to previous and/or next page -->
+  
+    <nav
+      class="md-footer__inner md-grid"
+      aria-label="footer.title"
+    >
+
+      <!-- Link to previous page -->
+      
+        <a
+          href="../modelisation_metadonnees/"
+          class="md-footer__link md-footer__link--prev"
+          rel="prev"
+        >
+          <div class="md-footer__button md-icon">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"/></svg>
+          </div>
+          <div class="md-footer__title">
+            <div class="md-ellipsis">
+              <span class="md-footer__direction">
+                Précédent
+              </span>
+              III. Métadonnées
+            </div>
+          </div>
+        </a>
+      
+
+      <!-- Link to next page -->
+      
+        <a
+          href="../chapterXI_connexion_demarrage/"
+          class="md-footer__link md-footer__link--next"
+          rel="next"
+        >
+          <div class="md-footer__title">
+            <div class="md-ellipsis">
+              <span class="md-footer__direction">
+                Suivant
+              </span>
+              I. Connexion et démarrage dans Providence
+            </div>
+          </div>
+          <div class="md-footer__button md-icon">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M4 11v2h12l-5.5 5.5 1.42 1.42L19.84 12l-7.92-7.92L10.5 5.5 16 11z"/></svg>
+          </div>
+        </a>
+      
+    </nav>
   
 
   <!-- Further information -->

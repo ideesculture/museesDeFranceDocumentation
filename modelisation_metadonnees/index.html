@@ -13,6 +13,10 @@
       
       
       
+        <link rel="prev" href="../modelisation_tables_principales/">
+      
+      
+        <link rel="next" href="../interstitiel/">
       
       
         
@@ -23,7 +27,7 @@
     
     
       
-        <title>Summary - Guide utilisateur CollectiveAccess</title>
+        <title>III. Métadonnées - Guide utilisateur CollectiveAccess</title>
       
     
     
@@ -82,7 +86,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#summary" class="md-skip">
+        <a href="#metadonnees" class="md-skip">
           Aller au contenu
         </a>
       
@@ -163,7 +167,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              Summary
+              III. Métadonnées
             
           </span>
         </div>
@@ -317,18 +321,20 @@
       
   
   
+    
   
   
+  
     
     
     
     
     
-    <li class="md-nav__item md-nav__item--nested">
+    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
       
         
         
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2" >
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2" checked>
         
           
           <label class="md-nav__link" for="__nav_2" id="__nav_2_label" tabindex="0">
@@ -349,7 +355,7 @@
             <span class="md-nav__icon md-icon"></span>
           </label>
         
-        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_2_label" aria-expanded="false">
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_2_label" aria-expanded="true">
           <label class="md-nav__title" for="__nav_2">
             <span class="md-nav__icon md-icon"></span>
             
@@ -420,10 +426,37 @@
                 
   
   
+    
   
   
-    <li class="md-nav__item">
-      <a href="../modelisation_metadonnees/" class="md-nav__link">
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    III. Métadonnées
+  
+
+    
+  </span>
+  
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
         
   
   
@@ -439,6 +472,37 @@
   
 
       </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table des matières">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table des matières
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#types-dattributs" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Types d'attributs
+      
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
     </li>
   
 
@@ -1941,6 +2005,25 @@
     
   
   
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table des matières
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#types-dattributs" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Types d'attributs
+      
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
 </nav>
                   </div>
                 </div>
@@ -1959,17 +2042,151 @@
   
 
 
-<h1 id="summary">Summary<a class="headerlink" href="#summary" title="Permanent link">¶</a></h1>
-<ul>
-<li><a href="../README">Guide utilisateur Providence</a></li>
-<li><a href="../chapter1">1.Introduction</a></li>
-<li><a href="../chapter2">2.Structure de la base de données</a></li>
-<li><a href="../chapter3">3.Connexion et démarrage dans Providence</a></li>
-<li><a href="../chapter4">4.La gestion des recherches</a></li>
-<li><a href="../chapter5">5.La saisie d'un objet dans CollectiveAccess</a></li>
-<li><a href="../chapter6">6. La saisie d'une entité dans CollectiveAccess</a></li>
-<li><a href="../chapter7">7. La saisie des lieux dans CollectiveAccess</a></li>
-</ul>
+<h1 id="metadonnees">Métadonnées<a class="headerlink" href="#metadonnees" title="Permanent link">¶</a></h1>
+<p>Les éléments de métadonnées sont les champs de données configurables qui constituent l'essentiel du schéma propre à votre installation. Chaque élément a un <strong>type d'attribut</strong> qui détermine la nature des données qu'il accepte et la façon dont elles sont normalisées. Chaque type est légèrement différent, conçu pour accepter et normaliser des données dans un format particulier.</p>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>La liste complète et à jour des types d'attributs figure dans le fichier <a href="https://github.com/collectiveaccess/providence/blob/master/app/conf/attribute_types.conf"><code>attribute_types.conf</code></a> du dépôt CollectiveAccess.</p>
+</div>
+<h2 id="types-dattributs">Types d'attributs<a class="headerlink" href="#types-dattributs" title="Permanent link">¶</a></h2>
+<table>
+<thead>
+<tr>
+<th>Type</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>Container</code></td>
+<td>Contrairement à tous les autres types, les conteneurs ne représentent pas une valeur de donnée. Leur seule fonction est d'organiser des attributs en groupes pour l'affichage. Dans un ensemble à plusieurs attributs (par exemple une adresse avec des attributs distincts pour le numéro, la ville, l'état, le pays et le code postal), il y a au moins un conteneur servant de « racine » (sommet) de la hiérarchie d'attributs. D'autres conteneurs peuvent regrouper les items en sous-groupes affichés sur des lignes distinctes d'un formulaire.</td>
+</tr>
+<tr>
+<td><code>Text</code></td>
+<td>Représente une valeur en texte libre.</td>
+</tr>
+<tr>
+<td><code>DateRange</code></td>
+<td>Représente une plage de dates historique, acceptant les expressions de plage de dates/heures dans les formats reconnus par le module TimeExpressionParser de CollectiveAccess.</td>
+</tr>
+<tr>
+<td><code>List</code></td>
+<td>Représente une valeur choisie dans une liste déroulante alimentée par une liste définie dans la table <code>ca_lists</code>.</td>
+</tr>
+<tr>
+<td><code>Geocode</code></td>
+<td>Représente une ou plusieurs coordonnées latitude/longitude. Saisie en paires décimales (ex. <code>40.321,-74.55</code>) ou en degrés-minutes-secondes. Plusieurs coordonnées sont séparées par des points-virgules. Les saisies non coordonnées sont converties via le service de géocodage Google Maps. Pour lever toute ambiguïté, il est fortement conseillé d'entourer les listes de coordonnées de crochets.</td>
+</tr>
+<tr>
+<td><code>Url</code></td>
+<td>Accepte une URL correctement formatée. Vérification actuellement limitée à la syntaxe globale et au protocole.</td>
+</tr>
+<tr>
+<td><code>Currency</code></td>
+<td>Accepte une valeur monétaire : un code de devise + un nombre décimal. Code de devise standard à trois lettres (voir ISO 4217) ou symbole spécial (<code>$</code>, <code>¥</code>, <code>£</code>, <code>€</code>). Exemples valides : <code>$14.95</code>, <code>£32.50</code>, <code>CAD 20</code>, <code>DKK 75</code>.</td>
+</tr>
+<tr>
+<td><code>Length</code></td>
+<td>Accepte des mesures de longueur en unités métriques, anglo-saxonnes et en points (typographiques). Saisie : quantité numérique + spécificateur d'unité. L'unité de sortie est dictée par la préférence d'unité de l'utilisateur.</td>
+</tr>
+<tr>
+<td><code>Weight</code></td>
+<td>Accepte des mesures de poids en unités métriques et anglo-saxonnes. Saisie : quantité + unité. L'unité de sortie est dictée par la préférence de l'utilisateur.</td>
+</tr>
+<tr>
+<td><code>TimeCode</code></td>
+<td>Accepte des décalages temporels en plusieurs formats de time code. Sert généralement à exprimer une durée ou une position dans un média temporel. Formats : <code>hh:mm:ss</code> (ex. <code>2:10:52</code>), <code>XXh XXm XXs</code> (ex. <code>2h 10m 52s</code>) ou <code>XXs</code> (ex. <code>7852s</code>).</td>
+</tr>
+<tr>
+<td><code>Integer</code></td>
+<td>Accepte les valeurs entières, mais pas les décimaux. En pratique, tout ce qui ne contient que les chiffres 0-9 est accepté.</td>
+</tr>
+<tr>
+<td><code>Numeric</code></td>
+<td>Accepte les valeurs numériques : signe optionnel, chiffres, partie décimale optionnelle et partie exponentielle optionnelle. Ainsi <code>+0123.45e6</code> est valide. La notation hexadécimale (<code>0xFF</code>) est aussi autorisée, mais sans signe, décimale ni exposant.</td>
+</tr>
+<tr>
+<td><code>LCSH</code></td>
+<td>Valeur de vedette-matière de la Bibliothèque du Congrès. Recherche une vedette LCSH et renvoie une liste de correspondances possibles. La vedette sélectionnée est stockée à la fois en texte et comme identifiant URL du service.</td>
+</tr>
+<tr>
+<td><code>GeoNames</code></td>
+<td>Valeur GeoNames. Transmet le texte de recherche au service GeoNames et propose une liste déroulante de résultats. Le géonom sélectionné est stocké en texte (nom, pays, continent et ID) et comme identifiant URL.</td>
+</tr>
+<tr>
+<td><code>File</code></td>
+<td>Fichier téléversé. CollectiveAccess tente d'identifier le fichier et d'en extraire des métadonnées limitées, mais l'accepte et le stocke même sans l'identifier.</td>
+</tr>
+<tr>
+<td><code>Media</code></td>
+<td>Média téléversé (image, son, vidéo). CollectiveAccess tente d'identifier le fichier, d'en extraire les métadonnées et de créer les dérivés configurés dans <code>media_processing.conf</code>. S'il ne peut pas identifier et analyser le fichier, il le rejette.</td>
+</tr>
+<tr>
+<td><code>Taxonomy</code></td>
+<td>Nom taxonomique renvoyé par un service de noms taxonomiques. Prend actuellement en charge les services ITIS et uBio.</td>
+</tr>
+<tr>
+<td><code>InformationService</code></td>
+<td>Interrogation d'un service web distant : Getty TGN, ULAN et AAT, une autre instance CollectiveAccess, Wikipedia, WorldCat, uBio, etc.</td>
+</tr>
+<tr>
+<td><code>ObjectRepresentations</code></td>
+<td>Référence des représentations d'objet au sein de votre instance CollectiveAccess.</td>
+</tr>
+<tr>
+<td><code>Entities</code></td>
+<td>Valeur d'entité. Recherche dans l'autorité des entités et crée une pseudo-relation sans type avec l'entité sélectionnée.</td>
+</tr>
+<tr>
+<td><code>Places</code></td>
+<td>Valeur de lieu. Recherche dans l'autorité des lieux et crée une pseudo-relation sans type. Restreignable à un seul type de lieu.</td>
+</tr>
+<tr>
+<td><code>Occurrences</code></td>
+<td>Valeur d'occurrence. Recherche dans l'autorité des occurrences et crée une pseudo-relation sans type. Restreignable (et devrait l'être) à un seul type d'occurrence.</td>
+</tr>
+<tr>
+<td><code>Collections</code></td>
+<td>Valeur de collection. Recherche dans l'autorité des collections et crée une pseudo-relation sans type. Restreignable à un seul type.</td>
+</tr>
+<tr>
+<td><code>StorageLocations</code></td>
+<td>Valeur d'emplacement de stockage. Recherche dans l'autorité des emplacements et crée une pseudo-relation sans type. Restreignable à un seul type.</td>
+</tr>
+<tr>
+<td><code>Loans</code></td>
+<td>Valeur de prêt. Recherche dans l'autorité des prêts et crée une pseudo-relation sans type. Restreignable à un seul type.</td>
+</tr>
+<tr>
+<td><code>Movements</code></td>
+<td>Valeur de mouvement. Recherche dans l'autorité des mouvements et crée une pseudo-relation sans type. Restreignable à un seul type.</td>
+</tr>
+<tr>
+<td><code>Objects</code></td>
+<td>Valeur d'objet. Recherche dans l'autorité des objets et crée une pseudo-relation sans type. Restreignable à un seul type.</td>
+</tr>
+<tr>
+<td><code>ObjectLots</code></td>
+<td>Valeur de lot d'objets. Recherche dans l'autorité des lots et crée une pseudo-relation sans type. Restreignable à un seul type.</td>
+</tr>
+<tr>
+<td><code>Floorplan</code></td>
+<td>Implémente une interface de plan interactif pour les fiches d'autorité de lieu.</td>
+</tr>
+<tr>
+<td><code>Color</code></td>
+<td>Représente une couleur au format hexadécimal RVB standard (ex. <code>FFCC33</code>). Généralement affiché avec un sélecteur de couleur.</td>
+</tr>
+<tr>
+<td><code>Filesize</code></td>
+<td>Accepte des tailles de fichier avec suffixes courants (<code>B</code>, <code>KB</code>, <code>KiB</code>, <code>MB</code>, <code>MiB</code>, <code>GB</code>, <code>GiB</code>, <code>TB</code>, etc.). Depuis la version 1.8.</td>
+</tr>
+</tbody>
+</table>
+<div class="admonition info">
+<p class="admonition-title">Source</p>
+<p>Traduction de la documentation officielle <a href="https://providence.readthedocs.io/en/latest/">CollectiveAccess / Providence</a>, section <em>Data Modelling — Metadata Elements</em>. Terminologie alignée sur le fichier de localisation <code>fr_FR</code> de l'application.</p>
+</div>
 
 
 
@@ -2072,6 +2289,54 @@
 <footer class="md-footer">
 
   <!-- Link to previous and/or next page -->
+  
+    <nav
+      class="md-footer__inner md-grid"
+      aria-label="footer.title"
+    >
+
+      <!-- Link to previous page -->
+      
+        <a
+          href="../modelisation_tables_principales/"
+          class="md-footer__link md-footer__link--prev"
+          rel="prev"
+        >
+          <div class="md-footer__button md-icon">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"/></svg>
+          </div>
+          <div class="md-footer__title">
+            <div class="md-ellipsis">
+              <span class="md-footer__direction">
+                Précédent
+              </span>
+              II. Tables principales et champs intrinsèques
+            </div>
+          </div>
+        </a>
+      
+
+      <!-- Link to next page -->
+      
+        <a
+          href="../interstitiel/"
+          class="md-footer__link md-footer__link--next"
+          rel="next"
+        >
+          <div class="md-footer__title">
+            <div class="md-ellipsis">
+              <span class="md-footer__direction">
+                Suivant
+              </span>
+              IV. Données interstitielles
+            </div>
+          </div>
+          <div class="md-footer__button md-icon">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M4 11v2h12l-5.5 5.5 1.42 1.42L19.84 12l-7.92-7.92L10.5 5.5 16 11z"/></svg>
+          </div>
+        </a>
+      
+    </nav>
   
 
   <!-- Further information -->

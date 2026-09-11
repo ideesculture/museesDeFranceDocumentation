@@ -13,6 +13,10 @@
       
       
       
+        <link rel="prev" href="../Registre_biens/">
+      
+      
+        <link rel="next" href="../affichage_modeles/">
       
       
         
@@ -23,7 +27,7 @@
     
     
       
-        <title>Summary - Guide utilisateur CollectiveAccess</title>
+        <title>Introduction - Guide utilisateur CollectiveAccess</title>
       
     
     
@@ -82,7 +86,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#summary" class="md-skip">
+        <a href="#affichages-et-modeles-daffichage" class="md-skip">
           Aller au contenu
         </a>
       
@@ -163,7 +167,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              Summary
+              Introduction
             
           </span>
         </div>
@@ -1289,18 +1293,20 @@
       
   
   
+    
   
   
+  
     
     
     
     
     
-    <li class="md-nav__item md-nav__item--nested">
+    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
       
         
         
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_6" >
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_6" checked>
         
           
           <label class="md-nav__link" for="__nav_6" id="__nav_6_label" tabindex="0">
@@ -1321,7 +1327,7 @@
             <span class="md-nav__icon md-icon"></span>
           </label>
         
-        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_6_label" aria-expanded="false">
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_6_label" aria-expanded="true">
           <label class="md-nav__title" for="__nav_6">
             <span class="md-nav__icon md-icon"></span>
             
@@ -1336,10 +1342,19 @@
                 
   
   
+    
   
   
-    <li class="md-nav__item">
-      <a href="../affichage_introduction/" class="md-nav__link">
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
         
   
   
@@ -1355,6 +1370,7 @@
   
 
       </a>
+      
     </li>
   
 
@@ -1959,17 +1975,23 @@
   
 
 
-<h1 id="summary">Summary<a class="headerlink" href="#summary" title="Permanent link">¶</a></h1>
+<h1 id="affichages-et-modeles-daffichage">Affichages et modèles d'affichage<a class="headerlink" href="#affichages-et-modeles-daffichage" title="Permanent link">¶</a></h1>
+<p>Un <strong>affichage</strong> dans CollectiveAccess est une présentation configurable des données d'un enregistrement : il définit quels blocs (champs de métadonnées) sont restitués, dans quel ordre et sous quelle forme. Les affichages servent à l'écran (fiches, colonnes des résultats de recherche), dans les éditions et exports, et dans les thèmes du site public Pawtucket.</p>
+<p>Le cœur d'un affichage est le <strong>modèle d'affichage</strong> (<em>display template</em>) : un texte mêlant du contenu fixe et des marqueurs <code>^</code> remplacés par les valeurs de l'enregistrement. Maîtriser cette syntaxe permet de produire des fiches lisibles, des étiquettes, des colonnes d'export sur mesure, et d'aller chercher des données portées par les enregistrements liés.</p>
+<div class="admonition note">
+<p class="admonition-title">Terminologie</p>
+<p>On parle d'<strong>affichage</strong> (l'objet « Display » de CollectiveAccess) et de <strong>modèle d'affichage</strong> (« Display template »), conformément aux libellés de l'interface française. Le terme « gabarit » n'est pas employé.</p>
+</div>
+<p>Cette section traduit et adapte la documentation officielle Providence. Elle se compose de :</p>
 <ul>
-<li><a href="../README">Guide utilisateur Providence</a></li>
-<li><a href="../chapter1">1.Introduction</a></li>
-<li><a href="../chapter2">2.Structure de la base de données</a></li>
-<li><a href="../chapter3">3.Connexion et démarrage dans Providence</a></li>
-<li><a href="../chapter4">4.La gestion des recherches</a></li>
-<li><a href="../chapter5">5.La saisie d'un objet dans CollectiveAccess</a></li>
-<li><a href="../chapter6">6. La saisie d'une entité dans CollectiveAccess</a></li>
-<li><a href="../chapter7">7. La saisie des lieux dans CollectiveAccess</a></li>
+<li><strong><a href="../affichage_modeles/">Syntaxe des modèles d'affichage</a></strong> — les marqueurs, les options, les conditions, l'accès aux données liées.</li>
+<li><strong><a href="../affichage_unites/">Les unités <code>&lt;unit&gt;</code></a></strong> — formater les conteneurs répétables, les hiérarchies et les relations indirectes.</li>
+<li><strong><a href="../affichage_expressions/">Les expressions</a></strong> — calculs, comparaisons et fonctions utilisables dans les conditions et les modèles.</li>
 </ul>
+<div class="admonition info">
+<p class="admonition-title">Source</p>
+<p>Traduction de la documentation officielle <a href="https://providence.readthedocs.io/en/latest/">CollectiveAccess / Providence</a>, section <em>Reporting</em>. La terminologie suit le fichier de localisation <code>fr_FR</code> de l'application.</p>
+</div>
 
 
 
@@ -2072,6 +2094,54 @@
 <footer class="md-footer">
 
   <!-- Link to previous and/or next page -->
+  
+    <nav
+      class="md-footer__inner md-grid"
+      aria-label="footer.title"
+    >
+
+      <!-- Link to previous page -->
+      
+        <a
+          href="../Registre_biens/"
+          class="md-footer__link md-footer__link--prev"
+          rel="prev"
+        >
+          <div class="md-footer__button md-icon">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"/></svg>
+          </div>
+          <div class="md-footer__title">
+            <div class="md-ellipsis">
+              <span class="md-footer__direction">
+                Précédent
+              </span>
+              VII. Registre des biens affectés/déposés
+            </div>
+          </div>
+        </a>
+      
+
+      <!-- Link to next page -->
+      
+        <a
+          href="../affichage_modeles/"
+          class="md-footer__link md-footer__link--next"
+          rel="next"
+        >
+          <div class="md-footer__title">
+            <div class="md-ellipsis">
+              <span class="md-footer__direction">
+                Suivant
+              </span>
+              I. Syntaxe des modèles d'affichage
+            </div>
+          </div>
+          <div class="md-footer__button md-icon">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M4 11v2h12l-5.5 5.5 1.42 1.42L19.84 12l-7.92-7.92L10.5 5.5 16 11z"/></svg>
+          </div>
+        </a>
+      
+    </nav>
   
 
   <!-- Further information -->
