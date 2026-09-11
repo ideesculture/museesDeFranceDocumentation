@@ -13,7 +13,7 @@
       
       
       
-        <link rel="prev" href="../recherche_syntaxe/">
+        <link rel="prev" href="../chapformrech/">
       
       
         <link rel="next" href="../chapterIX_parametrage_grille_saisie/">
@@ -126,6 +126,20 @@
 <!-- Supranav retiré le 2026-08-29 : la documentation est désormais
      intégrée au portail client (help.ideesculture.com/documentation), qui porte
      déjà sa propre navigation. -->
+<style>
+  /* En-tête en gris clair plutôt qu'orange : la documentation est encadrée dans le portail
+     help.ideesculture.com, dont la barre supérieure est sombre — l'orange jurait.
+     On surcharge la palette Material « orange » : le texte de l'en-tête y est déjà sombre
+     (#000000de), il reste donc lisible sur ce fond. Les liens du corps de page, eux, gardent
+     leur couleur propre (--md-typeset-a-color), volontairement inchangée. */
+  [data-md-color-primary=orange] {
+    --md-primary-fg-color: #f0f0f0;
+    --md-primary-fg-color--light: #f0f0f0;
+    --md-primary-fg-color--dark: #e3e3e3;
+  }
+  /* Sans l'aplat coloré, un filet est nécessaire pour détacher l'en-tête du contenu. */
+  .md-header { border-bottom: 1px solid #dcdcdc; }
+</style>
 
 
 <!-- Header -->
@@ -589,6 +603,34 @@
     
   
     II bis. Syntaxe de recherche (référence)
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../chapformrech/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    II ter. Formulaires de recherche avancée
   
 
     
@@ -2435,7 +2477,7 @@ Traitements en lots : suppression en lot - bombe</p>
       <!-- Link to previous page -->
       
         <a
-          href="../recherche_syntaxe/"
+          href="../chapformrech/"
           class="md-footer__link md-footer__link--prev"
           rel="prev"
         >
@@ -2447,7 +2489,7 @@ Traitements en lots : suppression en lot - bombe</p>
               <span class="md-footer__direction">
                 Précédent
               </span>
-              II bis. Syntaxe de recherche (référence)
+              II ter. Formulaires de recherche avancée
             </div>
           </div>
         </a>
